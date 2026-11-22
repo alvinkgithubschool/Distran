@@ -1,0 +1,606 @@
+{
+  "run_id": "amazon-5core-20261116",
+  "runtime": "Google Colab CPU via colab CLI",
+  "seed": 42,
+  "environment": {
+    "python": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+    "numpy": "2.2.6",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39"
+  },
+  "audit": {
+    "sources": [
+      {
+        "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/benchmark/5core/rating_only/Video_Games.csv.gz",
+        "sha256": "a2bde5f3b945960d161538c200dd87845e6ee471b46da96410dde61613c6901c",
+        "bytes": 12801967,
+        "rows": 814586,
+        "users": 94762,
+        "sampled_rows": 6676
+      },
+      {
+        "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/benchmark/5core/rating_only/Movies_and_TV.csv.gz",
+        "sha256": "260d72b08d5e501276b349fed80ad23715dc56bd90fb89a52598ac7194a0ade5",
+        "bytes": 111047519,
+        "rows": 7441129,
+        "users": 657203,
+        "sampled_rows": 59323
+      }
+    ],
+    "full_file_overlap_users": 19615,
+    "duplicates_removed": 0,
+    "sample": "SHA256(source_user_id) first 8 bytes big endian modulo 128 == 0; complete file scans; no future-based user filtering",
+    "pseudonyms": "Random per-run salt, not exported; sampled cohort deterministic, pseudonyms differ each run",
+    "limitations": "Publisher 5-core selection uses complete history; global split is within that preselected corpus, not a prospective population study. screen combines movies and TV; no reliable separation in ratings-only IDs."
+  },
+  "counts": {
+    "events": 65999,
+    "train": 39600,
+    "validation": 13204,
+    "test": 13195,
+    "users": 4718,
+    "items": 24390
+  },
+  "cutoffs": {
+    "train_max": 1469599661000,
+    "validation_max": 1531489567129,
+    "unit": "Unix milliseconds"
+  },
+  "parameters": {
+    "dim": 16,
+    "epochs": 30,
+    "lr": 0.03,
+    "reg": 0.01,
+    "positive": "rating >= 4",
+    "negative": "uniform unobserved-positive complement; unobserved is not known dislike"
+  },
+  "validation": {
+    "0": {
+      "evaluated_users": 1379,
+      "positive_heldout_users": 5248,
+      "cold_item_positives": 7027,
+      "repeat_positives": 0,
+      "k": 10,
+      "ranking": "full train catalog, exclude all training interactions",
+      "catalog_coverage": 0.0006150061500615006,
+      "recall_at_10": 0.02758209882937946,
+      "recall_at_10_ci95": [
+        0.020338797955730514,
+        0.03584032597810698
+      ],
+      "ndcg_at_10": 0.01844613414839313,
+      "ndcg_at_10_ci95": [
+        0.013688143894050347,
+        0.02389531152612064
+      ]
+    },
+    "0.25": {
+      "evaluated_users": 1379,
+      "positive_heldout_users": 5248,
+      "cold_item_positives": 7027,
+      "repeat_positives": 0,
+      "k": 10,
+      "ranking": "full train catalog, exclude all training interactions",
+      "catalog_coverage": 0.006847068470684707,
+      "recall_at_10": 0.02523685524048106,
+      "recall_at_10_ci95": [
+        0.018718644933746455,
+        0.03271401338569576
+      ],
+      "ndcg_at_10": 0.013979761676160486,
+      "ndcg_at_10_ci95": [
+        0.010315284134439166,
+        0.017979537751150448
+      ]
+    },
+    "0.5": {
+      "evaluated_users": 1379,
+      "positive_heldout_users": 5248,
+      "cold_item_positives": 7027,
+      "repeat_positives": 0,
+      "k": 10,
+      "ranking": "full train catalog, exclude all training interactions",
+      "catalog_coverage": 0.008241082410824108,
+      "recall_at_10": 0.023962326047170135,
+      "recall_at_10_ci95": [
+        0.017165734314030182,
+        0.030345898511688944
+      ],
+      "ndcg_at_10": 0.012891103212046635,
+      "ndcg_at_10_ci95": [
+        0.009322529876657507,
+        0.016647520461160185
+      ]
+    },
+    "0.75": {
+      "evaluated_users": 1379,
+      "positive_heldout_users": 5248,
+      "cold_item_positives": 7027,
+      "repeat_positives": 0,
+      "k": 10,
+      "ranking": "full train catalog, exclude all training interactions",
+      "catalog_coverage": 0.00988109881098811,
+      "recall_at_10": 0.023255291964501535,
+      "recall_at_10_ci95": [
+        0.01649504471839497,
+        0.029687143893090226
+      ],
+      "ndcg_at_10": 0.012148691230582591,
+      "ndcg_at_10_ci95": [
+        0.008847490003626035,
+        0.015371911138596874
+      ]
+    },
+    "1": {
+      "evaluated_users": 1379,
+      "positive_heldout_users": 5248,
+      "cold_item_positives": 7027,
+      "repeat_positives": 0,
+      "k": 10,
+      "ranking": "full train catalog, exclude all training interactions",
+      "catalog_coverage": 0.035834358343583436,
+      "recall_at_10": 0.018245623122345383,
+      "recall_at_10_ci95": [
+        0.012676218964743257,
+        0.02317133706274388
+      ],
+      "ndcg_at_10": 0.010540305274475564,
+      "ndcg_at_10_ci95": [
+        0.007307324767981513,
+        0.01365441275021047
+      ]
+    }
+  },
+  "selected_cf_weight": 0.0,
+  "test": {
+    "popularity": {
+      "all": {
+        "evaluated_users": 303,
+        "positive_heldout_users": 5567,
+        "cold_item_positives": 8718,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.0004920049200492004,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "game": {
+        "evaluated_users": 24,
+        "positive_heldout_users": 4911,
+        "cold_item_positives": 1423,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.004719004719004719,
+        "recall_at_10": 0.020833333333333332,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0625
+        ],
+        "ndcg_at_10": 0.0161188669681059,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.048356600904317704
+        ]
+      },
+      "screen": {
+        "evaluated_users": 282,
+        "positive_heldout_users": 5387,
+        "cold_item_positives": 7295,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.0005439956480348157,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "game_to_screen": {
+        "evaluated_users": 17,
+        "positive_heldout_users": 2217,
+        "cold_item_positives": 7295,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.00045332970669567977,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "screen_to_game": {
+        "evaluated_users": 7,
+        "positive_heldout_users": 4570,
+        "cold_item_positives": 1423,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.00429000429000429,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bpr": {
+      "all": {
+        "evaluated_users": 303,
+        "positive_heldout_users": 5567,
+        "cold_item_positives": 8718,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.02045920459204592,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "game": {
+        "evaluated_users": 24,
+        "positive_heldout_users": 4911,
+        "cold_item_positives": 1423,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.07550407550407551,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "screen": {
+        "evaluated_users": 282,
+        "positive_heldout_users": 5387,
+        "cold_item_positives": 7295,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.021623827009383926,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "game_to_screen": {
+        "evaluated_users": 17,
+        "positive_heldout_users": 2217,
+        "cold_item_positives": 7295,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.005122625685661181,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "screen_to_game": {
+        "evaluated_users": 7,
+        "positive_heldout_users": 4570,
+        "cold_item_positives": 1423,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.027885027885027884,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "hybrid": {
+      "all": {
+        "evaluated_users": 303,
+        "positive_heldout_users": 5567,
+        "cold_item_positives": 8718,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.0004920049200492004,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "game": {
+        "evaluated_users": 24,
+        "positive_heldout_users": 4911,
+        "cold_item_positives": 1423,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.004719004719004719,
+        "recall_at_10": 0.020833333333333332,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0625
+        ],
+        "ndcg_at_10": 0.0161188669681059,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.048356600904317704
+        ]
+      },
+      "screen": {
+        "evaluated_users": 282,
+        "positive_heldout_users": 5387,
+        "cold_item_positives": 7295,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.0005439956480348157,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "game_to_screen": {
+        "evaluated_users": 17,
+        "positive_heldout_users": 2217,
+        "cold_item_positives": 7295,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.00045332970669567977,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "screen_to_game": {
+        "evaluated_users": 7,
+        "positive_heldout_users": 4570,
+        "cold_item_positives": 1423,
+        "repeat_positives": 0,
+        "k": 10,
+        "ranking": "full train catalog, exclude all training interactions",
+        "catalog_coverage": 0.00429000429000429,
+        "recall_at_10": 0.0,
+        "recall_at_10_ci95": [
+          0.0,
+          0.0
+        ],
+        "ndcg_at_10": 0.0,
+        "ndcg_at_10_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "source_only_fold_in": {
+    "game_to_screen": {
+      "evaluated_users": 17,
+      "positive_heldout_users": 2217,
+      "cold_item_positives": 7295,
+      "repeat_positives": 0,
+      "k": 10,
+      "ranking": "full train catalog, exclude all training interactions",
+      "catalog_coverage": 0.00471462894963507,
+      "recall_at_10": 0.0,
+      "recall_at_10_ci95": [
+        0.0,
+        0.0
+      ],
+      "ndcg_at_10": 0.0,
+      "ndcg_at_10_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "screen_to_game": {
+      "evaluated_users": 7,
+      "positive_heldout_users": 4570,
+      "cold_item_positives": 1423,
+      "repeat_positives": 0,
+      "k": 10,
+      "ranking": "full train catalog, exclude all training interactions",
+      "catalog_coverage": 0.02917202917202917,
+      "recall_at_10": 0.0,
+      "recall_at_10_ci95": [
+        0.0,
+        0.0
+      ],
+      "ndcg_at_10": 0.0,
+      "ndcg_at_10_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "content": {
+    "seed": 42,
+    "documents": 12,
+    "vocabulary": 433,
+    "dimensions": 8,
+    "explained_variance": 0.6711771554759998,
+    "examples": [
+      {
+        "seed": "it-takes-two",
+        "recommendations": [
+          "baldurs-gate",
+          "exit-8",
+          "dune",
+          "cyberpunk"
+        ]
+      },
+      {
+        "seed": "cyberpunk",
+        "recommendations": [
+          "edgerunners",
+          "outer-wilds",
+          "blade-runner",
+          "disco-elysium"
+        ]
+      },
+      {
+        "seed": "elden-ring",
+        "recommendations": [
+          "baldurs-gate",
+          "outer-wilds",
+          "arrival",
+          "cyberpunk"
+        ]
+      },
+      {
+        "seed": "disco-elysium",
+        "recommendations": [
+          "arrival",
+          "cyberpunk",
+          "severance",
+          "it-takes-two"
+        ]
+      },
+      {
+        "seed": "baldurs-gate",
+        "recommendations": [
+          "it-takes-two",
+          "elden-ring",
+          "cyberpunk",
+          "blade-runner"
+        ]
+      },
+      {
+        "seed": "outer-wilds",
+        "recommendations": [
+          "exit-8",
+          "severance",
+          "elden-ring",
+          "cyberpunk"
+        ]
+      },
+      {
+        "seed": "exit-8",
+        "recommendations": [
+          "outer-wilds",
+          "it-takes-two",
+          "arrival",
+          "blade-runner"
+        ]
+      },
+      {
+        "seed": "dune",
+        "recommendations": [
+          "arrival",
+          "edgerunners",
+          "it-takes-two",
+          "severance"
+        ]
+      },
+      {
+        "seed": "blade-runner",
+        "recommendations": [
+          "cyberpunk",
+          "arrival",
+          "baldurs-gate",
+          "exit-8"
+        ]
+      },
+      {
+        "seed": "arrival",
+        "recommendations": [
+          "dune",
+          "elden-ring",
+          "disco-elysium",
+          "blade-runner"
+        ]
+      },
+      {
+        "seed": "severance",
+        "recommendations": [
+          "outer-wilds",
+          "dune",
+          "it-takes-two",
+          "cyberpunk"
+        ]
+      },
+      {
+        "seed": "edgerunners",
+        "recommendations": [
+          "cyberpunk",
+          "dune",
+          "arrival",
+          "outer-wilds"
+        ]
+      }
+    ]
+  },
+  "seconds": 253.19729852676392,
+  "promotion": "Research only. Amazon IDs have no reviewed app catalog mapping; app uses separate content model. Warm cross-domain cohorts use all training interactions; source-only fold-in is reported separately. Social, graph, TV-only, and cold-item quality not evaluated."
+}

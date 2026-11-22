@@ -1,0 +1,1011 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+fill_1667730e:
+  - '#070708'
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_e3bcc91d:
+  - '#F2EFE8'
+fill_1627b3c8:
+  - rgba(255, 255, 255, 0.08)
+effect_72672f49:
+  backdropFilter: blur(10px)
+Distran/Body/Abel 15 Regular 12:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 15
+  lineHeight: 15px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 20:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.2em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_56d3c81c:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: hug
+fill_a7745cf9:
+  - rgba(255, 255, 255, 0.3)
+fill_aa25df6b:
+  - rgba(255, 255, 255, 0.4)
+style_6b393ef2:
+  fontFamily: DM Mono
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 11
+  lineHeight: 16.5px
+  letterSpacing: 0.22em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_76b61451:
+  - rgba(255, 255, 255, 0.7)
+Distran/Utility/DM Mono 9 Medium 2:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 9
+  lineHeight: 13px
+  letterSpacing: 0.1333em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_5db237a5:
+  - rgba(0, 0, 0, 0.5)
+fill_0502029d:
+  - rgba(242, 239, 232, 0.08)
+effect_89dab1fb:
+  backdropFilter: blur(12px)
+layout_09682f42:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: fixed
+  dimensions:
+    height: 112
+effect_3f20e592:
+  boxShadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.06)
+layout_105bb49c:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 206
+    y: -40
+  dimensions:
+    width: 112
+    height: 112
+effect_3825867d:
+  filter: blur(38px)
+layout_919317fb:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: -24
+    y: 56
+  dimensions:
+    width: 96
+    height: 96
+fill_f172503b:
+  - '#E9C9A0'
+effect_8d6c7502:
+  filter: blur(42px)
+layout_01ad4940:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 286
+    height: 112
+Distran/Utility/Doto 10 Bold 15:
+  fontFamily: Doto
+  fontStyle: Bold
+  fontWeight: 700
+  fontSize: 10
+  lineHeight: 15px
+  letterSpacing: 0.2em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_051a613e:
+  - rgba(255, 255, 255, 0.55)
+style_d6bb6c18:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 9
+  lineHeight: 13.5px
+  letterSpacing: 0.12em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+style_eb9cf175:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 17
+  lineHeight: 18.36px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+style_9e61bec1:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 12.5
+  lineHeight: 17.19px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 10 Medium 5:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 10
+  lineHeight: 15px
+  letterSpacing: 0.12em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_b468acd2:
+  - type: GRADIENT_RADIAL
+    gradient: radial-gradient(circle at 15% 0%, rgba(26, 11, 13, 1) 0%, rgba(6, 6, 6, 1) 78%)
+fill_18bb4ad9:
+  - '#E05A4F'
+fill_5898a968:
+  - '#F39A92'
+layout_9d87501d:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: hug
+  dimensions:
+    width: 258
+fill_3b09d98d:
+  - type: GRADIENT_RADIAL
+    gradient: radial-gradient(circle at 15% 0%, rgba(16, 21, 8, 1) 0%, rgba(6, 6, 6, 1) 78%)
+fill_3f46df62:
+  - '#A9C24A'
+fill_b8aa5861:
+  - '#CADA61'
+style_c38f172e:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 9
+  lineHeight: 13px
+  letterSpacing: 0.1667em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_8fc20520:
+  - rgba(255, 255, 255, 0.31)
+layout_1cac93e5:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: fixed
+  dimensions:
+    height: 170
+layout_9eb42a62:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 128
+    height: 170
+style_ab1f926a:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 14
+  lineHeight: 14.76px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Body/Abel 13 Regular 10:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 13
+  lineHeight: 19.5px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_cf0a8057:
+  - type: GRADIENT_RADIAL
+    gradient: radial-gradient(circle at 15% 0%, rgba(28, 21, 10, 1) 0%, rgba(6, 6, 6, 1) 78%)
+layout_5df5c82b:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 48
+    y: -40
+  dimensions:
+    width: 112
+    height: 112
+fill_71d45aea:
+  - '#E8A848'
+layout_0ab1bfcb:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: -24
+    y: 114
+  dimensions:
+    width: 96
+    height: 96
+fill_a45b2f4c:
+  - '#FFCE7A'
+fill_55e15e3f:
+  - '#E8E2D6'
+fill_4155d993:
+  - type: GRADIENT_RADIAL
+    gradient: radial-gradient(circle at 15% 0%, rgba(20, 11, 26, 1) 0%, rgba(6, 6, 6, 1) 78%)
+fill_641de1c3:
+  - '#A261DA'
+fill_b5526bcf:
+  - '#C99CF0'
+layout_553b6c52:
+  mode: column
+  alignItems: stretch
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 36
+    height: 48
+layout_4a2b5bd7:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: -44
+    y: -40
+  dimensions:
+    width: 112
+    height: 112
+Distran/Utility/Doto 7 Bold 27:
+  fontFamily: Doto
+  fontStyle: Bold
+  fontWeight: 700
+  fontSize: 7
+  lineHeight: 10px
+  letterSpacing: 0.2em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_c98a17b9:
+  mode: column
+  alignItems: stretch
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 12
+    y: 0
+  dimensions:
+    width: 36
+    height: 48
+effect_954bc9ad:
+  boxShadow: '-2px 0px 4px 0px rgba(0, 0, 0, 0.38)'
+Distran/Body/Abel 18 Regular 22:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 18
+  lineHeight: 18px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_a111c4b6:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 24
+    height: 24
+fill_97d170e1: []
+
+ELEMENTS:
+EL-d269e0eb:
+  type: FRAME
+  layout:
+    mode: row
+    alignItems: center
+    gap: 6px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-bb582553:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    justifyContent: space-between
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-72dac7a6:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    alignItems: stretch
+    sizing:
+      horizontal: fixed
+      vertical: fill
+    dimensions:
+      width: 288
+  fills: fill_5db237a5
+  strokes: fill_0502029d
+  strokeWeight: 1px
+  effects: effect_89dab1fb
+  borderRadius: 16px
+EL-a895efd1:
+  type: FRAME
+  layout: layout_01ad4940
+  fills:
+    - type: IMAGE
+      imageRef: b9f21958d7cb19fa082cc8e609f5fcd92822b317
+      scaleMode: FILL
+      objectFit: cover
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: false
+        requiresImageDimensions: false
+  opacity: 0.4000000059604645
+EL-4d24f401:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 10px
+    justifyContent: space-between
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 286
+      height: 112
+EL-056676ea:
+  type: TEXT
+  layout:
+    mode: none
+    sizing: {}
+    locationRelativeToParent:
+      x: 248
+      y: 95
+    dimensions:
+      width: 20
+      height: 11
+  text: soon
+  textStyle:
+    fontFamily: DM Mono
+    fontStyle: Medium
+    fontWeight: 500
+    fontSize: 7
+    lineHeight: 10.5px
+    letterSpacing: 0.15em
+    textCase: UPPER
+    textAlignHorizontal: LEFT
+    textAlignVertical: TOP
+  fills: fill_051a613e
+EL-71321008:
+  type: FRAME
+  layout: layout_01ad4940
+  fills:
+    - type: GRADIENT_LINEAR
+      gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%)
+EL-0106a817:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 14px
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-7189becf:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 0px 0px 6px
+    alignItems: stretch
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-c8d50cb3:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    alignItems: center
+    gap: 8px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-a6ee0c6b:
+  type: FRAME
+  layout:
+    mode: column
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 20
+      height: 20
+  fills:
+    - rgba(255, 255, 255, 0.1)
+  borderRadius: 16777200px
+EL-f59cb770:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 11
+      height: 11
+EL-8afafe40:
+  type: TEXT
+  layout: layout_177c5efc
+  text: Release
+  textStyle:
+    fontFamily: DM Mono
+    fontStyle: Medium
+    fontWeight: 500
+    fontSize: 9
+    lineHeight: 13.5px
+    letterSpacing: 0.18em
+    textCase: UPPER
+    textAlignHorizontal: LEFT
+    textAlignVertical: TOP
+  fills:
+    - rgba(255, 255, 255, 0.45)
+EL-c2f3d1cf:
+  type: FRAME
+  layout:
+    mode: row
+    justifyContent: flex-end
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-1f8627c1:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 6px 0px 0px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-d7345710:
+  type: FRAME
+  layout:
+    mode: column
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 258
+      height: 34
+EL-1c01a48e:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 10px 0px 0px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-868076cd:
+  type: TEXT
+  layout: layout_177c5efc
+  text: Distran Editorial
+  textStyle: Distran/Utility/DM Mono 10 Medium 5
+  fills: fill_aa25df6b
+EL-76b45996:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    sizing:
+      horizontal: fixed
+      vertical: fill
+    dimensions:
+      width: 128
+EL-34612243:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 6px 0px 0px
+    alignItems: stretch
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-c12c2177:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    sizing:
+      horizontal: fill
+      vertical: fixed
+    dimensions:
+      height: 20
+EL-af65330f:
+  type: FRAME
+  layout: layout_9eb42a62
+  fills:
+    - type: IMAGE
+      imageRef: b9f21958d7cb19fa082cc8e609f5fcd92822b317
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 1.0700000524520874
+            - 0
+            - 0
+          - - 0
+            - 1.4199999570846558
+            - 0
+        filenameSuffix: '511873'
+  opacity: 0.5
+EL-54114995:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 10px
+    justifyContent: space-between
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 128
+      height: 170
+EL-4127c898:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    padding: 12px
+    alignItems: center
+    gap: 12px
+    sizing:
+      horizontal: fill
+      vertical: hug
+  fills: fill_5db237a5
+  strokes: fill_0502029d
+  strokeWeight: 1px
+  effects: effect_89dab1fb
+  borderRadius: 12px
+EL-ade7abf8:
+  type: FRAME
+  layout:
+    mode: row
+    alignItems: stretch
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 60
+      height: 48
+EL-17993474:
+  type: FRAME
+  layout: layout_4a2b5bd7
+  fills: fill_18bb4ad9
+  effects: effect_3825867d
+  opacity: 0.6000000238418579
+  borderRadius: 16777200px
+EL-9acfe508:
+  type: FRAME
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 36
+      height: 48
+  fills:
+    - type: IMAGE
+      imageRef: b9f21958d7cb19fa082cc8e609f5fcd92822b317
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.30000001192092896
+            - 0
+            - 0
+          - - 0
+            - 0.4000000059604645
+            - 0
+        filenameSuffix: 5a78a6
+  opacity: 0.5
+EL-892d529e:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 4px
+    justifyContent: space-between
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 36
+      height: 48
+EL-26909566:
+  type: FRAME
+  layout:
+    mode: column
+    alignItems: stretch
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 24
+      y: 0
+    dimensions:
+      width: 36
+      height: 48
+  fills: fill_cf0a8057
+  effects: effect_954bc9ad
+  borderRadius: 4px
+EL-d09f2b21:
+  type: FRAME
+  layout: layout_4a2b5bd7
+  fills: fill_71d45aea
+  effects: effect_3825867d
+  opacity: 0.6000000238418579
+  borderRadius: 16777200px
+EL-51794897:
+  type: FRAME
+  layout:
+    mode: column
+    alignItems: stretch
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-02e4d498:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    sizing:
+      horizontal: fill
+      vertical: fixed
+    dimensions:
+      height: 18
+EL-7f58780d:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 4px 0px 0px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-d40fb4e5:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 16
+EL-8257d511:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-31241652:
+  type: IMAGE-SVG
+  layout: layout_a111c4b6
+  fills: fill_97d170e1
+  opacity: 0.6000000238418579
+
+COMPONENTS:
+61:8:
+  id: 61:8
+  key: 0d4b4be5cf4766e8c5830107349e6abd40800be1
+  name: 2-home-11
+
+NODES:
+[FRAME] "Distran / Home — Upcoming & discover" #14:5065 layout={"mode":"column","sizing":{"horizontal":"contextual","vertical":"contextual"},"designedWidth":"402px","designedHeight":"874px"} fills=fill_1667730e
+  [FRAME] "Container" #14:5066 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":402,"height":808}} fills=fill_1667730e
+    [FRAME] "status-bar-spacer" #56:258 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":44}}
+      [TEXT] #56:259 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+      [FRAME] "spacer" #56:260 layout={"mode":"row","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1}}
+      [FRAME] "Frame" #56:261 template=EL-d269e0eb
+        [IMAGE-SVG] "signal" #56:262 template=EL-cc8debb7
+        [IMAGE-SVG] "wifi" #56:264 template=EL-cc8debb7
+        [IMAGE-SVG] "battery" #56:266 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+    [FRAME] "page-header" #56:268 layout={"mode":"row","alignSelf":"stretch","padding":"8px 20px 16px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "Frame" #56:269 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"hug","vertical":"hug"}}
+        [TEXT] #56:270 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.35)"] textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"lineHeight":"12px","letterSpacing":"0.3em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Your feed"
+        [TEXT] #56:271 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":22,"lineHeight":"24px","letterSpacing":"0.0091em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Good evening, Mike"
+      [FRAME] "avatar" #56:272 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":36,"height":36}} fills=fill_1627b3c8 strokes=["rgba(255, 255, 255, 0.12)"] strokeWeight=1px effects=effect_72672f49 borderRadius=16777200px
+        [TEXT] #56:273 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="M"
+    [FRAME] "buddy-strip" #56:274 layout={"mode":"row","alignSelf":"stretch","padding":"0px 12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "Frame" #56:275 layout={"mode":"row","padding":"12px 14px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%)"}] strokes=fill_1627b3c8 strokeWeight=1px effects=effect_72672f49 borderRadius=14px
+        [FRAME] "buddy-icon" #56:276 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":40,"height":40}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0.05) 100%)"}] effects={"boxShadow":"0px 0px 12px 0px rgba(255, 255, 255, 0.04)"} borderRadius=16777200px
+          [IMAGE-SVG] "Icon" #56:277 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":18,"height":18}}
+        [FRAME] "buddy-text" #56:283 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [TEXT] #56:284 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.38)"] textStyle="Distran/Utility/DM Mono 8 Medium 20" text="From Buddy · For You"
+          [TEXT] #56:285 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":16,"lineHeight":"20px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Because you finished the Night City cycle"
+        [FRAME] "Frame" #56:286 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":28,"height":28}}
+          [IMAGE-SVG] "arrow-icon" #56:287 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":14,"height":14}}
+    [FRAME] "scroll-content" #56:290 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "section-upcoming" #56:291 layout={"mode":"column","alignSelf":"stretch","padding":"24px 20px 0px","alignItems":"stretch","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "section-header" #56:292 template=EL-bb582553
+          [FRAME] "Frame" #56:293 template=EL-d269e0eb
+            [IMAGE-SVG] "icon-upcoming" #56:294 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":13,"height":13}}
+            [TEXT] #56:297 layout=layout_177c5efc fills=fill_76b61451 textStyle=style_6b393ef2 text="Upcoming — first looks"
+          [TEXT] #56:298 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.25)"] textStyle="Distran/Utility/DM Mono 9 Medium 2" text="↗ See all"
+        [FRAME] "rail-upcoming" #56:299 layout={"mode":"row","alignSelf":"stretch","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":274}}
+          [FRAME] "postcard-dune3" #56:300 template=EL-72dac7a6
+            [FRAME] "CoverArt" #56:301 layout=layout_09682f42 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(26, 20, 12, 1) 0%, rgba(6, 6, 6, 1) 78%)"}] effects=effect_3f20e592 borderRadius=8px
+              [FRAME] "blob-warm" #56:302 layout=layout_105bb49c fills=["#D8B483"] effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "blob-warm2" #56:303 layout=layout_919317fb fills=fill_f172503b effects=effect_8d6c7502 opacity=0.25 borderRadius=16777200px
+              [FRAME] "grain" #56:304 template=EL-a895efd1
+              [FRAME] "Frame" #56:305 template=EL-4d24f401
+                [TEXT] #56:306 layout=layout_177c5efc fills=fill_f172503b textStyle="Distran/Utility/Doto 10 Bold 15" text="D3"
+              [TEXT] #56:307 template=EL-056676ea
+              [FRAME] "Frame" #56:308 template=EL-71321008
+            [FRAME] "Frame" #56:309 template=EL-0106a817
+              [FRAME] "meta-margin" #56:310 template=EL-7189becf
+                [FRAME] "Frame" #56:311 template=EL-c8d50cb3
+                  [FRAME] "Frame" #56:312 template=EL-a6ee0c6b
+                    [IMAGE-SVG] "icon-clock" #56:313 template=EL-f59cb770
+                  [TEXT] #56:316 template=EL-8afafe40
+                  [FRAME] "Frame" #56:317 template=EL-c2f3d1cf
+                    [TEXT] #56:318 layout=layout_177c5efc fills=fill_a7745cf9 textStyle=style_d6bb6c18 text="99 days out"
+              [TEXT] #56:319 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_eb9cf175 text="Dune: Part Three sets its final march"
+              [FRAME] "Frame" #56:320 template=EL-1f8627c1
+                [FRAME] "Frame" #56:321 template=EL-d7345710
+                  [TEXT] #56:322 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":258,"height":34}} fills=fill_051a613e textStyle=style_9e61bec1 text="Villeneuve confirms the desert closes where it opened. Here is everything we know about the finale — and how to get early access on Distran."
+              [FRAME] "Frame" #56:323 template=EL-1c01a48e
+                [TEXT] #56:324 template=EL-868076cd
+          [FRAME] "postcard-er2" #56:325 template=EL-72dac7a6
+            [FRAME] "CoverArt" #56:326 layout=layout_09682f42 fills=fill_b468acd2 effects=effect_3f20e592 borderRadius=8px
+              [FRAME] "blob-red" #56:327 layout=layout_105bb49c fills=fill_18bb4ad9 effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "blob-red2" #56:328 layout=layout_919317fb fills=fill_5898a968 effects=effect_8d6c7502 opacity=0.25 borderRadius=16777200px
+              [FRAME] "grain" #56:329 template=EL-a895efd1
+              [FRAME] "Frame" #56:330 template=EL-4d24f401
+                [TEXT] #56:331 layout=layout_177c5efc fills=fill_5898a968 textStyle="Distran/Utility/Doto 10 Bold 15" text="ER2"
+              [TEXT] #56:332 template=EL-056676ea
+              [FRAME] "Frame" #56:333 template=EL-71321008
+            [FRAME] "Frame" #56:334 template=EL-0106a817
+              [FRAME] "meta-margin" #56:335 template=EL-7189becf
+                [FRAME] "Frame" #56:336 template=EL-c8d50cb3
+                  [FRAME] "Frame" #56:337 template=EL-a6ee0c6b
+                    [IMAGE-SVG] "icon-clock" #56:338 template=EL-f59cb770
+                  [TEXT] #56:341 template=EL-8afafe40
+                  [FRAME] "Frame" #56:342 template=EL-c2f3d1cf
+                    [TEXT] #56:343 layout=layout_177c5efc fills=fill_a7745cf9 textStyle=style_d6bb6c18 text="New crew"
+              [TEXT] #56:344 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_eb9cf175 text="Edgerunners 2 lands 20 October"
+              [FRAME] "Frame" #56:345 template=EL-1f8627c1
+                [FRAME] "Frame" #56:346 template=EL-d7345710
+                  [TEXT] #56:347 layout=layout_9d87501d fills=fill_051a613e textStyle=style_9e61bec1 text="A fresh cast, a colder edge. Trigger returns to Night City with the follow-up nobody expected to survive."
+              [FRAME] "Frame" #56:348 template=EL-1c01a48e
+                [TEXT] #56:349 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="Studio Trigger"
+          [FRAME] "postcard-nightreign" #56:350 template=EL-72dac7a6
+            [FRAME] "CoverArt" #56:351 layout=layout_09682f42 fills=fill_3b09d98d effects=effect_3f20e592 borderRadius=8px
+              [FRAME] "blob-green" #56:352 layout=layout_105bb49c fills=fill_3f46df62 effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "blob-green2" #56:353 layout=layout_919317fb fills=fill_b8aa5861 effects=effect_8d6c7502 opacity=0.25 borderRadius=16777200px
+              [FRAME] "grain" #56:354 template=EL-a895efd1
+              [FRAME] "Frame" #56:355 template=EL-4d24f401
+                [TEXT] #56:356 layout=layout_177c5efc fills=fill_b8aa5861 textStyle="Distran/Utility/Doto 10 Bold 15" text="NR"
+              [TEXT] #56:357 template=EL-056676ea
+              [FRAME] "Frame" #56:358 template=EL-71321008
+            [FRAME] "Frame" #56:359 layout={"mode":"column","alignSelf":"stretch","padding":"14px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fill"}}
+              [FRAME] "meta-margin" #56:360 template=EL-7189becf
+                [FRAME] "Frame" #56:361 template=EL-c8d50cb3
+                  [FRAME] "Frame" #56:362 template=EL-a6ee0c6b
+                    [IMAGE-SVG] "icon-clock" #56:363 template=EL-f59cb770
+                  [TEXT] #56:366 template=EL-8afafe40
+                  [FRAME] "Frame" #56:367 template=EL-c2f3d1cf
+                    [TEXT] #56:368 layout=layout_177c5efc fills=fill_a7745cf9 textStyle=style_d6bb6c18 text="120 days out"
+              [TEXT] #56:369 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle=style_eb9cf175 text="Nightreign turns Elden Ring into a three-night gauntlet"
+              [FRAME] "Frame" #56:370 template=EL-1f8627c1
+                [FRAME] "Frame" #56:371 template=EL-d7345710
+                  [TEXT] #56:372 layout=layout_9d87501d fills=fill_051a613e textStyle=style_9e61bec1 text="Co-op, rogue-lite loops, a shrinking map. FromSoft's boldest experiment since the open world."
+              [FRAME] "Frame" #56:373 template=EL-1c01a48e
+                [TEXT] #56:374 template=EL-868076cd
+      [FRAME] "section-discover" #56:375 layout={"mode":"column","alignSelf":"stretch","padding":"28px 20px 0px","alignItems":"stretch","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "section-header" #56:376 template=EL-bb582553
+          [TEXT] #56:377 layout=layout_177c5efc fills=fill_76b61451 textStyle=style_6b393ef2 text="Discover — new releases"
+          [TEXT] #56:378 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_c38f172e text="Browse"
+        [FRAME] "rail-discover" #56:379 layout={"mode":"row","alignSelf":"stretch","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":215}}
+          [FRAME] "item-pubRoyal" #56:380 template=EL-76b45996
+            [FRAME] "CoverArt" #56:381 layout=layout_1cac93e5 fills=["#FFFFFF"] effects={"boxShadow":"0px 0px 0px 1px rgba(255, 255, 255, 0.1)"} borderRadius=8px
+              [FRAME] "photo" #56:382 layout=layout_9eb42a62 fills=[{"type":"IMAGE","imageRef":"7419b64432a735438394cca6005cb58b253c7e5e","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+              [FRAME] "gradient" #56:383 layout=layout_9eb42a62 fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)"}]
+              [TEXT] #56:384 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":10,"y":148},"dimensions":{"width":53,"height":15}} fills=fill_e3bcc91d textStyle=style_ab1f926a text="Pub Royal"
+            [FRAME] "Frame" #56:385 template=EL-34612243
+              [FRAME] "Frame" #56:386 template=EL-c12c2177
+                [TEXT] #56:387 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 10" text="Pub Royal"
+            [TEXT] #56:388 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="2024 · Album"
+          [FRAME] "item-bg3" #56:389 template=EL-76b45996
+            [FRAME] "CoverArt" #56:390 layout=layout_1cac93e5 fills=fill_cf0a8057 effects=effect_3f20e592 borderRadius=8px
+              [FRAME] "blob" #56:391 layout=layout_5df5c82b fills=fill_71d45aea effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "blob2" #56:392 layout=layout_0ab1bfcb fills=fill_a45b2f4c effects=effect_8d6c7502 opacity=0.25 borderRadius=16777200px
+              [FRAME] "grain" #56:393 template=EL-af65330f
+              [FRAME] "Frame" #56:394 template=EL-54114995
+                [TEXT] #56:395 layout=layout_177c5efc fills=fill_a45b2f4c textStyle="Distran/Utility/Doto 10 Bold 15" text="BG3"
+                [TEXT] #56:396 layout=layout_177c5efc fills=fill_71d45aea textStyle=style_ab1f926a text="Baldur's Gate 3"
+            [FRAME] "Frame" #56:397 template=EL-34612243
+              [FRAME] "Frame" #56:398 template=EL-c12c2177
+                [TEXT] #56:399 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 10" text="Baldur's Gate 3"
+            [TEXT] #56:400 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="2023 · Game"
+          [FRAME] "item-arrival" #56:401 template=EL-76b45996
+            [FRAME] "CoverArt" #56:402 layout=layout_1cac93e5 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(21, 19, 15, 1) 0%, rgba(6, 6, 6, 1) 78%)"}] effects=effect_3f20e592 borderRadius=8px
+              [FRAME] "blob" #56:403 layout=layout_5df5c82b fills=fill_55e15e3f effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "blob2" #56:404 layout=layout_0ab1bfcb fills=fill_e3bcc91d effects=effect_8d6c7502 opacity=0.25 borderRadius=16777200px
+              [FRAME] "grain" #56:405 template=EL-af65330f
+              [FRAME] "Frame" #56:406 template=EL-54114995
+                [TEXT] #56:407 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Utility/Doto 10 Bold 15" text="AR"
+                [TEXT] #56:408 layout=layout_177c5efc fills=fill_55e15e3f textStyle=style_ab1f926a text="Arrival"
+            [FRAME] "Frame" #56:409 template=EL-34612243
+              [FRAME] "Frame" #56:410 template=EL-c12c2177
+                [TEXT] #56:411 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 10" text="Arrival"
+            [TEXT] #56:412 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="2016 · Film"
+          [FRAME] "item-eldenring" #56:413 template=EL-76b45996
+            [FRAME] "CoverArt" #56:414 layout=layout_1cac93e5 fills=fill_3b09d98d effects=effect_3f20e592 borderRadius=8px
+              [FRAME] "blob" #56:415 layout=layout_5df5c82b fills=fill_3f46df62 effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "blob2" #56:416 layout=layout_0ab1bfcb fills=fill_b8aa5861 effects=effect_8d6c7502 opacity=0.25 borderRadius=16777200px
+              [FRAME] "grain" #56:417 template=EL-af65330f
+              [FRAME] "Frame" #56:418 template=EL-54114995
+                [TEXT] #56:419 layout=layout_177c5efc fills=fill_b8aa5861 textStyle="Distran/Utility/Doto 10 Bold 15" text="ER"
+                [TEXT] #56:420 layout=layout_177c5efc fills=fill_3f46df62 textStyle=style_ab1f926a text="Elden Ring"
+            [FRAME] "Frame" #56:421 template=EL-34612243
+              [FRAME] "Frame" #56:422 template=EL-c12c2177
+                [TEXT] #56:423 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 10" text="Elden Ring"
+            [TEXT] #56:424 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="2022 · Game"
+          [FRAME] "item-countzero" #56:425 template=EL-76b45996
+            [FRAME] "CoverArt" #56:426 layout=layout_1cac93e5 fills=fill_4155d993 effects=effect_3f20e592 borderRadius=8px
+              [FRAME] "blob" #56:427 layout=layout_5df5c82b fills=fill_641de1c3 effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "blob2" #56:428 layout=layout_0ab1bfcb fills=fill_b5526bcf effects=effect_8d6c7502 opacity=0.25 borderRadius=16777200px
+              [FRAME] "grain" #56:429 template=EL-af65330f
+              [FRAME] "Frame" #56:430 template=EL-54114995
+                [TEXT] #56:431 layout=layout_177c5efc fills=fill_b5526bcf textStyle="Distran/Utility/Doto 10 Bold 15" text="CZ"
+                [TEXT] #56:432 layout=layout_177c5efc fills=fill_641de1c3 textStyle=style_ab1f926a text="Count Zero"
+            [FRAME] "Frame" #56:433 template=EL-34612243
+              [FRAME] "Frame" #56:434 template=EL-c12c2177
+                [TEXT] #56:435 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 10" text="Count Zero"
+            [TEXT] #56:436 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="1986 · Book"
+      [FRAME] "section-trending-lists" #56:437 layout={"mode":"column","alignSelf":"stretch","padding":"28px 20px 20px","alignItems":"stretch","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "section-header" #56:438 template=EL-bb582553
+          [TEXT] #56:439 layout=layout_177c5efc fills=fill_76b61451 textStyle=style_6b393ef2 text="Trending lists"
+          [TEXT] #56:440 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_c38f172e text="All"
+        [FRAME] "ListRow" #56:441 template=EL-4127c898
+          [FRAME] "cover-stack" #56:442 template=EL-ade7abf8
+            [FRAME] "cover-1" #56:443 layout=layout_553b6c52 fills=fill_b468acd2 borderRadius=4px
+              [FRAME] "blob" #56:444 template=EL-17993474
+              [FRAME] "grain" #56:445 template=EL-9acfe508
+              [FRAME] "Frame" #56:446 template=EL-892d529e
+                [TEXT] #56:447 layout=layout_177c5efc fills=fill_5898a968 textStyle="Distran/Utility/Doto 7 Bold 27" text="SH"
+            [FRAME] "cover-2" #56:448 layout=layout_c98a17b9 fills=fill_4155d993 effects=effect_954bc9ad borderRadius=4px
+              [FRAME] "blob" #56:449 layout=layout_4a2b5bd7 fills=fill_641de1c3 effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "grain" #56:450 template=EL-9acfe508
+              [FRAME] "Frame" #56:451 template=EL-892d529e
+                [TEXT] #56:452 layout=layout_177c5efc fills=fill_b5526bcf textStyle="Distran/Utility/Doto 7 Bold 27" text="TNM"
+            [FRAME] "cover-3" #56:453 template=EL-26909566
+              [FRAME] "blob" #56:454 template=EL-d09f2b21
+              [FRAME] "grain" #56:455 template=EL-9acfe508
+              [FRAME] "Frame" #56:456 template=EL-892d529e
+                [TEXT] #56:457 layout=layout_177c5efc fills=fill_a45b2f4c textStyle="Distran/Utility/Doto 7 Bold 27" text="BR49"
+          [FRAME] "Frame" #56:458 template=EL-51794897
+            [FRAME] "Frame" #56:459 template=EL-02e4d498
+              [TEXT] #56:460 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 18 Regular 22" text="Neon After Hours"
+            [FRAME] "Frame" #56:461 template=EL-7f58780d
+              [TEXT] #56:462 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="3 items · You"
+          [IMAGE-SVG] "arrow-icon" #56:463 template=EL-d40fb4e5
+        [FRAME] "ListRow-2" #56:466 template=EL-4127c898
+          [FRAME] "cover-stack" #56:467 template=EL-ade7abf8
+            [FRAME] "cover-a" #56:468 layout=layout_553b6c52 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(11, 20, 24, 1) 0%, rgba(6, 6, 6, 1) 78%)"}] borderRadius=4px
+              [FRAME] "blob" #56:469 layout=layout_4a2b5bd7 fills=["#39D0D8"] effects=effect_3825867d opacity=0.6000000238418579 borderRadius=16777200px
+              [FRAME] "grain" #56:470 template=EL-9acfe508
+              [FRAME] "Frame" #56:471 template=EL-892d529e
+                [TEXT] #56:472 layout=layout_177c5efc fills=["#7FF0F5"] textStyle="Distran/Utility/Doto 7 Bold 27" text="8"
+            [FRAME] "cover-b" #56:473 layout=layout_c98a17b9 fills=fill_b468acd2 effects=effect_954bc9ad borderRadius=4px
+              [FRAME] "blob" #56:474 template=EL-17993474
+              [FRAME] "grain" #56:475 template=EL-9acfe508
+              [FRAME] "Frame" #56:476 template=EL-892d529e
+                [TEXT] #56:477 layout=layout_177c5efc fills=fill_5898a968 textStyle="Distran/Utility/Doto 7 Bold 27" text="ER"
+            [FRAME] "cover-c" #56:478 template=EL-26909566
+              [FRAME] "blob" #56:479 template=EL-d09f2b21
+              [FRAME] "grain" #56:480 template=EL-9acfe508
+              [FRAME] "Frame" #56:481 template=EL-892d529e
+                [TEXT] #56:482 layout=layout_177c5efc fills=fill_a45b2f4c textStyle="Distran/Utility/Doto 7 Bold 27" text="2077"
+          [FRAME] "Frame" #56:483 template=EL-51794897
+            [FRAME] "Frame" #56:484 template=EL-02e4d498
+              [TEXT] #56:485 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 18 Regular 22" text="Night City Essentials"
+            [FRAME] "Frame" #56:486 template=EL-7f58780d
+              [TEXT] #56:487 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 10 Medium 5" text="5 items · Buddy Pick"
+          [IMAGE-SVG] "arrow-icon" #56:488 template=EL-d40fb4e5
+  [FRAME] "Navigation" #69:1886 layout={"mode":"row","padding":"0px 12px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":808},"dimensions":{"width":402,"height":66}} fills=["rgba(27, 27, 27, 0.5)"] effects={"backdropFilter":"blur(25px)"} borderRadius="10px 10px 2px 2px"
+    [FRAME] "Nav / Home / Active" #69:1887 template=EL-8257d511
+      [IMAGE-SVG] "Home icon" #69:1888 layout=layout_a111c4b6 fills=fill_97d170e1 componentId=61:8
+      [RECTANGLE] "Active tab light" #69:1889 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":22.8,"y":0},"dimensions":{"width":30,"height":4}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"}] effects={"boxShadow":"0px 4px 20px 0px rgba(255, 255, 255, 0.4)"} borderRadius="0px 0px 8px 8px"
+    [FRAME] "Nav / Discover" #69:1890 template=EL-8257d511
+      [IMAGE-SVG] "Discover icon" #69:1891 template=EL-31241652
+    [FRAME] "Nav / Lists" #69:1894 template=EL-8257d511
+      [IMAGE-SVG] "Lists icon" #69:1895 layout=layout_a111c4b6 opacity=0.6000000238418579
+    [FRAME] "Nav / Buddy & friends" #69:1901 template=EL-8257d511
+      [IMAGE-SVG] "Buddy & friends icon" #69:1902 template=EL-31241652
+    [FRAME] "Nav / Profile" #69:1904 template=EL-8257d511
+      [IMAGE-SVG] "Profile icon" #69:1905 template=EL-31241652

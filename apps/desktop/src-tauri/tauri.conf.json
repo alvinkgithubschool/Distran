@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Distran",
+  "version": "0.2.0",
+  "identifier": "com.distran.client",
+  "build": {
+    "beforeDevCommand": "node scripts/dev-server.mjs",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Distran",
+        "width": 1400,
+        "height": 960,
+        "minWidth": 360,
+        "minHeight": 640,
+        "backgroundColor": "#070708",
+        "resizable": true,
+        "theme": "Dark"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: https://image.tmdb.org https://images.igdb.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src http://127.0.0.1:8000 ipc: http://ipc.localhost http://127.0.0.1:1420 ws://127.0.0.1:1420"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app"
+    ],
+    "shortDescription": "One ledger. Every format.",
+    "category": "Entertainment",
+    "icon": [
+      "icons/icon.icns",
+      "icons/icon.png"
+    ]
+  }
+}

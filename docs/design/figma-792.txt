@@ -1,0 +1,161 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+fill_1667730e:
+  - '#070708'
+fill_3f46df62:
+  - '#A9C24A'
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_1627b3c8:
+  - rgba(255, 255, 255, 0.08)
+layout_56d3c81c:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: hug
+fill_e3bcc91d:
+  - '#F2EFE8'
+layout_ab1b6fea:
+  mode: row
+  padding: 4px 10px
+  sizing:
+    horizontal: hug
+    vertical: hug
+fill_749cf8f7:
+  - rgba(255, 255, 255, 0.04)
+style_ab5646b1:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 7
+  letterSpacing: 0.2em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_8fc20520:
+  - rgba(255, 255, 255, 0.31)
+style_8fcf27c2:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 9
+  lineHeight: 14px
+  letterSpacing: 0.2222em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_54fc3c84:
+  - rgba(255, 255, 255, 0.38)
+fill_f898a368:
+  - rgba(255, 255, 255, 0.12)
+style_36181dde:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 15
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_69547281:
+  - rgba(255, 255, 255, 0.19)
+
+ELEMENTS:
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-dd5ae54a:
+  type: FRAME
+  layout: layout_ab1b6fea
+  fills: fill_749cf8f7
+  strokes: fill_1627b3c8
+  strokeWeight: 1px
+  borderRadius: 16777200px
+EL-3046c3af:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 14px 16px
+    justifyContent: center
+    alignItems: stretch
+    sizing:
+      horizontal: fill
+      vertical: fixed
+    dimensions:
+      height: 52
+  fills:
+    - rgba(255, 255, 255, 0.03)
+  strokes: fill_f898a368
+  strokeWeight: 1px
+  borderRadius: 8px
+
+NODES:
+[FRAME] "Distran / Sign in" #14:792 layout={"mode":"column","sizing":{"horizontal":"contextual","vertical":"contextual"},"designedWidth":"402px","designedHeight":"874px"} fills=fill_1667730e
+  [FRAME] "Container" #14:798 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":402,"height":874}} fills=fill_1667730e
+    [FRAME] "AuthScreen" #14:799 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":874}}
+      [FRAME] "bg-layer" #14:800 layout={"mode":"column","alignSelf":"stretch","padding":"80px 28px 40px","justifyContent":"space-between","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"height":874}}
+        [FRAME] "bloom-lime" #56:172 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":-60,"y":180},"dimensions":{"width":240,"height":240}} fills=fill_3f46df62 effects={"filter":"blur(60px)"} opacity=0.11999999731779099 borderRadius=16777200px
+        [FRAME] "bloom-warm" #56:173 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":260,"y":80},"dimensions":{"width":180,"height":180}} fills=["#E8A848"] effects={"filter":"blur(50px)"} opacity=0.10000000149011612 borderRadius=16777200px
+      [FRAME] "status-bar" #56:174 layout={"mode":"row","padding":"0px 20px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":44}}
+        [TEXT] #56:175 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+        [FRAME] "Frame" #56:176 layout={"mode":"row","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+          [IMAGE-SVG] "signal" #56:177 template=EL-cc8debb7
+          [IMAGE-SVG] "wifi" #56:179 template=EL-cc8debb7
+          [IMAGE-SVG] "battery" #56:181 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+      [FRAME] "AuthScreen" #56:183 layout={"mode":"column","alignSelf":"stretch","padding":"80px 28px 40px","justifyContent":"space-between","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":874}}
+        [FRAME] "hero-copy" #14:801 layout={"mode":"column","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [FRAME] "wordmark-row" #56:184 layout={"mode":"row","padding":"4px 8px","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=["rgba(255, 255, 255, 0.05)"] strokes=fill_1627b3c8 strokeWeight=1px borderRadius=16777200px
+            [TEXT] #14:803 layout=layout_177c5efc fills=fill_3f46df62 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"lineHeight":"12px","letterSpacing":"0.3em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Distran"
+          [FRAME] "headline" #14:805 layout={"mode":"column","alignSelf":"stretch","padding":"20px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [TEXT] #14:806 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":48,"lineHeight":"46px","letterSpacing":"0.0083em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Welcome back to Distran."
+          [FRAME] "subtext" #14:812 layout={"mode":"column","padding":"14px 0px 0px","sizing":{"horizontal":"hug","vertical":"hug"}}
+            [TEXT] #14:809 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":320}} fills=["rgba(255, 255, 255, 0.35)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":15,"lineHeight":"23px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Games, film, music, books — one place to log it, list it, and share it."
+          [FRAME] "medium-pills" #56:185 layout={"mode":"row","padding":"24px 0px 0px","alignItems":"center","wrap":true,"gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+            [FRAME] "Frame" #56:186 template=EL-dd5ae54a
+              [TEXT] #56:187 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_ab5646b1 text="Film"
+            [FRAME] "Frame" #56:188 template=EL-dd5ae54a
+              [TEXT] #56:189 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_ab5646b1 text="Games"
+            [FRAME] "Frame" #56:190 template=EL-dd5ae54a
+              [TEXT] #56:191 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_ab5646b1 text="Music"
+            [FRAME] "Frame" #56:192 template=EL-dd5ae54a
+              [TEXT] #56:193 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_ab5646b1 text="Books"
+            [FRAME] "Frame" #56:194 layout=layout_ab1b6fea fills=["rgba(169, 194, 74, 0.1)"] strokes=["rgba(169, 194, 74, 0.19)"] strokeWeight=1px borderRadius=16777200px
+              [TEXT] #56:195 layout=layout_177c5efc fills=fill_3f46df62 textStyle=style_ab5646b1 text="+ Buddy AI"
+        [FRAME] "form-card" #14:813 layout={"mode":"column","alignSelf":"stretch","padding":"24px 20px","alignItems":"stretch","gap":"16px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_749cf8f7 strokes=fill_1627b3c8 strokeWeight=1px effects={"boxShadow":"0px 12px 40px 0px rgba(0, 0, 0, 0.19)","backdropFilter":"blur(12px)"} borderRadius=16px
+          [FRAME] "field-email" #14:814 layout={"mode":"column","alignSelf":"stretch","gap":"6px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [TEXT] #14:815 layout=layout_177c5efc fills=fill_54fc3c84 textStyle=style_8fcf27c2 text="Email"
+            [FRAME] "input-email" #14:817 template=EL-3046c3af
+              [TEXT] #14:818 layout=layout_56d3c81c fills=fill_69547281 textStyle=style_36181dde text="you@distran.io"
+          [FRAME] "field-password" #14:821 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","gap":"6px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [FRAME] "Frame" #56:196 layout={"mode":"row","alignSelf":"stretch","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+              [TEXT] #14:822 layout=layout_177c5efc fills=fill_54fc3c84 textStyle=style_8fcf27c2 text="Password"
+              [TEXT] #56:197 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.25)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":12,"lineHeight":"14px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP","textDecoration":"UNDERLINE"} text="Forgot?"
+            [FRAME] "input-password" #14:824 template=EL-3046c3af
+              [TEXT] #14:825 layout=layout_56d3c81c fills=fill_69547281 textStyle=style_36181dde text="••••••••"
+          [FRAME] "divider" #56:198 layout={"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1}} fills=["rgba(255, 255, 255, 0.06)"]
+          [FRAME] "btn-signin" #14:828 layout={"mode":"row","alignSelf":"stretch","padding":"16px 20px","justifyContent":"center","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_e3bcc91d effects={"boxShadow":"0px 6px 20px 0px rgba(242, 239, 232, 0.13)"} borderRadius=8px
+            [TEXT] #14:829 layout=layout_177c5efc fills=["#080808"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":16,"lineHeight":"16px","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="Sign in"
+            [IMAGE-SVG] "arrow-icon" #14:831 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":16,"height":16}}
+          [FRAME] "btn-connected" #14:834 layout={"mode":"row","alignSelf":"stretch","padding":"14px 16px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}} strokes=fill_f898a368 strokeWeight=1px borderRadius=8px
+            [TEXT] #14:835 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.44)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":14,"lineHeight":"14px","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="Continue with a connected app"
+          [FRAME] "signup-row" #56:199 layout={"mode":"row","alignSelf":"stretch","justifyContent":"center","alignItems":"center","gap":"4px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [TEXT] #14:838 layout=layout_177c5efc fills=fill_8fc20520 textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":13,"lineHeight":"13px","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="New to Distran?"
+            [TEXT] #14:841 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":14,"lineHeight":"14px","textAlignHorizontal":"CENTER","textAlignVertical":"TOP","textDecoration":"UNDERLINE"} text="Create one"

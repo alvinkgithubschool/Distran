@@ -1,0 +1,9 @@
+{
+  "ml/notebooks/03_training.ipynb": "8e9136904b402f05ca0b1e664793cdb2c723ccc3b151832aedf77bfdd7b142aa",
+  "ml/notebooks/03_training_output.ipynb": "c90e47038940333d1d0a1bc3598e0f2c14de0f8a7525548cc7fd6004aabef693",
+  "ml/experiment.py": "a9ecae8f70c0d20f8fc3fd0fba77477bdd488c20d4687518b490939a4dea5148",
+  "ml/distran_ml/baseline.py": "54bb279c278a4d374ac9ec3d5e73ab9ffec2f5166b4dd80bcde9f2ae737bd3c2",
+  "ml/inputs/catalog.json": "8f573e3d8d1af34386e02d4ae4e87badf14566c52a14cb9e8a5c88b0b95a24a3",
+  "ml/artifacts/colab-results.zip": "562806d8c10bf6974cdff119d30e34826ff211af4e2763a578eed6428d4bdadc",
+  "apps/desktop/src/lib/catalog-model.json": "de9a58fdff2dce1b86c966eea12a4cab1065303350b3c23ffafb604b4301739a"
+}

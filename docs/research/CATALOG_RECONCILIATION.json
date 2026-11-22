@@ -1,0 +1,212 @@
+{
+  "refreshed_at": "2026-11-16T14:00:50.715238+00:00",
+  "work_count": 12,
+  "aliases": {
+    "it-takes-two": "igdb:game:135243",
+    "cyberpunk": "igdb:game:1877",
+    "elden-ring": "igdb:game:119133",
+    "disco-elysium": "igdb:game:26472",
+    "baldurs-gate": "igdb:game:119171",
+    "outer-wilds": "igdb:game:11737",
+    "exit-8": "igdb:game:275404",
+    "dune": "tmdb:movie:693134",
+    "blade-runner": "tmdb:movie:335984",
+    "arrival": "tmdb:movie:329865",
+    "severance": "tmdb:tv:95396",
+    "edgerunners": "tmdb:tv:105248"
+  },
+  "policy": "Reviewed provider IDs; no title-only identity merge",
+  "works": [
+    {
+      "id": "igdb:game:135243",
+      "title": "It Takes Two",
+      "sourceUrl": "https://www.igdb.com/games/it-takes-two",
+      "creatorRole": "Studio",
+      "creators": [
+        {
+          "id": "igdb:company:12901",
+          "name": "Hazelight Studios",
+          "role": "Studio"
+        }
+      ]
+    },
+    {
+      "id": "igdb:game:1877",
+      "title": "Cyberpunk 2077",
+      "sourceUrl": "https://www.igdb.com/games/cyberpunk-2077",
+      "creatorRole": "Studio",
+      "creators": [
+        {
+          "id": "igdb:company:908",
+          "name": "CD Projekt RED",
+          "role": "Studio"
+        }
+      ]
+    },
+    {
+      "id": "igdb:game:119133",
+      "title": "Elden Ring",
+      "sourceUrl": "https://www.igdb.com/games/elden-ring",
+      "creatorRole": "Studio",
+      "creators": [
+        {
+          "id": "igdb:company:1012",
+          "name": "FromSoftware",
+          "role": "Studio"
+        }
+      ]
+    },
+    {
+      "id": "igdb:game:26472",
+      "title": "Disco Elysium",
+      "sourceUrl": "https://www.igdb.com/games/disco-elysium",
+      "creatorRole": "Studio",
+      "creators": [
+        {
+          "id": "igdb:company:15094",
+          "name": "ZA/UM",
+          "role": "Studio"
+        }
+      ]
+    },
+    {
+      "id": "igdb:game:119171",
+      "title": "Baldur's Gate III",
+      "sourceUrl": "https://www.igdb.com/games/baldurs-gate-iii",
+      "creatorRole": "Studio",
+      "creators": [
+        {
+          "id": "igdb:company:510",
+          "name": "Larian Studios",
+          "role": "Studio"
+        }
+      ]
+    },
+    {
+      "id": "igdb:game:11737",
+      "title": "Outer Wilds",
+      "sourceUrl": "https://www.igdb.com/games/outer-wilds",
+      "creatorRole": "Studio",
+      "creators": [
+        {
+          "id": "igdb:company:6209",
+          "name": "Mobius Digital",
+          "role": "Studio"
+        }
+      ]
+    },
+    {
+      "id": "igdb:game:275404",
+      "title": "The Exit 8",
+      "sourceUrl": "https://www.igdb.com/games/the-exit-8",
+      "creatorRole": "Studio",
+      "creators": [
+        {
+          "id": "igdb:company:51223",
+          "name": "KOTAKE CREATE",
+          "role": "Studio"
+        }
+      ]
+    },
+    {
+      "id": "tmdb:movie:693134",
+      "title": "Dune: Part Two",
+      "sourceUrl": "https://www.themoviedb.org/movie/693134",
+      "creatorRole": "Director",
+      "creators": [
+        {
+          "name": "Denis Villeneuve",
+          "role": "Director",
+          "id": "tmdb:person:137427",
+          "episodeCount": 1
+        }
+      ]
+    },
+    {
+      "id": "tmdb:movie:335984",
+      "title": "Blade Runner 2049",
+      "sourceUrl": "https://www.themoviedb.org/movie/335984",
+      "creatorRole": "Director",
+      "creators": [
+        {
+          "name": "Denis Villeneuve",
+          "role": "Director",
+          "id": "tmdb:person:137427",
+          "episodeCount": 1
+        }
+      ]
+    },
+    {
+      "id": "tmdb:movie:329865",
+      "title": "Arrival",
+      "sourceUrl": "https://www.themoviedb.org/movie/329865",
+      "creatorRole": "Director",
+      "creators": [
+        {
+          "name": "Denis Villeneuve",
+          "role": "Director",
+          "id": "tmdb:person:137427",
+          "episodeCount": 1
+        }
+      ]
+    },
+    {
+      "id": "tmdb:tv:95396",
+      "title": "Severance",
+      "sourceUrl": "https://www.themoviedb.org/tv/95396",
+      "creatorRole": "Director",
+      "creators": [
+        {
+          "name": "Ben Stiller",
+          "role": "Director",
+          "id": "tmdb:person:7399",
+          "episodeCount": 11
+        },
+        {
+          "name": "Aoife McArdle",
+          "role": "Director",
+          "id": "tmdb:person:1426949",
+          "episodeCount": 3
+        },
+        {
+          "name": "Sam Donovan",
+          "role": "Director",
+          "id": "tmdb:person:229028",
+          "episodeCount": 2
+        },
+        {
+          "name": "Uta Briesewitz",
+          "role": "Director",
+          "id": "tmdb:person:51853",
+          "episodeCount": 2
+        },
+        {
+          "name": "Jessica Lee Gagn\u00e9",
+          "role": "Director",
+          "id": "tmdb:person:1550276",
+          "episodeCount": 1
+        }
+      ]
+    },
+    {
+      "id": "tmdb:tv:105248",
+      "title": "Cyberpunk: Edgerunners",
+      "sourceUrl": "https://www.themoviedb.org/tv/105248",
+      "creatorRole": "Director",
+      "creators": [
+        {
+          "name": "Kai Ikarashi",
+          "role": "Director",
+          "id": "tmdb:person:1970560",
+          "episodeCount": 11
+        },
+        {
+          "name": "Hiroyuki Imaishi",
+          "role": "Director",
+          "id": "tmdb:person:109191",
+          "episodeCount": 10
+        }
+      ]
+    }
+  ]
+}

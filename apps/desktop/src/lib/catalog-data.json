@@ -1,0 +1,5830 @@
+[
+  {
+    "id": "igdb:game:135243",
+    "title": "It Takes Two",
+    "medium": "game",
+    "year": 2021,
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob22v.jpg",
+    "color": "#b7c96c",
+    "creatorRole": "Studio",
+    "maker": "Hazelight Studios",
+    "publisher": "Electronic Arts",
+    "description": "It Takes Two is a cooperative action-adventure game designed exclusively for two players, playable in local split-screen or online. Players control Cody and May, a married couple transformed into dolls, as they travel through fantastical environments based on their home and relationship. Gameplay combines platforming, puzzle-solving, and action sequences, with each level introducing new mechanics and giving the two characters different abilities that must be used together to progress. The game frequently changes its core mechanics from chapter to chapter, incorporating sections involving shooting, racing, flight, and other genres.",
+    "tags": [
+      "Platform",
+      "Puzzle",
+      "Adventure"
+    ],
+    "rating": "4.5",
+    "duration": "Playtime not verified",
+    "platforms": [
+      "Xbox Series X|S",
+      "PlayStation 4",
+      "Nintendo Switch 2",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "related": [
+      "igdb:game:19241",
+      "igdb:game:36897",
+      "igdb:game:25935",
+      "igdb:game:182115",
+      "igdb:game:136659",
+      "igdb:game:134474",
+      "igdb:game:120436",
+      "igdb:game:115624"
+    ],
+    "provider": "igdb",
+    "sourceUrl": "https://www.igdb.com/games/it-takes-two",
+    "credits": [
+      {
+        "name": "Electronic Arts",
+        "role": "Publisher",
+        "id": "igdb:company:1"
+      },
+      {
+        "name": "Hazelight Studios",
+        "role": "Developer",
+        "id": "igdb:company:12901"
+      },
+      {
+        "name": "Turn Me Up Games",
+        "role": "Company",
+        "id": "igdb:company:59778"
+      }
+    ],
+    "creators": [
+      {
+        "id": "igdb:company:12901",
+        "name": "Hazelight Studios",
+        "role": "Studio"
+      }
+    ],
+    "franchises": [],
+    "relatedLabel": "IGDB similar games",
+    "fallbackImage": "it-takes-two.jpg",
+    "themes": [
+      "Co-op",
+      "Adventure",
+      "A little wonder"
+    ],
+    "editorialRelated": [
+      "igdb:game:11737",
+      "igdb:game:119171"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "igdb:game:1877",
+    "title": "Cyberpunk 2077",
+    "medium": "game",
+    "year": 2020,
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaih8.jpg",
+    "color": "#b7c96c",
+    "creatorRole": "Studio",
+    "maker": "CD Projekt RED",
+    "publisher": "CD Projekt",
+    "description": "Cyberpunk 2077 is an open-world action-adventure game set in Night City, a sprawling metropolis driven by power, glamour, and body modification. Players assume the role of V, a mercenary outlaw in pursuit of a unique implant that holds the key to immortality. The game allows extensive customization of cyberware, skills, and playstyle. Choices made throughout the journey influence both the narrative and the world.",
+    "tags": [
+      "Shooter",
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "rating": "4.0",
+    "duration": "Playtime not verified",
+    "platforms": [
+      "Google Stadia",
+      "Xbox Series X|S",
+      "PlayStation 4",
+      "Nintendo Switch 2",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Mac",
+      "Xbox One"
+    ],
+    "related": [
+      "igdb:game:134612",
+      "igdb:game:55147",
+      "igdb:game:115427",
+      "igdb:game:148241",
+      "igdb:game:101211",
+      "igdb:game:100413",
+      "igdb:game:116634",
+      "igdb:game:96437"
+    ],
+    "provider": "igdb",
+    "sourceUrl": "https://www.igdb.com/games/cyberpunk-2077",
+    "credits": [
+      {
+        "name": "QLOC",
+        "role": "Company",
+        "id": "igdb:company:774"
+      },
+      {
+        "name": "Digital Scapes Studios",
+        "role": "Company",
+        "id": "igdb:company:6580"
+      },
+      {
+        "name": "CD Projekt Red Wroc\u0142aw",
+        "role": "Company",
+        "id": "igdb:company:19166"
+      },
+      {
+        "name": "CD Projekt",
+        "role": "Publisher",
+        "id": "igdb:company:4291"
+      },
+      {
+        "name": "CD Projekt RED",
+        "role": "Developer",
+        "id": "igdb:company:908"
+      },
+      {
+        "name": "Frame Machine",
+        "role": "Company",
+        "id": "igdb:company:3276"
+      }
+    ],
+    "creators": [
+      {
+        "id": "igdb:company:908",
+        "name": "CD Projekt RED",
+        "role": "Studio"
+      }
+    ],
+    "franchises": [
+      "Cyberpunk"
+    ],
+    "relatedLabel": "IGDB similar games",
+    "fallbackImage": "cyberpunk.jpg",
+    "themes": [
+      "Cyberpunk",
+      "Open world",
+      "Night city"
+    ],
+    "editorialRelated": [
+      "tmdb:tv:105248",
+      "tmdb:movie:335984",
+      "igdb:game:26472"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "igdb:game:119133",
+    "title": "Elden Ring",
+    "medium": "game",
+    "year": 2022,
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg",
+    "color": "#b7c96c",
+    "creatorRole": "Studio",
+    "maker": "FromSoftware",
+    "publisher": "Bandai Namco Entertainment, FromSoftware",
+    "description": "Elden Ring is an action RPG developed by FromSoftware and published by Bandai Namco Entertainment, released in February 2022. Directed by Hidetaka Miyazaki, with world-building contributions from novelist George R. R. Martin, the game features an expansive open world called the Lands Between. Players assume the role of a customisable character known as the Tarnished, who must explore this world, battle formidable enemies, and seek to restore the Elden Ring to become the Elden Lord.\n\nThe game builds on the challenging gameplay mechanics familiar from the Dark Souls series but introduces a more open-ended structure with vast exploration, dynamic weather, and a day-night cycle. It offers deep lore, complex characters, and an interconnected world filled with secrets, dungeons, and powerful bosses.",
+    "tags": [
+      "Role-playing (RPG)",
+      "Adventure"
+    ],
+    "rating": "4.8",
+    "duration": "Playtime not verified",
+    "platforms": [
+      "Xbox Series X|S",
+      "PlayStation 4",
+      "Nintendo Switch 2",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Xbox One"
+    ],
+    "related": [
+      "igdb:game:2155",
+      "igdb:game:2368",
+      "igdb:game:23733",
+      "igdb:game:5619",
+      "igdb:game:1942",
+      "igdb:game:103329",
+      "igdb:game:115289",
+      "igdb:game:1887"
+    ],
+    "provider": "igdb",
+    "sourceUrl": "https://www.igdb.com/games/elden-ring",
+    "credits": [
+      {
+        "name": "Bandai Namco Entertainment",
+        "role": "Publisher",
+        "id": "igdb:company:248"
+      },
+      {
+        "name": "FromSoftware",
+        "role": "Developer",
+        "id": "igdb:company:1012"
+      }
+    ],
+    "creators": [
+      {
+        "id": "igdb:company:1012",
+        "name": "FromSoftware",
+        "role": "Studio"
+      }
+    ],
+    "franchises": [
+      "Elden Ring"
+    ],
+    "relatedLabel": "IGDB similar games",
+    "fallbackImage": "elden-ring.jpg",
+    "themes": [
+      "Dark fantasy",
+      "Exploration",
+      "RPG"
+    ],
+    "editorialRelated": [
+      "igdb:game:119171",
+      "igdb:game:11737"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "igdb:game:26472",
+    "title": "Disco Elysium",
+    "medium": "game",
+    "year": 2019,
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1sfj.jpg",
+    "color": "#b7c96c",
+    "creatorRole": "Studio",
+    "maker": "ZA/UM",
+    "publisher": "ZA/UM",
+    "description": "Disco Elysium is a role-playing game developed and published by ZA/UM. It is set in the fictional city of Revachol, where players assume the role of an amnesic detective investigating a murder. The game emphasizes dialogue and skill-based choices, with character attributes represented by internal voices that influence decisions and interactions. Its narrative explores themes of politics, philosophy, and personal identity, and it is known for its unconventional gameplay and deep storytelling.",
+    "tags": [
+      "Role-playing (RPG)",
+      "Adventure",
+      "Indie"
+    ],
+    "rating": "4.5",
+    "duration": "Playtime not verified",
+    "platforms": [
+      "PC (Microsoft Windows)",
+      "Mac"
+    ],
+    "related": [
+      "igdb:game:152379",
+      "igdb:game:11423",
+      "igdb:game:26789",
+      "igdb:game:279614",
+      "igdb:game:192731",
+      "igdb:game:166722",
+      "igdb:game:46999",
+      "igdb:game:90714"
+    ],
+    "provider": "igdb",
+    "sourceUrl": "https://www.igdb.com/games/disco-elysium",
+    "credits": [
+      {
+        "name": "ZA/UM",
+        "role": "Developer",
+        "id": "igdb:company:15094"
+      },
+      {
+        "name": "The Knights of Unity",
+        "role": "Company",
+        "id": "igdb:company:20202"
+      }
+    ],
+    "creators": [
+      {
+        "id": "igdb:company:15094",
+        "name": "ZA/UM",
+        "role": "Studio"
+      }
+    ],
+    "franchises": [],
+    "relatedLabel": "IGDB similar games",
+    "fallbackImage": "disco-elysium.jpg",
+    "themes": [
+      "Detective",
+      "Narrative",
+      "Weird cities"
+    ],
+    "editorialRelated": [
+      "tmdb:tv:95396",
+      "tmdb:movie:335984",
+      "igdb:game:1877"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "igdb:game:119171",
+    "title": "Baldur's Gate III",
+    "medium": "game",
+    "year": 2023,
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co670h.jpg",
+    "color": "#b7c96c",
+    "creatorRole": "Studio",
+    "maker": "Larian Studios",
+    "publisher": "Larian Studios",
+    "description": "An ancient evil has returned to Baldur's Gate, intent on devouring it from the inside out. The fate of Faerun lies in your hands. Alone, you may resist. But together, you can overcome.",
+    "tags": [
+      "Role-playing (RPG)",
+      "Strategy",
+      "Turn-based strategy (TBS)",
+      "Adventure"
+    ],
+    "rating": "4.7",
+    "duration": "Playtime not verified",
+    "platforms": [
+      "Google Stadia",
+      "Xbox Series X|S",
+      "Linux",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Mac"
+    ],
+    "related": [
+      "igdb:game:1887",
+      "igdb:game:279627",
+      "igdb:game:125165",
+      "igdb:game:119133",
+      "igdb:game:11562",
+      "igdb:game:152125",
+      "igdb:game:106803",
+      "igdb:game:127697"
+    ],
+    "provider": "igdb",
+    "sourceUrl": "https://www.igdb.com/games/baldurs-gate-iii",
+    "credits": [
+      {
+        "name": "Wushu Studios",
+        "role": "Company",
+        "id": "igdb:company:47197"
+      },
+      {
+        "name": "Anshar Studios",
+        "role": "Company",
+        "id": "igdb:company:8444"
+      },
+      {
+        "name": "Larian Studios",
+        "role": "Developer",
+        "id": "igdb:company:510"
+      }
+    ],
+    "creators": [
+      {
+        "id": "igdb:company:510",
+        "name": "Larian Studios",
+        "role": "Studio"
+      }
+    ],
+    "franchises": [
+      "Dungeons & Dragons",
+      "Forgotten Realms",
+      "Baldur's Gate"
+    ],
+    "relatedLabel": "IGDB similar games",
+    "fallbackImage": "baldurs-gate.jpg",
+    "themes": [
+      "RPG",
+      "Co-op",
+      "Fantasy"
+    ],
+    "editorialRelated": [
+      "igdb:game:119133",
+      "igdb:game:135243"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "igdb:game:11737",
+    "title": "Outer Wilds",
+    "medium": "game",
+    "year": 2019,
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co65ac.jpg",
+    "color": "#b7c96c",
+    "creatorRole": "Studio",
+    "maker": "Mobius Digital",
+    "publisher": "Annapurna Interactive, Limited Run Games",
+    "description": "Outer Wilds is a critically-acclaimed and award-winning open world mystery about a solar system trapped in an endless time loop. The newest member of the space program in a small village on the planet Timber Hearth, the player navigates a space shuttle and travels across their solar system to get to the bottom of its mysteries by exploring the cosmos and gathering the knowledge hidden within each of the system's planets, left behind by another civilization in the distant past.",
+    "tags": [
+      "Puzzle",
+      "Simulator",
+      "Adventure",
+      "Indie"
+    ],
+    "rating": "4.3",
+    "duration": "Playtime not verified",
+    "platforms": [
+      "Xbox Series X|S",
+      "PlayStation 4",
+      "PC (Microsoft Windows)",
+      "PlayStation 5",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
+    "related": [
+      "igdb:game:164243",
+      "igdb:game:152267",
+      "igdb:game:131869",
+      "igdb:game:109668",
+      "igdb:game:26223",
+      "igdb:game:30264",
+      "igdb:game:197202",
+      "igdb:game:153808"
+    ],
+    "provider": "igdb",
+    "sourceUrl": "https://www.igdb.com/games/outer-wilds",
+    "credits": [
+      {
+        "name": "Annapurna Interactive",
+        "role": "Company",
+        "id": "igdb:company:11662"
+      },
+      {
+        "name": "Annapurna Interactive",
+        "role": "Publisher",
+        "id": "igdb:company:11662"
+      },
+      {
+        "name": "Mobius Digital",
+        "role": "Developer",
+        "id": "igdb:company:6209"
+      },
+      {
+        "name": "Limited Run Games",
+        "role": "Publisher",
+        "id": "igdb:company:31592"
+      }
+    ],
+    "creators": [
+      {
+        "id": "igdb:company:6209",
+        "name": "Mobius Digital",
+        "role": "Studio"
+      }
+    ],
+    "franchises": [
+      "Outer Wilds"
+    ],
+    "relatedLabel": "IGDB similar games",
+    "fallbackImage": "outer-wilds.jpg",
+    "themes": [
+      "Exploration",
+      "Space",
+      "Mystery"
+    ],
+    "editorialRelated": [
+      "tmdb:movie:329865",
+      "igdb:game:135243"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "igdb:game:275404",
+    "title": "The Exit 8",
+    "medium": "game",
+    "year": 2023,
+    "image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7fw1.jpg",
+    "color": "#b7c96c",
+    "creatorRole": "Studio",
+    "maker": "KOTAKE CREATE",
+    "publisher": "KOTAKE CREATE, PLAYISM",
+    "description": "You are trapped in an endless underground passageway. Take a good look around and find a way to escape.",
+    "tags": [
+      "Puzzle",
+      "Simulator",
+      "Adventure",
+      "Indie"
+    ],
+    "rating": "4.1",
+    "duration": "Playtime not verified",
+    "platforms": [
+      "Xbox Series X|S",
+      "PlayStation 4",
+      "Nintendo Switch 2",
+      "Android",
+      "PC (Microsoft Windows)",
+      "iOS",
+      "PlayStation 5",
+      "Nintendo Switch"
+    ],
+    "related": [
+      "igdb:game:131660",
+      "igdb:game:110807",
+      "igdb:game:282895",
+      "igdb:game:11737",
+      "igdb:game:11649",
+      "igdb:game:124257",
+      "igdb:game:225426",
+      "igdb:game:101007"
+    ],
+    "provider": "igdb",
+    "sourceUrl": "https://www.igdb.com/games/the-exit-8",
+    "credits": [
+      {
+        "name": "KOTAKE CREATE",
+        "role": "Publisher",
+        "id": "igdb:company:51223"
+      },
+      {
+        "name": "KOTAKE CREATE",
+        "role": "Developer",
+        "id": "igdb:company:51223"
+      },
+      {
+        "name": "PLAYISM",
+        "role": "Publisher",
+        "id": "igdb:company:23125"
+      }
+    ],
+    "creators": [
+      {
+        "id": "igdb:company:51223",
+        "name": "KOTAKE CREATE",
+        "role": "Studio"
+      }
+    ],
+    "franchises": [],
+    "relatedLabel": "IGDB similar games",
+    "fallbackImage": "exit-8.jpg",
+    "themes": [
+      "Liminal",
+      "Horror",
+      "Short journey"
+    ],
+    "editorialRelated": [
+      "tmdb:tv:95396",
+      "igdb:game:26472"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "tmdb:movie:693134",
+    "title": "Dune: Part Two",
+    "medium": "movie",
+    "year": 2024,
+    "image": "https://image.tmdb.org/t/p/w500/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    "color": "#dcaa72",
+    "maker": "Denis Villeneuve",
+    "creatorRole": "Director",
+    "publisher": "Legendary Pictures",
+    "description": "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+    "tags": [
+      "Science Fiction",
+      "Adventure"
+    ],
+    "rating": "4.1",
+    "duration": "2h 47m",
+    "verified_duration_minutes": 167,
+    "related": [
+      "tmdb:movie:438631",
+      "tmdb:movie:1170608",
+      "tmdb:movie:1895",
+      "tmdb:movie:412656",
+      "tmdb:movie:299687",
+      "tmdb:movie:9543",
+      "tmdb:movie:559",
+      "tmdb:movie:188927",
+      "tmdb:movie:604"
+    ],
+    "provider": "tmdb",
+    "sourceUrl": "https://www.themoviedb.org/movie/693134",
+    "credits": [
+      {
+        "name": "Tom Brown",
+        "role": "Supervising Art Director",
+        "id": "tmdb:person:1322142"
+      },
+      {
+        "name": "Mikl\u00f3s Hatvani-De\u00e0k",
+        "role": "Art Direction",
+        "id": "tmdb:person:3482372"
+      },
+      {
+        "name": "Adorjan Portik",
+        "role": "Art Direction",
+        "id": "tmdb:person:3345289"
+      },
+      {
+        "name": "Shane Vieau",
+        "role": "Set Decoration",
+        "id": "tmdb:person:53114"
+      },
+      {
+        "name": "Jacqueline West",
+        "role": "Costume Design",
+        "id": "tmdb:person:958488"
+      },
+      {
+        "name": "Donald Mowat",
+        "role": "Prosthetic Designer",
+        "id": "tmdb:person:1315700"
+      },
+      {
+        "name": "Gerd Nefzer",
+        "role": "Special Effects Supervisor",
+        "id": "tmdb:person:1530231"
+      },
+      {
+        "name": "Donald Mowat",
+        "role": "Hair Designer",
+        "id": "tmdb:person:1315700"
+      },
+      {
+        "name": "Francine Maisler",
+        "role": "Casting",
+        "id": "tmdb:person:6410"
+      },
+      {
+        "name": "Mary Parent",
+        "role": "Producer",
+        "id": "tmdb:person:114408"
+      },
+      {
+        "name": "Cale Boyter",
+        "role": "Producer",
+        "id": "tmdb:person:17315"
+      },
+      {
+        "name": "Joe Walker",
+        "role": "Editor",
+        "id": "tmdb:person:999565"
+      },
+      {
+        "name": "Ron Bartlett",
+        "role": "Sound Re-Recording Mixer",
+        "id": "tmdb:person:16177"
+      },
+      {
+        "name": "Hans Zimmer",
+        "role": "Original Music Composer",
+        "id": "tmdb:person:947"
+      },
+      {
+        "name": "Patrice Vermette",
+        "role": "Production Design",
+        "id": "tmdb:person:102873"
+      },
+      {
+        "name": "Paul Lambert",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1982162"
+      },
+      {
+        "name": "Greig Fraser",
+        "role": "Director of Photography",
+        "id": "tmdb:person:67113"
+      },
+      {
+        "name": "Byron Merritt",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1790475"
+      },
+      {
+        "name": "Jon Spaihts",
+        "role": "Executive Producer",
+        "id": "tmdb:person:564940"
+      },
+      {
+        "name": "Brian Herbert",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1790474"
+      },
+      {
+        "name": "Kim Herbert",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1790476"
+      },
+      {
+        "name": "Herb Gains",
+        "role": "Executive Producer",
+        "id": "tmdb:person:62739"
+      },
+      {
+        "name": "Joshua Grode",
+        "role": "Executive Producer",
+        "id": "tmdb:person:2364439"
+      },
+      {
+        "name": "Thomas Tull",
+        "role": "Executive Producer",
+        "id": "tmdb:person:54211"
+      },
+      {
+        "name": "Jessica Derhammer",
+        "role": "Co-Producer",
+        "id": "tmdb:person:1426313"
+      },
+      {
+        "name": "Jessica Derhammer",
+        "role": "Unit Production Manager",
+        "id": "tmdb:person:1426313"
+      },
+      {
+        "name": "Denis Villeneuve",
+        "role": "Screenplay",
+        "id": "tmdb:person:137427"
+      },
+      {
+        "name": "Lee Morrison",
+        "role": "Stunt Coordinator",
+        "id": "tmdb:person:2086976"
+      },
+      {
+        "name": "Ines Rose",
+        "role": "Art Direction Intern",
+        "id": "tmdb:person:3211548"
+      },
+      {
+        "name": "Tanya Lapointe",
+        "role": "Producer",
+        "id": "tmdb:person:1905971"
+      },
+      {
+        "name": "Nancy Case",
+        "role": "Casting Assistant",
+        "id": "tmdb:person:3738060"
+      },
+      {
+        "name": "Rachid Abbad",
+        "role": "Stunts",
+        "id": "tmdb:person:1627984"
+      },
+      {
+        "name": "Athina Sapanidis",
+        "role": "Prosthetic Makeup Artist",
+        "id": "tmdb:person:2721958"
+      },
+      {
+        "name": "Brogan Sharp",
+        "role": "Prosthetic Makeup Artist",
+        "id": "tmdb:person:1731150"
+      },
+      {
+        "name": "Sleiman Tadros",
+        "role": "Prosthetic Makeup Artist",
+        "id": "tmdb:person:1707985"
+      },
+      {
+        "name": "Laura Papp",
+        "role": "Prosthetic Makeup Artist",
+        "id": "tmdb:person:4176771"
+      },
+      {
+        "name": "Hanna M\u00e1t\u00e9",
+        "role": "Prosthetic Makeup Artist",
+        "id": "tmdb:person:3409451"
+      },
+      {
+        "name": "Barbara Kund",
+        "role": "Prosthetic Makeup Artist",
+        "id": "tmdb:person:2669165"
+      },
+      {
+        "name": "Donald Mowat",
+        "role": "Makeup Department Head",
+        "id": "tmdb:person:1315700"
+      },
+      {
+        "name": "Yazan Abu Jafar",
+        "role": "Set Dresser",
+        "id": "tmdb:person:4319384"
+      },
+      {
+        "name": "Abed Jarekji",
+        "role": "Lead Set Dresser",
+        "id": "tmdb:person:4542451"
+      },
+      {
+        "name": "Ray Beentjes",
+        "role": "Dialogue Editor",
+        "id": "tmdb:person:7267"
+      },
+      {
+        "name": "Murat \u00c7elikkol",
+        "role": "ADR Mixer",
+        "id": "tmdb:person:2344911"
+      },
+      {
+        "name": "Freya Clarke",
+        "role": "First Assistant Sound Editor",
+        "id": "tmdb:person:2704306"
+      },
+      {
+        "name": "Hayden Collow",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1424612"
+      },
+      {
+        "name": "Alexis Feodoroff",
+        "role": "Sound Editor",
+        "id": "tmdb:person:2198418"
+      },
+      {
+        "name": "Christopher Flick",
+        "role": "Foley Supervisor",
+        "id": "tmdb:person:1546875"
+      },
+      {
+        "name": "Tavish Grade",
+        "role": "Foley Mixer",
+        "id": "tmdb:person:3171603"
+      },
+      {
+        "name": "Richard King",
+        "role": "Supervising Sound Editor",
+        "id": "tmdb:person:1341403"
+      },
+      {
+        "name": "Michael W. Mitchell",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1377222"
+      },
+      {
+        "name": "Stefanie Ng",
+        "role": "Dialogue Editor",
+        "id": "tmdb:person:1457323"
+      },
+      {
+        "name": "Dan O'Connell",
+        "role": "Foley Artist",
+        "id": "tmdb:person:1338372"
+      },
+      {
+        "name": "Willard Overstreet",
+        "role": "Foley Editor",
+        "id": "tmdb:person:1387246"
+      },
+      {
+        "name": "Matt Stutter",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1457322"
+      },
+      {
+        "name": "Chris Terhune",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1338484"
+      },
+      {
+        "name": "Jordane Chedotal",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2067370"
+      },
+      {
+        "name": "Janka Erdely",
+        "role": "Set Designer",
+        "id": "tmdb:person:2552051"
+      },
+      {
+        "name": "Elias Jaber",
+        "role": "Set Dresser",
+        "id": "tmdb:person:4557505"
+      },
+      {
+        "name": "Magdi Kondorosi",
+        "role": "Set Decoration Buyer",
+        "id": "tmdb:person:2143548"
+      },
+      {
+        "name": "Betti Unterlauf",
+        "role": "Set Designer",
+        "id": "tmdb:person:4549331"
+      },
+      {
+        "name": "Stefanie \u00dcbelh\u00f6r",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1423275"
+      },
+      {
+        "name": "Tarik Afifi",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:2168354"
+      },
+      {
+        "name": "Thibault Chiron",
+        "role": "Stunt Double",
+        "id": "tmdb:person:3505017"
+      },
+      {
+        "name": "J\u00e1nos Henk",
+        "role": "Stunts",
+        "id": "tmdb:person:2721961"
+      },
+      {
+        "name": "Alex Jay",
+        "role": "Stunt Double",
+        "id": "tmdb:person:4557513"
+      },
+      {
+        "name": "S\u00e1ndor Mike",
+        "role": "Stunts",
+        "id": "tmdb:person:3521885"
+      },
+      {
+        "name": "G\u00e1bor Szem\u00e1n",
+        "role": "Stunt Double",
+        "id": "tmdb:person:2069517"
+      },
+      {
+        "name": "Miklos Bajus",
+        "role": "Special Effects Technician",
+        "id": "tmdb:person:4559221"
+      },
+      {
+        "name": "Stephan Galliant",
+        "role": "Special Effects Technician",
+        "id": "tmdb:person:4559223"
+      },
+      {
+        "name": "Rafiq Kamhawi",
+        "role": "Special Effects Coordinator",
+        "id": "tmdb:person:3653812"
+      },
+      {
+        "name": "Mate Kantor",
+        "role": "Special Effects Technician",
+        "id": "tmdb:person:4559224"
+      },
+      {
+        "name": "Adam Konrath",
+        "role": "Special Effects Technician",
+        "id": "tmdb:person:4559225"
+      },
+      {
+        "name": "Oliver Laude",
+        "role": "Special Effects Technician",
+        "id": "tmdb:person:4559226"
+      },
+      {
+        "name": "Luca Nefzer",
+        "role": "Special Effects Technician",
+        "id": "tmdb:person:4559227"
+      },
+      {
+        "name": "Roman Remer",
+        "role": "Special Effects Coordinator",
+        "id": "tmdb:person:4559228"
+      },
+      {
+        "name": "Ruben Teshmar",
+        "role": "Special Effects Technician",
+        "id": "tmdb:person:4559229"
+      },
+      {
+        "name": "John Harrison",
+        "role": "Executive Producer",
+        "id": "tmdb:person:13367"
+      },
+      {
+        "name": "Arnaud Brisebois",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1621764"
+      },
+      {
+        "name": "Gary Couto",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1940980"
+      },
+      {
+        "name": "Michael Grobe",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1725775"
+      },
+      {
+        "name": "Stephen James",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:3148018"
+      },
+      {
+        "name": "Louis-Charles Lapointe",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1649526"
+      },
+      {
+        "name": "Jake Maymudes",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:2559436"
+      },
+      {
+        "name": "Shrijeet Modi",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:2776252"
+      },
+      {
+        "name": "Max Rees",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:2068498"
+      },
+      {
+        "name": "Rhys Salcombe",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1545987"
+      },
+      {
+        "name": "Kim Allison-H\u00e8bert",
+        "role": "Executive Producer",
+        "id": "tmdb:person:3647453"
+      },
+      {
+        "name": "Richard P. Rubinstein",
+        "role": "Executive Producer",
+        "id": "tmdb:person:15000"
+      },
+      {
+        "name": "George Hull",
+        "role": "Concept Artist",
+        "id": "tmdb:person:1335873"
+      },
+      {
+        "name": "Darnell Appling",
+        "role": "Actor's Assistant",
+        "id": "tmdb:person:3352136"
+      },
+      {
+        "name": "Patrick McCormick",
+        "role": "Producer",
+        "id": "tmdb:person:57465"
+      },
+      {
+        "name": "Tam\u00e1s 'Chipie' P\u00e9ter",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:2143601"
+      },
+      {
+        "name": "Louis Clark",
+        "role": "Third Assistant Director",
+        "id": "tmdb:person:3584271"
+      },
+      {
+        "name": "Toby Hefferman",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:1724987"
+      },
+      {
+        "name": "Vera Janisch",
+        "role": "Second Second Assistant Director",
+        "id": "tmdb:person:2143483"
+      },
+      {
+        "name": "George Max Trummler",
+        "role": "Third Assistant Director",
+        "id": "tmdb:person:2651733"
+      },
+      {
+        "name": "Dale Bartlett",
+        "role": "Sound Re-Recording Mixer",
+        "id": "tmdb:person:2127275"
+      },
+      {
+        "name": "Gareth John",
+        "role": "Production Sound Mixer",
+        "id": "tmdb:person:1416947"
+      },
+      {
+        "name": "Kane Rodrigues",
+        "role": "Sound Mixer",
+        "id": "tmdb:person:1688318"
+      },
+      {
+        "name": "Dave Whitehead",
+        "role": "Sound Designer",
+        "id": "tmdb:person:1406066"
+      },
+      {
+        "name": "Rob de Groot",
+        "role": "Stunt Double",
+        "id": "tmdb:person:1826455"
+      },
+      {
+        "name": "Zs\u00f3fia Kocsis",
+        "role": "Stunt Double",
+        "id": "tmdb:person:2758109"
+      },
+      {
+        "name": "Cyrus Leisy",
+        "role": "Stunts",
+        "id": "tmdb:person:2468710"
+      },
+      {
+        "name": "Rich\u00e1rd Nagy",
+        "role": "Stunt Double",
+        "id": "tmdb:person:1844193"
+      },
+      {
+        "name": "Domonkos P\u00e1rd\u00e1nyi",
+        "role": "Stunt Coordinator",
+        "id": "tmdb:person:1392635"
+      },
+      {
+        "name": "Lorenz Hideyoshi Ruwwe",
+        "role": "Stunt Double",
+        "id": "tmdb:person:1605821"
+      },
+      {
+        "name": "Magdalena \u0160ittov\u00e1",
+        "role": "Stunt Double",
+        "id": "tmdb:person:2832950"
+      },
+      {
+        "name": "Marek Svitek",
+        "role": "Stunt Double",
+        "id": "tmdb:person:1411038"
+      },
+      {
+        "name": "Mikl\u00f3s Szentv\u00e1ry-Luk\u00e1cs",
+        "role": "Stunt Double",
+        "id": "tmdb:person:2758114"
+      },
+      {
+        "name": "Belle Williams",
+        "role": "Stunt Double",
+        "id": "tmdb:person:2153945"
+      },
+      {
+        "name": "Roger Yuan",
+        "role": "Fight Choreographer",
+        "id": "tmdb:person:2974"
+      },
+      {
+        "name": "Megan Norris",
+        "role": "Key Hair Stylist",
+        "id": "tmdb:person:1992652"
+      },
+      {
+        "name": "Muhammad Rasheed",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:3073983"
+      },
+      {
+        "name": "Zeina Soufan",
+        "role": "Costume Supervisor",
+        "id": "tmdb:person:1574435"
+      },
+      {
+        "name": "Jason Ewart",
+        "role": "Steadicam Operator",
+        "id": "tmdb:person:1391732"
+      },
+      {
+        "name": "Jason Ewart",
+        "role": "\"A\" Camera Operator",
+        "id": "tmdb:person:1391732"
+      },
+      {
+        "name": "Vilmos Keszler",
+        "role": "Grip",
+        "id": "tmdb:person:2062137"
+      },
+      {
+        "name": "Jamie Mills",
+        "role": "Gaffer",
+        "id": "tmdb:person:1591764"
+      },
+      {
+        "name": "Gergo Vasari",
+        "role": "Grip",
+        "id": "tmdb:person:2069495"
+      },
+      {
+        "name": "Denis Villeneuve",
+        "role": "Director",
+        "id": "tmdb:person:137427"
+      },
+      {
+        "name": "Frank Herbert",
+        "role": "Novel",
+        "id": "tmdb:person:12506"
+      },
+      {
+        "name": "Jon Spaihts",
+        "role": "Screenplay",
+        "id": "tmdb:person:564940"
+      },
+      {
+        "name": "Denis Villeneuve",
+        "role": "Producer",
+        "id": "tmdb:person:137427"
+      },
+      {
+        "name": "Omer Benyamin",
+        "role": "Additional Music",
+        "id": "tmdb:person:4773858"
+      },
+      {
+        "name": "Steven Doar",
+        "role": "Additional Music",
+        "id": "tmdb:person:3916613"
+      },
+      {
+        "name": "Tanya Lapointe",
+        "role": "Second Unit Director",
+        "id": "tmdb:person:1905971"
+      },
+      {
+        "name": "Samantha Thompson",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:5055587"
+      },
+      {
+        "name": "Ed Natividad",
+        "role": "Concept Artist",
+        "id": "tmdb:person:575766"
+      },
+      {
+        "name": "Matt Craufurd",
+        "role": "Location Manager",
+        "id": "tmdb:person:2396253"
+      },
+      {
+        "name": "Matt Cooper",
+        "role": "Unit Manager",
+        "id": "tmdb:person:5113134"
+      },
+      {
+        "name": "Chris Rosewarne",
+        "role": "Concept Artist",
+        "id": "tmdb:person:2040337"
+      },
+      {
+        "name": "Doug Hemphill",
+        "role": "Sound Re-Recording Mixer",
+        "id": "tmdb:person:1377220"
+      },
+      {
+        "name": "Andrew Ackland-Snow",
+        "role": "Art Direction",
+        "id": "tmdb:person:10710"
+      },
+      {
+        "name": "Larissa Lowthorp",
+        "role": "Creative Director",
+        "id": "tmdb:person:2757468"
+      },
+      {
+        "name": "Tom Edmondson",
+        "role": "Second Unit First Assistant Director",
+        "id": "tmdb:person:2624625"
+      },
+      {
+        "name": "John Wesley DeWolfe",
+        "role": "Camera Technician",
+        "id": "tmdb:person:4329041"
+      },
+      {
+        "name": "Vi-Dan Tran",
+        "role": "Fight Choreographer",
+        "id": "tmdb:person:1587301"
+      },
+      {
+        "name": "Nick Marshall",
+        "role": "Digital Effects Supervisor",
+        "id": "tmdb:person:5267517"
+      },
+      {
+        "name": "Abimanyu Khatman Zakaria",
+        "role": "Assistant Sound Designer",
+        "id": "tmdb:person:3815194"
+      },
+      {
+        "name": "Shaun Hallahan",
+        "role": "Animal Wrangler",
+        "id": "tmdb:person:5596891"
+      },
+      {
+        "name": "Eva von Bahr",
+        "role": "Prosthetic Designer",
+        "id": "tmdb:person:997661"
+      },
+      {
+        "name": "Love Larson",
+        "role": "Prosthetic Designer",
+        "id": "tmdb:person:1455302"
+      },
+      {
+        "name": "Benjamin Millepied",
+        "role": "Choreographer",
+        "id": "tmdb:person:970088"
+      },
+      {
+        "name": "Dixie Chassay",
+        "role": "Location Casting",
+        "id": "tmdb:person:1108835"
+      },
+      {
+        "name": "Kathy Driscoll-Mohler",
+        "role": "Casting Associate",
+        "id": "tmdb:person:19156"
+      },
+      {
+        "name": "Molly Rose",
+        "role": "Casting Associate",
+        "id": "tmdb:person:2069485"
+      },
+      {
+        "name": "Sam Evenson",
+        "role": "Digital Compositor",
+        "id": "tmdb:person:3298918"
+      },
+      {
+        "name": "Mat Thompson",
+        "role": "Visual Effects Production Manager",
+        "id": "tmdb:person:2092316"
+      },
+      {
+        "name": "Brice R. Parker",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:373986"
+      },
+      {
+        "name": "Doug Harlocker",
+        "role": "Property Master",
+        "id": "tmdb:person:1377215"
+      },
+      {
+        "name": "Doriana Farrell",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:6378322"
+      },
+      {
+        "name": "Jo Goldsmith-Eteson",
+        "role": "Vocals",
+        "id": "tmdb:person:6404388"
+      },
+      {
+        "name": "Timoth\u00e9e Chalamet",
+        "role": "Paul Atreides",
+        "id": "tmdb:person:1190668"
+      },
+      {
+        "name": "Zendaya",
+        "role": "Chani",
+        "id": "tmdb:person:505710"
+      },
+      {
+        "name": "Rebecca Ferguson",
+        "role": "Jessica",
+        "id": "tmdb:person:933238"
+      },
+      {
+        "name": "Javier Bardem",
+        "role": "Stilgar",
+        "id": "tmdb:person:3810"
+      },
+      {
+        "name": "Josh Brolin",
+        "role": "Gurney Halleck",
+        "id": "tmdb:person:16851"
+      },
+      {
+        "name": "Austin Butler",
+        "role": "Feyd-Rautha",
+        "id": "tmdb:person:86654"
+      },
+      {
+        "name": "Florence Pugh",
+        "role": "Princess Irulan",
+        "id": "tmdb:person:1373737"
+      },
+      {
+        "name": "Dave Bautista",
+        "role": "Beast Rabban",
+        "id": "tmdb:person:543530"
+      },
+      {
+        "name": "Christopher Walken",
+        "role": "Emperor",
+        "id": "tmdb:person:4690"
+      },
+      {
+        "name": "L\u00e9a Seydoux",
+        "role": "Lady Margot Fenring",
+        "id": "tmdb:person:121529"
+      },
+      {
+        "name": "Stellan Skarsg\u00e5rd",
+        "role": "Baron Harkonnen",
+        "id": "tmdb:person:1640"
+      },
+      {
+        "name": "Charlotte Rampling",
+        "role": "Reverend Mother Mohiam",
+        "id": "tmdb:person:44079"
+      },
+      {
+        "name": "Souheila Yacoub",
+        "role": "Shishakli",
+        "id": "tmdb:person:2037046"
+      },
+      {
+        "name": "Roger Yuan",
+        "role": "Lanville",
+        "id": "tmdb:person:2974"
+      },
+      {
+        "name": "Babs Olusanmokun",
+        "role": "Jamis",
+        "id": "tmdb:person:205923"
+      },
+      {
+        "name": "Alison Halstead",
+        "role": "Maker Keeper",
+        "id": "tmdb:person:4033288"
+      },
+      {
+        "name": "Giusi Merli",
+        "role": "Reverend Mother Ramallo",
+        "id": "tmdb:person:1934576"
+      },
+      {
+        "name": "Kait Tenison",
+        "role": "Bene Gesserit Sister",
+        "id": "tmdb:person:1780346"
+      },
+      {
+        "name": "Tara Breathnach",
+        "role": "Bene Gesserit Sister",
+        "id": "tmdb:person:1239728"
+      },
+      {
+        "name": "Akiko Hitomi",
+        "role": "Bene Gesserit Sister",
+        "id": "tmdb:person:2855994"
+      },
+      {
+        "name": "Imola G\u00e1sp\u00e1r",
+        "role": "Watermaster",
+        "id": "tmdb:person:997684"
+      },
+      {
+        "name": "Alison Adnet",
+        "role": "Young Fremen Patrol",
+        "id": "tmdb:person:4554406"
+      },
+      {
+        "name": "Hamza Baissa",
+        "role": "Young Fremen Patrol",
+        "id": "tmdb:person:4554407"
+      },
+      {
+        "name": "Hassan Najib",
+        "role": "Young Fremen Patrol",
+        "id": "tmdb:person:4072164"
+      },
+      {
+        "name": "Jasper Ryan-Cater",
+        "role": "Young Fremen Patrol",
+        "id": "tmdb:person:4554408"
+      },
+      {
+        "name": "Omar Elbooz",
+        "role": "Young Fremen Patrol",
+        "id": "tmdb:person:4072167"
+      },
+      {
+        "name": "Abdelkarim Hussein Seli Mohamed Hassanin",
+        "role": "Young Fremen Patrol",
+        "id": "tmdb:person:4554411"
+      },
+      {
+        "name": "Joseph Beddelem",
+        "role": "Fedaykin Leader",
+        "id": "tmdb:person:59298"
+      },
+      {
+        "name": "Xavier Alba Royo",
+        "role": "Fedaykin",
+        "id": "tmdb:person:3734838"
+      },
+      {
+        "name": "Rachid Abbad",
+        "role": "Fedaykin",
+        "id": "tmdb:person:1627984"
+      },
+      {
+        "name": "Affif Ben Badra",
+        "role": "Fedaykin",
+        "id": "tmdb:person:54807"
+      },
+      {
+        "name": "Botond B\u00f3ta",
+        "role": "Fedaykin",
+        "id": "tmdb:person:3495288"
+      },
+      {
+        "name": "Abdelaziz Boumane",
+        "role": "Fedaykin",
+        "id": "tmdb:person:4554420"
+      },
+      {
+        "name": "Abdellah Echahbi",
+        "role": "Fedaykin",
+        "id": "tmdb:person:4554421"
+      },
+      {
+        "name": "Zouhair Elakkari",
+        "role": "Fedaykin",
+        "id": "tmdb:person:4554422"
+      },
+      {
+        "name": "Noureddine Hajoujou",
+        "role": "Fedaykin",
+        "id": "tmdb:person:2990052"
+      },
+      {
+        "name": "Mohamed Mouraoui",
+        "role": "Fedaykin",
+        "id": "tmdb:person:4554423"
+      },
+      {
+        "name": "Adil Achraf Sayd",
+        "role": "Fedaykin",
+        "id": "tmdb:person:4554424"
+      },
+      {
+        "name": "Hamza Sayd",
+        "role": "Fedaykin",
+        "id": "tmdb:person:4554426"
+      },
+      {
+        "name": "Hopi Grace",
+        "role": "Fremen Nun",
+        "id": "tmdb:person:3669713"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Denis Villeneuve",
+        "role": "Director",
+        "id": "tmdb:person:137427",
+        "episodeCount": 1
+      }
+    ],
+    "franchises": [
+      "Dune Collection"
+    ],
+    "relatedLabel": "Same film collection and TMDB recommendations",
+    "fallbackImage": "dune.jpg",
+    "themes": [
+      "Science fiction",
+      "Epic",
+      "World-building"
+    ],
+    "editorialRelated": [
+      "tmdb:movie:329865",
+      "tmdb:movie:335984",
+      "igdb:game:119133"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "tmdb:movie:335984",
+    "title": "Blade Runner 2049",
+    "medium": "movie",
+    "year": 2017,
+    "image": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+    "color": "#dcaa72",
+    "maker": "Denis Villeneuve",
+    "creatorRole": "Director",
+    "publisher": "Alcon Entertainment, Columbia Pictures, Scott Free Productions",
+    "description": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+    "tags": [
+      "Science Fiction",
+      "Drama"
+    ],
+    "rating": "3.8",
+    "duration": "2h 44m",
+    "verified_duration_minutes": 164,
+    "related": [
+      "tmdb:movie:78",
+      "tmdb:movie:2789",
+      "tmdb:movie:500664",
+      "tmdb:movie:733317",
+      "tmdb:movie:198184",
+      "tmdb:movie:534",
+      "tmdb:movie:5549",
+      "tmdb:movie:218"
+    ],
+    "provider": "tmdb",
+    "sourceUrl": "https://www.themoviedb.org/movie/335984",
+    "credits": [
+      {
+        "name": "Hampton Fancher",
+        "role": "Story",
+        "id": "tmdb:person:583"
+      },
+      {
+        "name": "Hampton Fancher",
+        "role": "Screenplay",
+        "id": "tmdb:person:583"
+      },
+      {
+        "name": "Roger Deakins",
+        "role": "Director of Photography",
+        "id": "tmdb:person:151"
+      },
+      {
+        "name": "G\u00e1bor Szab\u00f3",
+        "role": "Concept Artist",
+        "id": "tmdb:person:1824079"
+      },
+      {
+        "name": "Michael Green",
+        "role": "Screenplay",
+        "id": "tmdb:person:191937"
+      },
+      {
+        "name": "Dana Belcastro",
+        "role": "Co-Producer",
+        "id": "tmdb:person:17219"
+      },
+      {
+        "name": "Bill Carraro",
+        "role": "Executive Producer",
+        "id": "tmdb:person:23420"
+      },
+      {
+        "name": "Tim Gamble",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1121571"
+      },
+      {
+        "name": "Frank Giustra",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1634532"
+      },
+      {
+        "name": "Broderick Johnson",
+        "role": "Producer",
+        "id": "tmdb:person:47285"
+      },
+      {
+        "name": "Andrew A. Kosove",
+        "role": "Producer",
+        "id": "tmdb:person:47286"
+      },
+      {
+        "name": "Carl Rogers",
+        "role": "Co-Producer",
+        "id": "tmdb:person:1399695"
+      },
+      {
+        "name": "Cynthia Sikes",
+        "role": "Producer",
+        "id": "tmdb:person:96765"
+      },
+      {
+        "name": "Steven P. Wegner",
+        "role": "Co-Producer",
+        "id": "tmdb:person:956249"
+      },
+      {
+        "name": "Bud Yorkin",
+        "role": "Producer",
+        "id": "tmdb:person:69946"
+      },
+      {
+        "name": "Francine Maisler",
+        "role": "Casting",
+        "id": "tmdb:person:6410"
+      },
+      {
+        "name": "Donald Mowat",
+        "role": "Makeup Department Head",
+        "id": "tmdb:person:1315700"
+      },
+      {
+        "name": "Gavin J. Behrman",
+        "role": "Production Supervisor",
+        "id": "tmdb:person:76675"
+      },
+      {
+        "name": "Joel Kramer",
+        "role": "Second Unit",
+        "id": "tmdb:person:13458"
+      },
+      {
+        "name": "George Hull",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:1335873"
+      },
+      {
+        "name": "Scott Lukowski",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:1634535"
+      },
+      {
+        "name": "Karen M. Murphy",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1392908"
+      },
+      {
+        "name": "John Nelson",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1456374"
+      },
+      {
+        "name": "Adam Hart",
+        "role": "Stunts",
+        "id": "tmdb:person:1445583"
+      },
+      {
+        "name": "Joel Kramer",
+        "role": "Stunt Coordinator",
+        "id": "tmdb:person:13458"
+      },
+      {
+        "name": "Daniel Czinkota",
+        "role": "Editorial Staff",
+        "id": "tmdb:person:1634536"
+      },
+      {
+        "name": "Ken Lebre",
+        "role": "Editorial Staff",
+        "id": "tmdb:person:1450342"
+      },
+      {
+        "name": "Zsolt Moln\u00e1r",
+        "role": "Location Manager",
+        "id": "tmdb:person:1634537"
+      },
+      {
+        "name": "Emma Pill",
+        "role": "Location Manager",
+        "id": "tmdb:person:1408369"
+      },
+      {
+        "name": "Joshua Ravetch",
+        "role": "Production Controller",
+        "id": "tmdb:person:1225727"
+      },
+      {
+        "name": "Lucinda Syson",
+        "role": "Casting",
+        "id": "tmdb:person:1113"
+      },
+      {
+        "name": "Victor James Martinez",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:1357046"
+      },
+      {
+        "name": "Ed Natividad",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:575766"
+      },
+      {
+        "name": "Peter Popken",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:40757"
+      },
+      {
+        "name": "Emmanuel Shiu",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:1335874"
+      },
+      {
+        "name": "Gerd Nefzer",
+        "role": "Special Effects Supervisor",
+        "id": "tmdb:person:1530231"
+      },
+      {
+        "name": "Marcus Preussing",
+        "role": "Pyrotechnic Supervisor",
+        "id": "tmdb:person:1653978"
+      },
+      {
+        "name": "Bernd Rautenberg",
+        "role": "Special Effects Supervisor",
+        "id": "tmdb:person:1653979"
+      },
+      {
+        "name": "Carsten Woithe",
+        "role": "Supervising Technical Director",
+        "id": "tmdb:person:1653985"
+      },
+      {
+        "name": "Huseyin Caner",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1590412"
+      },
+      {
+        "name": "Nikul Patel",
+        "role": "Visual Development",
+        "id": "tmdb:person:1653986"
+      },
+      {
+        "name": "Mark Avery",
+        "role": "Set Costumer",
+        "id": "tmdb:person:1447628"
+      },
+      {
+        "name": "Isabel Bloor",
+        "role": "Sets & Props Supervisor",
+        "id": "tmdb:person:1479280"
+      },
+      {
+        "name": "Matt Wallach",
+        "role": "Color Timer",
+        "id": "tmdb:person:1634466"
+      },
+      {
+        "name": "Rudolf Andr\u00e1s",
+        "role": "Location Manager",
+        "id": "tmdb:person:1394315"
+      },
+      {
+        "name": "Rachel Amanda Alterman",
+        "role": "Production Office Assistant",
+        "id": "tmdb:person:1634538"
+      },
+      {
+        "name": "Klaus Mielich",
+        "role": "Special Effects Coordinator",
+        "id": "tmdb:person:40804"
+      },
+      {
+        "name": "Joe Walker",
+        "role": "Editor",
+        "id": "tmdb:person:999565"
+      },
+      {
+        "name": "Zsolt Csutak",
+        "role": "Casting",
+        "id": "tmdb:person:49670"
+      },
+      {
+        "name": "Dennis Gassner",
+        "role": "Production Design",
+        "id": "tmdb:person:4248"
+      },
+      {
+        "name": "David Doran",
+        "role": "Art Direction",
+        "id": "tmdb:person:1394119"
+      },
+      {
+        "name": "Bence Erd\u00e9lyi",
+        "role": "Art Direction",
+        "id": "tmdb:person:1329411"
+      },
+      {
+        "name": "Lydia Fry",
+        "role": "Art Direction",
+        "id": "tmdb:person:1551809"
+      },
+      {
+        "name": "Paul Inglis",
+        "role": "Supervising Art Director",
+        "id": "tmdb:person:30463"
+      },
+      {
+        "name": "Tibor L\u00e1z\u00e1r",
+        "role": "Art Direction",
+        "id": "tmdb:person:1013552"
+      },
+      {
+        "name": "Stefan Speth",
+        "role": "Art Direction",
+        "id": "tmdb:person:1411329"
+      },
+      {
+        "name": "Alessandra Querzola",
+        "role": "Set Decoration",
+        "id": "tmdb:person:25063"
+      },
+      {
+        "name": "Ren\u00e9e April",
+        "role": "Costume Design",
+        "id": "tmdb:person:6057"
+      },
+      {
+        "name": "Anna T\u00f6rj\u00e9k",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:1726048"
+      },
+      {
+        "name": "Jaime Leigh McIntosh",
+        "role": "Hairstylist",
+        "id": "tmdb:person:1635484"
+      },
+      {
+        "name": "Csilla Blake-Horv\u00e1th",
+        "role": "Makeup Supervisor",
+        "id": "tmdb:person:1653963"
+      },
+      {
+        "name": "Lizzie Lawson",
+        "role": "Hair Supervisor",
+        "id": "tmdb:person:1334806"
+      },
+      {
+        "name": "G\u00e1bor Heged\u00fcs Hege",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:1813843"
+      },
+      {
+        "name": "Donald Sparks",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:1519868"
+      },
+      {
+        "name": "Joel Kramer",
+        "role": "Second Assistant Director",
+        "id": "tmdb:person:13458"
+      },
+      {
+        "name": "Christopher S. Aud",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1392131"
+      },
+      {
+        "name": "Mac Ruth",
+        "role": "Production Sound Mixer",
+        "id": "tmdb:person:1784639"
+      },
+      {
+        "name": "Zach Marshall",
+        "role": "Assistant Editor",
+        "id": "tmdb:person:1813847"
+      },
+      {
+        "name": "Bal\u00e1zs Budai",
+        "role": "Assistant Editor",
+        "id": "tmdb:person:1812638"
+      },
+      {
+        "name": "Ridley Scott",
+        "role": "Executive Producer",
+        "id": "tmdb:person:578"
+      },
+      {
+        "name": "Ron Bartlett",
+        "role": "Sound Re-Recording Mixer",
+        "id": "tmdb:person:16177"
+      },
+      {
+        "name": "Lee Gilmore",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1360099"
+      },
+      {
+        "name": "Theo Green",
+        "role": "Sound Designer",
+        "id": "tmdb:person:1099886"
+      },
+      {
+        "name": "Doug Hemphill",
+        "role": "Sound Re-Recording Mixer",
+        "id": "tmdb:person:1377220"
+      },
+      {
+        "name": "Mark Mangini",
+        "role": "Supervising Sound Editor",
+        "id": "tmdb:person:8376"
+      },
+      {
+        "name": "Greg ten Bosch",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1433721"
+      },
+      {
+        "name": "Hans Zimmer",
+        "role": "Original Music Composer",
+        "id": "tmdb:person:947"
+      },
+      {
+        "name": "Benjamin Wallfisch",
+        "role": "Original Music Composer",
+        "id": "tmdb:person:40825"
+      },
+      {
+        "name": "Dylan Goss",
+        "role": "Aerial Director of Photography",
+        "id": "tmdb:person:91122"
+      },
+      {
+        "name": "\u00c1d\u00e1m Fillenz",
+        "role": "Camera Operator",
+        "id": "tmdb:person:1298839"
+      },
+      {
+        "name": "L\u00e1szl\u00f3 Bille",
+        "role": "Camera Operator",
+        "id": "tmdb:person:1399639"
+      },
+      {
+        "name": "Imre Juh\u00e1sz",
+        "role": "Camera Operator",
+        "id": "tmdb:person:1458446"
+      },
+      {
+        "name": "Guszt\u00e1v Kirsch",
+        "role": "Camera Operator",
+        "id": "tmdb:person:1915356"
+      },
+      {
+        "name": "Marc Wolff",
+        "role": "Pilot",
+        "id": "tmdb:person:1576007"
+      },
+      {
+        "name": "Bill O'Leary",
+        "role": "Gaffer",
+        "id": "tmdb:person:1401997"
+      },
+      {
+        "name": "Kriszti\u00e1n Paluch",
+        "role": "Gaffer",
+        "id": "tmdb:person:1563261"
+      },
+      {
+        "name": "Mitch Lillian",
+        "role": "Key Grip",
+        "id": "tmdb:person:1573082"
+      },
+      {
+        "name": "Attila Sz\u00fccs",
+        "role": "Key Grip",
+        "id": "tmdb:person:1915357"
+      },
+      {
+        "name": "Patrick Bramucci",
+        "role": "Rigging Gaffer",
+        "id": "tmdb:person:1266990"
+      },
+      {
+        "name": "Antal Berger",
+        "role": "Rigging Gaffer",
+        "id": "tmdb:person:1915358"
+      },
+      {
+        "name": "Charley Gilleran",
+        "role": "Rigging Grip",
+        "id": "tmdb:person:1550071"
+      },
+      {
+        "name": "Pierre Gill",
+        "role": "Second Unit Director of Photography",
+        "id": "tmdb:person:25744"
+      },
+      {
+        "name": "Pete Cavaciuti",
+        "role": "Steadicam Operator",
+        "id": "tmdb:person:1408354"
+      },
+      {
+        "name": "Zolt\u00e1n Schrammel",
+        "role": "Techno Crane Operator",
+        "id": "tmdb:person:1120382"
+      },
+      {
+        "name": "Kata Vermes",
+        "role": "Additional Still Photographer",
+        "id": "tmdb:person:1409872"
+      },
+      {
+        "name": "Kerry Warn",
+        "role": "Hair Designer",
+        "id": "tmdb:person:1458571"
+      },
+      {
+        "name": "Jo-Ann MacNeil",
+        "role": "Key Makeup Artist",
+        "id": "tmdb:person:1364792"
+      },
+      {
+        "name": "Ruth Haney",
+        "role": "Key Makeup Artist",
+        "id": "tmdb:person:1815346"
+      },
+      {
+        "name": "Jon Henry Gordon",
+        "role": "Key Hair Stylist",
+        "id": "tmdb:person:1806958"
+      },
+      {
+        "name": "Veronika Sz\u00fccs",
+        "role": "Art Department Coordinator",
+        "id": "tmdb:person:1974553"
+      },
+      {
+        "name": "Colin H. Fraser",
+        "role": "Construction Coordinator",
+        "id": "tmdb:person:1974555"
+      },
+      {
+        "name": "Tibor Dajko",
+        "role": "3D Artist",
+        "id": "tmdb:person:1974556"
+      },
+      {
+        "name": "Michael Anders",
+        "role": "3D Coordinator",
+        "id": "tmdb:person:1974557"
+      },
+      {
+        "name": "Eric Bates",
+        "role": "Animation Supervisor",
+        "id": "tmdb:person:1459774"
+      },
+      {
+        "name": "Wesley Chandler",
+        "role": "Animation Supervisor",
+        "id": "tmdb:person:1974558"
+      },
+      {
+        "name": "Jakub Pazera",
+        "role": "Lead Animator",
+        "id": "tmdb:person:1974559"
+      },
+      {
+        "name": "Chris McLaughlin",
+        "role": "CG Supervisor",
+        "id": "tmdb:person:1974560"
+      },
+      {
+        "name": "Etienne Poulin St-Laurent",
+        "role": "Matchmove Supervisor",
+        "id": "tmdb:person:1907215"
+      },
+      {
+        "name": "Duane Floch",
+        "role": "Pre-Visualization Supervisor",
+        "id": "tmdb:person:1947505"
+      },
+      {
+        "name": "Erik Lehmann",
+        "role": "3D Generalist",
+        "id": "tmdb:person:1974565"
+      },
+      {
+        "name": "Miles Lauridsen",
+        "role": "Sequence Supervisor",
+        "id": "tmdb:person:1974568"
+      },
+      {
+        "name": "Leo-Patrick Houde",
+        "role": "VFX Editor",
+        "id": "tmdb:person:1790954"
+      },
+      {
+        "name": "Sasha Leigh Izadpanah",
+        "role": "VFX Editor",
+        "id": "tmdb:person:1714907"
+      },
+      {
+        "name": "Xinyi Puah",
+        "role": "Visual Effects Editor",
+        "id": "tmdb:person:1403467"
+      },
+      {
+        "name": "Bianca Cuffaro",
+        "role": "Visual Effects Editor",
+        "id": "tmdb:person:1974570"
+      },
+      {
+        "name": "Kelly Noordermeer",
+        "role": "Visual Effects Editor",
+        "id": "tmdb:person:1903926"
+      },
+      {
+        "name": "C\u00e9line Zapater",
+        "role": "Visual Effects Editor",
+        "id": "tmdb:person:1649521"
+      },
+      {
+        "name": "Ryan Basaraba",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974571"
+      },
+      {
+        "name": "Fanny Bissonnette",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974572"
+      },
+      {
+        "name": "Yogesh Chautel",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1901055"
+      },
+      {
+        "name": "Paul Docherty",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1337331"
+      },
+      {
+        "name": "Gabriel Jalbert",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974573"
+      },
+      {
+        "name": "Lucas John Ng",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1915265"
+      },
+      {
+        "name": "Cindy O'Hare",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974575"
+      },
+      {
+        "name": "Andr\u00e9 Geoffroy",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974576"
+      },
+      {
+        "name": "Philippe L\u00e9pine",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974577"
+      },
+      {
+        "name": "Christ Ohoueu",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974578"
+      },
+      {
+        "name": "Annabelle Zoellin",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974579"
+      },
+      {
+        "name": "Lorie Bussi\u00e8res",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974580"
+      },
+      {
+        "name": "Heather Martini",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1974581"
+      },
+      {
+        "name": "Julien Cimino",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1915731"
+      },
+      {
+        "name": "Sabrina Gagnon",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1739331"
+      },
+      {
+        "name": "Annie Normandin",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1901062"
+      },
+      {
+        "name": "Michelle Eisenreich",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1377294"
+      },
+      {
+        "name": "Kim Menaster",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1797237"
+      },
+      {
+        "name": "Chad Nixon",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1531523"
+      },
+      {
+        "name": "Adam O'Brien-Locke",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1444294"
+      },
+      {
+        "name": "Jessica Clothier",
+        "role": "Script Supervisor",
+        "id": "tmdb:person:1378728"
+      },
+      {
+        "name": "Cliff Fleming",
+        "role": "Aerial Coordinator",
+        "id": "tmdb:person:91932"
+      },
+      {
+        "name": "D\u00f3ra Simk\u00f3",
+        "role": "Script Supervisor",
+        "id": "tmdb:person:1427850"
+      },
+      {
+        "name": "Cory Fleming",
+        "role": "Pilot",
+        "id": "tmdb:person:1757625"
+      },
+      {
+        "name": "Bea Merkovits",
+        "role": "Assistant Costume Designer",
+        "id": "tmdb:person:1548948"
+      },
+      {
+        "name": "Margaret Robbs",
+        "role": "Assistant Costume Designer",
+        "id": "tmdb:person:1553785"
+      },
+      {
+        "name": "Martine Gagnon",
+        "role": "Assistant Costume Designer",
+        "id": "tmdb:person:1525883"
+      },
+      {
+        "name": "Lilla Kleininger",
+        "role": "Ager/Dyer",
+        "id": "tmdb:person:1974596"
+      },
+      {
+        "name": "D\u00f3ra Papp",
+        "role": "Set Costumer",
+        "id": "tmdb:person:1458414"
+      },
+      {
+        "name": "Caitlin McKenna",
+        "role": "ADR Voice Casting",
+        "id": "tmdb:person:59055"
+      },
+      {
+        "name": "Kathy Driscoll-Mohler",
+        "role": "Casting Associate",
+        "id": "tmdb:person:19156"
+      },
+      {
+        "name": "Natasha Vincent",
+        "role": "Casting Associate",
+        "id": "tmdb:person:1764110"
+      },
+      {
+        "name": "Robert E. Phillips",
+        "role": "Digital Intermediate",
+        "id": "tmdb:person:1432047"
+      },
+      {
+        "name": "Mary Lukasiewicz",
+        "role": "First Assistant Editor",
+        "id": "tmdb:person:1706693"
+      },
+      {
+        "name": "Zsolt Gonda",
+        "role": "Armorer",
+        "id": "tmdb:person:1974600"
+      },
+      {
+        "name": "G\u00e1bor Kiszelly",
+        "role": "Special Effects Supervisor",
+        "id": "tmdb:person:1533488"
+      },
+      {
+        "name": "Linda Mester",
+        "role": "Special Effects Coordinator",
+        "id": "tmdb:person:1853629"
+      },
+      {
+        "name": "Doug Harlocker",
+        "role": "Property Master",
+        "id": "tmdb:person:1377215"
+      },
+      {
+        "name": "Bradley Good",
+        "role": "Assistant Property Master",
+        "id": "tmdb:person:1974605"
+      },
+      {
+        "name": "Joseph Hiura",
+        "role": "Set Designer",
+        "id": "tmdb:person:1376891"
+      },
+      {
+        "name": "Orsolya Maza",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1974608"
+      },
+      {
+        "name": "Elicia Scales",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1974609"
+      },
+      {
+        "name": "Abby J. Smith",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1974610"
+      },
+      {
+        "name": "M\u00e1t\u00e9 Herjeczki",
+        "role": "Construction Coordinator",
+        "id": "tmdb:person:1974611"
+      },
+      {
+        "name": "Tamas Gelei",
+        "role": "Prop Maker",
+        "id": "tmdb:person:1974612"
+      },
+      {
+        "name": "Istvan Muranyi",
+        "role": "Prop Maker",
+        "id": "tmdb:person:1974613"
+      },
+      {
+        "name": "Torma Zolt\u00e1n",
+        "role": "Prop Maker",
+        "id": "tmdb:person:1974615"
+      },
+      {
+        "name": "Vilmos T\u00f6rk\u00f6ly",
+        "role": "Prop Maker",
+        "id": "tmdb:person:1974616"
+      },
+      {
+        "name": "Paul Lambert",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1982162"
+      },
+      {
+        "name": "Richard R. Hoover",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1533794"
+      },
+      {
+        "name": "Mitul Patel",
+        "role": "Sequence Supervisor",
+        "id": "tmdb:person:2012684"
+      },
+      {
+        "name": "Larry Garrison",
+        "role": "Unit Publicist",
+        "id": "tmdb:person:1399643"
+      },
+      {
+        "name": "Maria Gerencser",
+        "role": "Accountant",
+        "id": "tmdb:person:2069457"
+      },
+      {
+        "name": "Nicolas Girard",
+        "role": "Title Designer",
+        "id": "tmdb:person:2069458"
+      },
+      {
+        "name": "Jason Habelow",
+        "role": "Production Coordinator",
+        "id": "tmdb:person:2069459"
+      },
+      {
+        "name": "Altus Health",
+        "role": "Health and Safety",
+        "id": "tmdb:person:2069462"
+      },
+      {
+        "name": "Vikt\u00f3ria Jaross",
+        "role": "Choreographer",
+        "id": "tmdb:person:2069463"
+      },
+      {
+        "name": "Rick Lipton",
+        "role": "Dialect Coach",
+        "id": "tmdb:person:1442173"
+      },
+      {
+        "name": "Jordi Roca Agut",
+        "role": "Production Coordinator",
+        "id": "tmdb:person:2069466"
+      },
+      {
+        "name": "Nathalie Rodriguez Martinez",
+        "role": "Production Coordinator",
+        "id": "tmdb:person:2069467"
+      },
+      {
+        "name": "G\u00e1bor Ujh\u00e1zy",
+        "role": "Unit Manager",
+        "id": "tmdb:person:1399646"
+      },
+      {
+        "name": "Desiderio Vite",
+        "role": "Pilot",
+        "id": "tmdb:person:2069470"
+      },
+      {
+        "name": "Laurie Wright",
+        "role": "Production Coordinator",
+        "id": "tmdb:person:1635612"
+      },
+      {
+        "name": "Danny Yount",
+        "role": "Title Designer",
+        "id": "tmdb:person:1657138"
+      },
+      {
+        "name": "Aaron Haye",
+        "role": "Thanks",
+        "id": "tmdb:person:1182907"
+      },
+      {
+        "name": "Dennis McCarthy",
+        "role": "Thanks",
+        "id": "tmdb:person:1436196"
+      },
+      {
+        "name": "Syd Mead",
+        "role": "Thanks",
+        "id": "tmdb:person:12867"
+      },
+      {
+        "name": "Ryota Nakanishi",
+        "role": "Thanks",
+        "id": "tmdb:person:1276612"
+      },
+      {
+        "name": "Dan Spellman",
+        "role": "Thanks",
+        "id": "tmdb:person:2069471"
+      },
+      {
+        "name": "Andrew G. Vajna",
+        "role": "Thanks",
+        "id": "tmdb:person:56967"
+      },
+      {
+        "name": "Nico Abondolo",
+        "role": "Musician",
+        "id": "tmdb:person:1099438"
+      },
+      {
+        "name": "Deva Anderson",
+        "role": "Music Supervisor",
+        "id": "tmdb:person:1535987"
+      },
+      {
+        "name": "Clint Bennett",
+        "role": "Supervising Music Editor",
+        "id": "tmdb:person:1364427"
+      },
+      {
+        "name": "Ashley Culp",
+        "role": "Executive Music Producer",
+        "id": "tmdb:person:2069472"
+      },
+      {
+        "name": "Alcon Sleeping Giant",
+        "role": "Executive Music Producer",
+        "id": "tmdb:person:2069473"
+      },
+      {
+        "name": "Michael Hodges",
+        "role": "Executive Music Producer",
+        "id": "tmdb:person:2069474"
+      },
+      {
+        "name": "Kayla Morrison",
+        "role": "Executive Music Producer",
+        "id": "tmdb:person:2069475"
+      },
+      {
+        "name": "Owen Gurry",
+        "role": "Musician",
+        "id": "tmdb:person:1824961"
+      },
+      {
+        "name": "Avi Kaplan",
+        "role": "Musician",
+        "id": "tmdb:person:1542851"
+      },
+      {
+        "name": "Rio Mangini",
+        "role": "Musician",
+        "id": "tmdb:person:1298900"
+      },
+      {
+        "name": "Ryan Rubin",
+        "role": "Music Editor",
+        "id": "tmdb:person:1417841"
+      },
+      {
+        "name": "Tristan Schulze",
+        "role": "Musician",
+        "id": "tmdb:person:240430"
+      },
+      {
+        "name": "Simone Vitucci",
+        "role": "Musician",
+        "id": "tmdb:person:2069477"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Denis Villeneuve",
+        "role": "Director",
+        "id": "tmdb:person:137427",
+        "episodeCount": 1
+      }
+    ],
+    "franchises": [
+      "Blade Runner Collection"
+    ],
+    "relatedLabel": "Same film collection and TMDB recommendations",
+    "fallbackImage": "blade-runner.jpg",
+    "themes": [
+      "Cyberpunk",
+      "Atmospheric",
+      "Identity"
+    ],
+    "editorialRelated": [
+      "igdb:game:1877",
+      "tmdb:movie:329865",
+      "tmdb:movie:693134"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "tmdb:movie:329865",
+    "title": "Arrival",
+    "medium": "movie",
+    "year": 2016,
+    "image": "https://image.tmdb.org/t/p/w500/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg",
+    "color": "#dcaa72",
+    "maker": "Denis Villeneuve",
+    "creatorRole": "Director",
+    "publisher": "FilmNation Entertainment, Lava Bear Films, 21 Laps Entertainment",
+    "description": "Taking place after alien crafts land around the world, an expert linguist is recruited by the military to determine whether they come in peace or are a threat.",
+    "tags": [
+      "Drama",
+      "Science Fiction",
+      "Mystery"
+    ],
+    "rating": "3.8",
+    "duration": "1h 56m",
+    "verified_duration_minutes": 116,
+    "related": [
+      "tmdb:movie:2103",
+      "tmdb:movie:17431",
+      "tmdb:movie:686",
+      "tmdb:movie:559581",
+      "tmdb:movie:522402",
+      "tmdb:movie:152",
+      "tmdb:movie:2067",
+      "tmdb:movie:585378"
+    ],
+    "provider": "tmdb",
+    "sourceUrl": "https://www.themoviedb.org/movie/329865",
+    "credits": [
+      {
+        "name": "Nicolas Lepage",
+        "role": "Art Direction",
+        "id": "tmdb:person:17613"
+      },
+      {
+        "name": "Denis Villeneuve",
+        "role": "Director",
+        "id": "tmdb:person:137427"
+      },
+      {
+        "name": "Michael Jackman",
+        "role": "Co-Producer",
+        "id": "tmdb:person:34338"
+      },
+      {
+        "name": "Glen Basner",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1018975"
+      },
+      {
+        "name": "R\u00e9jean Goderre",
+        "role": "Key Hair Stylist",
+        "id": "tmdb:person:1436493"
+      },
+      {
+        "name": "H\u00e9l\u00e8ne Lamarre",
+        "role": "Art Department Coordinator",
+        "id": "tmdb:person:1394740"
+      },
+      {
+        "name": "Luc Boudrias",
+        "role": "Sound Re-Recording Mixer",
+        "id": "tmdb:person:1197112"
+      },
+      {
+        "name": "Eric Heisserer",
+        "role": "Screenplay",
+        "id": "tmdb:person:115033"
+      },
+      {
+        "name": "Jean-Pierre Paquet",
+        "role": "Art Direction",
+        "id": "tmdb:person:1327907"
+      },
+      {
+        "name": "Nicolas Becker",
+        "role": "Special Sound Effects",
+        "id": "tmdb:person:17428"
+      },
+      {
+        "name": "Colleen Quinton",
+        "role": "Makeup Department Head",
+        "id": "tmdb:person:1402019"
+      },
+      {
+        "name": "Stephen Craig",
+        "role": "Scenic Artist",
+        "id": "tmdb:person:1626988"
+      },
+      {
+        "name": "Isabelle Guay",
+        "role": "Supervising Art Director",
+        "id": "tmdb:person:8704"
+      },
+      {
+        "name": "Marianne Bobet",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:1646477"
+      },
+      {
+        "name": "Michael Jackman",
+        "role": "Post Production Supervisor",
+        "id": "tmdb:person:34338"
+      },
+      {
+        "name": "Sylvain Bellemare",
+        "role": "Supervising Sound Editor",
+        "id": "tmdb:person:1294674"
+      },
+      {
+        "name": "Olivier Guillaume",
+        "role": "Special Sound Effects",
+        "id": "tmdb:person:1646495"
+      },
+      {
+        "name": "Milan Popelka",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1646476"
+      },
+      {
+        "name": "Dan Levine",
+        "role": "Producer",
+        "id": "tmdb:person:1188380"
+      },
+      {
+        "name": "Claude La Haye",
+        "role": "Sound Mixer",
+        "id": "tmdb:person:17427"
+      },
+      {
+        "name": "Francis P\u00e9loquin",
+        "role": "Boom Operator",
+        "id": "tmdb:person:1646498"
+      },
+      {
+        "name": "Francine Maisler",
+        "role": "Casting",
+        "id": "tmdb:person:6410"
+      },
+      {
+        "name": "Marie-Christine Dormier",
+        "role": "Hairstylist",
+        "id": "tmdb:person:1646478"
+      },
+      {
+        "name": "Eric Heisserer",
+        "role": "Executive Producer",
+        "id": "tmdb:person:115033"
+      },
+      {
+        "name": "Shawn Levy",
+        "role": "Producer",
+        "id": "tmdb:person:17825"
+      },
+      {
+        "name": "Tory Metzger",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1622445"
+      },
+      {
+        "name": "Stan Wlodkowski",
+        "role": "Unit Production Manager",
+        "id": "tmdb:person:51689"
+      },
+      {
+        "name": "Serge Archambault",
+        "role": "Scenic Artist",
+        "id": "tmdb:person:1590092"
+      },
+      {
+        "name": "Aaron Morrison",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1646492"
+      },
+      {
+        "name": "Karen Lunder",
+        "role": "Producer",
+        "id": "tmdb:person:57175"
+      },
+      {
+        "name": "Aaron Ryder",
+        "role": "Producer",
+        "id": "tmdb:person:554"
+      },
+      {
+        "name": "Meinert Hansen",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:1646489"
+      },
+      {
+        "name": "Ted Chiang",
+        "role": "Short Story",
+        "id": "tmdb:person:1646469"
+      },
+      {
+        "name": "Sabrina Trudel",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:1638380"
+      },
+      {
+        "name": "Mathieu Beaudin",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1566366"
+      },
+      {
+        "name": "Marc Reichel",
+        "role": "Special Effects",
+        "id": "tmdb:person:1363859"
+      },
+      {
+        "name": "Robert Parle",
+        "role": "Art Direction",
+        "id": "tmdb:person:1409696"
+      },
+      {
+        "name": "Paul Hotte",
+        "role": "Set Decoration",
+        "id": "tmdb:person:6053"
+      },
+      {
+        "name": "Joan Patricia Parris",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:1363840"
+      },
+      {
+        "name": "Bernard Gari\u00e9py Strobl",
+        "role": "Sound Re-Recording Mixer",
+        "id": "tmdb:person:1570605"
+      },
+      {
+        "name": "Alain Caporicci",
+        "role": "Set Production Assistant",
+        "id": "tmdb:person:1380391"
+      },
+      {
+        "name": "Pierre-Jules Audet",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1392955"
+      },
+      {
+        "name": "Ilyaa Ghafouri",
+        "role": "Sound Design Assistant",
+        "id": "tmdb:person:1646493"
+      },
+      {
+        "name": "David Linde",
+        "role": "Producer",
+        "id": "tmdb:person:39454"
+      },
+      {
+        "name": "Stan Wlodkowski",
+        "role": "Executive Producer",
+        "id": "tmdb:person:51689"
+      },
+      {
+        "name": "Joe Walker",
+        "role": "Editor",
+        "id": "tmdb:person:999565"
+      },
+      {
+        "name": "H\u00e9l\u00e8ne Ross",
+        "role": "Production Manager",
+        "id": "tmdb:person:1646484"
+      },
+      {
+        "name": "Andr\u00e9 Nicholas Malouf",
+        "role": "Set Dressing Artist",
+        "id": "tmdb:person:1646491"
+      },
+      {
+        "name": "Marc Aubry",
+        "role": "Animation",
+        "id": "tmdb:person:1194578"
+      },
+      {
+        "name": "Olivier Beaulieu",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646515"
+      },
+      {
+        "name": "S\u00e9bastien Bergeron",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1646520"
+      },
+      {
+        "name": "Joanie Croteau",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:113120"
+      },
+      {
+        "name": "Dominic Dauphin",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646548"
+      },
+      {
+        "name": "Emmanuel Gatera",
+        "role": "Animation",
+        "id": "tmdb:person:1646562"
+      },
+      {
+        "name": "Mathieu Girard",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646565"
+      },
+      {
+        "name": "Veronique Guay",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:113134"
+      },
+      {
+        "name": "Mathieu Lalonde",
+        "role": "Modeling",
+        "id": "tmdb:person:1646581"
+      },
+      {
+        "name": "Samuel Boisvert",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646527"
+      },
+      {
+        "name": "Heston L'Abb\u00e9",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646579"
+      },
+      {
+        "name": "Michael Beaulac",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646513"
+      },
+      {
+        "name": "Vincent Forand",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646555"
+      },
+      {
+        "name": "Samuel Lepage-Bedard",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646593"
+      },
+      {
+        "name": "Jose Luis Gomez",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646566"
+      },
+      {
+        "name": "Nick Guth",
+        "role": "Visual Effects",
+        "id": "tmdb:person:1646569"
+      },
+      {
+        "name": "Lari Karam",
+        "role": "Animation",
+        "id": "tmdb:person:1646577"
+      },
+      {
+        "name": "Caroline Labrie",
+        "role": "Animation",
+        "id": "tmdb:person:1641660"
+      },
+      {
+        "name": "Ivan Moran",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1426330"
+      },
+      {
+        "name": "Matt Belbin",
+        "role": "Digital Effects Supervisor",
+        "id": "tmdb:person:1646517"
+      },
+      {
+        "name": "Steve Cady",
+        "role": "Animation",
+        "id": "tmdb:person:1461150"
+      },
+      {
+        "name": "Jean-Pierre Flayeux",
+        "role": "Compositors",
+        "id": "tmdb:person:1646554"
+      },
+      {
+        "name": "Nadine Homier",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646572"
+      },
+      {
+        "name": "Peter Konig",
+        "role": "Conceptual Design",
+        "id": "tmdb:person:1646578"
+      },
+      {
+        "name": "Miguel Berube Ouellet",
+        "role": "Modeling",
+        "id": "tmdb:person:1646523"
+      },
+      {
+        "name": "Cynthia Rodriguez del Castillo",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646537"
+      },
+      {
+        "name": "Xavier Larocque",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646585"
+      },
+      {
+        "name": "Martine Losier",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1646598"
+      },
+      {
+        "name": "Lafleche Dumais",
+        "role": "CG Supervisor",
+        "id": "tmdb:person:113126"
+      },
+      {
+        "name": "Alexandre Lafortune",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1568842"
+      },
+      {
+        "name": "Maxime Lapointe",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646584"
+      },
+      {
+        "name": "Patrick Lemay-Hardy",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646591"
+      },
+      {
+        "name": "Hugo L\u00e9veill\u00e9",
+        "role": "Compositors",
+        "id": "tmdb:person:1646600"
+      },
+      {
+        "name": "Xavier Bourque",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646534"
+      },
+      {
+        "name": "Matthieu Chatelier",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646541"
+      },
+      {
+        "name": "Gael Hollard",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646571"
+      },
+      {
+        "name": "Bruno-Pierre Jobin",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646576"
+      },
+      {
+        "name": "Louis Morin",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1402029"
+      },
+      {
+        "name": "Julien Dubusset",
+        "role": "Animation",
+        "id": "tmdb:person:1646552"
+      },
+      {
+        "name": "Alain Lachance",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1194083"
+      },
+      {
+        "name": "Christopher Ahrens",
+        "role": "CG Supervisor",
+        "id": "tmdb:person:1646507"
+      },
+      {
+        "name": "Thierry Delattre",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:113122"
+      },
+      {
+        "name": "Olivier Gravel",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646568"
+      },
+      {
+        "name": "Yann Jouannic",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:49194"
+      },
+      {
+        "name": "Richard Martin",
+        "role": "Compositors",
+        "id": "tmdb:person:113145"
+      },
+      {
+        "name": "Marie-Pier Couture-Alain",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646546"
+      },
+      {
+        "name": "Andrew Barry",
+        "role": "Compositors",
+        "id": "tmdb:person:1646512"
+      },
+      {
+        "name": "Meggie Cabral",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1646536"
+      },
+      {
+        "name": "Jean-Francois Gallant",
+        "role": "Animation",
+        "id": "tmdb:person:1646560"
+      },
+      {
+        "name": "Maxime Lemieux",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646592"
+      },
+      {
+        "name": "Louise Bertrand",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1621770"
+      },
+      {
+        "name": "Robert De La Cruz",
+        "role": "Modeling",
+        "id": "tmdb:person:1646549"
+      },
+      {
+        "name": "No\u00e9mie Jacques",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1644261"
+      },
+      {
+        "name": "Marie-Claude Lafontaine",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1634298"
+      },
+      {
+        "name": "F\u00e9lix Arsenault",
+        "role": "Modeling",
+        "id": "tmdb:person:1646510"
+      },
+      {
+        "name": "Jean-Fran\u00e7ois Ferland",
+        "role": "Visual Effects Supervisor",
+        "id": "tmdb:person:1419725"
+      },
+      {
+        "name": "Karina Mariano",
+        "role": "Visual Effects Coordinator",
+        "id": "tmdb:person:1646601"
+      },
+      {
+        "name": "Belly Mingmuong",
+        "role": "Digital Compositors",
+        "id": "tmdb:person:1646603"
+      },
+      {
+        "name": "Bradford Young",
+        "role": "Director of Photography",
+        "id": "tmdb:person:1046612"
+      },
+      {
+        "name": "J\u00f3hann J\u00f3hannsson",
+        "role": "Original Music Composer",
+        "id": "tmdb:person:117992"
+      },
+      {
+        "name": "Catherine Nadeau",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1501951"
+      },
+      {
+        "name": "Dan Cohen",
+        "role": "Producer",
+        "id": "tmdb:person:1718785"
+      },
+      {
+        "name": "Andr\u00e9 Valade",
+        "role": "Set Decoration",
+        "id": "tmdb:person:1590089"
+      },
+      {
+        "name": "Jan Thijs",
+        "role": "Still Photographer",
+        "id": "tmdb:person:132642"
+      },
+      {
+        "name": "Eames Gagnon",
+        "role": "Gaffer",
+        "id": "tmdb:person:1402034"
+      },
+      {
+        "name": "Ren\u00e9e April",
+        "role": "Costume Design",
+        "id": "tmdb:person:6057"
+      },
+      {
+        "name": "Mary Lukasiewicz",
+        "role": "First Assistant Editor",
+        "id": "tmdb:person:1706693"
+      },
+      {
+        "name": "Pierre Daudelin",
+        "role": "Best Boy Electric",
+        "id": "tmdb:person:1593425"
+      },
+      {
+        "name": "Fr\u00e9d\u00e9ric Chamberland",
+        "role": "Steadicam Operator",
+        "id": "tmdb:person:1420573"
+      },
+      {
+        "name": "Jean-Fran\u00e7ois Dub\u00e9",
+        "role": "Rigging Grip",
+        "id": "tmdb:person:1706692"
+      },
+      {
+        "name": "Salom\u00e9 Villeneuve",
+        "role": "Costume Assistant",
+        "id": "tmdb:person:3638876"
+      },
+      {
+        "name": "Shaun Nagorny",
+        "role": "Rigging Grip",
+        "id": "tmdb:person:1777654"
+      },
+      {
+        "name": "Hans Bjerno",
+        "role": "Aerial Director of Photography",
+        "id": "tmdb:person:1399071"
+      },
+      {
+        "name": "Isabelle Faivre-Duboz",
+        "role": "Script Supervisor",
+        "id": "tmdb:person:1777636"
+      },
+      {
+        "name": "Christian Lalonde",
+        "role": "Rigging Grip",
+        "id": "tmdb:person:1777659"
+      },
+      {
+        "name": "Peter Wilke",
+        "role": "Steadicam Operator",
+        "id": "tmdb:person:1441365"
+      },
+      {
+        "name": "Marieke S\u00e9guin",
+        "role": "Rigging Grip",
+        "id": "tmdb:person:1777665"
+      },
+      {
+        "name": "Pierre-Luc L'Esp\u00e9rance",
+        "role": "Rigging Grip",
+        "id": "tmdb:person:1777653"
+      },
+      {
+        "name": "Bruce Winant",
+        "role": "ADR Voice Casting",
+        "id": "tmdb:person:26678"
+      },
+      {
+        "name": "Daniel Sauv\u00e9",
+        "role": "Additional Camera",
+        "id": "tmdb:person:1394756"
+      },
+      {
+        "name": "Dann Fink",
+        "role": "ADR Voice Casting",
+        "id": "tmdb:person:1446462"
+      },
+      {
+        "name": "Keith Kerr",
+        "role": "Key Grip",
+        "id": "tmdb:person:1777669"
+      },
+      {
+        "name": "Alain Bisson Doyal",
+        "role": "Techno Crane Operator",
+        "id": "tmdb:person:1631613"
+      },
+      {
+        "name": "Marc D\u00e9sourdy",
+        "role": "Stunt Coordinator",
+        "id": "tmdb:person:1293479"
+      },
+      {
+        "name": "Mario Davignon",
+        "role": "Costume Supervisor",
+        "id": "tmdb:person:113894"
+      },
+      {
+        "name": "Viriya Say",
+        "role": "Seamstress",
+        "id": "tmdb:person:1777639"
+      },
+      {
+        "name": "Maude Turcot",
+        "role": "Rigging Grip",
+        "id": "tmdb:person:1777656"
+      },
+      {
+        "name": "Simon Guilbault",
+        "role": "Set Designer",
+        "id": "tmdb:person:1482882"
+      },
+      {
+        "name": "Jordana Sapiurka",
+        "role": "Casting Assistant",
+        "id": "tmdb:person:1810168"
+      },
+      {
+        "name": "Kathy Ann Thomas",
+        "role": "Production Coordinator",
+        "id": "tmdb:person:1810186"
+      },
+      {
+        "name": "Jean Gagnon",
+        "role": "Set Designer",
+        "id": "tmdb:person:1810163"
+      },
+      {
+        "name": "Marie-Soleil D\u00e9nomm\u00e9",
+        "role": "Set Decoration",
+        "id": "tmdb:person:1810161"
+      },
+      {
+        "name": "Mich\u00e8le St-Arnaud",
+        "role": "Location Manager",
+        "id": "tmdb:person:1384399"
+      },
+      {
+        "name": "Leo Y\u0131lmaz",
+        "role": "Production Manager",
+        "id": "tmdb:person:3997777"
+      },
+      {
+        "name": "Beno\u00eet Bri\u00e8re",
+        "role": "Visual Effects Producer",
+        "id": "tmdb:person:1891015"
+      },
+      {
+        "name": "Pierre Gill",
+        "role": "Additional Photography",
+        "id": "tmdb:person:25744"
+      },
+      {
+        "name": "Clint Bennett",
+        "role": "Music Editor",
+        "id": "tmdb:person:1364427"
+      },
+      {
+        "name": "Steve Perski",
+        "role": "Sound Recordist",
+        "id": "tmdb:person:2041410"
+      },
+      {
+        "name": "Luc Raymond",
+        "role": "Foley Editor",
+        "id": "tmdb:person:1209144"
+      },
+      {
+        "name": "Claire Pochon",
+        "role": "Dialogue Editor",
+        "id": "tmdb:person:1577946"
+      },
+      {
+        "name": "Justin Scott Wilson",
+        "role": "Sound Recordist",
+        "id": "tmdb:person:1646501"
+      },
+      {
+        "name": "Val\u00e9ry Dufort-Boucher",
+        "role": "Dialogue Editor",
+        "id": "tmdb:person:1194079"
+      },
+      {
+        "name": "Lise Pharand",
+        "role": "Property Master",
+        "id": "tmdb:person:2041416"
+      },
+      {
+        "name": "Donald Sparks",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:1519868"
+      },
+      {
+        "name": "Stan Sakellaropoulos",
+        "role": "ADR Supervisor",
+        "id": "tmdb:person:1437280"
+      },
+      {
+        "name": "R\u00e9jean Goderre",
+        "role": "Hairstylist",
+        "id": "tmdb:person:1436493"
+      },
+      {
+        "name": "Jennifer Dionne",
+        "role": "Assistant Makeup Artist",
+        "id": "tmdb:person:1303908"
+      },
+      {
+        "name": "Martha Fernandez",
+        "role": "Art Department Coordinator",
+        "id": "tmdb:person:936842"
+      },
+      {
+        "name": "Carl Lessard",
+        "role": "Graphic Designer",
+        "id": "tmdb:person:2145806"
+      },
+      {
+        "name": "Luc Houle",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2145808"
+      },
+      {
+        "name": "Andr\u00e9 Nicholas Malouf",
+        "role": "Set Dresser",
+        "id": "tmdb:person:1646491"
+      },
+      {
+        "name": "Marie-Jos\u00e9 Bourassa",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:2145798"
+      },
+      {
+        "name": "Mario Huot",
+        "role": "Assistant Hairdresser",
+        "id": "tmdb:person:2145790"
+      },
+      {
+        "name": "Jocelyn Charbonneau",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2054572"
+      },
+      {
+        "name": "Luc-Eric Duhamel",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2145809"
+      },
+      {
+        "name": "S\u00e9bastien Gervais",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2145812"
+      },
+      {
+        "name": "J\u00f3hann J\u00f3hannsson",
+        "role": "Musician",
+        "id": "tmdb:person:117992"
+      },
+      {
+        "name": "Kaven MacDonald",
+        "role": "Third Assistant Director",
+        "id": "tmdb:person:2145803"
+      },
+      {
+        "name": "Martin Macrae",
+        "role": "Concept Artist",
+        "id": "tmdb:person:2144096"
+      },
+      {
+        "name": "J\u00f3hann J\u00f3hannsson",
+        "role": "Music Arranger",
+        "id": "tmdb:person:117992"
+      },
+      {
+        "name": "J\u00f3hann J\u00f3hannsson",
+        "role": "Music Producer",
+        "id": "tmdb:person:117992"
+      },
+      {
+        "name": "Marie-Christine Cormier",
+        "role": "Assistant Hairdresser",
+        "id": "tmdb:person:2145789"
+      },
+      {
+        "name": "R\u00e9jean Goderre",
+        "role": "Key Hairdresser",
+        "id": "tmdb:person:1436493"
+      },
+      {
+        "name": "Marie-Julie Dallaire",
+        "role": "Second Unit Director",
+        "id": "tmdb:person:980546"
+      },
+      {
+        "name": "Louis-Antoine Lassonde",
+        "role": "ADR Mixer",
+        "id": "tmdb:person:2145816"
+      },
+      {
+        "name": "Moumita Mondal",
+        "role": "Second Unit Director",
+        "id": "tmdb:person:2145801"
+      },
+      {
+        "name": "Marc-Andre Jalbert",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2145810"
+      },
+      {
+        "name": "Gillian Chandler",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:1790327"
+      },
+      {
+        "name": "Michelle Quinn",
+        "role": "Production Manager",
+        "id": "tmdb:person:1842070"
+      },
+      {
+        "name": "Brigitte Goulet",
+        "role": "Second Assistant Director",
+        "id": "tmdb:person:1993874"
+      },
+      {
+        "name": "Marco Lavall\u00e9e",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2145811"
+      },
+      {
+        "name": "Sandro Di Gioacchino",
+        "role": "Assistant Hairdresser",
+        "id": "tmdb:person:1646480"
+      },
+      {
+        "name": "Marie-Lise Taupier",
+        "role": "Hairdresser",
+        "id": "tmdb:person:2145791"
+      },
+      {
+        "name": "Catherine Laniel",
+        "role": "Assistant Makeup Artist",
+        "id": "tmdb:person:2145792"
+      },
+      {
+        "name": "Xiao Yun Hu",
+        "role": "Assistant Makeup Artist",
+        "id": "tmdb:person:2145793"
+      },
+      {
+        "name": "Karine P. Labelle",
+        "role": "Second Second Assistant Director",
+        "id": "tmdb:person:2145800"
+      },
+      {
+        "name": "Martin Henri",
+        "role": "Line Producer",
+        "id": "tmdb:person:2145778"
+      },
+      {
+        "name": "Morag Ross",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:1330586"
+      },
+      {
+        "name": "Dandy Thibaudeau",
+        "role": "Second Assistant Director",
+        "id": "tmdb:person:2145799"
+      },
+      {
+        "name": "Carl Kouri",
+        "role": "Third Assistant Director",
+        "id": "tmdb:person:2145802"
+      },
+      {
+        "name": "Fr\u00ed\u00f0a Arad\u00f3ttir",
+        "role": "Key Hair Stylist",
+        "id": "tmdb:person:1413224"
+      },
+      {
+        "name": "Louis Frederic Denomme",
+        "role": "Set Dresser",
+        "id": "tmdb:person:2006448"
+      },
+      {
+        "name": "Olivier Calvert",
+        "role": "Sound Designer",
+        "id": "tmdb:person:114358"
+      },
+      {
+        "name": "Alan Robert Murray",
+        "role": "Sound Effects Editor",
+        "id": "tmdb:person:1368865"
+      },
+      {
+        "name": "Maxwell Chamberlin",
+        "role": "ADR Mixer",
+        "id": "tmdb:person:2145817"
+      },
+      {
+        "name": "Simon Girard",
+        "role": "Assistant Sound Editor",
+        "id": "tmdb:person:2145819"
+      },
+      {
+        "name": "James A. Moore",
+        "role": "ADR Recordist",
+        "id": "tmdb:person:1402559"
+      },
+      {
+        "name": "Michelle Child",
+        "role": "Sound Designer",
+        "id": "tmdb:person:1365540"
+      },
+      {
+        "name": "Anthony Weeden",
+        "role": "Orchestrator",
+        "id": "tmdb:person:1746705"
+      },
+      {
+        "name": "Will Slater",
+        "role": "Sound Designer",
+        "id": "tmdb:person:1580488"
+      },
+      {
+        "name": "Michel Saule",
+        "role": "Driver",
+        "id": "tmdb:person:2145894"
+      },
+      {
+        "name": "Andrew A. Kosove",
+        "role": "Thanks",
+        "id": "tmdb:person:47286"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Denis Villeneuve",
+        "role": "Director",
+        "id": "tmdb:person:137427",
+        "episodeCount": 1
+      }
+    ],
+    "franchises": [],
+    "relatedLabel": "TMDB recommendations",
+    "fallbackImage": "arrival.jpg",
+    "themes": [
+      "Science fiction",
+      "Language",
+      "Contemplative"
+    ],
+    "editorialRelated": [
+      "igdb:game:11737",
+      "tmdb:movie:693134",
+      "tmdb:movie:335984"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "tmdb:tv:95396",
+    "title": "Severance",
+    "medium": "tv",
+    "year": 2022,
+    "image": "https://image.tmdb.org/t/p/w500/pPHpeI2X1qEd1CS1SeyrdhZ4qnT.jpg",
+    "color": "#8cb9bd",
+    "maker": "Ben Stiller, Aoife McArdle, Sam Donovan",
+    "creatorRole": "Director",
+    "publisher": "Endeavor Content, Red Hour, Fifth Season",
+    "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+    "tags": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi & Fantasy"
+    ],
+    "rating": "4.2",
+    "duration": "19 episodes",
+    "related": [
+      "tmdb:tv:91962",
+      "tmdb:tv:253372",
+      "tmdb:tv:70485",
+      "tmdb:tv:93166",
+      "tmdb:tv:156819",
+      "tmdb:tv:34639",
+      "tmdb:tv:253376",
+      "tmdb:tv:125116"
+    ],
+    "provider": "tmdb",
+    "sourceUrl": "https://www.themoviedb.org/tv/95396",
+    "credits": [
+      {
+        "name": "Jeremy Hindle",
+        "role": "Production Design",
+        "id": "tmdb:person:1327160"
+      },
+      {
+        "name": "Tansy Michaud",
+        "role": "Graphic Designer",
+        "id": "tmdb:person:3442461"
+      },
+      {
+        "name": "Catherine Miller",
+        "role": "Property Master",
+        "id": "tmdb:person:1183783"
+      },
+      {
+        "name": "Hinju Kim",
+        "role": "Art Direction",
+        "id": "tmdb:person:62062"
+      },
+      {
+        "name": "Hinju Kim",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:62062"
+      },
+      {
+        "name": "David Schlesinger",
+        "role": "Set Decoration",
+        "id": "tmdb:person:957292"
+      },
+      {
+        "name": "James C. Feng",
+        "role": "Art Direction",
+        "id": "tmdb:person:1389555"
+      },
+      {
+        "name": "Matthew H. Wiesner",
+        "role": "Location Scout",
+        "id": "tmdb:person:1782428"
+      },
+      {
+        "name": "Daniel Aviles",
+        "role": "Other",
+        "id": "tmdb:person:3442489"
+      },
+      {
+        "name": "Oliver Latta",
+        "role": "Opening Title Sequence",
+        "id": "tmdb:person:4805373"
+      },
+      {
+        "name": "Andrew Baseman",
+        "role": "Set Decoration",
+        "id": "tmdb:person:958931"
+      },
+      {
+        "name": "Travis Anderberg",
+        "role": "Assistant Property Master",
+        "id": "tmdb:person:3442465"
+      },
+      {
+        "name": "Nick Francone",
+        "role": "Other",
+        "id": "tmdb:person:2676867"
+      },
+      {
+        "name": "David Swayze",
+        "role": "Conceptual Illustrator",
+        "id": "tmdb:person:32904"
+      },
+      {
+        "name": "Leopoldo Ramirez",
+        "role": "Set Decorating Coordinator",
+        "id": "tmdb:person:3442530"
+      },
+      {
+        "name": "Deneice O'Connor",
+        "role": "Property Buyer",
+        "id": "tmdb:person:1279813"
+      },
+      {
+        "name": "Emma Mendelson",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:2840860"
+      },
+      {
+        "name": "Arizona Newsum",
+        "role": "Art Department Coordinator",
+        "id": "tmdb:person:2075693"
+      },
+      {
+        "name": "Angelica Borrero",
+        "role": "Art Direction",
+        "id": "tmdb:person:2749939"
+      },
+      {
+        "name": "Patrice Andrew Davidson",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:2647521"
+      },
+      {
+        "name": "Elizabeth Eggert",
+        "role": "Assistant Set Decoration",
+        "id": "tmdb:person:1636698"
+      },
+      {
+        "name": "Colleen Dolan",
+        "role": "On Set Props",
+        "id": "tmdb:person:3442481"
+      },
+      {
+        "name": "Kory Victor",
+        "role": "Conceptual Illustrator",
+        "id": "tmdb:person:3233409"
+      },
+      {
+        "name": "Roxanne Kratt",
+        "role": "Set Decoration Buyer",
+        "id": "tmdb:person:1825603"
+      },
+      {
+        "name": "Stephen Davan",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:3442460"
+      },
+      {
+        "name": "Rachel Barker",
+        "role": "Set Decoration Buyer",
+        "id": "tmdb:person:3290709"
+      },
+      {
+        "name": "Bryan Walsh",
+        "role": "Other",
+        "id": "tmdb:person:1768970"
+      },
+      {
+        "name": "Hugh Sicotte",
+        "role": "Conceptual Illustrator",
+        "id": "tmdb:person:1790089"
+      },
+      {
+        "name": "Teddy Blanks",
+        "role": "Title Designer",
+        "id": "tmdb:person:1760490"
+      },
+      {
+        "name": "Martin Kirchoff",
+        "role": "Key Carpenter",
+        "id": "tmdb:person:2379951"
+      },
+      {
+        "name": "Jason Turner",
+        "role": "Other",
+        "id": "tmdb:person:3442483"
+      },
+      {
+        "name": "Peter Dorsey",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:2360304"
+      },
+      {
+        "name": "Anthony Taratunio",
+        "role": "Other",
+        "id": "tmdb:person:1884201"
+      },
+      {
+        "name": "Sarah Rae Davidson",
+        "role": "Graphic Designer",
+        "id": "tmdb:person:1759010"
+      },
+      {
+        "name": "Karen T. Salva",
+        "role": "Location Scout",
+        "id": "tmdb:person:2502735"
+      },
+      {
+        "name": "Jeff Mann",
+        "role": "Other",
+        "id": "tmdb:person:7233"
+      },
+      {
+        "name": "Ernest Karpeles",
+        "role": "Location Scout",
+        "id": "tmdb:person:3442602"
+      },
+      {
+        "name": "Kadie Dolan",
+        "role": "Other",
+        "id": "tmdb:person:3442484"
+      },
+      {
+        "name": "Ace Huggins",
+        "role": "Leadman",
+        "id": "tmdb:person:3442550"
+      },
+      {
+        "name": "Sharon White",
+        "role": "Assistant Set Decoration",
+        "id": "tmdb:person:3442557"
+      },
+      {
+        "name": "Sheila Bock",
+        "role": "Assistant Set Decoration",
+        "id": "tmdb:person:1527484"
+      },
+      {
+        "name": "Tommy Yacuk",
+        "role": "Construction Coordinator",
+        "id": "tmdb:person:3442595"
+      },
+      {
+        "name": "Jamie Rama",
+        "role": "Conceptual Illustrator",
+        "id": "tmdb:person:1701153"
+      },
+      {
+        "name": "Juliana Barreto Barreto",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:2209823"
+      },
+      {
+        "name": "Eric Fehlberg",
+        "role": "Conceptual Illustrator",
+        "id": "tmdb:person:1790080"
+      },
+      {
+        "name": "Jeannette Kim",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1416804"
+      },
+      {
+        "name": "Chris Shriver",
+        "role": "Art Direction",
+        "id": "tmdb:person:17950"
+      },
+      {
+        "name": "Benji Cox",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1372083"
+      },
+      {
+        "name": "Katya Blumenberg",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:1411803"
+      },
+      {
+        "name": "Ann Bartek",
+        "role": "Art Direction",
+        "id": "tmdb:person:2494684"
+      },
+      {
+        "name": "Shoko Kambara",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:2806442"
+      },
+      {
+        "name": "Glenn Barrett",
+        "role": "Art Direction",
+        "id": "tmdb:person:2200097"
+      },
+      {
+        "name": "Jessica Lee Gagn\u00e9",
+        "role": "Director of Photography",
+        "id": "tmdb:person:1550276"
+      },
+      {
+        "name": "William Gonzalez",
+        "role": "Best Boy Grip",
+        "id": "tmdb:person:3442574"
+      },
+      {
+        "name": "Chris Stendardi",
+        "role": "Dolly Grip",
+        "id": "tmdb:person:1993417"
+      },
+      {
+        "name": "Daniel Sheats",
+        "role": "Libra Head Technician",
+        "id": "tmdb:person:3442519"
+      },
+      {
+        "name": "Atsushi Nishijima",
+        "role": "Still Photographer",
+        "id": "tmdb:person:1193622"
+      },
+      {
+        "name": "Johnny Erbes-Chan",
+        "role": "Key Grip",
+        "id": "tmdb:person:1959238"
+      },
+      {
+        "name": "Wilson Webb",
+        "role": "Still Photographer",
+        "id": "tmdb:person:1452675"
+      },
+      {
+        "name": "Sebasti\u00e1n Almeida",
+        "role": "Libra Head Technician",
+        "id": "tmdb:person:1419104"
+      },
+      {
+        "name": "Luke Taylor",
+        "role": "Digital Imaging Technician",
+        "id": "tmdb:person:3442500"
+      },
+      {
+        "name": "Patrick Donahue",
+        "role": "Dolly Grip",
+        "id": "tmdb:person:3442581"
+      },
+      {
+        "name": "Stanley Fernandez Jr.",
+        "role": "Camera Operator",
+        "id": "tmdb:person:1468585"
+      },
+      {
+        "name": "Matt Mitchell",
+        "role": "Director of Photography",
+        "id": "tmdb:person:1999030"
+      },
+      {
+        "name": "Matt Mitchell",
+        "role": "Additional Photography",
+        "id": "tmdb:person:1999030"
+      },
+      {
+        "name": "Peter Agliata",
+        "role": "Camera Operator",
+        "id": "tmdb:person:1683263"
+      },
+      {
+        "name": "David Lanzenberg",
+        "role": "Director of Photography",
+        "id": "tmdb:person:1144816"
+      },
+      {
+        "name": "Suzie Lavelle",
+        "role": "Director of Photography",
+        "id": "tmdb:person:1672937"
+      },
+      {
+        "name": "Michael Guthrie",
+        "role": "First Assistant Camera",
+        "id": "tmdb:person:1565945"
+      },
+      {
+        "name": "Eric Swanek",
+        "role": "First Assistant Camera",
+        "id": "tmdb:person:1460569"
+      },
+      {
+        "name": "Tyler Swanek",
+        "role": "Second Assistant Camera",
+        "id": "tmdb:person:1634242"
+      },
+      {
+        "name": "Vincent Tuths",
+        "role": "Second Assistant Camera",
+        "id": "tmdb:person:3442499"
+      },
+      {
+        "name": "Sam Ellison",
+        "role": "Camera Operator",
+        "id": "tmdb:person:1308216"
+      },
+      {
+        "name": "Jon Carter",
+        "role": "Hair Department Head",
+        "id": "tmdb:person:2023764"
+      },
+      {
+        "name": "Judy Chin",
+        "role": "Makeup Department Head",
+        "id": "tmdb:person:1347722"
+      },
+      {
+        "name": "Jessica Calder\u00f3n",
+        "role": "Truck Costumer",
+        "id": "tmdb:person:2927289"
+      },
+      {
+        "name": "Sarah Edwards",
+        "role": "Costume Design",
+        "id": "tmdb:person:38084"
+      },
+      {
+        "name": "Joshua First",
+        "role": "Hairstylist",
+        "id": "tmdb:person:2588283"
+      },
+      {
+        "name": "Kirsten MacLeod",
+        "role": "Costume Coordinator",
+        "id": "tmdb:person:3442593"
+      },
+      {
+        "name": "Heather Breen",
+        "role": "Other",
+        "id": "tmdb:person:1992681"
+      },
+      {
+        "name": "Dan Urlie",
+        "role": "Assistant Costume Designer",
+        "id": "tmdb:person:3442585"
+      },
+      {
+        "name": "Don Kozma",
+        "role": "Key Hair Stylist",
+        "id": "tmdb:person:1732800"
+      },
+      {
+        "name": "Bernadette Mazur",
+        "role": "Makeup Department Head",
+        "id": "tmdb:person:142152"
+      },
+      {
+        "name": "Becca Banks",
+        "role": "On Set Dresser",
+        "id": "tmdb:person:2988914"
+      },
+      {
+        "name": "Anna Stachow",
+        "role": "Makeup Artist",
+        "id": "tmdb:person:1738670"
+      },
+      {
+        "name": "Alice Bee",
+        "role": "Tailor",
+        "id": "tmdb:person:2827105"
+      },
+      {
+        "name": "Debra Peck",
+        "role": "Set Costumer",
+        "id": "tmdb:person:3288090"
+      },
+      {
+        "name": "Sasha Cummins",
+        "role": "Key Hair Stylist",
+        "id": "tmdb:person:1688089"
+      },
+      {
+        "name": "Marie Seifts",
+        "role": "Wardrobe Supervisor",
+        "id": "tmdb:person:2927287"
+      },
+      {
+        "name": "Carol Deelay",
+        "role": "Set Costumer",
+        "id": "tmdb:person:3282153"
+      },
+      {
+        "name": "Lucy Cobbs",
+        "role": "Set Costumer",
+        "id": "tmdb:person:2713138"
+      },
+      {
+        "name": "Abby Walton",
+        "role": "Assistant Costume Designer",
+        "id": "tmdb:person:1916301"
+      },
+      {
+        "name": "Alec Hansen",
+        "role": "On Set Dresser",
+        "id": "tmdb:person:3442563"
+      },
+      {
+        "name": "Tricia Barsamian",
+        "role": "Other",
+        "id": "tmdb:person:2631823"
+      },
+      {
+        "name": "Dylan Rossman",
+        "role": "Ager/Dyer",
+        "id": "tmdb:person:3442592"
+      },
+      {
+        "name": "Eldar Iskandarov",
+        "role": "Other",
+        "id": "tmdb:person:1633476"
+      },
+      {
+        "name": "Anita Lausevic",
+        "role": "Hair Department Head",
+        "id": "tmdb:person:1536946"
+      },
+      {
+        "name": "Jill Brooks",
+        "role": "Executive Visual Effects Producer",
+        "id": "tmdb:person:6690"
+      },
+      {
+        "name": "Joe Brennan",
+        "role": "Transportation Co-Captain",
+        "id": "tmdb:person:2089185"
+      },
+      {
+        "name": "Danny Frommer",
+        "role": "Set Medic",
+        "id": "tmdb:person:2155304"
+      },
+      {
+        "name": "Marissa Grinstead",
+        "role": "Set Production Assistant",
+        "id": "tmdb:person:3442639"
+      },
+      {
+        "name": "Joel Baral",
+        "role": "Thanks",
+        "id": "tmdb:person:1166743"
+      },
+      {
+        "name": "Tiffany Upshaw",
+        "role": "Post Production Supervisor",
+        "id": "tmdb:person:3442644"
+      },
+      {
+        "name": "George Cuomo",
+        "role": "Set Production Assistant",
+        "id": "tmdb:person:3442638"
+      },
+      {
+        "name": "Timothy Paustian",
+        "role": "Transportation Captain",
+        "id": "tmdb:person:1336195"
+      },
+      {
+        "name": "Nikki Mansfield",
+        "role": "Set Production Assistant",
+        "id": "tmdb:person:3442640"
+      },
+      {
+        "name": "Dean Neistat",
+        "role": "Stunt Coordinator",
+        "id": "tmdb:person:1456723"
+      },
+      {
+        "name": "Eli Lederberg",
+        "role": "Post Production Assistant",
+        "id": "tmdb:person:3442645"
+      },
+      {
+        "name": "Israel Vileda",
+        "role": "Set Production Assistant",
+        "id": "tmdb:person:3442641"
+      },
+      {
+        "name": "Leslie Salter",
+        "role": "Charge Scenic Artist",
+        "id": "tmdb:person:2031028"
+      },
+      {
+        "name": "Cameron Steinfeld",
+        "role": "Set Production Assistant",
+        "id": "tmdb:person:3442642"
+      },
+      {
+        "name": "Doug Coleman",
+        "role": "Special Effects Coordinator",
+        "id": "tmdb:person:2520288"
+      },
+      {
+        "name": "Kansas Ballesteros",
+        "role": "Loader",
+        "id": "tmdb:person:2168079"
+      },
+      {
+        "name": "Brian Pucci",
+        "role": "Loader",
+        "id": "tmdb:person:3442520"
+      },
+      {
+        "name": "Nils Johnson",
+        "role": "Video Assist Operator",
+        "id": "tmdb:person:91109"
+      },
+      {
+        "name": "Mike Sime",
+        "role": "Other",
+        "id": "tmdb:person:2903519"
+      },
+      {
+        "name": "Skylar Loraquette",
+        "role": "Set Production Assistant",
+        "id": "tmdb:person:2181192"
+      },
+      {
+        "name": "Ashley Pynn",
+        "role": "Utility Stunts",
+        "id": "tmdb:person:2056245"
+      },
+      {
+        "name": "Caleb Smith",
+        "role": "In Memory Of",
+        "id": "tmdb:person:3442820"
+      },
+      {
+        "name": "Ben Stiller",
+        "role": "Director",
+        "id": "tmdb:person:7399"
+      },
+      {
+        "name": "Sam Alper",
+        "role": "Script Coordinator",
+        "id": "tmdb:person:1702814"
+      },
+      {
+        "name": "Deirdre Horgan",
+        "role": "Script Supervisor",
+        "id": "tmdb:person:1389601"
+      },
+      {
+        "name": "Parker Hull",
+        "role": "Script Coordinator",
+        "id": "tmdb:person:3442498"
+      },
+      {
+        "name": "Matt Lake",
+        "role": "Second Assistant Director",
+        "id": "tmdb:person:1796097"
+      },
+      {
+        "name": "Melinda Ziyadat",
+        "role": "Second Assistant Director",
+        "id": "tmdb:person:1825451"
+      },
+      {
+        "name": "Katie Carroll",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:2245313"
+      },
+      {
+        "name": "Sahar Shmolevitz",
+        "role": "Second Assistant Director",
+        "id": "tmdb:person:3460952"
+      },
+      {
+        "name": "Ellen Parnett",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:2455533"
+      },
+      {
+        "name": "Aoife McArdle",
+        "role": "Director",
+        "id": "tmdb:person:1426949"
+      },
+      {
+        "name": "Kit Bland",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:2895790"
+      },
+      {
+        "name": "Max O'Brasky",
+        "role": "Second Second Assistant Director",
+        "id": "tmdb:person:3335123"
+      },
+      {
+        "name": "Sam Donovan",
+        "role": "Director",
+        "id": "tmdb:person:229028"
+      },
+      {
+        "name": "Uta Briesewitz",
+        "role": "Director",
+        "id": "tmdb:person:51853"
+      },
+      {
+        "name": "Justin Bischoff",
+        "role": "Second Second Assistant Director",
+        "id": "tmdb:person:2150480"
+      },
+      {
+        "name": "Kristina McFadden",
+        "role": "Second Second Assistant Director",
+        "id": "tmdb:person:3442817"
+      },
+      {
+        "name": "Jessica Lee Gagn\u00e9",
+        "role": "Director",
+        "id": "tmdb:person:1550276"
+      },
+      {
+        "name": "Marco Londoner",
+        "role": "First Assistant Director",
+        "id": "tmdb:person:774666"
+      },
+      {
+        "name": "Kelsi Russell",
+        "role": "Second Second Assistant Director",
+        "id": "tmdb:person:2520332"
+      },
+      {
+        "name": "Kate Ransome Wilcox",
+        "role": "Second Second Assistant Director",
+        "id": "tmdb:person:1463793"
+      },
+      {
+        "name": "Geoffrey Richman",
+        "role": "Editor",
+        "id": "tmdb:person:37267"
+      },
+      {
+        "name": "Alex Kaufman",
+        "role": "Colorist",
+        "id": "tmdb:person:3140722"
+      },
+      {
+        "name": "Nicholas Figueroa",
+        "role": "Online Editor",
+        "id": "tmdb:person:2108100"
+      },
+      {
+        "name": "Tom Poole",
+        "role": "Other",
+        "id": "tmdb:person:2052490"
+      },
+      {
+        "name": "Mia Pakulski",
+        "role": "Dailies Operator",
+        "id": "tmdb:person:3442658"
+      },
+      {
+        "name": "Andrew Geary",
+        "role": "Colorist",
+        "id": "tmdb:person:2123102"
+      },
+      {
+        "name": "Joe Landauer",
+        "role": "Editor",
+        "id": "tmdb:person:1173410"
+      },
+      {
+        "name": "Erica Freed Marker",
+        "role": "Editor",
+        "id": "tmdb:person:1513824"
+      },
+      {
+        "name": "Gershon Hinkson",
+        "role": "Editor",
+        "id": "tmdb:person:959055"
+      },
+      {
+        "name": "Keith Fraase",
+        "role": "Editor",
+        "id": "tmdb:person:1409532"
+      },
+      {
+        "name": "Dave Labich",
+        "role": "Assistant Editor",
+        "id": "tmdb:person:2006993"
+      },
+      {
+        "name": "Vanessa Trengrove",
+        "role": "Assistant Editor",
+        "id": "tmdb:person:3442643"
+      },
+      {
+        "name": "Adam Schaefer",
+        "role": "Assistant Editor",
+        "id": "tmdb:person:3128730"
+      },
+      {
+        "name": "James McFadyen",
+        "role": "Rigging Gaffer",
+        "id": "tmdb:person:3442567"
+      },
+      {
+        "name": "Eric Gearity",
+        "role": "Key Rigging Grip",
+        "id": "tmdb:person:2408792"
+      },
+      {
+        "name": "Brendan Walsh",
+        "role": "Best Boy Electric",
+        "id": "tmdb:person:2626982"
+      },
+      {
+        "name": "Kurt Lennig",
+        "role": "Gaffer",
+        "id": "tmdb:person:1989468"
+      },
+      {
+        "name": "Joy Weber",
+        "role": "Other",
+        "id": "tmdb:person:2872183"
+      },
+      {
+        "name": "Kevin Casaletta",
+        "role": "Lighting Programmer",
+        "id": "tmdb:person:3442569"
+      },
+      {
+        "name": "Jackie Cohn",
+        "role": "Executive Producer",
+        "id": "tmdb:person:2216572"
+      },
+      {
+        "name": "Ben Stiller",
+        "role": "Executive Producer",
+        "id": "tmdb:person:7399"
+      },
+      {
+        "name": "Nicholas Weinstock",
+        "role": "Executive Producer",
+        "id": "tmdb:person:84418"
+      },
+      {
+        "name": "Bess Fifer",
+        "role": "Location Casting",
+        "id": "tmdb:person:1421522"
+      },
+      {
+        "name": "Dan Erickson",
+        "role": "Executive Producer",
+        "id": "tmdb:person:3442409"
+      },
+      {
+        "name": "Katie Pruitt",
+        "role": "Co-Producer",
+        "id": "tmdb:person:2318068"
+      },
+      {
+        "name": "Rachel Tenner",
+        "role": "Casting",
+        "id": "tmdb:person:928414"
+      },
+      {
+        "name": "Adam Scott",
+        "role": "Producer",
+        "id": "tmdb:person:36801"
+      },
+      {
+        "name": "Adam Scott",
+        "role": "Executive Producer",
+        "id": "tmdb:person:36801"
+      },
+      {
+        "name": "Patricia Arquette",
+        "role": "Executive Producer",
+        "id": "tmdb:person:4687"
+      },
+      {
+        "name": "Patricia Arquette",
+        "role": "Producer",
+        "id": "tmdb:person:4687"
+      },
+      {
+        "name": "Mark Friedman",
+        "role": "Executive Producer",
+        "id": "tmdb:person:87364"
+      },
+      {
+        "name": "Richard Schwartz",
+        "role": "Executive Producer",
+        "id": "tmdb:person:2338503"
+      },
+      {
+        "name": "Anna Ouyang Moench",
+        "role": "Supervising Producer",
+        "id": "tmdb:person:3442438"
+      },
+      {
+        "name": "Geoffrey Richman",
+        "role": "Co-Producer",
+        "id": "tmdb:person:37267"
+      },
+      {
+        "name": "John Lesher",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1095253"
+      },
+      {
+        "name": "Erin Wagoner",
+        "role": "Consulting Producer",
+        "id": "tmdb:person:2204374"
+      },
+      {
+        "name": "K.C. Perry",
+        "role": "Consulting Producer",
+        "id": "tmdb:person:2024509"
+      },
+      {
+        "name": "Sean Fogel",
+        "role": "Producer",
+        "id": "tmdb:person:1729459"
+      },
+      {
+        "name": "Wei-Ning Yu",
+        "role": "Producer",
+        "id": "tmdb:person:2591542"
+      },
+      {
+        "name": "Beau Willimon",
+        "role": "Executive Producer",
+        "id": "tmdb:person:64817"
+      },
+      {
+        "name": "Jordan Tappis",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1507631"
+      },
+      {
+        "name": "Caroline Baron",
+        "role": "Executive Producer",
+        "id": "tmdb:person:5356"
+      },
+      {
+        "name": "Diana Dekajlo",
+        "role": "Co-Producer",
+        "id": "tmdb:person:1732848"
+      },
+      {
+        "name": "Sam Donovan",
+        "role": "Executive Producer",
+        "id": "tmdb:person:229028"
+      },
+      {
+        "name": "Adam Countee",
+        "role": "Co-Executive Producer",
+        "id": "tmdb:person:1531428"
+      },
+      {
+        "name": "Mohamad El Masri",
+        "role": "Co-Executive Producer",
+        "id": "tmdb:person:1974205"
+      },
+      {
+        "name": "Jessica Lee Gagn\u00e9",
+        "role": "Producer",
+        "id": "tmdb:person:1550276"
+      },
+      {
+        "name": "A.J. Swirz",
+        "role": "Location Coordinator",
+        "id": "tmdb:person:3013641"
+      },
+      {
+        "name": "Chris Black",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1211962"
+      },
+      {
+        "name": "Debbie DeLisi",
+        "role": "Extras Casting",
+        "id": "tmdb:person:1334463"
+      },
+      {
+        "name": "Chris Modrzynski",
+        "role": "Location Assistant",
+        "id": "tmdb:person:1772109"
+      },
+      {
+        "name": "Gerry Robert Byrne",
+        "role": "Producer",
+        "id": "tmdb:person:213"
+      },
+      {
+        "name": "Kristyn Macready",
+        "role": "Unit Production Manager",
+        "id": "tmdb:person:3442455"
+      },
+      {
+        "name": "Seamus Davey-Fitzpatrick",
+        "role": "Location Production Assistant",
+        "id": "tmdb:person:12042"
+      },
+      {
+        "name": "Aoife McArdle",
+        "role": "Producer",
+        "id": "tmdb:person:1426949"
+      },
+      {
+        "name": "Roberto Capriotti",
+        "role": "Assistant Production Coordinator",
+        "id": "tmdb:person:3442497"
+      },
+      {
+        "name": "Tanner Hansinger",
+        "role": "Executive Producer's Assistant",
+        "id": "tmdb:person:6036873"
+      },
+      {
+        "name": "Amanda Overton",
+        "role": "Producer",
+        "id": "tmdb:person:1656216"
+      },
+      {
+        "name": "Nevine Smith",
+        "role": "Second Assistant Accountant",
+        "id": "tmdb:person:3442625"
+      },
+      {
+        "name": "Jill Footlick",
+        "role": "Co-Executive Producer",
+        "id": "tmdb:person:47277"
+      },
+      {
+        "name": "Ian Burley",
+        "role": "Location Assistant",
+        "id": "tmdb:person:3442608"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Ben Stiller",
+        "role": "Director",
+        "id": "tmdb:person:7399",
+        "episodeCount": 11
+      },
+      {
+        "name": "Aoife McArdle",
+        "role": "Director",
+        "id": "tmdb:person:1426949",
+        "episodeCount": 3
+      },
+      {
+        "name": "Sam Donovan",
+        "role": "Director",
+        "id": "tmdb:person:229028",
+        "episodeCount": 2
+      },
+      {
+        "name": "Uta Briesewitz",
+        "role": "Director",
+        "id": "tmdb:person:51853",
+        "episodeCount": 2
+      },
+      {
+        "name": "Jessica Lee Gagn\u00e9",
+        "role": "Director",
+        "id": "tmdb:person:1550276",
+        "episodeCount": 1
+      }
+    ],
+    "franchises": [],
+    "relatedLabel": "TMDB recommendations",
+    "fallbackImage": "severance.jpg",
+    "themes": [
+      "Mystery",
+      "Identity",
+      "Uncanny"
+    ],
+    "editorialRelated": [
+      "igdb:game:275404",
+      "igdb:game:26472",
+      "tmdb:movie:335984"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  },
+  {
+    "id": "tmdb:tv:105248",
+    "title": "Cyberpunk: Edgerunners",
+    "medium": "tv",
+    "year": 2022,
+    "image": "https://image.tmdb.org/t/p/w500/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
+    "color": "#8cb9bd",
+    "maker": "Kai Ikarashi, Hiroyuki Imaishi",
+    "creatorRole": "Director",
+    "publisher": "TRIGGER, CD PROJEKT RED, Netflix",
+    "description": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw \u2014 an edgerunner.",
+    "tags": [
+      "Animation",
+      "Action & Adventure",
+      "Sci-Fi & Fantasy",
+      "Crime"
+    ],
+    "rating": "4.3",
+    "duration": "20 episodes",
+    "related": [
+      "tmdb:tv:84553",
+      "tmdb:tv:235930",
+      "tmdb:tv:261579",
+      "tmdb:tv:86831",
+      "tmdb:tv:231003",
+      "tmdb:tv:406",
+      "tmdb:tv:127372",
+      "tmdb:tv:219543"
+    ],
+    "provider": "tmdb",
+    "sourceUrl": "https://www.themoviedb.org/tv/105248",
+    "credits": [
+      {
+        "name": "Pawe\u0142 Mielniczuk",
+        "role": "Art Direction",
+        "id": "tmdb:person:6319962"
+      },
+      {
+        "name": "Hiromi Wakabayashi",
+        "role": "Creative Director",
+        "id": "tmdb:person:1970559"
+      },
+      {
+        "name": "Masanobu Nomura",
+        "role": "Art Direction",
+        "id": "tmdb:person:571459"
+      },
+      {
+        "name": "Irina Moraru",
+        "role": "Main Title Designer",
+        "id": "tmdb:person:6319961"
+      },
+      {
+        "name": "Toshiki Amata",
+        "role": "Art Designer",
+        "id": "tmdb:person:2569200"
+      },
+      {
+        "name": "Marek Madej",
+        "role": "Concept Artist",
+        "id": "tmdb:person:6319959"
+      },
+      {
+        "name": "Risa Fujii",
+        "role": "Background Designer",
+        "id": "tmdb:person:3336603"
+      },
+      {
+        "name": "Risa Fujii",
+        "role": "Assistant Art Director",
+        "id": "tmdb:person:3336603"
+      },
+      {
+        "name": "Yoshifumi Hagano",
+        "role": "Prop Designer",
+        "id": "tmdb:person:3052140"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Art Designer",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Prop Designer",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Yoshio Tanioka",
+        "role": "Background Designer",
+        "id": "tmdb:person:1672040"
+      },
+      {
+        "name": "Yumi Horikoshi",
+        "role": "Background Designer",
+        "id": "tmdb:person:3027653"
+      },
+      {
+        "name": "Yoshiyuki Kaneko",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:2383310"
+      },
+      {
+        "name": "Hiroki Arai",
+        "role": "Prop Designer",
+        "id": "tmdb:person:2933083"
+      },
+      {
+        "name": "Sho Oi",
+        "role": "Prop Designer",
+        "id": "tmdb:person:3221738"
+      },
+      {
+        "name": "Sho Oi",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:3221738"
+      },
+      {
+        "name": "Simon Dohi",
+        "role": "Prop Designer",
+        "id": "tmdb:person:2933098"
+      },
+      {
+        "name": "Chigusa Kiyota",
+        "role": "Prop Designer",
+        "id": "tmdb:person:3077239"
+      },
+      {
+        "name": "Yuto Kaneko",
+        "role": "Prop Designer",
+        "id": "tmdb:person:2691883"
+      },
+      {
+        "name": "Naoki Takeda",
+        "role": "Prop Designer",
+        "id": "tmdb:person:2517771"
+      },
+      {
+        "name": "Akihiro Sato",
+        "role": "Prop Designer",
+        "id": "tmdb:person:3077263"
+      },
+      {
+        "name": "Yoshito Takamine",
+        "role": "Background Designer",
+        "id": "tmdb:person:1624755"
+      },
+      {
+        "name": "Hiroyuki Imaishi",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:109191"
+      },
+      {
+        "name": "Hiroyuki Imaishi",
+        "role": "Other",
+        "id": "tmdb:person:109191"
+      },
+      {
+        "name": "Naoto Uchida",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:2814118"
+      },
+      {
+        "name": "Yoshihiro Miyajima",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:2649234"
+      },
+      {
+        "name": "Takuya Saito",
+        "role": "Prop Designer",
+        "id": "tmdb:person:3077260"
+      },
+      {
+        "name": "Takafumi Chida",
+        "role": "Prop Designer",
+        "id": "tmdb:person:3243414"
+      },
+      {
+        "name": "Shunpei Gunyasu",
+        "role": "Prop Designer",
+        "id": "tmdb:person:3077251"
+      },
+      {
+        "name": "Nobuhide Kariya",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:2954951"
+      },
+      {
+        "name": "Yuki Yokoyama",
+        "role": "Background Designer",
+        "id": "tmdb:person:3056856"
+      },
+      {
+        "name": "Youhei Tsuchiya",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:3126439"
+      },
+      {
+        "name": "Yoh Yoshinari",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:109197"
+      },
+      {
+        "name": "Sakiko Uda",
+        "role": "Prop Designer",
+        "id": "tmdb:person:2460823"
+      },
+      {
+        "name": "Sae Otani",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:3243420"
+      },
+      {
+        "name": "Kodai Nakano",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:2933078"
+      },
+      {
+        "name": "Sushio",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:1456817"
+      },
+      {
+        "name": "Shiori Miyazaki",
+        "role": "Prop Designer",
+        "id": "tmdb:person:2476502"
+      },
+      {
+        "name": "Nobutoshi Ogura",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:1511114"
+      },
+      {
+        "name": "Norika Kinoshita",
+        "role": "Background Designer",
+        "id": "tmdb:person:3699085"
+      },
+      {
+        "name": "Akira Amemiya",
+        "role": "Storyboard Artist",
+        "id": "tmdb:person:1515341"
+      },
+      {
+        "name": "Yoshiki Usa",
+        "role": "Script",
+        "id": "tmdb:person:1647650"
+      },
+      {
+        "name": "Yoshiki Usa",
+        "role": "Other",
+        "id": "tmdb:person:1647650"
+      },
+      {
+        "name": "Masahiko Otsuka",
+        "role": "Script",
+        "id": "tmdb:person:1164927"
+      },
+      {
+        "name": "Eric Heisserer",
+        "role": "Creative Consultant",
+        "id": "tmdb:person:115033"
+      },
+      {
+        "name": "Shoko Harada",
+        "role": "Special Effects",
+        "id": "tmdb:person:3699043"
+      },
+      {
+        "name": "Mutsumi Saitoh",
+        "role": "Special Effects",
+        "id": "tmdb:person:3108891"
+      },
+      {
+        "name": "Aya Kubota",
+        "role": "Special Effects",
+        "id": "tmdb:person:3002735"
+      },
+      {
+        "name": "Yoshiyuki Kaneko",
+        "role": "Director",
+        "id": "tmdb:person:2383310"
+      },
+      {
+        "name": "Yoshiyuki Kaneko",
+        "role": "Assistant Director",
+        "id": "tmdb:person:2383310"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Series Director",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Director",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Naoto Uchida",
+        "role": "Assistant Director",
+        "id": "tmdb:person:2814118"
+      },
+      {
+        "name": "Naoto Uchida",
+        "role": "Director",
+        "id": "tmdb:person:2814118"
+      },
+      {
+        "name": "Hiroyuki Imaishi",
+        "role": "Series Director",
+        "id": "tmdb:person:109191"
+      },
+      {
+        "name": "Akira Furukawa",
+        "role": "Director",
+        "id": "tmdb:person:2933079"
+      },
+      {
+        "name": "Akira Furukawa",
+        "role": "Assistant Director",
+        "id": "tmdb:person:2933079"
+      },
+      {
+        "name": "Kodai Nakano",
+        "role": "Director",
+        "id": "tmdb:person:2933078"
+      },
+      {
+        "name": "Hinako Takagi",
+        "role": "Assistant Director",
+        "id": "tmdb:person:3826342"
+      },
+      {
+        "name": "Hinako Takagi",
+        "role": "Director",
+        "id": "tmdb:person:3826342"
+      },
+      {
+        "name": "Hideki Tanaka",
+        "role": "Assistant Director",
+        "id": "tmdb:person:6575087"
+      },
+      {
+        "name": "Sae Otani",
+        "role": "Director",
+        "id": "tmdb:person:3243420"
+      },
+      {
+        "name": "Sae Otani",
+        "role": "Other",
+        "id": "tmdb:person:3243420"
+      },
+      {
+        "name": "Yuichi Shimodaira",
+        "role": "Director",
+        "id": "tmdb:person:2933081"
+      },
+      {
+        "name": "Momoka Ide",
+        "role": "Assistant Director",
+        "id": "tmdb:person:6564405"
+      },
+      {
+        "name": "Yuki Kawano",
+        "role": "Director",
+        "id": "tmdb:person:4501518"
+      },
+      {
+        "name": "Youhei Tsuchiya",
+        "role": "Director",
+        "id": "tmdb:person:3126439"
+      },
+      {
+        "name": "Nobuhide Kariya",
+        "role": "Director",
+        "id": "tmdb:person:2954951"
+      },
+      {
+        "name": "Mai Owada",
+        "role": "Director",
+        "id": "tmdb:person:3022718"
+      },
+      {
+        "name": "Tomoyuki Munehiro",
+        "role": "Director",
+        "id": "tmdb:person:2843730"
+      },
+      {
+        "name": "Takumi Ichikawa",
+        "role": "Assistant Director",
+        "id": "tmdb:person:3699086"
+      },
+      {
+        "name": "Masato Yoshitake",
+        "role": "Editor",
+        "id": "tmdb:person:1182783"
+      },
+      {
+        "name": "Kasumi Shibata",
+        "role": "Online Editor",
+        "id": "tmdb:person:3243393"
+      },
+      {
+        "name": "Kazuki Takahashi",
+        "role": "Online Editor",
+        "id": "tmdb:person:3498272"
+      },
+      {
+        "name": "Rina Oguchi",
+        "role": "Online Editor",
+        "id": "tmdb:person:3166568"
+      },
+      {
+        "name": "Yoshiki Usa",
+        "role": "Executive Producer",
+        "id": "tmdb:person:1647650"
+      },
+      {
+        "name": "Bartosz Sztybor",
+        "role": "Producer",
+        "id": "tmdb:person:3581626"
+      },
+      {
+        "name": "Bartosz Sztybor",
+        "role": "Executive Producer",
+        "id": "tmdb:person:3581626"
+      },
+      {
+        "name": "Saya Elder",
+        "role": "Executive Producer",
+        "id": "tmdb:person:3581628"
+      },
+      {
+        "name": "Saya Elder",
+        "role": "Producer",
+        "id": "tmdb:person:3581628"
+      },
+      {
+        "name": "Satoru Homma",
+        "role": "Producer",
+        "id": "tmdb:person:3581629"
+      },
+      {
+        "name": "Satoru Homma",
+        "role": "Executive Producer",
+        "id": "tmdb:person:3581629"
+      },
+      {
+        "name": "Tetsuya Seya",
+        "role": "Producer",
+        "id": "tmdb:person:6564260"
+      },
+      {
+        "name": "Rafa\u0142 Jaki",
+        "role": "Executive Producer",
+        "id": "tmdb:person:3581622"
+      },
+      {
+        "name": "Gabriel Moszkowski",
+        "role": "Producer",
+        "id": "tmdb:person:1696365"
+      },
+      {
+        "name": "Taiki Sakurai",
+        "role": "Executive Producer",
+        "id": "tmdb:person:235480"
+      },
+      {
+        "name": "Jan Rosner",
+        "role": "Producer",
+        "id": "tmdb:person:6564264"
+      },
+      {
+        "name": "Shunsuke Shida",
+        "role": "Other",
+        "id": "tmdb:person:2884008"
+      },
+      {
+        "name": "Dylan Thomas",
+        "role": "Executive Producer",
+        "id": "tmdb:person:3581623"
+      },
+      {
+        "name": "Shuntaro Koike",
+        "role": "Production Manager",
+        "id": "tmdb:person:3699051"
+      },
+      {
+        "name": "Mao Nakagawa",
+        "role": "Production Manager",
+        "id": "tmdb:person:3699036"
+      },
+      {
+        "name": "Hideki Iwasawa",
+        "role": "Production Manager",
+        "id": "tmdb:person:3243403"
+      },
+      {
+        "name": "Yoshitaka Togo",
+        "role": "Production Manager",
+        "id": "tmdb:person:3243404"
+      },
+      {
+        "name": "Naoto Setoguchi",
+        "role": "Production Manager",
+        "id": "tmdb:person:3243405"
+      },
+      {
+        "name": "Takuya Narumi",
+        "role": "Production Manager",
+        "id": "tmdb:person:3699073"
+      },
+      {
+        "name": "Tadashi Hayashida",
+        "role": "Production Manager",
+        "id": "tmdb:person:3699075"
+      },
+      {
+        "name": "Hiroki Urakari",
+        "role": "Sound Director",
+        "id": "tmdb:person:2395221"
+      },
+      {
+        "name": "Airi Kobayashi",
+        "role": "Sound Effects",
+        "id": "tmdb:person:3212168"
+      },
+      {
+        "name": "Hiroki Nozaki",
+        "role": "Sound Effects",
+        "id": "tmdb:person:1579844"
+      },
+      {
+        "name": "Marcin Przyby\u0142owicz",
+        "role": "Music Consultant",
+        "id": "tmdb:person:1624846"
+      },
+      {
+        "name": "Kazuyuki Kikuchi",
+        "role": "Sound Designer",
+        "id": "tmdb:person:3699046"
+      },
+      {
+        "name": "Rosa Walton",
+        "role": "Songs",
+        "id": "tmdb:person:4009490"
+      },
+      {
+        "name": "Audrey Tait",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:3657984"
+      },
+      {
+        "name": "Laurence Tolhurst",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:1523784"
+      },
+      {
+        "name": "Robert 'Bob' Hardy",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:1227398"
+      },
+      {
+        "name": "Jasper Yang",
+        "role": "Sound Designer",
+        "id": "tmdb:person:6319956"
+      },
+      {
+        "name": "Krzysztof Popiel",
+        "role": "Sound Designer",
+        "id": "tmdb:person:6319955"
+      },
+      {
+        "name": "Piotr Malinowski",
+        "role": "Sound Designer",
+        "id": "tmdb:person:4733020"
+      },
+      {
+        "name": "Daiki Takagi",
+        "role": "Sound Editor",
+        "id": "tmdb:person:3699044"
+      },
+      {
+        "name": "Julian Corrie",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:3240379"
+      },
+      {
+        "name": "Dino Bardot",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:2512056"
+      },
+      {
+        "name": "Akira Yamaoka",
+        "role": "Original Music Composer",
+        "id": "tmdb:person:8301"
+      },
+      {
+        "name": "Hanna Kubiak",
+        "role": "Sound Designer",
+        "id": "tmdb:person:6319954"
+      },
+      {
+        "name": "Tsuneo Imahori",
+        "role": "Original Music Composer",
+        "id": "tmdb:person:1793268"
+      },
+      {
+        "name": "Petite Meller",
+        "role": "Songs",
+        "id": "tmdb:person:5514037"
+      },
+      {
+        "name": "Michael Dempsey",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:5707041"
+      },
+      {
+        "name": "Robert Smith",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:206581"
+      },
+      {
+        "name": "Krzysztof Lipka",
+        "role": "Sound Designer",
+        "id": "tmdb:person:6319953"
+      },
+      {
+        "name": "Alex Kapranos",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:1759261"
+      },
+      {
+        "name": "Patryk Wozniak",
+        "role": "Sound Designer",
+        "id": "tmdb:person:6319957"
+      },
+      {
+        "name": "Pawel Daudzward",
+        "role": "Sound Designer",
+        "id": "tmdb:person:6319952"
+      },
+      {
+        "name": "Grzegorz Michalak",
+        "role": "Sound Designer",
+        "id": "tmdb:person:6319958"
+      },
+      {
+        "name": "Dawid Podsiad\u0142o",
+        "role": "Songs",
+        "id": "tmdb:person:2203246"
+      },
+      {
+        "name": "Kuba Sojka",
+        "role": "Songs",
+        "id": "tmdb:person:6564295"
+      },
+      {
+        "name": "Rico Nasty",
+        "role": "Songs",
+        "id": "tmdb:person:2800894"
+      },
+      {
+        "name": "Paul Thomson",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:3657980"
+      },
+      {
+        "name": "Nick McCarthy",
+        "role": "Theme Song Performance",
+        "id": "tmdb:person:1227399"
+      },
+      {
+        "name": "Yoh Yoshinari",
+        "role": "Animation Director",
+        "id": "tmdb:person:109197"
+      },
+      {
+        "name": "Yoh Yoshinari",
+        "role": "Character Designer",
+        "id": "tmdb:person:109197"
+      },
+      {
+        "name": "Yoh Yoshinari",
+        "role": "Supervising Animation Director",
+        "id": "tmdb:person:109197"
+      },
+      {
+        "name": "Yoh Yoshinari",
+        "role": "Key Animation",
+        "id": "tmdb:person:109197"
+      },
+      {
+        "name": "Yukiko Kakita",
+        "role": "Color Designer",
+        "id": "tmdb:person:1506173"
+      },
+      {
+        "name": "Tetsuya Kawata",
+        "role": "Compositing Artist",
+        "id": "tmdb:person:2382855"
+      },
+      {
+        "name": "Tetsuya Kawata",
+        "role": "Compositing Lead",
+        "id": "tmdb:person:2382855"
+      },
+      {
+        "name": "Ichigo Kanno",
+        "role": "Animation Director",
+        "id": "tmdb:person:3052141"
+      },
+      {
+        "name": "Ichigo Kanno",
+        "role": "Key Animation",
+        "id": "tmdb:person:3052141"
+      },
+      {
+        "name": "Ichigo Kanno",
+        "role": "Character Designer",
+        "id": "tmdb:person:3052141"
+      },
+      {
+        "name": "Yuto Kaneko",
+        "role": "Animation Director",
+        "id": "tmdb:person:2691883"
+      },
+      {
+        "name": "Yuto Kaneko",
+        "role": "Key Animation",
+        "id": "tmdb:person:2691883"
+      },
+      {
+        "name": "Yuto Kaneko",
+        "role": "Character Designer",
+        "id": "tmdb:person:2691883"
+      },
+      {
+        "name": "Yusuke Yoshigaki",
+        "role": "Character Designer",
+        "id": "tmdb:person:1297534"
+      },
+      {
+        "name": "Yusuke Yoshigaki",
+        "role": "Key Animation",
+        "id": "tmdb:person:1297534"
+      },
+      {
+        "name": "Yusuke Yoshigaki",
+        "role": "Animation Director",
+        "id": "tmdb:person:1297534"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Animation Director",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Kai Ikarashi",
+        "role": "Key Animation",
+        "id": "tmdb:person:1970560"
+      },
+      {
+        "name": "Takuya Saito",
+        "role": "Key Animation",
+        "id": "tmdb:person:3077260"
+      },
+      {
+        "name": "Koji Aramaki",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:3699779"
+      },
+      {
+        "name": "Shoichi Kita",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:3699781"
+      },
+      {
+        "name": "Hiroki Arai",
+        "role": "Animation Director",
+        "id": "tmdb:person:2933083"
+      },
+      {
+        "name": "Hiroki Arai",
+        "role": "Key Animation",
+        "id": "tmdb:person:2933083"
+      },
+      {
+        "name": "Ryoma Sanpei",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:3699782"
+      },
+      {
+        "name": "Hiroyuki Imaishi",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:109191"
+      },
+      {
+        "name": "Natsumi Nagahama",
+        "role": "3D Director",
+        "id": "tmdb:person:3699068"
+      },
+      {
+        "name": "Tsuyoshi Kusano",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:1971724"
+      },
+      {
+        "name": "Sebastian Kalemba",
+        "role": "Animation Director",
+        "id": "tmdb:person:6319963"
+      },
+      {
+        "name": "Eiji Tsuchida",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:1606738"
+      },
+      {
+        "name": "Hiromi Wakabayashi",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:1970559"
+      },
+      {
+        "name": "Yoshiyuki Kaneko",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:2383310"
+      },
+      {
+        "name": "Shigeto Koyama",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:1520806"
+      },
+      {
+        "name": "Mai Yoneyama",
+        "role": "Opening/Ending Animation",
+        "id": "tmdb:person:3052155"
+      },
+      {
+        "name": "Shinya Kuwabara",
+        "role": "Compositing Artist",
+        "id": "tmdb:person:3544370"
+      },
+      {
+        "name": "Simon Dohi",
+        "role": "Key Animation",
+        "id": "tmdb:person:2933098"
+      },
+      {
+        "name": "Simon Dohi",
+        "role": "Animation Director",
+        "id": "tmdb:person:2933098"
+      },
+      {
+        "name": "Katsunori Shiradou",
+        "role": "Compositing Artist",
+        "id": "tmdb:person:2803136"
+      },
+      {
+        "name": "Yuichiro Tozawa",
+        "role": "Compositing Artist",
+        "id": "tmdb:person:1869799"
+      },
+      {
+        "name": "Yoshifumi Hagano",
+        "role": "Key Animation",
+        "id": "tmdb:person:3052140"
+      },
+      {
+        "name": "Yoshifumi Hagano",
+        "role": "Animation Director",
+        "id": "tmdb:person:3052140"
+      },
+      {
+        "name": "Wataru Goto",
+        "role": "Compositing Artist",
+        "id": "tmdb:person:3718910"
+      },
+      {
+        "name": "Takafumi Chida",
+        "role": "Key Animation",
+        "id": "tmdb:person:3243414"
+      },
+      {
+        "name": "Tetsuya Hasegawa",
+        "role": "Key Animation",
+        "id": "tmdb:person:1970415"
+      },
+      {
+        "name": "Tetsuya Hasegawa",
+        "role": "Animation Director",
+        "id": "tmdb:person:1970415"
+      },
+      {
+        "name": "Akihiro Sato",
+        "role": "Key Animation",
+        "id": "tmdb:person:3077263"
+      },
+      {
+        "name": "Shunpei Gunyasu",
+        "role": "Key Animation",
+        "id": "tmdb:person:3077251"
+      },
+      {
+        "name": "Rino Kodama",
+        "role": "Key Animation",
+        "id": "tmdb:person:3243416"
+      },
+      {
+        "name": "Sho Oi",
+        "role": "Key Animation",
+        "id": "tmdb:person:3221738"
+      },
+      {
+        "name": "Atsushi Yoneda",
+        "role": "Key Animation",
+        "id": "tmdb:person:3324966"
+      },
+      {
+        "name": "Chigusa Kiyota",
+        "role": "Key Animation",
+        "id": "tmdb:person:3077239"
+      },
+      {
+        "name": "Yuka Asano",
+        "role": "Key Animation",
+        "id": "tmdb:person:3179909"
+      },
+      {
+        "name": "Yuko Kobayashi",
+        "role": "Key Animation",
+        "id": "tmdb:person:3153617"
+      },
+      {
+        "name": "Emi Tamura",
+        "role": "Key Animation",
+        "id": "tmdb:person:2933082"
+      },
+      {
+        "name": "Emi Tamura",
+        "role": "Animation Director",
+        "id": "tmdb:person:2933082"
+      },
+      {
+        "name": "Hidenori Makino",
+        "role": "Key Animation",
+        "id": "tmdb:person:3077265"
+      },
+      {
+        "name": "Naoki Takeda",
+        "role": "Key Animation",
+        "id": "tmdb:person:2517771"
+      },
+      {
+        "name": "Naoki Takeda",
+        "role": "Animation Director",
+        "id": "tmdb:person:2517771"
+      },
+      {
+        "name": "Toshiharu Sugie",
+        "role": "Key Animation",
+        "id": "tmdb:person:1848300"
+      },
+      {
+        "name": "Asami Shimizu",
+        "role": "Key Animation",
+        "id": "tmdb:person:2032235"
+      },
+      {
+        "name": "Eiko Hiramoto",
+        "role": "Compositing Artist",
+        "id": "tmdb:person:3718929"
+      },
+      {
+        "name": "Sakiko Uda",
+        "role": "Animation Director",
+        "id": "tmdb:person:2460823"
+      },
+      {
+        "name": "Sakiko Uda",
+        "role": "Key Animation",
+        "id": "tmdb:person:2460823"
+      },
+      {
+        "name": "Karin Tu",
+        "role": "Key Animation",
+        "id": "tmdb:person:3699077"
+      },
+      {
+        "name": "Hirotaka Nii",
+        "role": "Key Animation",
+        "id": "tmdb:person:2976636"
+      },
+      {
+        "name": "Chisato Hosokawa",
+        "role": "Key Animation",
+        "id": "tmdb:person:3699071"
+      },
+      {
+        "name": "Kazuki Chiba",
+        "role": "Key Animation",
+        "id": "tmdb:person:3077264"
+      },
+      {
+        "name": "Sushio",
+        "role": "Key Animation",
+        "id": "tmdb:person:1456817"
+      },
+      {
+        "name": "Sushio",
+        "role": "Animation Director",
+        "id": "tmdb:person:1456817"
+      },
+      {
+        "name": "Toshiyuki Sato",
+        "role": "Key Animation",
+        "id": "tmdb:person:1970416"
+      },
+      {
+        "name": "Harumi Kurihara",
+        "role": "Compositing Artist",
+        "id": "tmdb:person:3168140"
+      }
+    ],
+    "creators": [
+      {
+        "name": "Kai Ikarashi",
+        "role": "Director",
+        "id": "tmdb:person:1970560",
+        "episodeCount": 11
+      },
+      {
+        "name": "Hiroyuki Imaishi",
+        "role": "Director",
+        "id": "tmdb:person:109191",
+        "episodeCount": 10
+      }
+    ],
+    "franchises": [],
+    "relatedLabel": "TMDB recommendations",
+    "fallbackImage": "edgerunners.jpg",
+    "themes": [
+      "Anime",
+      "Cyberpunk",
+      "Found family"
+    ],
+    "editorialRelated": [
+      "igdb:game:1877",
+      "tmdb:movie:335984"
+    ],
+    "metadataFetchedAt": "2026-11-16T14:00:50.715238+00:00"
+  }
+]

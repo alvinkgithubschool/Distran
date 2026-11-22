@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Distran: Tauri app",
+      "command": "pnpm app",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Distran: browser preview",
+      "command": "pnpm dev",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

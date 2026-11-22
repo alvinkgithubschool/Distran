@@ -1,0 +1,531 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+fill_3f46df62:
+  - '#A9C24A'
+effect_f73b3804:
+  filter: blur(40px)
+fill_aae41927:
+  - '#39D0D8'
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 8 Medium 11:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.25em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_556c5aa7:
+  - rgba(255, 255, 255, 0.25)
+fill_e3bcc91d:
+  - '#F2EFE8'
+effect_72672f49:
+  backdropFilter: blur(10px)
+fill_aa25df6b:
+  - rgba(255, 255, 255, 0.4)
+layout_69f1f18c:
+  mode: column
+  padding: 16px
+  sizing:
+    horizontal: fill
+    vertical: fixed
+  dimensions:
+    height: 120
+layout_a3708cea:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 80
+    y: -30
+  dimensions:
+    width: 100
+    height: 100
+effect_49a8bcf3:
+  filter: blur(30px)
+fill_0c47ee96:
+  - type: IMAGE
+    imageRef: b9f21958d7cb19fa082cc8e609f5fcd92822b317
+    scaleMode: FILL
+    objectFit: cover
+    isBackground: false
+    imageDownloadArguments:
+      needsCropping: false
+      requiresImageDimensions: false
+Distran/Heading/Abel 20 Regular 25:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 20
+  lineHeight: 20px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 28:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.1875em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_71d45aea:
+  - '#E8A848'
+layout_7a9e3e54:
+  mode: column
+  padding: 16px
+  sizing:
+    horizontal: fill
+    vertical: fixed
+  dimensions:
+    height: 100
+layout_f42a0a32:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 70
+    y: -30
+  dimensions:
+    width: 90
+    height: 90
+effect_4d43e5ce:
+  filter: blur(27.5px)
+style_c539baf6:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 18
+  lineHeight: 18px
+  letterSpacing: 0.0111em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_641de1c3:
+  - '#A261DA'
+fill_06f88e6e:
+  - '#D8B483'
+Distran/Utility/DM Mono 8 Medium 20:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.2em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_56d3c81c:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: hug
+Distran/Utility/DM Mono 8 Medium 4:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_92bc56c4:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 60
+    y: -20
+  dimensions:
+    width: 80
+    height: 80
+effect_70a93cc1:
+  filter: blur(25px)
+layout_aa5cfa92:
+  mode: column
+  justifyContent: center
+  alignItems: center
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 36
+    height: 36
+Distran/Body/Abel 16 Regular 16:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 16
+  lineHeight: 16px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Body/Abel 13 Regular 17:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 13
+  lineHeight: 16px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_18bb4ad9:
+  - '#E05A4F'
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_a111c4b6:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 24
+    height: 24
+fill_97d170e1: []
+
+ELEMENTS:
+EL-e9c4af71:
+  type: FRAME
+  layout:
+    mode: column
+    gap: 2px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-8d28aa4b:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    gap: 10px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-f0a8ff53:
+  type: FRAME
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 176
+      height: 120
+  fills: fill_0c47ee96
+  opacity: 0.20000000298023224
+EL-d2f5d0a6:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 22
+      height: 22
+EL-3cbb4930:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 16px
+    justifyContent: space-between
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 176
+      height: 120
+EL-6550384c:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    sizing:
+      horizontal: fill
+      vertical: fixed
+    dimensions:
+      height: 1
+EL-e0e1330a:
+  type: FRAME
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 176
+      height: 100
+  fills: fill_0c47ee96
+  opacity: 0.20000000298023224
+EL-9d271db5:
+  type: FRAME
+  layout:
+    mode: column
+    gap: 2px
+    sizing:
+      horizontal: hug
+      vertical: hug
+    position: absolute
+    locationRelativeToParent:
+      x: 16
+      y: 62
+EL-f5d8aba9:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 12px
+    gap: 8px
+    sizing:
+      horizontal: fixed
+      vertical: fill
+    dimensions:
+      width: 148
+  fills:
+    - rgba(0, 0, 0, 0.5)
+  strokes:
+    - rgba(242, 239, 232, 0.08)
+  strokeWeight: 1px
+  effects:
+    backdropFilter: blur(12px)
+  borderRadius: 12px
+EL-43323dcb:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    gap: 2px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-8aa96b47:
+  type: TEXT
+  layout: layout_177c5efc
+  text: Studio
+  textStyle: Distran/Utility/DM Mono 8 Medium 4
+  fills: fill_aa25df6b
+EL-29c08605:
+  type: FRAME
+  layout: layout_92bc56c4
+  fills: fill_641de1c3
+  effects: effect_70a93cc1
+  opacity: 0.11999999731779099
+  borderRadius: 16777200px
+EL-eb179b8a:
+  type: FRAME
+  layout: layout_aa5cfa92
+  fills:
+    - '#140B1A'
+  borderRadius: 16777200px
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-8257d511:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-31241652:
+  type: IMAGE-SVG
+  layout: layout_a111c4b6
+  fills: fill_97d170e1
+  opacity: 0.6000000238418579
+
+COMPONENTS:
+61:8:
+  id: 61:8
+  key: 0d4b4be5cf4766e8c5830107349e6abd40800be1
+  name: 2-home-11
+
+NODES:
+[FRAME] "Distran / Discover" #14:9162 layout={"mode":"none","sizing":{}} fills=["#070708"]
+  [FRAME] "scroll-content" #56:784 layout={"mode":"column","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":874}}
+    [FRAME] "discover-hero" #56:785 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":402,"height":200}}
+      [FRAME] "hero-bg" #56:786 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":200}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(13, 13, 16, 1) 0%, rgba(7, 7, 8, 1) 100%)"}]
+      [FRAME] "blob-tl" #56:787 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":-40,"y":-40},"dimensions":{"width":180,"height":180}} fills=fill_3f46df62 effects=effect_f73b3804 opacity=0.05999999865889549 borderRadius=16777200px
+      [FRAME] "blob-tr" #56:788 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":260,"y":-60},"dimensions":{"width":160,"height":160}} fills=fill_aae41927 effects=effect_f73b3804 opacity=0.07000000029802322 borderRadius=16777200px
+      [FRAME] "fade-bottom" #56:789 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":100},"dimensions":{"width":402,"height":100}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(7, 7, 8, 0) 0%, rgba(7, 7, 8, 1) 100%)"}]
+      [FRAME] "header-content" #56:790 layout={"mode":"column","padding":"52px 20px 0px","alignItems":"stretch","gap":"16px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402}}
+        [FRAME] "title-row" #56:791 layout={"mode":"row","alignSelf":"stretch","justifyContent":"space-between","alignItems":"flex-end","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [FRAME] "Frame" #56:792 template=EL-e9c4af71
+            [TEXT] #56:793 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Explore everything"
+            [TEXT] #56:794 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":36,"lineHeight":"34px","letterSpacing":"0.0083em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Discover"
+          [FRAME] "buddy-chip" #56:795 layout={"mode":"row","padding":"6px 10px","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=["rgba(255, 255, 255, 0.06)"] strokes=["rgba(255, 255, 255, 0.1)"] strokeWeight=1px effects=effect_72672f49 borderRadius=16777200px
+            [IMAGE-SVG] "buddy-icon-sm" #56:796 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":10,"height":10}}
+            [TEXT] #56:798 layout=layout_177c5efc fills=["rgba(242, 239, 232, 0.8)"] textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"letterSpacing":"0.15em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Buddy"
+        [FRAME] "search-bar" #56:799 layout={"mode":"row","alignSelf":"stretch","padding":"12px 14px","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=["rgba(255, 255, 255, 0.04)"] strokes=["rgba(255, 255, 255, 0.09)"] strokeWeight=1px borderRadius=12px
+          [IMAGE-SVG] "search-icon" #56:800 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":14.92,"height":16}}
+          [TEXT] #56:803 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.22)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":15,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Search every format…"
+    [FRAME] "formats-section" #56:804 layout={"mode":"column","alignSelf":"stretch","padding":"0px 20px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "section-label" #56:805 layout={"mode":"row","alignSelf":"stretch","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [TEXT] #56:806 layout=layout_177c5efc fills=fill_556c5aa7 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"letterSpacing":"0.25em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Browse by format"
+      [FRAME] "row1" #56:807 template=EL-8d28aa4b
+        [FRAME] "card-games" #56:808 layout=layout_69f1f18c fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(19, 27, 9, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=["rgba(169, 194, 74, 0.1)"] strokeWeight=1px effects={"boxShadow":"0px 8px 20px 0px rgba(169, 194, 74, 0.05)"} borderRadius=12px
+          [FRAME] "blob" #56:809 layout=layout_a3708cea fills=fill_3f46df62 effects=effect_49a8bcf3 opacity=0.25 borderRadius=16777200px
+          [FRAME] "grain" #56:810 template=EL-f0a8ff53
+          [IMAGE-SVG] "icon" #56:811 template=EL-d2f5d0a6
+          [FRAME] "card-bottom" #56:817 template=EL-3cbb4930
+            [FRAME] "Frame" #56:818 template=EL-6550384c
+            [FRAME] "Frame" #56:819 template=EL-e9c4af71
+              [TEXT] #56:820 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Heading/Abel 20 Regular 25" text="Games"
+              [TEXT] #56:821 layout=layout_177c5efc fills=["rgba(169, 194, 74, 0.5)"] textStyle="Distran/Utility/DM Mono 8 Medium 28" text="7 on Distran"
+        [FRAME] "card-movies" #56:822 layout=layout_69f1f18c fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(26, 20, 12, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=["rgba(232, 168, 72, 0.1)"] strokeWeight=1px effects={"boxShadow":"0px 8px 20px 0px rgba(232, 168, 72, 0.05)"} borderRadius=12px
+          [FRAME] "blob" #56:823 layout=layout_a3708cea fills=fill_71d45aea effects=effect_49a8bcf3 opacity=0.25 borderRadius=16777200px
+          [FRAME] "grain" #56:824 template=EL-f0a8ff53
+          [IMAGE-SVG] "icon" #56:825 template=EL-d2f5d0a6
+          [FRAME] "card-bottom" #56:831 template=EL-3cbb4930
+            [FRAME] "Frame" #56:832 template=EL-6550384c
+            [FRAME] "Frame" #56:833 template=EL-e9c4af71
+              [TEXT] #56:834 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Heading/Abel 20 Regular 25" text="Movies"
+              [TEXT] #56:835 layout=layout_177c5efc fills=["rgba(232, 168, 72, 0.5)"] textStyle="Distran/Utility/DM Mono 8 Medium 28" text="5 on Distran"
+      [FRAME] "row2" #56:836 template=EL-8d28aa4b
+        [FRAME] "card-tv" #56:837 layout=layout_7a9e3e54 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(11, 20, 24, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=["rgba(57, 208, 216, 0.1)"] strokeWeight=1px effects={"boxShadow":"0px 6px 16px 0px rgba(57, 208, 216, 0.05)"} borderRadius=12px
+          [FRAME] "blob" #56:838 layout=layout_f42a0a32 fills=fill_aae41927 effects=effect_4d43e5ce opacity=0.20000000298023224 borderRadius=16777200px
+          [FRAME] "grain" #56:839 template=EL-e0e1330a
+          [IMAGE-SVG] "icon" #56:840 template=EL-d2f5d0a6
+          [FRAME] "card-bottom" #56:843 template=EL-9d271db5
+            [TEXT] #56:844 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_c539baf6 text="TV"
+            [TEXT] #56:845 layout=layout_177c5efc fills=["rgba(57, 208, 216, 0.5)"] textStyle="Distran/Utility/DM Mono 8 Medium 28" text="2 on Distran"
+        [FRAME] "card-music" #56:846 layout=layout_7a9e3e54 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(20, 16, 30, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=["rgba(162, 97, 218, 0.1)"] strokeWeight=1px effects={"boxShadow":"0px 6px 16px 0px rgba(162, 97, 218, 0.05)"} borderRadius=12px
+          [FRAME] "blob" #56:847 layout=layout_f42a0a32 fills=fill_641de1c3 effects=effect_4d43e5ce opacity=0.2199999988079071 borderRadius=16777200px
+          [FRAME] "grain" #56:848 template=EL-e0e1330a
+          [IMAGE-SVG] "icon" #56:849 template=EL-d2f5d0a6
+          [FRAME] "card-bottom" #56:853 template=EL-9d271db5
+            [TEXT] #56:854 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_c539baf6 text="Music"
+            [TEXT] #56:855 layout=layout_177c5efc fills=["rgba(162, 97, 218, 0.5)"] textStyle="Distran/Utility/DM Mono 8 Medium 28" text="4 on Distran"
+      [FRAME] "row3" #56:856 template=EL-8d28aa4b
+        [FRAME] "card-books" #56:857 layout={"mode":"column","padding":"16px","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":215,"height":100}} fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(26, 19, 10, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=["rgba(216, 180, 131, 0.1)"] strokeWeight=1px effects={"boxShadow":"0px 6px 16px 0px rgba(216, 180, 131, 0.05)"} borderRadius=12px
+          [FRAME] "blob" #56:858 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":120,"y":-30},"dimensions":{"width":90,"height":90}} fills=fill_06f88e6e effects=effect_4d43e5ce opacity=0.2199999988079071 borderRadius=16777200px
+          [FRAME] "grain" #56:859 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":215,"height":100}} fills=fill_0c47ee96 opacity=0.20000000298023224
+          [IMAGE-SVG] "icon" #56:860 template=EL-d2f5d0a6
+          [FRAME] "card-bottom" #56:863 template=EL-9d271db5
+            [TEXT] #56:864 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_c539baf6 text="Books"
+            [TEXT] #56:865 layout=layout_177c5efc fills=["rgba(216, 180, 131, 0.5)"] textStyle="Distran/Utility/DM Mono 8 Medium 28" text="4 on Distran"
+        [FRAME] "card-social" #56:866 layout=layout_7a9e3e54 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(16, 16, 32, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=["rgba(127, 159, 240, 0.1)"] strokeWeight=1px effects={"boxShadow":"0px 6px 16px 0px rgba(127, 159, 240, 0.05)"} borderRadius=12px
+          [FRAME] "blob" #56:867 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":50,"y":-30},"dimensions":{"width":90,"height":90}} fills=["#7F9FF0"] effects=effect_4d43e5ce opacity=0.20000000298023224 borderRadius=16777200px
+          [FRAME] "grain" #56:868 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":145,"height":100}} fills=fill_0c47ee96 opacity=0.20000000298023224
+          [IMAGE-SVG] "icon" #56:869 template=EL-d2f5d0a6
+          [FRAME] "card-bottom" #56:872 template=EL-9d271db5
+            [TEXT] #56:873 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_c539baf6 text="Social"
+            [TEXT] #56:874 layout=layout_177c5efc fills=["rgba(127, 159, 240, 0.5)"] textStyle="Distran/Utility/DM Mono 8 Medium 28" text="2 on Distran"
+    [FRAME] "buddy-strip" #56:875 layout={"mode":"column","alignSelf":"stretch","padding":"20px 20px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "buddy-card" #56:876 layout={"mode":"row","alignSelf":"stretch","padding":"14px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%)"}] strokes=["rgba(255, 255, 255, 0.08)"] strokeWeight=1px effects=effect_72672f49 borderRadius=14px
+        [FRAME] "buddy-icon" #56:877 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":44,"height":44}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0.05) 100%)"}] borderRadius=16777200px
+          [IMAGE-SVG] "Icon" #56:878 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":18,"height":18}}
+        [FRAME] "buddy-text" #56:882 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [TEXT] #56:883 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.38)"] textStyle="Distran/Utility/DM Mono 8 Medium 20" text="From Buddy · For You"
+          [TEXT] #56:884 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":15,"lineHeight":"19px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Your taste runs dark — try Disco Elysium next"
+        [FRAME] "arrow" #56:885 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":28,"height":28}}
+          [IMAGE-SVG] "arrow-icon" #56:886 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":14,"height":14}}
+    [FRAME] "creators-section" #56:889 layout={"mode":"column","alignSelf":"stretch","padding":"24px 0px 0px","alignItems":"stretch","gap":"14px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "section-head" #56:890 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "Frame" #56:891 template=EL-e9c4af71
+          [TEXT] #56:892 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Community"
+          [TEXT] #56:893 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Heading/Abel 20 Regular 25" text="Creators to Follow"
+        [TEXT] #56:894 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.31)"] textStyle="Distran/Utility/DM Mono 8 Medium 4" text="See All"
+      [FRAME] "creators-rail" #56:895 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px 4px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":128}}
+        [FRAME] "creator-cdpr" #56:896 template=EL-f5d8aba9
+          [FRAME] "blob-creator" #56:897 layout=layout_92bc56c4 fills=fill_71d45aea effects=effect_70a93cc1 opacity=0.11999999731779099 borderRadius=16777200px
+          [FRAME] "avatar" #56:898 layout=layout_aa5cfa92 fills=["#1C150A"] borderRadius=16777200px
+            [TEXT] #56:899 layout=layout_177c5efc fills=fill_71d45aea textStyle="Distran/Body/Abel 16 Regular 16" text="C"
+          [FRAME] "Frame" #56:900 template=EL-43323dcb
+            [TEXT] #56:901 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 17" text="CD PROJEKT RED"
+            [TEXT] #56:902 template=EL-8aa96b47
+        [FRAME] "creator-trigger" #56:903 template=EL-f5d8aba9
+          [FRAME] "blob-creator" #56:904 layout=layout_92bc56c4 fills=fill_18bb4ad9 effects=effect_70a93cc1 opacity=0.11999999731779099 borderRadius=16777200px
+          [FRAME] "avatar" #56:905 layout=layout_aa5cfa92 fills=["#1A0B0D"] borderRadius=16777200px
+            [TEXT] #56:906 layout=layout_177c5efc fills=fill_18bb4ad9 textStyle="Distran/Body/Abel 16 Regular 16" text="S"
+          [FRAME] "Frame" #56:907 template=EL-43323dcb
+            [TEXT] #56:908 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 17" text="Studio Trigger"
+            [TEXT] #56:909 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 8 Medium 4" text="Animation Studio"
+        [FRAME] "creator-villeneuve" #56:910 template=EL-f5d8aba9
+          [FRAME] "blob-creator" #56:911 layout=layout_92bc56c4 fills=fill_06f88e6e effects=effect_70a93cc1 opacity=0.11999999731779099 borderRadius=16777200px
+          [FRAME] "avatar" #56:912 layout=layout_aa5cfa92 fills=["#1A140C"] borderRadius=16777200px
+            [TEXT] #56:913 layout=layout_177c5efc fills=fill_06f88e6e textStyle="Distran/Body/Abel 16 Regular 16" text="D"
+          [FRAME] "Frame" #56:914 template=EL-43323dcb
+            [TEXT] #56:915 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 17" text="Denis Villeneuve"
+            [TEXT] #56:916 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 8 Medium 4" text="Director"
+        [FRAME] "creator-gibson" #56:917 template=EL-f5d8aba9
+          [FRAME] "blob-creator" #56:918 template=EL-29c08605
+          [FRAME] "avatar" #56:919 template=EL-eb179b8a
+            [TEXT] #56:920 layout=layout_177c5efc fills=fill_641de1c3 textStyle="Distran/Body/Abel 16 Regular 16" text="W"
+          [FRAME] "Frame" #56:921 template=EL-43323dcb
+            [TEXT] #56:922 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 17" text="William Gibson"
+            [TEXT] #56:923 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 8 Medium 4" text="Author"
+        [FRAME] "creator-from" #56:924 template=EL-f5d8aba9
+          [FRAME] "blob-creator" #56:925 layout=layout_92bc56c4 fills=fill_3f46df62 effects=effect_70a93cc1 opacity=0.11999999731779099 borderRadius=16777200px
+          [FRAME] "avatar" #56:926 layout=layout_aa5cfa92 fills=["#101508"] borderRadius=16777200px
+            [TEXT] #56:927 layout=layout_177c5efc fills=fill_3f46df62 textStyle="Distran/Body/Abel 16 Regular 16" text="F"
+          [FRAME] "Frame" #56:928 template=EL-43323dcb
+            [TEXT] #56:929 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 17" text="FromSoftware"
+            [TEXT] #56:930 template=EL-8aa96b47
+        [FRAME] "creator-perturbator" #56:931 template=EL-f5d8aba9
+          [FRAME] "blob-creator" #56:932 template=EL-29c08605
+          [FRAME] "avatar" #56:933 template=EL-eb179b8a
+            [TEXT] #56:934 layout=layout_177c5efc fills=fill_641de1c3 textStyle="Distran/Body/Abel 16 Regular 16" text="P"
+          [FRAME] "Frame" #56:935 template=EL-43323dcb
+            [TEXT] #56:936 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle="Distran/Body/Abel 13 Regular 17" text="Perturbator"
+            [TEXT] #56:937 layout=layout_177c5efc fills=fill_aa25df6b textStyle="Distran/Utility/DM Mono 8 Medium 4" text="Artist"
+    [FRAME] "bottom-pad" #56:938 layout={"mode":"column","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":100}}
+  [FRAME] "status-bar-spacer" #56:774 layout={"mode":"row","padding":"0px 20px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":44}}
+    [TEXT] #56:775 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+    [FRAME] "Frame" #56:776 layout={"mode":"row","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1}}
+    [FRAME] "Frame" #56:777 layout={"mode":"row","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+      [IMAGE-SVG] "signal" #56:778 template=EL-cc8debb7
+      [IMAGE-SVG] "wifi" #56:780 template=EL-cc8debb7
+      [IMAGE-SVG] "battery" #56:782 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+  [FRAME] "Navigation" #67:74 layout={"mode":"row","padding":"0px 12px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":808},"dimensions":{"width":402,"height":66}} fills=["rgba(27, 27, 27, 0.5)"] effects={"backdropFilter":"blur(25px)"} borderRadius="10px 10px 2px 2px"
+    [FRAME] "Nav / Home" #67:366 template=EL-8257d511
+      [IMAGE-SVG] "Home icon" #67:367 layout=layout_a111c4b6 fills=fill_97d170e1 opacity=0.6000000238418579 componentId=61:8
+    [FRAME] "Nav / Discover / Active" #67:370 template=EL-8257d511
+      [IMAGE-SVG] "Discover icon" #67:371 layout=layout_a111c4b6 fills=fill_97d170e1
+      [RECTANGLE] "Active tab light" #67:374 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":22.8,"y":0},"dimensions":{"width":30,"height":4}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"}] effects={"boxShadow":"0px 4px 20px 0px rgba(255, 255, 255, 0.4)"} borderRadius="0px 0px 8px 8px"
+    [FRAME] "Nav / Lists" #67:375 template=EL-8257d511
+      [IMAGE-SVG] "Lists icon" #67:376 layout=layout_a111c4b6 opacity=0.6000000238418579
+    [FRAME] "Nav / Buddy & friends" #67:382 template=EL-8257d511
+      [IMAGE-SVG] "Buddy & friends icon" #67:383 template=EL-31241652
+    [FRAME] "Nav / Profile" #67:385 template=EL-8257d511
+      [IMAGE-SVG] "Profile icon" #67:386 template=EL-31241652

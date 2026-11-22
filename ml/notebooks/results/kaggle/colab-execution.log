@@ -1,0 +1,270 @@
+
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.5)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] Parsing notebook 'ml/notebooks/04_kaggle_metadata.ipynb'...
+[colab] Executing cell 1/4 - Pin dependencies...
+0
+[colab] Executing cell 2/4 - Install the exact experiment and app snapshot...
+[colab] Executing cell 3/4 - Preprocess, train, select on validation, and evaluate...
+[colab] Executing cell 4/4 - Inspect scores and app content recommendations...
+movies parameters 1.0 test {'mae': 0.675149811640086, 'rmse': 0.8559876775856086} baseline {'mae': 0.7305988627736025, 'rmse': 0.9085418996364045}
+sales parameters 1.0 test {'mae': 9.309318147553304, 'rmse': 11.869799738949224} baseline {'mae': 11.695556488053322, 'rmse': 14.463009597808142}
+hltb parameters 1.0 test {'mae': 7.908027001919783, 'rmse': 10.412276967777231} baseline {'mae': 8.73511060431801, 'rmse': 11.469550287345225}
+[
+  {
+    "seed": "it-takes-two",
+    "recommendations": [
+      {
+        "id": "baldurs-gate",
+        "cosine": 0.7333635086231407
+      },
+      {
+        "id": "dune",
+        "cosine": 0.6595192026301282
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.6108480189164011
+      },
+      {
+        "id": "outer-wilds",
+        "cosine": 0.5231015047573405
+      }
+    ]
+  },
+  {
+    "seed": "cyberpunk",
+    "recommendations": [
+      {
+        "id": "edgerunners",
+        "cosine": 0.8662009204114998
+      },
+      {
+        "id": "disco-elysium",
+        "cosine": 0.8526748942853619
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.6391403652307124
+      },
+      {
+        "id": "dune",
+        "cosine": 0.6183080207502539
+      }
+    ]
+  },
+  {
+    "seed": "elden-ring",
+    "recommendations": [
+      {
+        "id": "dune",
+        "cosine": 0.7224307792798238
+      },
+      {
+        "id": "edgerunners",
+        "cosine": 0.7124798010709681
+      },
+      {
+        "id": "cyberpunk",
+        "cosine": 0.6391403652307124
+      },
+      {
+        "id": "disco-elysium",
+        "cosine": 0.6240108306588381
+      }
+    ]
+  },
+  {
+    "seed": "disco-elysium",
+    "recommendations": [
+      {
+        "id": "cyberpunk",
+        "cosine": 0.8526748942853619
+      },
+      {
+        "id": "dune",
+        "cosine": 0.7841134341803955
+      },
+      {
+        "id": "edgerunners",
+        "cosine": 0.7656392120500836
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.6240108306588381
+      }
+    ]
+  },
+  {
+    "seed": "baldurs-gate",
+    "recommendations": [
+      {
+        "id": "it-takes-two",
+        "cosine": 0.7333635086231407
+      },
+      {
+        "id": "exit-8",
+        "cosine": 0.43912017916631635
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.42679624503378844
+      },
+      {
+        "id": "edgerunners",
+        "cosine": 0.25794878518177405
+      }
+    ]
+  },
+  {
+    "seed": "outer-wilds",
+    "recommendations": [
+      {
+        "id": "dune",
+        "cosine": 0.6853843459918229
+      },
+      {
+        "id": "arrival",
+        "cosine": 0.6326993418375542
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.5779518372558727
+      },
+      {
+        "id": "disco-elysium",
+        "cosine": 0.5231760335430413
+      }
+    ]
+  },
+  {
+    "seed": "exit-8",
+    "recommendations": [
+      {
+        "id": "elden-ring",
+        "cosine": 0.5523267218784963
+      },
+      {
+        "id": "edgerunners",
+        "cosine": 0.4983463050739333
+      },
+      {
+        "id": "blade-runner",
+        "cosine": 0.4508924916628952
+      },
+      {
+        "id": "baldurs-gate",
+        "cosine": 0.43912017916631635
+      }
+    ]
+  },
+  {
+    "seed": "dune",
+    "recommendations": [
+      {
+        "id": "disco-elysium",
+        "cosine": 0.7841134341803955
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.7224307792798238
+      },
+      {
+        "id": "edgerunners",
+        "cosine": 0.7069639932901086
+      },
+      {
+        "id": "outer-wilds",
+        "cosine": 0.6853843459918229
+      }
+    ]
+  },
+  {
+    "seed": "blade-runner",
+    "recommendations": [
+      {
+        "id": "cyberpunk",
+        "cosine": 0.5397614790328692
+      },
+      {
+        "id": "edgerunners",
+        "cosine": 0.5339205417351318
+      },
+      {
+        "id": "disco-elysium",
+        "cosine": 0.516997739485241
+      },
+      {
+        "id": "exit-8",
+        "cosine": 0.4508924916628952
+      }
+    ]
+  },
+  {
+    "seed": "arrival",
+    "recommendations": [
+      {
+        "id": "severance",
+        "cosine": 0.639729509188429
+      },
+      {
+        "id": "outer-wilds",
+        "cosine": 0.6326993418375542
+      },
+      {
+        "id": "dune",
+        "cosine": 0.6210981543549912
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.5532316066077171
+      }
+    ]
+  },
+  {
+    "seed": "severance",
+    "recommendations": [
+      {
+        "id": "arrival",
+        "cosine": 0.639729509188429
+      },
+      {
+        "id": "blade-runner",
+        "cosine": 0.40170031410252843
+      },
+      {
+        "id": "dune",
+        "cosine": 0.22672698837368013
+      },
+      {
+        "id": "edgerunners",
+        "cosine": 0.20800055631552683
+      }
+    ]
+  },
+  {
+    "seed": "edgerunners",
+    "recommendations": [
+      {
+        "id": "cyberpunk",
+        "cosine": 0.8662009204114998
+      },
+      {
+        "id": "disco-elysium",
+        "cosine": 0.7656392120500836
+      },
+      {
+        "id": "elden-ring",
+        "cosine": 0.7124798010709681
+      },
+      {
+        "id": "dune",
+        "cosine": 0.7069639932901086
+      }
+    ]
+  }
+]
+Download /content/distran-metadata/results.zip before stopping the runtime.
+[colab] Saving notebook with outputs to 'ml/notebooks/04_kaggle_metadata_output.ipynb'...

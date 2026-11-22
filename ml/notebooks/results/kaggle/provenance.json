@@ -1,0 +1,8 @@
+{
+  "ml/notebooks/04_kaggle_metadata.ipynb": "bfc4234ccb9ef1656a6edf0373285619f8577937bf63fe676c1be052ab56a966",
+  "ml/notebooks/04_kaggle_metadata_output.ipynb": "e9d75842b0b909b10e278315eb78234a3c97e6066597d8125decdca5b7eb66c6",
+  "ml/metadata_experiment.py": "69906dc434173cb1cb9d9d24990864c2c86ed274764c9ec1db1ad537dd3d57b2",
+  "ml/inputs/catalog-metadata.json": "30b05eb44a122f122628f205f57a6f9b15388881290cbc735a7560bf2d81efa4",
+  "ml/artifacts/kaggle-results.zip": "6e08d8b3ee45d0ed0ef63626c8615d1c71ddba96209dc4004b4b5bb7b77ab8e2",
+  "apps/desktop/src/lib/catalog-model.json": "1d032accee5203a60dbeb786672a61df22bfad71288af5c887d04761c15bf29b"
+}

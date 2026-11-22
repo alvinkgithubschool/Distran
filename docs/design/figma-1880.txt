@@ -1,0 +1,547 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+fill_1667730e:
+  - '#070708'
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_270c8887:
+  - rgba(255, 255, 255, 0.35)
+fill_e3bcc91d:
+  - '#F2EFE8'
+fill_1627b3c8:
+  - rgba(255, 255, 255, 0.08)
+effect_72672f49:
+  backdropFilter: blur(10px)
+Distran/Body/Abel 15 Regular 12:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 15
+  lineHeight: 15px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 20:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.2em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_3f46df62:
+  - '#A9C24A'
+style_93ca4a9f:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 9
+  lineHeight: 13px
+  letterSpacing: 0.1em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+style_b23bc1a3:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 10
+  lineHeight: 12px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_dbe29f28:
+  - rgba(255, 255, 255, 0.1)
+fill_5222c42a:
+  - rgba(255, 255, 255, 0.5)
+ts1:
+  fills:
+    - rgba(255, 255, 255, 0.7)
+fill_556c5aa7:
+  - rgba(255, 255, 255, 0.25)
+Distran/Utility/DM Mono 8 Medium 4:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_8fc20520:
+  - rgba(255, 255, 255, 0.31)
+Distran/Utility/DM Mono 8 Medium 11:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.25em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Heading/Abel 20 Regular 25:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 20
+  lineHeight: 20px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+effect_49a8bcf3:
+  filter: blur(30px)
+fill_b8aa5861:
+  - '#CADA61'
+fill_0c47ee96:
+  - type: IMAGE
+    imageRef: b9f21958d7cb19fa082cc8e609f5fcd92822b317
+    scaleMode: FILL
+    objectFit: cover
+    isBackground: false
+    imageDownloadArguments:
+      needsCropping: false
+      requiresImageDimensions: false
+Distran/Utility/Doto 10 Bold 15:
+  fontFamily: Doto
+  fontStyle: Bold
+  fontWeight: 700
+  fontSize: 10
+  lineHeight: 15px
+  letterSpacing: 0.2em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_56d3c81c:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: hug
+Distran/Utility/DM Mono 7 Medium 7:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 7
+  lineHeight: 10px
+  letterSpacing: 0.1429em
+  textCase: UPPER
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+layout_16e0e64c:
+  mode: column
+  alignSelf: stretch
+  alignItems: stretch
+  sizing:
+    horizontal: fill
+    vertical: fixed
+  dimensions:
+    height: 83
+layout_67d5ae5c:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 75
+    y: -35
+  dimensions:
+    width: 90
+    height: 90
+fill_71d45aea:
+  - '#E8A848'
+effect_4d43e5ce:
+  filter: blur(27.5px)
+Distran/Utility/Doto 9 Bold 6:
+  fontFamily: Doto
+  fontStyle: Bold
+  fontWeight: 700
+  fontSize: 9
+  lineHeight: 13px
+  letterSpacing: 0.2em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+style_c63d3fa4:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 12
+  lineHeight: 12px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_ca885aa9:
+  - type: GRADIENT_RADIAL
+    gradient: radial-gradient(circle at 15% 0%, rgba(11, 20, 24, 1) 0%, rgba(6, 6, 6, 1) 80%)
+effect_1c8b7029:
+  boxShadow: 0px 6px 16px 0px rgba(57, 208, 216, 0.1)
+fill_aae41927:
+  - '#39D0D8'
+fill_102f25f4:
+  - '#7FF0F5'
+Distran/Utility/DM Mono 6 Medium 13:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 6
+  lineHeight: 9px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_808d0e61:
+  mode: column
+  alignItems: stretch
+  sizing:
+    horizontal: fill
+    vertical: fixed
+  dimensions:
+    height: 110
+layout_4d75b100:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 85
+    y: -35
+  dimensions:
+    width: 100
+    height: 100
+fill_06f88e6e:
+  - '#D8B483'
+layout_dc8a8d41:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 176
+    height: 110
+Distran/Utility/DM Mono 7 Medium 7 (62:3925):
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 7
+  lineHeight: 10px
+  letterSpacing: 0.1429em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_18bb4ad9:
+  - '#E05A4F'
+layout_a111c4b6:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 24
+    height: 24
+fill_97d170e1: []
+
+ELEMENTS:
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-2f9fe287:
+  type: FRAME
+  layout:
+    mode: column
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-e487a1a2:
+  type: FRAME
+  layout:
+    mode: row
+    alignItems: center
+    gap: 4px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-2b88f0d9:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 10
+      height: 10
+EL-197b04ef:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    justifyContent: space-between
+    alignItems: flex-end
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-e9c4af71:
+  type: FRAME
+  layout:
+    mode: column
+    gap: 2px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-8d28aa4b:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    gap: 10px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-4cfc0a40:
+  type: FRAME
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 176
+      height: 83
+  fills: fill_0c47ee96
+  opacity: 0.30000001192092896
+EL-8584abd0:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 10px
+    justifyContent: space-between
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 176
+      height: 83
+EL-ffa4398d:
+  type: FRAME
+  layout: layout_dc8a8d41
+  fills: fill_0c47ee96
+  opacity: 0.30000001192092896
+EL-76ab6008:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 10px
+    justifyContent: space-between
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 176
+      height: 110
+EL-85faa455:
+  type: FRAME
+  layout:
+    mode: column
+    gap: 1px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-8257d511:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-31241652:
+  type: IMAGE-SVG
+  layout: layout_a111c4b6
+  fills: fill_97d170e1
+  opacity: 0.6000000238418579
+
+COMPONENTS:
+61:8:
+  id: 61:8
+  key: 0d4b4be5cf4766e8c5830107349e6abd40800be1
+  name: 2-home-11
+
+NODES:
+[FRAME] "Distran / Home — For you" #14:1880 layout={"mode":"column","sizing":{"horizontal":"contextual","vertical":"contextual"},"designedWidth":"402px","designedHeight":"874px"} fills=fill_1667730e
+  [FRAME] "Container" #14:1886 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":402,"height":874}} fills=fill_1667730e
+    [FRAME] "status-bar-spacer" #56:4 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":44}}
+      [TEXT] #56:5 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+      [FRAME] "spacer" #56:6 layout={"mode":"row","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1}}
+      [FRAME] "Frame" #56:7 layout={"mode":"row","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+        [IMAGE-SVG] "signal" #56:159 template=EL-cc8debb7
+        [IMAGE-SVG] "wifi" #56:147 template=EL-cc8debb7
+        [IMAGE-SVG] "battery" #56:153 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+    [FRAME] "hero" #56:11 layout={"mode":"column","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":320}}
+      [FRAME] "hero-bg" #56:12 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":402,"height":320}} fills=[{"type":"IMAGE","imageRef":"24006ec35e50d53bb4b5c88db92c2c7f2e4a6a9e","scaleMode":"FILL","backgroundSize":"cover","backgroundRepeat":"no-repeat","isBackground":true,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+        [FRAME] "hero-gradient-bottom" #56:13 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":320}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(7, 7, 8, 0) 0%, rgba(7, 7, 8, 0.8) 55%, rgba(7, 7, 8, 1) 100%)"}]
+        [FRAME] "hero-gradient-top" #56:14 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":100}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(7, 7, 8, 0.6) 0%, rgba(7, 7, 8, 0) 100%)"}]
+        [FRAME] "header" #56:15 layout={"mode":"row","padding":"0px 20px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":44},"dimensions":{"width":402}}
+          [FRAME] "Frame" #56:16 template=EL-2f9fe287
+            [TEXT] #56:17 layout=layout_177c5efc fills=fill_270c8887 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"lineHeight":"12px","letterSpacing":"0.3em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Your feed"
+            [TEXT] #56:18 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":22,"lineHeight":"24px","letterSpacing":"0.0091em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Good evening, Mike"
+          [FRAME] "avatar" #56:19 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":36,"height":36}} fills=fill_1627b3c8 strokes=["rgba(255, 255, 255, 0.12)"] strokeWeight=1px effects=effect_72672f49 borderRadius=16777200px
+            [TEXT] #56:20 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="M"
+        [FRAME] "hero-content" #56:21 layout={"mode":"column","gap":"10px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":20,"y":180},"dimensions":{"width":362}}
+          [FRAME] "Frame" #56:22 layout={"mode":"row","padding":"4px 10px","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=["rgba(169, 194, 74, 0.15)"] strokes=["rgba(169, 194, 74, 0.25)"] strokeWeight=1px borderRadius=16777200px
+            [TEXT] #56:23 layout=layout_177c5efc fills=fill_3f46df62 textStyle="Distran/Utility/DM Mono 8 Medium 20" text="Featured · Co-op"
+          [TEXT] #56:24 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":36,"lineHeight":"34px","letterSpacing":"0.0083em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="It Takes Two"
+          [FRAME] "Frame" #56:25 layout={"mode":"row","alignItems":"center","gap":"16px","sizing":{"horizontal":"hug","vertical":"hug"}}
+            [TEXT] #56:26 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.45)"] textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":9,"lineHeight":"13px","letterSpacing":"0.1333em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Game · 2021"
+            [FRAME] "Frame" #56:27 template=EL-e487a1a2
+              [IMAGE-SVG] "star" #56:144 template=EL-2b88f0d9
+              [TEXT] #56:29 layout=layout_177c5efc fills=fill_3f46df62 textStyle=style_93ca4a9f text="4.9"
+            [FRAME] "Frame" #56:30 template=EL-e487a1a2
+              [IMAGE-SVG] "users" #56:150 template=EL-2b88f0d9
+              [TEXT] #56:32 layout=layout_177c5efc fills=fill_270c8887 textStyle=style_93ca4a9f text="1.2k logs"
+          [FRAME] "Frame" #56:33 layout={"mode":"row","padding":"4px 0px 0px","alignItems":"center","gap":"10px","sizing":{"horizontal":"hug","vertical":"hug"}}
+            [FRAME] "Frame" #56:34 layout={"mode":"row","padding":"10px 18px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_e3bcc91d borderRadius=16777200px
+              [IMAGE-SVG] "plus" #56:156 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":12,"height":12}}
+              [TEXT] #56:36 layout=layout_177c5efc fills=fill_1667730e textStyle=style_b23bc1a3 text="Log It"
+            [FRAME] "Frame" #56:37 layout={"mode":"row","padding":"10px 14px","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=["rgba(255, 255, 255, 0.07)"] strokes=fill_dbe29f28 strokeWeight=1px effects=effect_72672f49 borderRadius=16777200px
+              [TEXT] #56:38 layout=layout_177c5efc fills=fill_5222c42a textStyle=style_b23bc1a3 text="Details"
+    [FRAME] "social-strip" #56:39 layout={"mode":"row","alignSelf":"stretch","padding":"10px 20px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}} fills=["rgba(255, 255, 255, 0.03)"] strokes=["rgba(255, 255, 255, 0.05)"] strokeWeight="0px 0px 1px"
+      [FRAME] "Frame" #56:40 layout={"mode":"row","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}}
+        [FRAME] "avatar-cluster" #56:41 layout={"mode":"row","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":44,"height":24}}
+          [FRAME] "av1" #56:42 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":24,"height":24}} fills=[{"type":"IMAGE","imageRef":"a5b8228f4fc49bd57510cedae80306a47ebd63e2","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] strokes=fill_1667730e strokeWeight=2px borderRadius=16777200px
+          [FRAME] "av2" #56:43 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":18,"y":0},"dimensions":{"width":24,"height":24}} fills=[{"type":"IMAGE","imageRef":"d2475e0016c54d24ba47c207e80df992ca55dce3","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] strokes=fill_1667730e strokeWeight=2px borderRadius=16777200px
+        [FRAME] "Frame" #56:44 template=EL-2f9fe287
+          [TEXT] #56:45 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":12,"lineHeight":"16px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Ari0825{ts1} added Your Shared List{/ts1}"
+          [TEXT] #56:46 layout=layout_177c5efc fills=fill_556c5aa7 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"lineHeight":"12px","letterSpacing":"0.1em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="2 minutes ago"
+      [TEXT] #56:47 layout=layout_177c5efc fills=fill_8fc20520 textStyle="Distran/Utility/DM Mono 8 Medium 4" text="Open →"
+    [FRAME] "scroll-content" #56:48 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":462}}
+      [FRAME] "section-coop" #56:49 layout={"mode":"column","alignSelf":"stretch","padding":"20px 20px 0px","alignItems":"stretch","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "section-header" #56:50 template=EL-197b04ef
+          [FRAME] "Frame" #56:51 template=EL-e9c4af71
+            [TEXT] #56:52 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Shared List · Ari0825"
+            [TEXT] #56:53 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Heading/Abel 20 Regular 25" text="Co-op Games to play together"
+          [TEXT] #56:54 layout=layout_177c5efc fills=fill_8fc20520 textStyle="Distran/Utility/DM Mono 8 Medium 4" text="↗ Open List"
+        [FRAME] "games-grid" #56:55 template=EL-8d28aa4b
+          [FRAME] "card-large" #56:56 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":176,"height":176}} fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(16, 21, 8, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] effects={"boxShadow":"0px 8px 20px 0px rgba(169, 194, 74, 0.1)"} borderRadius=10px
+            [FRAME] "blob1" #56:57 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":100,"y":-35},"dimensions":{"width":100,"height":100}} fills=fill_3f46df62 effects=effect_49a8bcf3 opacity=0.5 borderRadius=16777200px
+            [FRAME] "blob2" #56:58 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":-20,"y":110},"dimensions":{"width":80,"height":80}} fills=fill_b8aa5861 effects={"filter":"blur(35px)"} opacity=0.20000000298023224 borderRadius=16777200px
+            [FRAME] "film-grain" #56:59 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":176,"height":176}} fills=fill_0c47ee96 opacity=0.3499999940395355
+            [FRAME] "card-content" #56:60 layout={"mode":"column","padding":"10px","justifyContent":"space-between","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":176,"height":176}}
+              [TEXT] #56:61 layout=layout_177c5efc fills=fill_b8aa5861 textStyle="Distran/Utility/Doto 10 Bold 15" text="IT2"
+              [FRAME] "Frame" #56:62 layout={"mode":"column","alignItems":"stretch","gap":"2px","sizing":{"horizontal":"hug","vertical":"hug"}}
+                [TEXT] #56:63 layout=layout_56d3c81c fills=fill_3f46df62 textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":13,"lineHeight":"13px","letterSpacing":"0.01em","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="It Takes Two"
+                [TEXT] #56:64 layout=layout_56d3c81c fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 7 Medium 7" text="Game · Co-op"
+          [FRAME] "cards-right" #56:65 layout={"mode":"column","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [FRAME] "card-sm-1" #56:66 layout=layout_16e0e64c fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(28, 21, 10, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] effects={"boxShadow":"0px 6px 16px 0px rgba(232, 168, 72, 0.1)"} borderRadius=10px
+              [FRAME] "blob" #56:67 layout=layout_67d5ae5c fills=fill_71d45aea effects=effect_4d43e5ce opacity=0.5 borderRadius=16777200px
+              [FRAME] "grain" #56:68 template=EL-4cfc0a40
+              [FRAME] "card-content" #56:69 template=EL-8584abd0
+                [TEXT] #56:70 layout=layout_177c5efc fills=["#FFCE7A"] textStyle="Distran/Utility/Doto 9 Bold 6" text="2077"
+                [TEXT] #56:71 layout=layout_177c5efc fills=fill_71d45aea textStyle=style_c63d3fa4 text="Cyberpunk 2077"
+            [FRAME] "card-sm-2" #56:72 layout=layout_16e0e64c fills=fill_ca885aa9 effects=effect_1c8b7029 borderRadius=10px
+              [FRAME] "blob" #56:73 layout=layout_67d5ae5c fills=fill_aae41927 effects=effect_4d43e5ce opacity=0.5 borderRadius=16777200px
+              [FRAME] "grain" #56:74 template=EL-4cfc0a40
+              [FRAME] "card-content" #56:75 template=EL-8584abd0
+                [TEXT] #56:76 layout=layout_177c5efc fills=fill_102f25f4 textStyle="Distran/Utility/Doto 9 Bold 6" text="ORION"
+                [FRAME] "Frame" #56:77 template=EL-197b04ef
+                  [TEXT] #56:78 layout=layout_177c5efc fills=fill_aae41927 textStyle=style_c63d3fa4 text="Project Orion"
+                  [FRAME] "Frame" #56:79 layout={"mode":"row","padding":"2px 5px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_dbe29f28 borderRadius=3px
+                    [TEXT] #56:80 layout=layout_177c5efc fills=fill_270c8887 textStyle="Distran/Utility/DM Mono 6 Medium 13" text="Sealed"
+      [FRAME] "section-trending" #56:81 layout={"mode":"column","alignSelf":"stretch","padding":"24px 20px 0px","alignItems":"stretch","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "section-header" #56:82 layout={"mode":"row","alignSelf":"stretch","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [FRAME] "Frame" #56:83 template=EL-e9c4af71
+            [TEXT] #56:84 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Community"
+            [TEXT] #56:85 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Heading/Abel 20 Regular 25" text="Trending Right Now"
+          [TEXT] #56:86 layout=layout_177c5efc fills=fill_8fc20520 textStyle="Distran/Utility/DM Mono 8 Medium 4" text="See More"
+        [FRAME] "trending-grid" #56:87 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [FRAME] "row1" #56:88 template=EL-8d28aa4b
+            [FRAME] "card-dune" #56:89 layout=layout_808d0e61 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(26, 20, 12, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] effects={"boxShadow":"0px 6px 16px 0px rgba(216, 180, 131, 0.1)"} borderRadius=10px
+              [FRAME] "blob" #56:90 layout=layout_4d75b100 fills=fill_06f88e6e effects=effect_49a8bcf3 opacity=0.5 borderRadius=16777200px
+              [FRAME] "grain" #56:91 template=EL-ffa4398d
+              [FRAME] "card-content" #56:92 template=EL-76ab6008
+                [TEXT] #56:93 layout=layout_177c5efc fills=["#E9C9A0"] textStyle="Distran/Utility/Doto 9 Bold 6" text="D2"
+                [FRAME] "Frame" #56:94 template=EL-85faa455
+                  [TEXT] #56:95 layout=layout_177c5efc fills=fill_06f88e6e textStyle=style_c63d3fa4 text="Dune: Part Two"
+                  [TEXT] #56:96 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 7 Medium 7 (62:3925)" text="Film · 2024"
+            [FRAME] "card-pubRoyal" #56:97 layout=layout_808d0e61 fills=["#111111"] effects={"boxShadow":"0px 6px 16px 0px rgba(0, 0, 0, 0.1)"} borderRadius=10px
+              [FRAME] "photo" #56:98 layout=layout_dc8a8d41 fills=[{"type":"IMAGE","imageRef":"7419b64432a735438394cca6005cb58b253c7e5e","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+              [FRAME] "gradient-overlay" #56:99 layout=layout_dc8a8d41 fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 32%, rgba(0, 0, 0, 0.5) 70%)"}]
+              [FRAME] "card-label" #56:100 layout={"mode":"column","padding":"10px","justifyContent":"flex-end","gap":"1px","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":176,"height":110}}
+                [TEXT] #56:101 layout=layout_177c5efc fills=["#FFFFFF"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":13,"lineHeight":"14px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Pub Royal"
+                [TEXT] #56:102 layout=layout_177c5efc fills=fill_5222c42a textStyle="Distran/Utility/DM Mono 7 Medium 7 (62:3925)" text="Bar · London"
+          [FRAME] "row2" #56:103 template=EL-8d28aa4b
+            [FRAME] "card-edgerunners" #56:104 layout=layout_808d0e61 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(26, 11, 13, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] effects={"boxShadow":"0px 6px 16px 0px rgba(224, 90, 79, 0.1)"} borderRadius=10px
+              [FRAME] "blob" #56:105 layout=layout_4d75b100 fills=fill_18bb4ad9 effects=effect_49a8bcf3 opacity=0.5 borderRadius=16777200px
+              [FRAME] "grain" #56:106 template=EL-ffa4398d
+              [FRAME] "card-content" #56:107 template=EL-76ab6008
+                [TEXT] #56:108 layout=layout_177c5efc fills=["#F39A92"] textStyle="Distran/Utility/Doto 9 Bold 6" text="ER"
+                [FRAME] "Frame" #56:109 template=EL-85faa455
+                  [TEXT] #56:110 layout=layout_177c5efc fills=fill_18bb4ad9 textStyle=style_c63d3fa4 text="Cyberpunk: Edgerunners"
+                  [TEXT] #56:111 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 7 Medium 7 (62:3925)" text="Series · 2022"
+            [FRAME] "card-exit8" #56:112 layout=layout_808d0e61 fills=fill_ca885aa9 effects=effect_1c8b7029 borderRadius=10px
+              [FRAME] "blob" #56:113 layout=layout_4d75b100 fills=fill_aae41927 effects=effect_49a8bcf3 opacity=0.5 borderRadius=16777200px
+              [FRAME] "grain" #56:114 template=EL-ffa4398d
+              [FRAME] "card-content" #56:115 template=EL-76ab6008
+                [TEXT] #56:116 layout=layout_177c5efc fills=fill_102f25f4 textStyle="Distran/Utility/Doto 9 Bold 6" text="8"
+                [FRAME] "Frame" #56:117 template=EL-85faa455
+                  [TEXT] #56:118 layout=layout_177c5efc fills=fill_aae41927 textStyle=style_c63d3fa4 text="Exit 8"
+                  [TEXT] #56:119 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 7 Medium 7 (62:3925)" text="Game · Liminal"
+      [FRAME] "buddy-strip" #56:120 layout={"mode":"row","alignSelf":"stretch","padding":"14px 16px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%)"}] strokes=fill_1627b3c8 strokeWeight=1px effects=effect_72672f49 borderRadius=14px
+        [FRAME] "buddy-icon" #56:121 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":44,"height":44}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0.05) 100%)"}] effects={"boxShadow":"0px 0px 12px 0px rgba(255, 255, 255, 0.04)"} borderRadius=16777200px
+          [IMAGE-SVG] "Icon" #56:122 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":18,"height":18}}
+        [FRAME] "buddy-text" #56:123 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [TEXT] #56:124 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.38)"] textStyle="Distran/Utility/DM Mono 8 Medium 20" text="From Buddy · For You"
+          [TEXT] #56:125 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":16,"lineHeight":"20px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Because you finished the Night City cycle"
+        [FRAME] "Frame" #56:126 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":28,"height":28}}
+          [IMAGE-SVG] "arrow-icon" #56:127 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":14,"height":14}}
+      [FRAME] "bottom-pad" #56:128 layout={"mode":"column","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":16}}
+  [FRAME] "Navigation" #69:1861 layout={"mode":"row","padding":"0px 12px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":0,"y":808},"dimensions":{"width":402,"height":66}} fills=["rgba(27, 27, 27, 0.5)"] effects={"backdropFilter":"blur(25px)"} borderRadius="10px 10px 2px 2px"
+    [FRAME] "Nav / Home / Active" #69:1862 template=EL-8257d511
+      [IMAGE-SVG] "Home icon" #69:1863 layout=layout_a111c4b6 fills=fill_97d170e1 componentId=61:8
+      [RECTANGLE] "Active tab light" #69:1864 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":22.8,"y":0},"dimensions":{"width":30,"height":4}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"}] effects={"boxShadow":"0px 4px 20px 0px rgba(255, 255, 255, 0.4)"} borderRadius="0px 0px 8px 8px"
+    [FRAME] "Nav / Discover" #69:1865 template=EL-8257d511
+      [IMAGE-SVG] "Discover icon" #69:1866 template=EL-31241652
+    [FRAME] "Nav / Lists" #69:1869 template=EL-8257d511
+      [IMAGE-SVG] "Lists icon" #69:1870 layout=layout_a111c4b6 opacity=0.6000000238418579
+    [FRAME] "Nav / Buddy & friends" #69:1876 template=EL-8257d511
+      [IMAGE-SVG] "Buddy & friends icon" #69:1877 template=EL-31241652
+    [FRAME] "Nav / Profile" #69:1879 template=EL-8257d511
+      [IMAGE-SVG] "Profile icon" #69:1880 template=EL-31241652

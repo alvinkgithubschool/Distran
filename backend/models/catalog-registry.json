@@ -1,0 +1,73 @@
+{
+  "aliases": {
+    "it-takes-two": "igdb:game:135243",
+    "cyberpunk": "igdb:game:1877",
+    "elden-ring": "igdb:game:119133",
+    "disco-elysium": "igdb:game:26472",
+    "baldurs-gate": "igdb:game:119171",
+    "outer-wilds": "igdb:game:11737",
+    "exit-8": "igdb:game:275404",
+    "dune": "tmdb:movie:693134",
+    "blade-runner": "tmdb:movie:335984",
+    "arrival": "tmdb:movie:329865",
+    "severance": "tmdb:tv:95396",
+    "edgerunners": "tmdb:tv:105248"
+  },
+  "editorial_connections": {
+    "igdb:game:135243": [
+      "igdb:game:11737",
+      "igdb:game:119171"
+    ],
+    "igdb:game:1877": [
+      "tmdb:tv:105248",
+      "tmdb:movie:335984",
+      "igdb:game:26472"
+    ],
+    "igdb:game:119133": [
+      "igdb:game:119171",
+      "igdb:game:11737"
+    ],
+    "igdb:game:26472": [
+      "tmdb:tv:95396",
+      "tmdb:movie:335984",
+      "igdb:game:1877"
+    ],
+    "igdb:game:119171": [
+      "igdb:game:119133",
+      "igdb:game:135243"
+    ],
+    "igdb:game:11737": [
+      "tmdb:movie:329865",
+      "igdb:game:135243"
+    ],
+    "igdb:game:275404": [
+      "tmdb:tv:95396",
+      "igdb:game:26472"
+    ],
+    "tmdb:movie:693134": [
+      "tmdb:movie:329865",
+      "tmdb:movie:335984",
+      "igdb:game:119133"
+    ],
+    "tmdb:movie:335984": [
+      "igdb:game:1877",
+      "tmdb:movie:329865",
+      "tmdb:movie:693134"
+    ],
+    "tmdb:movie:329865": [
+      "igdb:game:11737",
+      "tmdb:movie:693134",
+      "tmdb:movie:335984"
+    ],
+    "tmdb:tv:95396": [
+      "igdb:game:275404",
+      "igdb:game:26472",
+      "tmdb:movie:335984"
+    ],
+    "tmdb:tv:105248": [
+      "igdb:game:1877",
+      "tmdb:movie:335984"
+    ]
+  },
+  "reviewed_at": "2026-11-16T14:00:50.715238+00:00"
+}

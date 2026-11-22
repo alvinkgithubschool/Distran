@@ -1,0 +1,154 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+fill_1667730e:
+  - '#070708'
+layout_db0cff65:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 402
+    height: 874
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+effect_72672f49:
+  backdropFilter: blur(10px)
+style_a666531d:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  letterSpacing: 0.25em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_8fc20520:
+  - rgba(255, 255, 255, 0.31)
+fill_658ab2fa:
+  - '#FFFFFF'
+fill_e3bcc91d:
+  - '#F2EFE8'
+Distran/Utility/DM Mono 8 Medium 11:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.25em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+style_025e2761:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  lineHeight: 14px
+  letterSpacing: 0.1455em
+  textCase: UPPER
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+style_68223e13:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 10
+  lineHeight: 15px
+  letterSpacing: 0.25em
+  textCase: UPPER
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+fill_5a1a324a:
+  - rgba(255, 255, 255, 0.2)
+Distran/Utility/DM Mono 8 Medium 20:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.2em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+
+ELEMENTS:
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-522202e5:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 14
+      height: 14
+
+NODES:
+[FRAME] "Distran / Partner room — Dune" #14:1811 layout={"mode":"none","sizing":{}} fills=fill_1667730e
+  [FRAME] "hero-bg" #14:1812 layout=layout_db0cff65 fills=[{"type":"IMAGE","imageRef":"69953960aa7b7abfc376b1985ca58ad6005f310e","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+  [FRAME] "gradient-top" #56:202 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":300}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(7, 7, 8, 1) 0%, rgba(7, 7, 8, 0.5) 60%, rgba(7, 7, 8, 0) 100%)"}]
+  [FRAME] "gradient-bottom" #56:203 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":400},"dimensions":{"width":402,"height":474}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(7, 7, 8, 0) 0%, rgba(7, 7, 8, 0.8) 35%, rgba(7, 7, 8, 1) 65%, rgba(7, 7, 8, 1) 100%)"}]
+  [FRAME] "film-grain" #56:204 layout=layout_db0cff65 opacity=0.18000000715255737
+  [FRAME] "status-bar" #56:205 layout={"mode":"row","padding":"0px 20px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":44}}
+    [TEXT] #56:206 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+    [FRAME] "spacer" #56:207 layout={"mode":"row","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1}}
+    [FRAME] "Frame" #56:208 layout={"mode":"row","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+      [IMAGE-SVG] "signal" #56:209 template=EL-cc8debb7
+      [IMAGE-SVG] "wifi" #56:211 template=EL-cc8debb7
+      [IMAGE-SVG] "battery" #56:213 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+  [FRAME] "partner-badge" #56:215 layout={"mode":"row","padding":"6px 14px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":113.5,"y":64}} fills=["rgba(255, 255, 255, 0.05)"] strokes=["rgba(255, 255, 255, 0.1)"] strokeWeight=1px effects=effect_72672f49 borderRadius=16777200px
+    [TEXT] #56:216 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_a666531d text="Distran"
+    [TEXT] #56:217 layout=layout_177c5efc fills=fill_658ab2fa textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"letterSpacing":"0.125em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="×"
+    [TEXT] #56:218 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_a666531d text="Warner Bros."
+  [FRAME] "partner-logos" #56:219 layout={"mode":"row","justifyContent":"center","alignItems":"center","gap":"16px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":166,"y":234}}
+    [IMAGE-SVG] "distran-logo" #56:220 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":18,"height":18}}
+    [IMAGE-SVG] "star-divider" #56:222 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":6,"height":6}} fills=fill_658ab2fa
+    [IMAGE-SVG] "wb-logo" #56:223 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":15,"height":16}}
+  [FRAME] "title-block" #56:227 layout={"mode":"column","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":63.5,"y":290}}
+    [TEXT] #56:228 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"BTC Project MKUltra","fontStyle":"Regular","fontWeight":400,"fontSize":72,"lineHeight":"68px","letterSpacing":"0.2778em","textCase":"UPPER","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="DUNE"
+    [FRAME] "subtitle-pill" #56:229 layout={"mode":"row","padding":"4px 12px","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=["rgba(216, 180, 131, 0.13)"] strokes=["rgba(216, 180, 131, 0.25)"] strokeWeight=1px borderRadius=16777200px
+      [TEXT] #56:230 layout=layout_177c5efc fills=["#D8B483"] textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Partner Experience · Sci-Fi"
+  [FRAME] "PartnerGate" #14:1813 layout={"mode":"column","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":32,"y":432},"dimensions":{"width":338}}
+    [TEXT] #14:1831 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"hug"},"dimensions":{"width":338}} fills=["rgba(255, 255, 255, 0.7)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":15,"lineHeight":"24px","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="Experience the interactive Distran in the lead up to the final instalment of the Dune Franchise."
+  [FRAME] "buttons" #14:1833 layout={"mode":"row","justifyContent":"center","alignItems":"center","gap":"12px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":62.5,"y":524}}
+    [FRAME] "btn-save" #14:1834 layout={"mode":"row","padding":"16px 24px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"hug","vertical":"hug"}} fills=["rgba(255, 255, 255, 0.07)"] strokes=["rgba(255, 255, 255, 0.14)"] strokeWeight=1px effects={"backdropFilter":"blur(16px)"} borderRadius=6px
+      [TEXT] #14:1835 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.45)"] textStyle=style_025e2761 text="Save for Later"
+    [FRAME] "btn-go" #14:1837 layout={"mode":"row","padding":"16px 32px","justifyContent":"center","alignItems":"center","gap":"10px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_e3bcc91d effects={"boxShadow":"0px 8px 24px 0px rgba(216, 180, 131, 0.19)"} borderRadius=6px
+      [TEXT] #14:1838 layout=layout_177c5efc fills=fill_1667730e textStyle=style_025e2761 text="Go"
+      [IMAGE-SVG] "Icon" #14:1840 template=EL-522202e5
+  [FRAME] "interest-label" #14:1850 layout={"mode":"row","justifyContent":"center","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":104.5,"y":614}}
+    [TEXT] #14:1844 layout=layout_177c5efc fills=fill_5a1a324a textStyle=style_68223e13 text="Based on your interests"
+  [FRAME] "buddy-strip" #56:241 layout={"mode":"row","padding":"14px 16px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":20,"y":654},"dimensions":{"width":362}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%)"}] strokes=["rgba(255, 255, 255, 0.08)"] strokeWeight=1px effects=effect_72672f49 borderRadius=14px
+    [FRAME] "buddy-icon" #56:242 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":40,"height":40}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0.05) 100%)"}] effects={"boxShadow":"0px 0px 12px 0px rgba(255, 255, 255, 0.04)"} borderRadius=16777200px
+      [IMAGE-SVG] "Icon" #56:243 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":16,"height":16}}
+    [FRAME] "buddy-text" #56:249 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [TEXT] #56:250 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.38)"] textStyle="Distran/Utility/DM Mono 8 Medium 20" text="From Buddy · For You"
+      [TEXT] #56:251 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":15,"lineHeight":"20px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="You've been following the Dune universe"
+    [FRAME] "Frame" #56:252 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":28,"height":28}}
+      [IMAGE-SVG] "arrow-icon" #56:253 template=EL-522202e5
+  [FRAME] "scroll-hint" #14:1851 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":109,"y":796}}
+    [TEXT] #14:1852 layout=layout_177c5efc fills=fill_5a1a324a textStyle=style_68223e13 text="Scroll to go to Home ↓"

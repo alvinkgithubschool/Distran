@@ -1,0 +1,342 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+fill_ef7c035d:
+  - '#060608'
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_1eec04ca:
+  - rgba(255, 255, 255, 0.6)
+fill_b74742e8:
+  - rgba(255, 255, 255, 0.13)
+fill_e3bcc91d:
+  - '#F2EFE8'
+style_25097bf7:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 10
+  lineHeight: 15px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_270c8887:
+  - rgba(255, 255, 255, 0.35)
+Distran/Body/Abel 16 Regular 16:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 16
+  lineHeight: 16px
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+fill_1627b3c8:
+  - rgba(255, 255, 255, 0.08)
+fill_556c5aa7:
+  - rgba(255, 255, 255, 0.25)
+Distran/Utility/DM Mono 10 Medium 5:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 10
+  lineHeight: 15px
+  letterSpacing: 0.12em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_6ed232c4:
+  - rgba(255, 255, 255, 0.44)
+layout_56d3c81c:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: hug
+layout_e4ef4421:
+  mode: column
+  justifyContent: center
+  alignItems: center
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 44
+    height: 44
+Distran/Body/Abel 15 Regular 12:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 15
+  lineHeight: 15px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 11:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.25em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Heading/Abel 20 Regular 25:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 20
+  lineHeight: 20px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 4:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 20:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.2em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_a111c4b6:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 24
+    height: 24
+fill_97d170e1: []
+
+ELEMENTS:
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-870f883f:
+  type: FRAME
+  layout:
+    mode: column
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 40
+      height: 40
+  fills:
+    - rgba(255, 255, 255, 0.09)
+  strokes: fill_b74742e8
+  strokeWeight: 1px
+  effects:
+    backdropFilter: blur(12px)
+  borderRadius: 20px
+EL-d40fb4e5:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 16
+EL-f1890f3e:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 17
+      height: 17
+EL-84043737:
+  type: TEXT
+  layout: layout_177c5efc
+  text: ·
+  textStyle:
+    fontFamily: DM Mono
+    fontStyle: Medium
+    fontWeight: 500
+    fontSize: 10
+    lineHeight: 15px
+    letterSpacing: 0.15em
+    textAlignHorizontal: LEFT
+    textAlignVertical: TOP
+  fills:
+    - rgba(255, 255, 255, 0.19)
+EL-62b4d877:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 13
+      height: 13
+EL-39e51add:
+  type: FRAME
+  layout:
+    mode: row
+    padding: 5px 12px
+    alignItems: center
+    sizing:
+      horizontal: hug
+      vertical: hug
+  strokes:
+    - rgba(255, 255, 255, 0.12)
+  strokeWeight: 1px
+  borderRadius: 20px
+EL-eca96ef6:
+  type: FRAME
+  layout:
+    mode: column
+    gap: 3px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-8257d511:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-31241652:
+  type: IMAGE-SVG
+  layout: layout_a111c4b6
+  fills: fill_97d170e1
+  opacity: 0.6000000238418579
+
+COMPONENTS:
+61:8:
+  id: 61:8
+  key: 0d4b4be5cf4766e8c5830107349e6abd40800be1
+  name: 2-home-11
+
+NODES:
+[FRAME] "Distran / Title — Pub Royal" #14:7970 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"contextual","vertical":"contextual"},"designedWidth":"393px","designedHeight":"874px"} fills=fill_ef7c035d
+  [FRAME] "status-bar" #14:7976 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":44}}
+    [TEXT] #56:651 layout=layout_177c5efc fills=fill_1eec04ca textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+    [FRAME] "Frame" #56:652 layout={"mode":"row","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+      [IMAGE-SVG] "signal" #56:653 template=EL-cc8debb7
+      [IMAGE-SVG] "wifi" #56:655 template=EL-cc8debb7
+      [IMAGE-SVG] "battery" #56:657 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+  [FRAME] "Body" #14:8899 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":830}}
+    [FRAME] "hero" #14:8902 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":520}}
+      [FRAME] "album-art" #14:8903 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":393,"height":520}} fills=[{"type":"IMAGE","imageRef":"7419b64432a735438394cca6005cb58b253c7e5e","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+      [FRAME] "gradient-top" #56:659 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":393,"height":120}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(6, 6, 8, 0.6) 0%, rgba(6, 6, 8, 0) 100%)"}]
+      [FRAME] "gradient-bottom" #56:660 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":200},"dimensions":{"width":393,"height":320}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(6, 6, 8, 0) 0%, rgba(6, 6, 8, 0.8) 45%, rgba(6, 6, 8, 1) 100%)"}]
+      [FRAME] "nav-row" #56:661 layout={"mode":"row","padding":"0px 16px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":44},"dimensions":{"width":393}}
+        [FRAME] "btn-back" #56:662 template=EL-870f883f
+          [IMAGE-SVG] "icon" #56:663 template=EL-d40fb4e5
+        [FRAME] "Frame" #56:665 layout={"mode":"row","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"hug"}}
+          [FRAME] "btn-add" #56:666 template=EL-870f883f
+            [IMAGE-SVG] "icon" #56:667 template=EL-f1890f3e
+          [FRAME] "btn-heart" #56:670 template=EL-870f883f
+            [IMAGE-SVG] "icon" #56:671 template=EL-f1890f3e
+      [FRAME] "hero-title" #56:673 layout={"mode":"column","padding":"0px 24px 24px","alignItems":"center","gap":"4px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":400},"dimensions":{"width":393}}
+        [TEXT] #56:674 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":52,"lineHeight":"48px","letterSpacing":"0.0077em","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="Pub Royal"
+        [TEXT] #56:675 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.8)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":22,"lineHeight":"24px","letterSpacing":"0.0091em","textAlignHorizontal":"CENTER","textAlignVertical":"TOP"} text="Les Cowboys Fringants"
+    [FRAME] "meta-strip" #56:676 layout={"mode":"row","alignSelf":"stretch","padding":"10px 24px","justifyContent":"center","alignItems":"center","gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [TEXT] #56:677 layout=layout_177c5efc fills=fill_270c8887 textStyle=style_25097bf7 text="Album"
+      [TEXT] #56:678 template=EL-84043737
+      [TEXT] #56:679 layout=layout_177c5efc fills=fill_270c8887 textStyle=style_25097bf7 text="2024"
+      [TEXT] #56:680 template=EL-84043737
+      [TEXT] #56:681 layout=layout_177c5efc fills=fill_270c8887 textStyle=style_25097bf7 text="42:18"
+      [TEXT] #56:682 template=EL-84043737
+      [TEXT] #56:683 layout=layout_177c5efc fills=fill_270c8887 textStyle=style_25097bf7 text="Hi-Res Lossless"
+    [FRAME] "actions" #56:684 layout={"mode":"row","alignSelf":"stretch","padding":"4px 20px 0px","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [FRAME] "btn-log" #56:685 layout={"mode":"row","padding":"14px 0px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":182,"height":50}} fills=fill_e3bcc91d borderRadius=25px
+        [TEXT] #56:686 layout=layout_177c5efc fills=fill_ef7c035d textStyle="Distran/Body/Abel 16 Regular 16" text="Log this"
+      [FRAME] "btn-share" #56:687 layout={"mode":"row","padding":"0px 20px","alignItems":"center","gap":"8px","sizing":{"horizontal":"hug","vertical":"fixed"},"dimensions":{"height":50}} fills=fill_1627b3c8 strokes=fill_b74742e8 strokeWeight=1px borderRadius=25px
+        [IMAGE-SVG] "icon" #56:688 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":15,"height":15}}
+        [TEXT] #56:691 layout=layout_177c5efc fills=["#FFFFFF"] textStyle="Distran/Body/Abel 16 Regular 16" text="Share"
+      [FRAME] "btn-save" #56:692 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":50,"height":50}} fills=fill_1627b3c8 strokes=fill_b74742e8 strokeWeight=1px borderRadius=25px
+        [IMAGE-SVG] "icon" #56:693 template=EL-f1890f3e
+    [FRAME] "rating-row" #56:695 layout={"mode":"row","alignSelf":"stretch","padding":"14px 20px 0px","alignItems":"center","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [FRAME] "Frame" #56:696 layout={"mode":"row","alignItems":"center","gap":"2px","sizing":{"horizontal":"hug","vertical":"hug"}}
+        [IMAGE-SVG] "star" #56:697 template=EL-62b4d877
+        [IMAGE-SVG] "star" #56:699 template=EL-62b4d877
+        [IMAGE-SVG] "star" #56:701 template=EL-62b4d877
+        [IMAGE-SVG] "star" #56:703 template=EL-62b4d877
+        [IMAGE-SVG] "star" #56:705 template=EL-62b4d877
+      [TEXT] #56:707 layout=layout_177c5efc fills=fill_1eec04ca textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":12,"lineHeight":"18px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="4.9"
+      [TEXT] #56:708 layout=layout_177c5efc fills=fill_556c5aa7 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":11,"lineHeight":"16px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="41,200 logs"
+    [FRAME] "tags" #56:709 layout={"mode":"row","alignSelf":"stretch","padding":"14px 20px 0px","alignItems":"center","gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [FRAME] "tag" #56:710 template=EL-39e51add
+        [TEXT] #56:711 layout=layout_177c5efc fills=fill_6ed232c4 textStyle="Distran/Utility/DM Mono 10 Medium 5" text="francophone"
+      [FRAME] "tag" #56:712 template=EL-39e51add
+        [TEXT] #56:713 layout=layout_177c5efc fills=fill_6ed232c4 textStyle="Distran/Utility/DM Mono 10 Medium 5" text="folk rock"
+      [FRAME] "tag" #56:714 template=EL-39e51add
+        [TEXT] #56:715 layout=layout_177c5efc fills=fill_6ed232c4 textStyle="Distran/Utility/DM Mono 10 Medium 5" text="québec"
+    [FRAME] "description" #56:716 layout={"mode":"column","alignSelf":"stretch","padding":"16px 20px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [TEXT] #56:717 layout=layout_56d3c81c fills=["rgba(255, 255, 255, 0.75)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":16,"lineHeight":"26px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Featuring the final recordings of the late Karl Tremblay. A quiet, unflinching record about endings — a raven keeping watch over Pub Royal while the light goes down the path."
+    [FRAME] "artist-card-wrap" #56:718 layout={"mode":"column","alignSelf":"stretch","padding":"20px 20px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [FRAME] "artist-card" #56:719 layout={"mode":"row","alignSelf":"stretch","padding":"14px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} strokes=fill_1627b3c8 strokeWeight=1px borderRadius=14px
+        [FRAME] "avatar" #56:720 layout=layout_e4ef4421 fills=["#141D2C"] borderRadius=22px
+          [TEXT] #56:721 layout=layout_177c5efc fills=["#9DB8DC"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":18,"lineHeight":"18px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="L"
+        [FRAME] "Frame" #56:722 template=EL-eca96ef6
+          [TEXT] #56:723 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="Les Cowboys Fringants"
+          [TEXT] #56:724 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.31)"] textStyle="Distran/Utility/DM Mono 10 Medium 5" text="Band · La Tribu"
+        [IMAGE-SVG] "arrow" #56:725 template=EL-d40fb4e5
+    [FRAME] "section-posts" #56:728 layout={"mode":"row","alignSelf":"stretch","padding":"28px 20px 0px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [FRAME] "Frame" #56:729 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"hug","vertical":"hug"}}
+        [TEXT] #56:730 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Community"
+        [TEXT] #56:731 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Heading/Abel 20 Regular 25" text="Posts & Articles"
+      [TEXT] #56:732 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 4" text="See All"
+    [FRAME] "buddy-strip" #56:733 layout={"mode":"row","alignSelf":"stretch","padding":"16px 16px 0px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_ef7c035d
+      [FRAME] "buddy-inner" #56:734 layout={"mode":"row","padding":"14px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%)"}] strokes=["rgba(255, 255, 255, 0.07)"] strokeWeight=1px effects={"backdropFilter":"blur(10px)"} borderRadius=14px
+        [FRAME] "buddy-icon" #56:735 layout=layout_e4ef4421 fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.05) 100%)"}] borderRadius=22px
+          [IMAGE-SVG] "Icon" #56:736 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":18,"height":18}}
+        [FRAME] "Frame" #56:739 template=EL-eca96ef6
+          [TEXT] #56:740 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.33)"] textStyle="Distran/Utility/DM Mono 8 Medium 20" text="From Buddy · For You"
+          [TEXT] #56:741 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":15,"lineHeight":"20px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Because you finished the Night City cycle"
+        [IMAGE-SVG] "arrow" #56:742 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":14,"height":14}}
+    [FRAME] "bottom-pad" #56:745 layout={"mode":"column","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":20}} fills=fill_ef7c035d
+  [FRAME] "Navigation" #69:1936 layout={"mode":"row","padding":"0px 12px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":-4.5,"y":808},"dimensions":{"width":402,"height":66}} fills=["rgba(27, 27, 27, 0.5)"] effects={"backdropFilter":"blur(25px)"} borderRadius="10px 10px 2px 2px"
+    [FRAME] "Nav / Home / Active" #69:1937 template=EL-8257d511
+      [IMAGE-SVG] "Home icon" #69:1938 layout=layout_a111c4b6 fills=fill_97d170e1 componentId=61:8
+      [RECTANGLE] "Active tab light" #69:1939 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":22.8,"y":0},"dimensions":{"width":30,"height":4}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"}] effects={"boxShadow":"0px 4px 20px 0px rgba(255, 255, 255, 0.4)"} borderRadius="0px 0px 8px 8px"
+    [FRAME] "Nav / Discover" #69:1940 template=EL-8257d511
+      [IMAGE-SVG] "Discover icon" #69:1941 template=EL-31241652
+    [FRAME] "Nav / Lists" #69:1944 template=EL-8257d511
+      [IMAGE-SVG] "Lists icon" #69:1945 layout=layout_a111c4b6 opacity=0.6000000238418579
+    [FRAME] "Nav / Buddy & friends" #69:1951 template=EL-8257d511
+      [IMAGE-SVG] "Buddy & friends icon" #69:1952 template=EL-31241652
+    [FRAME] "Nav / Profile" #69:1954 template=EL-8257d511
+      [IMAGE-SVG] "Profile icon" #69:1955 template=EL-31241652

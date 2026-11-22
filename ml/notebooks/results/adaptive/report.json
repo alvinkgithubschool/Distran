@@ -1,0 +1,1400 @@
+{
+  "run_id": "adaptive-personalization-20261122",
+  "runtime": "Google Colab CPU via colab CLI (staged, checkpointed cells)",
+  "seed": 42,
+  "model_card": {
+    "name": "Distran APC-1 (Adaptive Preference Classifier: shared-prior online logistic with per-user residual)",
+    "model_id": "distran-apc-v1",
+    "classification": {
+      "task": "binary preference classification plus ranking (NDCG/Recall@10) with log loss, Brier and calibration",
+      "family": "shared logistic prior theta plus private per-user residual delta_u, online SGD with chronological predict-before-learn replay; feature/score fusion, not parameter averaging",
+      "encoders": {
+        "textcnn": "TextCNN: 24-d token embeddings, conv1d filter sizes 3/4/5 with 16 filters each, ReLU, max-over-time pooling, linear 3-class score-bucket head; NumPy Adam",
+        "mini_gpt": "decoder-only transformer (GPT-style): d=48, 2 heads, 2 pre-LN blocks, ff=96, causal next-token LM over 48-token windows; NumPy Adam",
+        "baseline": "TF-IDF + truncated SVD (notebook 04 shared encoder)"
+      },
+      "serving": "local JSON coefficients per account; no hosted GPU service",
+      "status": "research only; not promoted"
+    }
+  },
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.2.6",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39"
+  },
+  "events": {
+    "sources": [
+      {
+        "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/benchmark/5core/rating_only/Video_Games.csv.gz",
+        "sha256": "a2bde5f3b945960d161538c200dd87845e6ee471b46da96410dde61613c6901c",
+        "bytes": 12801967,
+        "rows": 814586,
+        "users": 94762,
+        "sampled_rows": 6676
+      },
+      {
+        "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/benchmark/5core/rating_only/Movies_and_TV.csv.gz",
+        "sha256": "260d72b08d5e501276b349fed80ad23715dc56bd90fb89a52598ac7194a0ade5",
+        "bytes": 111047519,
+        "rows": 7441129,
+        "users": 657203,
+        "sampled_rows": 59323
+      }
+    ],
+    "full_file_overlap_users": 19615,
+    "duplicates_removed": 0,
+    "sample": "SHA256(source_user_id) first 8 bytes big endian modulo 128 == 0; complete file scans; no future-based user filtering",
+    "pseudonyms": "Random per-run salt, not exported; sampled cohort deterministic, pseudonyms differ each run",
+    "limitations": "Publisher 5-core selection uses complete history; screen combines movies and TV. Same sampling rule as notebook 03 so cohorts are comparable."
+  },
+  "counts": {
+    "events": 65999,
+    "train": 39600,
+    "validation": 13204,
+    "test": 13195,
+    "users": 4718,
+    "items": 24390
+  },
+  "corpus": {
+    "sources": {
+      "movies": {
+        "handle": "balaka18/tmdb-top-10000-popular-movies-dataset/versions/2",
+        "file": "movies_tmdb_popular.csv",
+        "sha256": "bc97c7426389cb652553fc6abae5943dd2174259596d40588a4c1f42d19a5f6e",
+        "bytes": 3339485,
+        "resolved": "/kaggle/input/tmdb-top-10000-popular-movies-dataset",
+        "rows": 10000
+      },
+      "hltb": {
+        "handle": "zaireali/howlongtobeat-games-scraper-2162025/versions/1",
+        "file": "hltb_data.csv",
+        "sha256": "63832555c3b5861b047bc095ceded72a050d4672555bb0d51850e819ced293e6",
+        "bytes": 74322417,
+        "resolved": "/kaggle/input/howlongtobeat-games-scraper-2162025",
+        "rows": 147474
+      }
+    },
+    "docs": 20000,
+    "scored": 11202,
+    "hltb_sample": 10000,
+    "hltb_policy": "deterministic SHA256-title-ordered subset; one row per game_game_id",
+    "split": "SHA256(normalized title)[:8] hex mod 10; buckets 0-5 train, 6-7 validation, 8-9 test",
+    "score_policy": "TMDB vote_average (0-10) with vote_count>=5; HLTB game_review_score/10 with game_count_review>=5; buckets low<6, mid 6-7.5, high>7.5"
+  },
+  "encoders": {
+    "textcnn": {
+      "architecture": "TextCNN: 24-d token embeddings, conv1d filter sizes 3/4/5 with 16 filters each, ReLU, max-over-time pooling, linear 3-class score-bucket head; NumPy Adam",
+      "params": 196851,
+      "train_epochs": 15,
+      "test_accuracy": 0.535827,
+      "test_macro_f1": 0.386317,
+      "majority_baseline": 0.597566,
+      "history": [
+        {
+          "epoch": 12,
+          "train_loss": 0.000288,
+          "val_accuracy": 0.532723
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.000268,
+          "val_accuracy": 0.532265
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.000252,
+          "val_accuracy": 0.531808
+        }
+      ]
+    },
+    "mini_gpt": {
+      "architecture": "decoder-only transformer (GPT-style): d=48, 2 heads, 2 pre-LN blocks, ff=96, causal next-token LM over 48-token windows; NumPy Adam",
+      "params": 808128,
+      "steps": 1200,
+      "val_perplexity": 34.6845,
+      "unigram_baseline_perplexity": 2047.3361,
+      "history": [
+        {
+          "step": 800,
+          "train_loss": 4.162861,
+          "val_perplexity": 109.7303
+        },
+        {
+          "step": 1000,
+          "train_loss": 4.602824,
+          "val_perplexity": 106.5192
+        },
+        {
+          "step": 1200,
+          "train_loss": 3.288194,
+          "val_perplexity": 104.1695
+        }
+      ]
+    },
+    "svd": {
+      "dim": 64,
+      "explained_variance": 0.069485,
+      "vocabulary": 20000
+    },
+    "agreement": {
+      "cnn_gpt_mean_cosine": 0.006765,
+      "probe_top3_jaccard_cnn_gpt": 0.175,
+      "probe_top3_jaccard_cnn_svd": 0.1,
+      "probe_top3_jaccard_cnn_svd_v2_app": 0.158333,
+      "probe_top3_jaccard_gpt_svd": 0.225,
+      "probe_top3_jaccard_gpt_svd_v2_app": 0.316667,
+      "probe_top3_jaccard_svd_svd_v2_app": 0.441667
+    },
+    "probes": {
+      "cnn": [
+        {
+          "seed": "it-takes-two",
+          "neighbors": [
+            "outer-wilds",
+            "elden-ring",
+            "disco-elysium"
+          ]
+        },
+        {
+          "seed": "cyberpunk",
+          "neighbors": [
+            "blade-runner",
+            "exit-8",
+            "arrival"
+          ]
+        },
+        {
+          "seed": "elden-ring",
+          "neighbors": [
+            "outer-wilds",
+            "it-takes-two",
+            "blade-runner"
+          ]
+        },
+        {
+          "seed": "disco-elysium",
+          "neighbors": [
+            "outer-wilds",
+            "it-takes-two",
+            "blade-runner"
+          ]
+        },
+        {
+          "seed": "baldurs-gate",
+          "neighbors": [
+            "blade-runner",
+            "elden-ring",
+            "outer-wilds"
+          ]
+        },
+        {
+          "seed": "outer-wilds",
+          "neighbors": [
+            "it-takes-two",
+            "elden-ring",
+            "exit-8"
+          ]
+        },
+        {
+          "seed": "exit-8",
+          "neighbors": [
+            "blade-runner",
+            "outer-wilds",
+            "arrival"
+          ]
+        },
+        {
+          "seed": "dune",
+          "neighbors": [
+            "blade-runner",
+            "cyberpunk",
+            "outer-wilds"
+          ]
+        },
+        {
+          "seed": "blade-runner",
+          "neighbors": [
+            "cyberpunk",
+            "exit-8",
+            "baldurs-gate"
+          ]
+        },
+        {
+          "seed": "arrival",
+          "neighbors": [
+            "exit-8",
+            "blade-runner",
+            "outer-wilds"
+          ]
+        },
+        {
+          "seed": "severance",
+          "neighbors": [
+            "edgerunners",
+            "dune",
+            "disco-elysium"
+          ]
+        },
+        {
+          "seed": "edgerunners",
+          "neighbors": [
+            "disco-elysium",
+            "elden-ring",
+            "severance"
+          ]
+        }
+      ],
+      "gpt": [
+        {
+          "seed": "it-takes-two",
+          "neighbors": [
+            "blade-runner",
+            "severance",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "cyberpunk",
+          "neighbors": [
+            "disco-elysium",
+            "elden-ring",
+            "edgerunners"
+          ]
+        },
+        {
+          "seed": "elden-ring",
+          "neighbors": [
+            "dune",
+            "severance",
+            "blade-runner"
+          ]
+        },
+        {
+          "seed": "disco-elysium",
+          "neighbors": [
+            "cyberpunk",
+            "it-takes-two",
+            "severance"
+          ]
+        },
+        {
+          "seed": "baldurs-gate",
+          "neighbors": [
+            "outer-wilds",
+            "exit-8",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "outer-wilds",
+          "neighbors": [
+            "baldurs-gate",
+            "exit-8",
+            "cyberpunk"
+          ]
+        },
+        {
+          "seed": "exit-8",
+          "neighbors": [
+            "outer-wilds",
+            "baldurs-gate",
+            "disco-elysium"
+          ]
+        },
+        {
+          "seed": "dune",
+          "neighbors": [
+            "elden-ring",
+            "severance",
+            "arrival"
+          ]
+        },
+        {
+          "seed": "blade-runner",
+          "neighbors": [
+            "severance",
+            "it-takes-two",
+            "arrival"
+          ]
+        },
+        {
+          "seed": "arrival",
+          "neighbors": [
+            "blade-runner",
+            "dune",
+            "severance"
+          ]
+        },
+        {
+          "seed": "severance",
+          "neighbors": [
+            "blade-runner",
+            "it-takes-two",
+            "dune"
+          ]
+        },
+        {
+          "seed": "edgerunners",
+          "neighbors": [
+            "blade-runner",
+            "cyberpunk",
+            "elden-ring"
+          ]
+        }
+      ],
+      "svd": [
+        {
+          "seed": "it-takes-two",
+          "neighbors": [
+            "baldurs-gate",
+            "dune",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "cyberpunk",
+          "neighbors": [
+            "disco-elysium",
+            "edgerunners",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "elden-ring",
+          "neighbors": [
+            "arrival",
+            "edgerunners",
+            "it-takes-two"
+          ]
+        },
+        {
+          "seed": "disco-elysium",
+          "neighbors": [
+            "cyberpunk",
+            "edgerunners",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "baldurs-gate",
+          "neighbors": [
+            "it-takes-two",
+            "elden-ring",
+            "arrival"
+          ]
+        },
+        {
+          "seed": "outer-wilds",
+          "neighbors": [
+            "arrival",
+            "severance",
+            "disco-elysium"
+          ]
+        },
+        {
+          "seed": "exit-8",
+          "neighbors": [
+            "elden-ring",
+            "arrival",
+            "it-takes-two"
+          ]
+        },
+        {
+          "seed": "dune",
+          "neighbors": [
+            "edgerunners",
+            "it-takes-two",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "blade-runner",
+          "neighbors": [
+            "severance",
+            "arrival",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "arrival",
+          "neighbors": [
+            "elden-ring",
+            "outer-wilds",
+            "edgerunners"
+          ]
+        },
+        {
+          "seed": "severance",
+          "neighbors": [
+            "outer-wilds",
+            "blade-runner",
+            "arrival"
+          ]
+        },
+        {
+          "seed": "edgerunners",
+          "neighbors": [
+            "dune",
+            "cyberpunk",
+            "disco-elysium"
+          ]
+        }
+      ],
+      "svd_v2_app": [
+        {
+          "seed": "it-takes-two",
+          "neighbors": [
+            "baldurs-gate",
+            "dune",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "cyberpunk",
+          "neighbors": [
+            "edgerunners",
+            "disco-elysium",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "elden-ring",
+          "neighbors": [
+            "dune",
+            "edgerunners",
+            "cyberpunk"
+          ]
+        },
+        {
+          "seed": "disco-elysium",
+          "neighbors": [
+            "cyberpunk",
+            "dune",
+            "edgerunners"
+          ]
+        },
+        {
+          "seed": "baldurs-gate",
+          "neighbors": [
+            "it-takes-two",
+            "exit-8",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "outer-wilds",
+          "neighbors": [
+            "dune",
+            "arrival",
+            "elden-ring"
+          ]
+        },
+        {
+          "seed": "exit-8",
+          "neighbors": [
+            "elden-ring",
+            "edgerunners",
+            "blade-runner"
+          ]
+        },
+        {
+          "seed": "dune",
+          "neighbors": [
+            "disco-elysium",
+            "elden-ring",
+            "edgerunners"
+          ]
+        },
+        {
+          "seed": "blade-runner",
+          "neighbors": [
+            "cyberpunk",
+            "edgerunners",
+            "disco-elysium"
+          ]
+        },
+        {
+          "seed": "arrival",
+          "neighbors": [
+            "severance",
+            "outer-wilds",
+            "dune"
+          ]
+        },
+        {
+          "seed": "severance",
+          "neighbors": [
+            "arrival",
+            "blade-runner",
+            "dune"
+          ]
+        },
+        {
+          "seed": "edgerunners",
+          "neighbors": [
+            "cyberpunk",
+            "disco-elysium",
+            "elden-ring"
+          ]
+        }
+      ]
+    }
+  },
+  "classifier": {
+    "features": [
+      "item_pop_pct",
+      "item_quality",
+      "item_dom_game",
+      "item_dom_screen",
+      "item_recency_90d",
+      "user_activity",
+      "user_pos_rate",
+      "user_aff_game",
+      "user_aff_screen",
+      "user_recency_30d",
+      "inter_aff_game",
+      "inter_aff_screen",
+      "collab_pct"
+    ],
+    "theta": [
+      2.456363,
+      0.57954,
+      -3.876341,
+      -2.971939,
+      0.510835,
+      2.764954,
+      1.110804,
+      -2.957995,
+      -1.913814,
+      -0.31693,
+      3.200347,
+      0.291685,
+      4.652789
+    ],
+    "intercept": -3.518072,
+    "validation": {
+      "lr=0.05,reg=0.0": {
+        "logloss": 1.899116
+      },
+      "lr=0.05,reg=0.01": {
+        "logloss": 1.900004
+      },
+      "lr=0.1,reg=0.0": {
+        "logloss": 1.628578,
+        "ndcg_at_10": 0.012751801983911426
+      },
+      "lr=0.1,reg=0.01": {
+        "logloss": 1.630033
+      }
+    },
+    "selected": "lr=0.1,reg=0.0",
+    "test_pointwise": {
+      "adaptive": {
+        "logloss": 1.745827,
+        "brier": 0.52121,
+        "n": 13195,
+        "calibration": [
+          {
+            "range": [
+              0.0,
+              0.1
+            ],
+            "n": 7405,
+            "mean_pred": 0.0441,
+            "observed": 0.7396
+          },
+          {
+            "range": [
+              0.1,
+              0.2
+            ],
+            "n": 1651,
+            "mean_pred": 0.1448,
+            "observed": 0.7686
+          },
+          {
+            "range": [
+              0.2,
+              0.30000000000000004
+            ],
+            "n": 754,
+            "mean_pred": 0.2452,
+            "observed": 0.7215
+          },
+          {
+            "range": [
+              0.30000000000000004,
+              0.4
+            ],
+            "n": 516,
+            "mean_pred": 0.3472,
+            "observed": 0.7578
+          },
+          {
+            "range": [
+              0.4,
+              0.5
+            ],
+            "n": 462,
+            "mean_pred": 0.4476,
+            "observed": 0.7771
+          },
+          {
+            "range": [
+              0.5,
+              0.6000000000000001
+            ],
+            "n": 413,
+            "mean_pred": 0.5522,
+            "observed": 0.8402
+          },
+          {
+            "range": [
+              0.6000000000000001,
+              0.7000000000000001
+            ],
+            "n": 442,
+            "mean_pred": 0.6509,
+            "observed": 0.8258
+          },
+          {
+            "range": [
+              0.7000000000000001,
+              0.8
+            ],
+            "n": 461,
+            "mean_pred": 0.7512,
+            "observed": 0.8655
+          },
+          {
+            "range": [
+              0.8,
+              0.9
+            ],
+            "n": 512,
+            "mean_pred": 0.8491,
+            "observed": 0.916
+          },
+          {
+            "range": [
+              0.9,
+              1.0
+            ],
+            "n": 579,
+            "mean_pred": 0.9525,
+            "observed": 0.9361
+          }
+        ]
+      },
+      "shared_only": {
+        "logloss": 2.729197,
+        "brier": 0.709318,
+        "n": 13195,
+        "calibration": [
+          {
+            "range": [
+              0.0,
+              0.1
+            ],
+            "n": 12492,
+            "mean_pred": 0.0289,
+            "observed": 0.7679
+          },
+          {
+            "range": [
+              0.1,
+              0.2
+            ],
+            "n": 357,
+            "mean_pred": 0.1242,
+            "observed": 0.7927
+          },
+          {
+            "range": [
+              0.2,
+              0.30000000000000004
+            ],
+            "n": 72,
+            "mean_pred": 0.249,
+            "observed": 0.875
+          },
+          {
+            "range": [
+              0.30000000000000004,
+              0.4
+            ],
+            "n": 57,
+            "mean_pred": 0.3477,
+            "observed": 0.7544
+          },
+          {
+            "range": [
+              0.4,
+              0.5
+            ],
+            "n": 53,
+            "mean_pred": 0.4414,
+            "observed": 0.8302
+          },
+          {
+            "range": [
+              0.5,
+              0.6000000000000001
+            ],
+            "n": 41,
+            "mean_pred": 0.5486,
+            "observed": 0.8537
+          },
+          {
+            "range": [
+              0.6000000000000001,
+              0.7000000000000001
+            ],
+            "n": 43,
+            "mean_pred": 0.6514,
+            "observed": 0.7907
+          },
+          {
+            "range": [
+              0.7000000000000001,
+              0.8
+            ],
+            "n": 42,
+            "mean_pred": 0.7408,
+            "observed": 0.9048
+          },
+          {
+            "range": [
+              0.8,
+              0.9
+            ],
+            "n": 34,
+            "mean_pred": 0.8524,
+            "observed": 0.7647
+          },
+          {
+            "range": [
+              0.9,
+              1.0
+            ],
+            "n": 4,
+            "mean_pred": 0.928,
+            "observed": 1.0
+          }
+        ]
+      }
+    },
+    "validation_ranking": {
+      "adaptive": {
+        "all": {
+          "evaluated_users": 1379,
+          "positive_heldout_users": 2955,
+          "cold_heldout_users": 530,
+          "cold_item_positives": 7027,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.011644116441164412,
+          "recall_at_10": 0.02329013746707728,
+          "recall_at_10_ci95": [
+            0.016279,
+            0.030532
+          ],
+          "ndcg_at_10": 0.012751801983911426,
+          "ndcg_at_10_ci95": [
+            0.008764,
+            0.017022
+          ]
+        },
+        "game": {
+          "evaluated_users": 78,
+          "positive_heldout_users": 281,
+          "cold_heldout_users": 95,
+          "cold_item_positives": 742,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.06392106392106392,
+          "recall_at_10": 0.0021367521367521365,
+          "recall_at_10_ci95": [
+            0.0,
+            0.00641
+          ],
+          "ndcg_at_10": 0.0015008024761277376,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.004502
+          ]
+        },
+        "screen": {
+          "evaluated_users": 1314,
+          "positive_heldout_users": 2726,
+          "cold_heldout_users": 441,
+          "cold_item_positives": 6285,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.00716260936579174,
+          "recall_at_10": 0.024347107737518695,
+          "recall_at_10_ci95": [
+            0.01721,
+            0.031848
+          ],
+          "ndcg_at_10": 0.013308130396635231,
+          "ndcg_at_10_ci95": [
+            0.009322,
+            0.017796
+          ]
+        },
+        "game_to_screen": {
+          "evaluated_users": 36,
+          "positive_heldout_users": 2726,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 6285,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0031279749762001905,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_to_game": {
+          "evaluated_users": 26,
+          "positive_heldout_users": 281,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 742,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.04804804804804805,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "test": {
+      "popularity": {
+        "all": {
+          "evaluated_users": 303,
+          "positive_heldout_users": 2113,
+          "cold_heldout_users": 849,
+          "cold_item_positives": 8718,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0004920049200492004,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game": {
+          "evaluated_users": 24,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 193,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.004719004719004719,
+          "recall_at_10": 0.020833333333333332,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0625
+          ],
+          "ndcg_at_10": 0.0161188669681059,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.048357
+          ]
+        },
+        "screen": {
+          "evaluated_users": 282,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 669,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0005439956480348157,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game_to_screen": {
+          "evaluated_users": 17,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.00045332970669567977,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_to_game": {
+          "evaluated_users": 7,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.00429000429000429,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "bpr": {
+        "all": {
+          "evaluated_users": 303,
+          "positive_heldout_users": 2113,
+          "cold_heldout_users": 849,
+          "cold_item_positives": 8718,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.021484214842148422,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game": {
+          "evaluated_users": 24,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 193,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0827970827970828,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen": {
+          "evaluated_users": 282,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 669,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.022303821569427444,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game_to_screen": {
+          "evaluated_users": 17,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.004759961920304637,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_to_game": {
+          "evaluated_users": 7,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.02917202917202917,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "fixed_linear_heuristic": {
+        "all": {
+          "evaluated_users": 303,
+          "positive_heldout_users": 2113,
+          "cold_heldout_users": 849,
+          "cold_item_positives": 8718,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.00955309553095531,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game": {
+          "evaluated_users": 24,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 193,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0429000429000429,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen": {
+          "evaluated_users": 282,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 669,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.006754612629765629,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game_to_screen": {
+          "evaluated_users": 17,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.00335463982954803,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_to_game": {
+          "evaluated_users": 7,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.02616902616902617,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "shared_logistic": {
+        "all": {
+          "evaluated_users": 303,
+          "positive_heldout_users": 2113,
+          "cold_heldout_users": 849,
+          "cold_item_positives": 8718,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.009102091020910209,
+          "recall_at_10": 0.0033003300330033004,
+          "recall_at_10_ci95": [
+            0.0,
+            0.009901
+          ],
+          "ndcg_at_10": 0.0009540093277818082,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.002862
+          ]
+        },
+        "game": {
+          "evaluated_users": 24,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 193,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.04247104247104247,
+          "recall_at_10": 0.041666666666666664,
+          "recall_at_10_ci95": [
+            0.0,
+            0.125
+          ],
+          "ndcg_at_10": 0.012044367763245328,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.036133
+          ]
+        },
+        "screen": {
+          "evaluated_users": 282,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 669,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.006165284011061245,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game_to_screen": {
+          "evaluated_users": 17,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0028106441815132143,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_to_game": {
+          "evaluated_users": 7,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.02574002574002574,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "adaptive": {
+        "all": {
+          "evaluated_users": 303,
+          "positive_heldout_users": 2113,
+          "cold_heldout_users": 849,
+          "cold_item_positives": 8718,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.009143091430914308,
+          "recall_at_10": 0.0033003300330033004,
+          "recall_at_10_ci95": [
+            0.0,
+            0.009901
+          ],
+          "ndcg_at_10": 0.0009540093277818082,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.002862
+          ]
+        },
+        "game": {
+          "evaluated_users": 24,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 193,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0429000429000429,
+          "recall_at_10": 0.041666666666666664,
+          "recall_at_10_ci95": [
+            0.0,
+            0.125
+          ],
+          "ndcg_at_10": 0.012044367763245328,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.036133
+          ]
+        },
+        "screen": {
+          "evaluated_users": 282,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 669,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0062106169817308125,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "game_to_screen": {
+          "evaluated_users": 17,
+          "positive_heldout_users": 1771,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 7295,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.0029013101228523505,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "screen_to_game": {
+          "evaluated_users": 7,
+          "positive_heldout_users": 380,
+          "cold_heldout_users": 0,
+          "cold_item_positives": 1423,
+          "k": 10,
+          "ranking": "full train catalog, exclude all training interactions",
+          "catalog_coverage": 0.02574002574002574,
+          "recall_at_10": 0.0,
+          "recall_at_10_ci95": [
+            0.0,
+            0.0
+          ],
+          "ndcg_at_10": 0.0,
+          "ndcg_at_10_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "parameters": {
+    "bpr": {
+      "dim": 16,
+      "epochs": 30,
+      "positive": "rating >= 4"
+    },
+    "shared_theta": {
+      "epochs": 6,
+      "neg_per_user": 5
+    },
+    "adaptive": {
+      "lr_u": 0.1,
+      "reg_u": 0.0,
+      "half_life_user_days": 30,
+      "half_life_item_days": 90,
+      "clip": 10
+    }
+  },
+  "seconds": 187.0,
+  "limitations": [
+    "Amazon IDs have no reviewed mapping to the app catalog; the CNN/GPT semantic channels are demonstrated on the metadata corpus and curated probes, not as features inside the Amazon replay.",
+    "Features are as-of the train split (static within each split); the online replay is predict-before-learn on labels but not expanding-window on features.",
+    "Corpus splits are title-group hash splits (snapshot), while the interaction split is chronological; score buckets are aggregate quality, not personal taste.",
+    "Single fixed test measurement per model; bootstrap CIs are user-level only and no cross-model significance is claimed.",
+    "No impression ledger or logged propensities exist, so no bandit or off-policy evaluation is possible."
+  ]
+}

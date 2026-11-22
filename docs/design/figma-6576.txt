@@ -1,0 +1,265 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+layout_db0cff65:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 402
+    height: 874
+fill_71d45aea:
+  - '#E8A848'
+fill_aae41927:
+  - '#39D0D8'
+fill_3f46df62:
+  - '#A9C24A'
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_1627b3c8:
+  - rgba(255, 255, 255, 0.08)
+fill_8fc20520:
+  - rgba(255, 255, 255, 0.31)
+fill_e3bcc91d:
+  - '#F2EFE8'
+fill_556c5aa7:
+  - rgba(255, 255, 255, 0.25)
+fill_fd958d89:
+  - rgba(255, 255, 255, 0.15)
+layout_e22c7540:
+  mode: column
+  padding: 18px 12px
+  alignItems: center
+  gap: 10px
+  sizing:
+    horizontal: fill
+    vertical: hug
+fill_b3355a17:
+  - type: GRADIENT_LINEAR
+    gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%)
+effect_89dab1fb:
+  backdropFilter: blur(12px)
+layout_5f1a3a43:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 10
+    y: -10
+  dimensions:
+    width: 60
+    height: 60
+effect_e36a6918:
+  filter: blur(20px)
+Distran/Body/Abel 15 Regular 12:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 15
+  lineHeight: 15px
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 7 Medium 7:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 7
+  lineHeight: 10px
+  letterSpacing: 0.1429em
+  textCase: UPPER
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 20:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.2em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_a111c4b6:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 24
+    height: 24
+fill_97d170e1: []
+
+ELEMENTS:
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-8d28aa4b:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    gap: 10px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-12c4107b:
+  type: FRAME
+  layout: layout_e22c7540
+  fills: fill_b3355a17
+  strokes:
+    - rgba(255, 255, 255, 0.1)
+  strokeWeight: 1px
+  effects: effect_89dab1fb
+  borderRadius: 16px
+EL-a73b2a19:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 20
+      height: 20
+EL-c7938746:
+  type: FRAME
+  layout:
+    mode: column
+    alignItems: center
+    gap: 2px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-109c7287:
+  type: TEXT
+  layout: layout_177c5efc
+  text: Log · Rate · Wish
+  textStyle: Distran/Utility/DM Mono 7 Medium 7
+  fills: fill_556c5aa7
+EL-8257d511:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-31241652:
+  type: IMAGE-SVG
+  layout: layout_a111c4b6
+  fills: fill_97d170e1
+  opacity: 0.6000000238418579
+
+COMPONENTS:
+61:8:
+  id: 61:8
+  key: 0d4b4be5cf4766e8c5830107349e6abd40800be1
+  name: 2-home-11
+
+NODES:
+[FRAME] "Distran / Format switcher" #14:6576 layout={"mode":"none","sizing":{}} fills=["#070708"]
+  [FRAME] "BG-blur" #14:6577 layout=layout_db0cff65 fills=[{"type":"IMAGE","imageRef":"24006ec35e50d53bb4b5c88db92c2c7f2e4a6a9e","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] opacity=0.18000000715255737
+  [FRAME] "scrim" #56:519 layout=layout_db0cff65 fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(7, 7, 8, 0.9) 0%, rgba(7, 7, 8, 0.8) 100%)"}]
+  [FRAME] "blob-amber" #56:520 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":-40,"y":320},"dimensions":{"width":200,"height":200}} fills=fill_71d45aea effects={"filter":"blur(60px)"} opacity=0.11999999731779099 borderRadius=16777200px
+  [FRAME] "blob-cyan" #56:521 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":220,"y":280},"dimensions":{"width":180,"height":180}} fills=fill_aae41927 effects={"filter":"blur(50px)"} opacity=0.10000000149011612 borderRadius=16777200px
+  [FRAME] "blob-green" #56:522 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":100,"y":500},"dimensions":{"width":160,"height":160}} fills=fill_3f46df62 effects={"filter":"blur(55px)"} opacity=0.07999999821186066 borderRadius=16777200px
+  [FRAME] "status-bar" #56:523 layout={"mode":"row","padding":"0px 20px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":44}}
+    [TEXT] #56:524 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+    [FRAME] "spacer" #56:525 layout={"mode":"row","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1}}
+    [FRAME] "Frame" #56:526 layout={"mode":"row","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+      [IMAGE-SVG] "signal" #56:527 template=EL-cc8debb7
+      [IMAGE-SVG] "wifi" #56:529 template=EL-cc8debb7
+      [IMAGE-SVG] "battery" #56:531 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+  [FRAME] "context-hint" #56:533 layout={"mode":"column","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":52},"dimensions":{"width":402}}
+    [FRAME] "Frame" #56:534 layout={"mode":"row","padding":"6px 14px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=["rgba(255, 255, 255, 0.04)"] strokes=fill_1627b3c8 strokeWeight=1px borderRadius=16777200px
+      [TEXT] #56:535 layout=layout_177c5efc fills=fill_8fc20520 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":9,"letterSpacing":"0.2em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Home Feed"
+  [FRAME] "switch-label" #56:536 layout={"mode":"column","alignItems":"center","gap":"4px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":110},"dimensions":{"width":402}}
+    [TEXT] #56:537 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.19)"] textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":9,"letterSpacing":"0.2667em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Navigate to"
+    [TEXT] #56:538 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":38,"lineHeight":"38px","letterSpacing":"0.0079em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Switch Format"
+  [FRAME] "divider-line" #56:539 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":141,"y":186},"dimensions":{"width":120,"height":1}} fills=["rgba(255, 255, 255, 0.07)"]
+  [FRAME] "format-sheet" #56:540 layout={"mode":"column","padding":"20px 16px 0px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":220},"dimensions":{"width":402}}
+    [FRAME] "sheet-label" #56:541 layout={"mode":"row","alignSelf":"stretch","padding":"0px 4px 14px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [TEXT] #56:542 layout=layout_177c5efc fills=fill_556c5aa7 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"letterSpacing":"0.25em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Jump to a format"
+      [TEXT] #56:543 layout=layout_177c5efc fills=fill_fd958d89 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"letterSpacing":"0.15em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="6 categories"
+    [FRAME] "row-1" #56:544 template=EL-8d28aa4b
+      [FRAME] "card-games" #56:545 template=EL-12c4107b
+        [FRAME] "blob" #56:546 layout=layout_5f1a3a43 fills=fill_3f46df62 effects=effect_e36a6918 opacity=0.30000001192092896 borderRadius=16777200px
+        [IMAGE-SVG] "icon-games" #56:547 template=EL-a73b2a19
+        [FRAME] "Frame" #56:553 template=EL-c7938746
+          [TEXT] #56:554 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="Games"
+          [TEXT] #56:555 template=EL-109c7287
+      [FRAME] "card-movies" #56:556 template=EL-12c4107b
+        [FRAME] "blob" #56:557 layout=layout_5f1a3a43 fills=["#E05A4F"] effects=effect_e36a6918 opacity=0.30000001192092896 borderRadius=16777200px
+        [IMAGE-SVG] "icon-movies" #56:558 template=EL-a73b2a19
+        [FRAME] "Frame" #56:567 template=EL-c7938746
+          [TEXT] #56:568 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="Movies"
+          [TEXT] #56:569 template=EL-109c7287
+      [FRAME] "card-tv" #56:570 template=EL-12c4107b
+        [FRAME] "blob" #56:571 layout=layout_5f1a3a43 fills=fill_aae41927 effects=effect_e36a6918 opacity=0.30000001192092896 borderRadius=16777200px
+        [IMAGE-SVG] "icon-tv" #56:572 template=EL-a73b2a19
+        [FRAME] "Frame" #56:575 template=EL-c7938746
+          [TEXT] #56:576 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="TV"
+          [TEXT] #56:577 template=EL-109c7287
+    [FRAME] "row-gap" #56:578 layout={"mode":"row","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":10}}
+    [FRAME] "row-2" #56:579 template=EL-8d28aa4b
+      [FRAME] "card-music" #56:580 template=EL-12c4107b
+        [FRAME] "blob" #56:581 layout=layout_5f1a3a43 fills=fill_71d45aea effects=effect_e36a6918 opacity=0.30000001192092896 borderRadius=16777200px
+        [IMAGE-SVG] "icon-music" #56:582 template=EL-a73b2a19
+        [FRAME] "Frame" #56:586 template=EL-c7938746
+          [TEXT] #56:587 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="Music"
+          [TEXT] #56:588 template=EL-109c7287
+      [FRAME] "card-books" #56:589 template=EL-12c4107b
+        [FRAME] "blob" #56:590 layout=layout_5f1a3a43 fills=["#A261DA"] effects=effect_e36a6918 opacity=0.30000001192092896 borderRadius=16777200px
+        [IMAGE-SVG] "icon-books" #56:591 template=EL-a73b2a19
+        [FRAME] "Frame" #56:594 template=EL-c7938746
+          [TEXT] #56:595 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="Books"
+          [TEXT] #56:596 template=EL-109c7287
+      [FRAME] "card-social" #56:597 layout=layout_e22c7540 fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%)"}] strokes=fill_fd958d89 strokeWeight=1px effects=effect_89dab1fb borderRadius=16px
+        [FRAME] "blob" #56:598 layout=layout_5f1a3a43 fills=["#D8B483"] effects=effect_e36a6918 opacity=0.30000001192092896 borderRadius=16777200px
+        [IMAGE-SVG] "icon-social" #56:599 template=EL-a73b2a19
+        [FRAME] "Frame" #56:605 template=EL-c7938746
+          [TEXT] #56:606 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 15 Regular 12" text="Social"
+          [TEXT] #56:607 template=EL-109c7287
+  [FRAME] "buddy-strip" #56:608 layout={"mode":"row","padding":"14px 16px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":16,"y":596},"dimensions":{"width":370}} fills=fill_b3355a17 strokes=fill_1627b3c8 strokeWeight=1px effects={"backdropFilter":"blur(10px)"} borderRadius=14px
+    [FRAME] "buddy-icon" #56:609 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":40,"height":40}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.04) 100%)"}] borderRadius=16777200px
+      [IMAGE-SVG] "Icon" #56:610 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":18,"height":18}}
+    [FRAME] "buddy-text" #56:616 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [TEXT] #56:617 layout=layout_177c5efc fills=fill_8fc20520 textStyle="Distran/Utility/DM Mono 8 Medium 20" text="From Buddy · For You"
+      [TEXT] #56:618 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":15,"lineHeight":"19px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Because you finished the Night City cycle"
+    [IMAGE-SVG] "arrow" #56:619 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":14,"height":14}}
+  [FRAME] "Navigation" #69:1911 layout={"mode":"row","padding":"0px 12px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":808},"dimensions":{"width":402,"height":66}} fills=["rgba(27, 27, 27, 0.5)"] effects={"backdropFilter":"blur(25px)"} borderRadius="10px 10px 2px 2px"
+    [FRAME] "Nav / Home / Active" #69:1912 template=EL-8257d511
+      [IMAGE-SVG] "Home icon" #69:1913 layout=layout_a111c4b6 fills=fill_97d170e1 componentId=61:8
+      [RECTANGLE] "Active tab light" #69:1914 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":22.8,"y":0},"dimensions":{"width":30,"height":4}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"}] effects={"boxShadow":"0px 4px 20px 0px rgba(255, 255, 255, 0.4)"} borderRadius="0px 0px 8px 8px"
+    [FRAME] "Nav / Discover" #69:1915 template=EL-8257d511
+      [IMAGE-SVG] "Discover icon" #69:1916 template=EL-31241652
+    [FRAME] "Nav / Lists" #69:1919 template=EL-8257d511
+      [IMAGE-SVG] "Lists icon" #69:1920 layout=layout_a111c4b6 opacity=0.6000000238418579
+    [FRAME] "Nav / Buddy & friends" #69:1926 template=EL-8257d511
+      [IMAGE-SVG] "Buddy & friends icon" #69:1927 template=EL-31241652
+    [FRAME] "Nav / Profile" #69:1929 template=EL-8257d511
+      [IMAGE-SVG] "Profile icon" #69:1930 template=EL-31241652

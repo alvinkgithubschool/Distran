@@ -1,0 +1,42 @@
+{
+  "run_id": "adaptive-personalization-20261122",
+  "notebook_sha256": null,
+  "amazon_sources": [
+    {
+      "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/benchmark/5core/rating_only/Video_Games.csv.gz",
+      "sha256": "a2bde5f3b945960d161538c200dd87845e6ee471b46da96410dde61613c6901c",
+      "bytes": 12801967,
+      "rows": 814586,
+      "users": 94762,
+      "sampled_rows": 6676
+    },
+    {
+      "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/benchmark/5core/rating_only/Movies_and_TV.csv.gz",
+      "sha256": "260d72b08d5e501276b349fed80ad23715dc56bd90fb89a52598ac7194a0ade5",
+      "bytes": 111047519,
+      "rows": 7441129,
+      "users": 657203,
+      "sampled_rows": 59323
+    }
+  ],
+  "kaggle_sources": {
+    "movies": {
+      "handle": "balaka18/tmdb-top-10000-popular-movies-dataset/versions/2",
+      "file": "movies_tmdb_popular.csv",
+      "sha256": "bc97c7426389cb652553fc6abae5943dd2174259596d40588a4c1f42d19a5f6e",
+      "bytes": 3339485,
+      "resolved": "/kaggle/input/tmdb-top-10000-popular-movies-dataset",
+      "rows": 10000
+    },
+    "hltb": {
+      "handle": "zaireali/howlongtobeat-games-scraper-2162025/versions/1",
+      "file": "hltb_data.csv",
+      "sha256": "63832555c3b5861b047bc095ceded72a050d4672555bb0d51850e819ced293e6",
+      "bytes": 74322417,
+      "resolved": "/kaggle/input/howlongtobeat-games-scraper-2162025",
+      "rows": 147474
+    }
+  },
+  "catalog_sha256": "30b05eb44a122f122628f205f57a6f9b15388881290cbc735a7560bf2d81efa4",
+  "experiment_sha256": "2fc608a56a486b74fe49d4cb4b26ba569894cab7b39186c542475d550229cdbe"
+}

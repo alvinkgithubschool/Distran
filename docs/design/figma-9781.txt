@@ -1,0 +1,611 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+fill_1667730e:
+  - '#070708'
+fill_71d45aea:
+  - '#E8A848'
+fill_18bb4ad9:
+  - '#E05A4F'
+effect_70de1e8b:
+  filter: blur(50px)
+fill_3f46df62:
+  - '#A9C24A'
+fill_aae41927:
+  - '#39D0D8'
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_556c5aa7:
+  - rgba(255, 255, 255, 0.25)
+fill_e3bcc91d:
+  - '#F2EFE8'
+layout_5c79c5b1:
+  mode: column
+  alignSelf: stretch
+  alignItems: stretch
+  sizing:
+    horizontal: fill
+    vertical: hug
+fill_1627b3c8:
+  - rgba(255, 255, 255, 0.08)
+effect_72672f49:
+  backdropFilter: blur(10px)
+layout_1bedeed8:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: -20
+    y: -20
+  dimensions:
+    width: 160
+    height: 160
+effect_7f4392c3:
+  filter: blur(35px)
+layout_8c591318:
+  mode: column
+  alignItems: stretch
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 44
+    y: 4
+  dimensions:
+    width: 36
+    height: 48
+fill_cd3e7423:
+  - type: GRADIENT_RADIAL
+    gradient: radial-gradient(circle at 15% 0%, rgba(26, 11, 13, 1) 0%, rgba(6, 6, 6, 1) 80%)
+layout_1a85fea5:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: -20
+    y: -20
+  dimensions:
+    width: 80
+    height: 80
+effect_e36a6918:
+  filter: blur(20px)
+layout_b54d6ad9:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 4
+    y: 4
+  dimensions:
+    width: 10
+    height: 8
+Distran/Utility/Doto 7 Bold 14:
+  fontFamily: Doto
+  fontStyle: Bold
+  fontWeight: 700
+  fontSize: 7
+  letterSpacing: 0.1429em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_5898a968:
+  - '#F39A92'
+layout_59b8278b:
+  mode: column
+  alignItems: stretch
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 22
+    y: 2
+  dimensions:
+    width: 36
+    height: 48
+layout_553b6c52:
+  mode: column
+  alignItems: stretch
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 36
+    height: 48
+fill_8bddf908:
+  - type: GRADIENT_RADIAL
+    gradient: radial-gradient(circle at 15% 0%, rgba(28, 21, 10, 1) 0%, rgba(6, 6, 6, 1) 80%)
+fill_f898a368:
+  - rgba(255, 255, 255, 0.12)
+fill_a45b2f4c:
+  - '#FFCE7A'
+Distran/Body/Abel 18 Regular 22:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 18
+  lineHeight: 18px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 9 Medium 2:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 9
+  lineHeight: 13px
+  letterSpacing: 0.1333em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_8fc20520:
+  - rgba(255, 255, 255, 0.31)
+layout_e4b6f33f:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 16
+    height: 16
+style_05ff7f69:
+  fontFamily: Doto
+  fontStyle: Bold
+  fontWeight: 700
+  fontSize: 5
+  letterSpacing: 0.16em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_f172503b:
+  - '#E9C9A0'
+layout_1cd21869:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  position: absolute
+  locationRelativeToParent:
+    x: 2
+    y: 4
+  dimensions:
+    width: 19
+    height: 6
+layout_3e71dd93:
+  mode: row
+  padding: 2px 6px
+  sizing:
+    horizontal: hug
+    vertical: hug
+style_926859f4:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 7
+  lineHeight: 11px
+  letterSpacing: 0.1143em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_f24987f4:
+  mode: row
+  padding: 1px 3px
+  sizing:
+    horizontal: hug
+    vertical: hug
+  position: absolute
+  locationRelativeToParent:
+    x: 2
+    y: 34
+style_acfbbeff:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 5
+  letterSpacing: 0.1em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_102f25f4:
+  - '#7FF0F5'
+layout_a111c4b6:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 24
+    height: 24
+fill_97d170e1: []
+
+ELEMENTS:
+EL-d269e0eb:
+  type: FRAME
+  layout:
+    mode: row
+    alignItems: center
+    gap: 6px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-ff54a4b4:
+  type: FRAME
+  layout: layout_5c79c5b1
+  fills:
+    - type: GRADIENT_LINEAR
+      gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%)
+  strokes: fill_1627b3c8
+  strokeWeight: 1px
+  effects: effect_72672f49
+  borderRadius: 16px
+EL-b6433046:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    padding: 14px
+    alignItems: center
+    gap: 14px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-d7c070bb:
+  type: FRAME
+  layout:
+    mode: row
+    alignItems: stretch
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 80
+      height: 56
+EL-e7de5b71:
+  type: FRAME
+  layout: layout_1a85fea5
+  fills: fill_18bb4ad9
+  effects: effect_e36a6918
+  opacity: 0.699999988079071
+  borderRadius: 16777200px
+EL-d0b3a985:
+  type: FRAME
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 36
+      height: 48
+  fills:
+    - type: IMAGE
+      imageRef: b9f21958d7cb19fa082cc8e609f5fcd92822b317
+      scaleMode: FILL
+      objectFit: cover
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: false
+        requiresImageDimensions: false
+  opacity: 0.4000000059604645
+EL-34e0f50e:
+  type: FRAME
+  layout: layout_59b8278b
+  fills:
+    - type: GRADIENT_RADIAL
+      gradient: radial-gradient(circle at 15% 0%, rgba(20, 11, 26, 1) 0%, rgba(6, 6, 6, 1) 80%)
+  strokes: fill_1627b3c8
+  strokeWeight: 1px
+  borderRadius: 6px
+EL-5679138a:
+  type: FRAME
+  layout: layout_1a85fea5
+  fills:
+    - '#A261DA'
+  effects: effect_e36a6918
+  opacity: 0.699999988079071
+  borderRadius: 16777200px
+EL-45eedbf0:
+  type: TEXT
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 3
+      y: 4
+    dimensions:
+      width: 13
+      height: 7
+  text: TNM
+  textStyle:
+    fontFamily: Doto
+    fontStyle: Bold
+    fontWeight: 700
+    fontSize: 6
+    letterSpacing: 0.1667em
+    textAlignHorizontal: LEFT
+    textAlignVertical: TOP
+  fills:
+    - '#C99CF0'
+EL-929905f4:
+  type: FRAME
+  layout:
+    mode: column
+    gap: 4px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-a7ad38af:
+  type: TEXT
+  layout: layout_177c5efc
+  text: ·
+  textStyle: Distran/Utility/DM Mono 9 Medium 2
+  fills:
+    - rgba(255, 255, 255, 0.19)
+EL-1d09bebd:
+  type: TEXT
+  layout: layout_177c5efc
+  text: You
+  textStyle: Distran/Utility/DM Mono 9 Medium 2
+  fills: fill_8fc20520
+EL-d40fb4e5:
+  type: IMAGE-SVG
+  layout: layout_e4b6f33f
+EL-430760a9:
+  type: FRAME
+  layout: layout_1a85fea5
+  fills: fill_71d45aea
+  effects: effect_e36a6918
+  opacity: 0.699999988079071
+  borderRadius: 16777200px
+EL-ddfd19fc:
+  type: TEXT
+  layout: layout_177c5efc
+  text: 3 items
+  textStyle: Distran/Utility/DM Mono 9 Medium 2
+  fills: fill_8fc20520
+EL-cb8e5549:
+  type: FRAME
+  layout: layout_8c591318
+  fills:
+    - type: GRADIENT_RADIAL
+      gradient: radial-gradient(circle at 15% 0%, rgba(26, 20, 12, 1) 0%, rgba(6, 6, 6, 1) 80%)
+  strokes: fill_1627b3c8
+  strokeWeight: 1px
+  borderRadius: 6px
+EL-de829221:
+  type: FRAME
+  layout: layout_1a85fea5
+  fills:
+    - '#D8B483'
+  effects: effect_e36a6918
+  opacity: 0.699999988079071
+  borderRadius: 16777200px
+EL-e5f5f06c:
+  type: FRAME
+  layout: layout_f24987f4
+  fills:
+    - rgba(255, 255, 255, 0.1)
+  borderRadius: 2px
+EL-1e80e615:
+  type: TEXT
+  layout: layout_177c5efc
+  text: soon
+  textStyle: style_acfbbeff
+  fills:
+    - rgba(255, 255, 255, 0.35)
+EL-b71e751f:
+  type: TEXT
+  layout: layout_177c5efc
+  text: ·
+  textStyle: Distran/Utility/DM Mono 9 Medium 2
+  fills:
+    - rgba(255, 255, 255, 0.15)
+EL-8257d511:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-31241652:
+  type: IMAGE-SVG
+  layout: layout_a111c4b6
+  fills: fill_97d170e1
+  opacity: 0.6000000238418579
+
+COMPONENTS:
+61:8:
+  id: 61:8
+  key: 0d4b4be5cf4766e8c5830107349e6abd40800be1
+  name: 2-home-11
+
+NODES:
+[FRAME] "Distran / Lists" #14:9781 layout={"mode":"none","sizing":{}} fills=fill_1667730e
+  [FRAME] "Container" #14:9782 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":874}}
+    [FRAME] "Frame" #56:968 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":-60,"y":120},"dimensions":{"width":260,"height":260}} fills=fill_71d45aea effects={"filter":"blur(60px)"} opacity=0.07000000029802322 borderRadius=16777200px
+    [FRAME] "Frame" #56:969 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":180,"y":340},"dimensions":{"width":200,"height":200}} fills=fill_18bb4ad9 effects=effect_70de1e8b opacity=0.05999999865889549 borderRadius=16777200px
+    [FRAME] "Frame" #56:970 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":60,"y":560},"dimensions":{"width":180,"height":180}} fills=fill_3f46df62 effects=effect_70de1e8b opacity=0.05999999865889549 borderRadius=16777200px
+    [FRAME] "Frame" #56:971 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":200,"y":650},"dimensions":{"width":160,"height":160}} fills=fill_aae41927 effects={"filter":"blur(45px)"} opacity=0.05000000074505806 borderRadius=16777200px
+  [FRAME] "Container" #14:10819 layout={"mode":"column","padding":"0px 0px 128px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402}}
+    [FRAME] "status-bar" #56:972 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":50}}
+      [TEXT] #56:973 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+      [FRAME] "spacer" #56:974 layout={"mode":"row","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":1}}
+      [FRAME] "Frame" #56:975 template=EL-d269e0eb
+        [IMAGE-SVG] "signal" #56:976 template=EL-cc8debb7
+        [IMAGE-SVG] "wifi" #56:978 template=EL-cc8debb7
+        [IMAGE-SVG] "battery" #56:980 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+    [FRAME] "hero-header" #56:982 layout={"mode":"column","alignSelf":"stretch","padding":"8px 20px 0px","justifyContent":"space-between","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "title-row" #56:983 layout={"mode":"row","alignSelf":"stretch","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "Frame" #56:984 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"hug","vertical":"hug"}}
+          [TEXT] #56:985 layout=layout_177c5efc fills=fill_556c5aa7 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":8,"lineHeight":"12px","letterSpacing":"0.3em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Your shelf"
+          [TEXT] #56:986 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":28,"lineHeight":"28px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Lists"
+        [FRAME] "Frame" #56:987 layout={"mode":"row","padding":"8px 14px","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}} fills=fill_e3bcc91d borderRadius=16777200px
+          [IMAGE-SVG] "Frame" #56:988 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":11,"height":11}}
+          [TEXT] #56:990 layout=layout_177c5efc fills=fill_1667730e textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":10,"lineHeight":"12px","letterSpacing":"0.15em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="New"
+    [FRAME] "descriptor" #56:991 layout={"mode":"column","alignSelf":"stretch","padding":"20px 20px 0px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [TEXT] #56:992 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.21)"] textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":9,"lineHeight":"14px","letterSpacing":"0.2667em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Ordered · combined · shared"
+    [FRAME] "tagline" #56:993 layout={"mode":"column","alignSelf":"stretch","padding":"6px 20px 0px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [TEXT] #56:994 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":34,"lineHeight":"32px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Every list, one shelf."
+    [FRAME] "lists-container" #56:995 layout={"mode":"column","alignSelf":"stretch","padding":"28px 16px 0px","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+      [FRAME] "list-card-night-city" #56:996 template=EL-ff54a4b4
+        [FRAME] "Frame" #56:997 layout=layout_1bedeed8 fills=fill_71d45aea effects=effect_7f4392c3 opacity=0.18000000715255737 borderRadius=16777200px
+        [FRAME] "Frame" #56:998 template=EL-b6433046
+          [FRAME] "cover-stack" #56:999 template=EL-d7c070bb
+            [FRAME] "cover-3" #56:1000 layout=layout_8c591318 fills=fill_cd3e7423 strokes=fill_1627b3c8 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1001 template=EL-e7de5b71
+              [FRAME] "Frame" #56:1002 template=EL-d0b3a985
+              [TEXT] #56:1003 layout=layout_b54d6ad9 fills=fill_5898a968 textStyle="Distran/Utility/Doto 7 Bold 14" text="ER"
+            [FRAME] "cover-2" #56:1004 template=EL-34e0f50e
+              [FRAME] "Frame" #56:1005 template=EL-5679138a
+              [FRAME] "Frame" #56:1006 template=EL-d0b3a985
+              [TEXT] #56:1007 template=EL-45eedbf0
+            [FRAME] "cover-1" #56:1008 layout=layout_553b6c52 fills=fill_8bddf908 strokes=fill_f898a368 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1009 layout=layout_1a85fea5 fills=fill_71d45aea effects=effect_e36a6918 opacity=0.800000011920929 borderRadius=16777200px
+              [FRAME] "Frame" #56:1010 template=EL-d0b3a985
+              [TEXT] #56:1011 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":3,"y":4},"dimensions":{"width":20,"height":8}} fills=fill_a45b2f4c textStyle="Distran/Utility/Doto 7 Bold 14" text="2077"
+          [FRAME] "Frame" #56:1012 template=EL-929905f4
+            [TEXT] #56:1013 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 18 Regular 22" text="Night City Cycle"
+            [FRAME] "Frame" #56:1014 template=EL-d269e0eb
+              [TEXT] #56:1015 layout=layout_177c5efc fills=fill_8fc20520 textStyle="Distran/Utility/DM Mono 9 Medium 2" text="4 items"
+              [TEXT] #56:1016 template=EL-a7ad38af
+              [TEXT] #56:1017 template=EL-1d09bebd
+          [IMAGE-SVG] "Frame" #56:1018 template=EL-d40fb4e5
+      [FRAME] "list-card-neon" #56:1021 template=EL-ff54a4b4
+        [FRAME] "Frame" #56:1022 layout=layout_1bedeed8 fills=fill_18bb4ad9 effects=effect_7f4392c3 opacity=0.15000000596046448 borderRadius=16777200px
+        [FRAME] "Frame" #56:1023 template=EL-b6433046
+          [FRAME] "cover-stack" #56:1024 template=EL-d7c070bb
+            [FRAME] "cover-3" #56:1025 layout=layout_8c591318 fills=fill_8bddf908 strokes=fill_1627b3c8 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1026 template=EL-430760a9
+              [FRAME] "Frame" #56:1027 template=EL-d0b3a985
+              [TEXT] #56:1028 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":2,"y":4},"dimensions":{"width":15,"height":6}} fills=fill_a45b2f4c textStyle=style_05ff7f69 text="BR49"
+            [FRAME] "cover-2" #56:1029 template=EL-34e0f50e
+              [FRAME] "Frame" #56:1030 template=EL-5679138a
+              [FRAME] "Frame" #56:1031 template=EL-d0b3a985
+              [TEXT] #56:1032 template=EL-45eedbf0
+            [FRAME] "cover-1" #56:1033 layout=layout_553b6c52 fills=fill_cd3e7423 strokes=fill_f898a368 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1034 layout=layout_1a85fea5 fills=fill_18bb4ad9 effects=effect_e36a6918 opacity=0.800000011920929 borderRadius=16777200px
+              [FRAME] "Frame" #56:1035 template=EL-d0b3a985
+              [TEXT] #56:1036 layout=layout_b54d6ad9 fills=fill_5898a968 textStyle="Distran/Utility/Doto 7 Bold 14" text="SH"
+          [FRAME] "Frame" #56:1037 template=EL-929905f4
+            [TEXT] #56:1038 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 18 Regular 22" text="Neon After Hours"
+            [FRAME] "Frame" #56:1039 template=EL-d269e0eb
+              [TEXT] #56:1040 template=EL-ddfd19fc
+              [TEXT] #56:1041 template=EL-a7ad38af
+              [TEXT] #56:1042 template=EL-1d09bebd
+          [IMAGE-SVG] "Frame" #56:1043 template=EL-d40fb4e5
+      [FRAME] "list-card-coop" #56:1046 template=EL-ff54a4b4
+        [FRAME] "Frame" #56:1047 layout=layout_1bedeed8 fills=fill_3f46df62 effects=effect_7f4392c3 opacity=0.14000000059604645 borderRadius=16777200px
+        [FRAME] "Frame" #56:1048 template=EL-b6433046
+          [FRAME] "cover-stack" #56:1049 template=EL-d7c070bb
+            [FRAME] "cover-3" #56:1050 template=EL-cb8e5549
+              [FRAME] "Frame" #56:1051 template=EL-de829221
+              [FRAME] "Frame" #56:1052 template=EL-d0b3a985
+              [TEXT] #56:1053 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":3,"y":4},"dimensions":{"width":10,"height":8}} fills=fill_f172503b textStyle="Distran/Utility/Doto 7 Bold 14" text="D3"
+            [FRAME] "cover-2" #56:1054 layout=layout_59b8278b fills=fill_8bddf908 strokes=fill_1627b3c8 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1055 template=EL-430760a9
+              [FRAME] "Frame" #56:1056 template=EL-d0b3a985
+              [TEXT] #56:1057 layout=layout_1cd21869 fills=fill_a45b2f4c textStyle=style_05ff7f69 text="ORION"
+            [FRAME] "cover-1" #56:1058 layout=layout_553b6c52 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(16, 21, 8, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=fill_f898a368 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1059 layout=layout_1a85fea5 fills=fill_3f46df62 effects=effect_e36a6918 opacity=0.800000011920929 borderRadius=16777200px
+              [FRAME] "Frame" #56:1060 template=EL-d0b3a985
+              [TEXT] #56:1061 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":4,"y":4},"dimensions":{"width":15,"height":8}} fills=["#CADA61"] textStyle="Distran/Utility/Doto 7 Bold 14" text="IT2"
+          [FRAME] "Frame" #56:1062 template=EL-929905f4
+            [TEXT] #56:1063 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Body/Abel 18 Regular 22" text="Co-op Games to play together"
+            [FRAME] "Frame" #56:1064 template=EL-d269e0eb
+              [TEXT] #56:1065 template=EL-ddfd19fc
+              [TEXT] #56:1066 template=EL-a7ad38af
+              [FRAME] "Frame" #56:1067 layout=layout_3e71dd93 fills=["rgba(169, 194, 74, 0.1)"] strokes=["rgba(169, 194, 74, 0.19)"] strokeWeight=1px borderRadius=16777200px
+                [TEXT] #56:1068 layout=layout_177c5efc fills=fill_3f46df62 textStyle=style_926859f4 text="Ari"
+          [IMAGE-SVG] "Frame" #56:1069 template=EL-d40fb4e5
+      [FRAME] "list-card-sealed" #56:1072 layout=layout_5c79c5b1 fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%)"}] strokes=["rgba(255, 255, 255, 0.05)"] strokeWeight=1px effects=effect_72672f49 borderRadius=16px
+        [FRAME] "Frame" #56:1073 layout=layout_1bedeed8 fills=fill_aae41927 effects=effect_7f4392c3 opacity=0.10000000149011612 borderRadius=16777200px
+        [FRAME] "Frame" #56:1074 template=EL-b6433046
+          [FRAME] "cover-stack" #56:1075 template=EL-d7c070bb
+            [FRAME] "cover-3" #56:1076 template=EL-cb8e5549
+              [FRAME] "Frame" #56:1077 template=EL-de829221
+              [FRAME] "Frame" #56:1078 template=EL-d0b3a985
+              [TEXT] #56:1079 layout=layout_b54d6ad9 fills=fill_f172503b textStyle="Distran/Utility/Doto 7 Bold 14" text="D3"
+              [FRAME] "Frame" #56:1080 template=EL-e5f5f06c
+                [TEXT] #56:1081 template=EL-1e80e615
+            [FRAME] "cover-2" #56:1082 layout=layout_59b8278b fills=fill_cd3e7423 strokes=fill_1627b3c8 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1083 template=EL-e7de5b71
+              [FRAME] "Frame" #56:1084 template=EL-d0b3a985
+              [TEXT] #56:1085 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":3,"y":4},"dimensions":{"width":15,"height":8}} fills=fill_5898a968 textStyle="Distran/Utility/Doto 7 Bold 14" text="ER2"
+              [FRAME] "Frame" #56:1086 template=EL-e5f5f06c
+                [TEXT] #56:1087 template=EL-1e80e615
+            [FRAME] "cover-1" #56:1088 layout=layout_553b6c52 fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(11, 20, 24, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] strokes=fill_f898a368 strokeWeight=1px borderRadius=6px
+              [FRAME] "Frame" #56:1089 layout=layout_1a85fea5 fills=fill_aae41927 effects=effect_e36a6918 opacity=0.800000011920929 borderRadius=16777200px
+              [FRAME] "Frame" #56:1090 template=EL-d0b3a985
+              [TEXT] #56:1091 layout=layout_1cd21869 fills=fill_102f25f4 textStyle=style_05ff7f69 text="ORION"
+              [FRAME] "Frame" #56:1092 layout=layout_f24987f4 fills=["rgba(57, 208, 216, 0.13)"] strokes=["rgba(57, 208, 216, 0.25)"] strokeWeight=1px borderRadius=2px
+                [TEXT] #56:1093 layout=layout_177c5efc fills=fill_102f25f4 textStyle=style_acfbbeff text="sealed"
+          [FRAME] "Frame" #56:1094 template=EL-929905f4
+            [TEXT] #56:1095 layout=layout_177c5efc fills=fill_e3bcc91d opacity=0.800000011920929 textStyle="Distran/Body/Abel 18 Regular 22" text="Sealed & Upcoming"
+            [FRAME] "Frame" #56:1096 template=EL-d269e0eb
+              [TEXT] #56:1097 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 9 Medium 2" text="3 items"
+              [TEXT] #56:1098 template=EL-b71e751f
+              [TEXT] #56:1099 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 9 Medium 2" text="You"
+              [TEXT] #56:1100 template=EL-b71e751f
+              [FRAME] "Frame" #56:1101 layout=layout_3e71dd93 fills=["rgba(255, 255, 255, 0.04)"] strokes=["rgba(255, 255, 255, 0.09)"] strokeWeight=1px borderRadius=16777200px
+                [TEXT] #56:1102 layout=layout_177c5efc fills=fill_556c5aa7 textStyle=style_926859f4 text="private"
+          [IMAGE-SVG] "Frame" #56:1103 layout=layout_e4b6f33f opacity=0.5
+    [FRAME] "buddy-strip" #56:1106 layout={"mode":"row","alignSelf":"stretch","padding":"14px 16px","alignItems":"center","gap":"12px","sizing":{"horizontal":"fill","vertical":"hug"}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%)"}] strokes=["rgba(255, 255, 255, 0.07)"] strokeWeight=1px effects=effect_72672f49 borderRadius=14px
+      [FRAME] "Frame" #56:1107 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":40,"height":40}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.05) 100%)"}] borderRadius=16777200px
+        [IMAGE-SVG] "Frame" #56:1108 template=EL-d40fb4e5
+      [FRAME] "Frame" #56:1114 layout={"mode":"column","gap":"2px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [TEXT] #56:1115 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.33)"] textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":7,"lineHeight":"11px","letterSpacing":"0.2em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Buddy · New List Idea"
+        [TEXT] #56:1116 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"hug"}} fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":14,"lineHeight":"18px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Start a Wired Cities list — your sci-fi streak is strong"
+      [FRAME] "Frame" #56:1117 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":24,"height":24}}
+        [IMAGE-SVG] "Frame" #56:1118 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":12,"height":12}}
+  [FRAME] "Navigation" #14:10997 layout={"mode":"row","padding":"0px 12px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":808},"dimensions":{"width":402,"height":66}} fills=["rgba(27, 27, 27, 0.5)"] effects={"backdropFilter":"blur(25px)"} borderRadius="10px 10px 2px 2px"
+    [FRAME] "Nav / Home" #67:389 template=EL-8257d511
+      [IMAGE-SVG] "Home icon" #67:390 layout=layout_a111c4b6 fills=fill_97d170e1 opacity=0.6000000238418579 componentId=61:8
+    [FRAME] "Nav / Discover" #67:393 template=EL-8257d511
+      [IMAGE-SVG] "Discover icon" #67:394 template=EL-31241652
+    [FRAME] "Nav / Lists / Active" #67:397 template=EL-8257d511
+      [IMAGE-SVG] "Lists icon" #67:398 layout=layout_a111c4b6
+      [RECTANGLE] "Active tab light" #67:404 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":22.8,"y":0},"dimensions":{"width":30,"height":4}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"}] effects={"boxShadow":"0px 4px 20px 0px rgba(255, 255, 255, 0.4)"} borderRadius="0px 0px 8px 8px"
+    [FRAME] "Nav / Buddy & friends" #67:405 template=EL-8257d511
+      [IMAGE-SVG] "Buddy & friends icon" #67:406 template=EL-31241652
+    [FRAME] "Nav / Profile" #67:408 template=EL-8257d511
+      [IMAGE-SVG] "Profile icon" #67:409 template=EL-31241652

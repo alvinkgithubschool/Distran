@@ -1,0 +1,17 @@
+[package]
+name = "distran"
+version = "0.2.0"
+description = "Distran — one cultural memory"
+authors = ["Distran"]
+edition = "2021"
+rust-version = "1.90"
+
+[lib]
+name = "distran_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.7", features = [] }
+
+[dependencies]
+tauri = { version = "2.12", features = [] }

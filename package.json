@@ -1,0 +1,17 @@
+{
+  "name": "distran-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix apps/desktop run dev",
+    "build": "npm --prefix apps/desktop run build",
+    "test": "npm --prefix apps/desktop run test",
+    "app": "npm --prefix apps/desktop run tauri dev",
+    "app:build": "npm --prefix apps/desktop run tauri build",
+    "test:e2e": "npm --prefix apps/desktop run test:e2e",
+    "format": "pnpm --dir apps/desktop format",
+    "api": "node scripts/api.mjs",
+    "test:api": ".venv/bin/python -m unittest discover -s backend/tests -v",
+    "check:catalog": "node scripts/check-catalog.mjs"
+  },
+  "packageManager": "pnpm@11.24.0"
+}

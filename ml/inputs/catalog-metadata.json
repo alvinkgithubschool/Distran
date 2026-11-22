@@ -1,0 +1,158 @@
+[
+  {
+    "id": "it-takes-two",
+    "title": "It Takes Two",
+    "year": 2021,
+    "medium": "game",
+    "description": "Two people, one extraordinary world. Play as Cody and May, a couple transformed into dolls, on a wonderfully unpredictable journey built entirely for two.",
+    "tags": [
+      "Co-op",
+      "Adventure",
+      "A little wonder"
+    ],
+    "maker": "Hazelight Studios"
+  },
+  {
+    "id": "cyberpunk",
+    "title": "Cyberpunk 2077",
+    "year": 2020,
+    "medium": "game",
+    "description": "Become V, a mercenary searching for a one-of-a-kind implant in Night City. A story about identity, impossible choices, and the people you find at the edge of the future.",
+    "tags": [
+      "Cyberpunk",
+      "Open world",
+      "Night city"
+    ],
+    "maker": "CD PROJEKT RED"
+  },
+  {
+    "id": "elden-ring",
+    "title": "Elden Ring",
+    "year": 2022,
+    "medium": "game",
+    "description": "Rise, Tarnished, and follow the grace of gold into the Lands Between. A vast, mysterious world where every ruin has a story and every distant light is an invitation.",
+    "tags": [
+      "Dark fantasy",
+      "Exploration",
+      "RPG"
+    ],
+    "maker": "FromSoftware"
+  },
+  {
+    "id": "disco-elysium",
+    "title": "Disco Elysium",
+    "year": 2019,
+    "medium": "game",
+    "description": "You are a detective with a city to unravel and a mind that will not stay quiet. Question the world, question yourself, and find something worth holding on to in Revachol.",
+    "tags": [
+      "Detective",
+      "Narrative",
+      "Weird cities"
+    ],
+    "maker": "ZA/UM"
+  },
+  {
+    "id": "baldurs-gate",
+    "title": "Baldur’s Gate 3",
+    "year": 2023,
+    "medium": "game",
+    "description": "Gather your party and return to the Forgotten Realms. An adventure shaped by friendship, freedom, and the choices that make a story yours.",
+    "tags": [
+      "RPG",
+      "Co-op",
+      "Fantasy"
+    ],
+    "maker": "Larian Studios"
+  },
+  {
+    "id": "outer-wilds",
+    "title": "Outer Wilds",
+    "year": 2019,
+    "medium": "game",
+    "description": "An open-world mystery about a solar system trapped in an endless time loop. Pack your curiosity, follow an unfamiliar signal, and discover what waits beyond the next horizon.",
+    "tags": [
+      "Exploration",
+      "Space",
+      "Mystery"
+    ],
+    "maker": "Mobius Digital"
+  },
+  {
+    "id": "exit-8",
+    "title": "The Exit 8",
+    "year": 2023,
+    "medium": "game",
+    "description": "You are trapped in an endless underground passageway. Observe your surroundings carefully. If you find an anomaly, turn back. Find the way to Exit 8.",
+    "tags": [
+      "Liminal",
+      "Horror",
+      "Short journey"
+    ],
+    "maker": "KOTAKE CREATE"
+  },
+  {
+    "id": "dune",
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "medium": "movie",
+    "description": "Paul Atreides joins Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. In the desert, a personal journey becomes something much larger.",
+    "tags": [
+      "Science fiction",
+      "Epic",
+      "World-building"
+    ],
+    "maker": "Denis Villeneuve"
+  },
+  {
+    "id": "blade-runner",
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "medium": "movie",
+    "description": "A new blade runner uncovers a secret that could change what remains of society. His search leads through a rain-soaked future, toward questions about memory and being human.",
+    "tags": [
+      "Cyberpunk",
+      "Atmospheric",
+      "Identity"
+    ],
+    "maker": "Denis Villeneuve"
+  },
+  {
+    "id": "arrival",
+    "title": "Arrival",
+    "year": 2016,
+    "medium": "movie",
+    "description": "When mysterious spacecraft appear across the world, a linguist searches for a way to communicate. A quiet, moving story about language, time, and the connections that shape a life.",
+    "tags": [
+      "Science fiction",
+      "Language",
+      "Contemplative"
+    ],
+    "maker": "Denis Villeneuve"
+  },
+  {
+    "id": "severance",
+    "title": "Severance",
+    "year": 2022,
+    "medium": "tv",
+    "description": "A team of office workers have surgically divided their memories between work and personal life. When the boundary begins to unravel, they discover that nothing about their work is ordinary.",
+    "tags": [
+      "Mystery",
+      "Identity",
+      "Uncanny"
+    ],
+    "maker": "Dan Erickson"
+  },
+  {
+    "id": "edgerunners",
+    "title": "Cyberpunk: Edgerunners",
+    "year": 2022,
+    "medium": "tv",
+    "description": "A street kid tries to survive in a city obsessed with technology and body modification. A standalone story in the world of Cyberpunk 2077, about found family and the price of a dream.",
+    "tags": [
+      "Anime",
+      "Cyberpunk",
+      "Found family"
+    ],
+    "maker": "Studio Trigger"
+  }
+]

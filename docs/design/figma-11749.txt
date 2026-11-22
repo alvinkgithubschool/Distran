@@ -1,0 +1,592 @@
+NAME: "Mobile App Dev"
+
+GLOBAL_VARS:
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+Distran/Utility/DM Mono 11 Medium 9:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 11
+  letterSpacing: 0.0455em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_8fc20520:
+  - rgba(255, 255, 255, 0.31)
+fill_87a9adb8:
+  - rgba(255, 255, 255, 0.06)
+fill_e3bcc91d:
+  - '#F2EFE8'
+fill_f898a368:
+  - rgba(255, 255, 255, 0.12)
+layout_56d3c81c:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: hug
+style_c08fd7b7:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 24
+  lineHeight: 24px
+  letterSpacing: 0.01em
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+style_92d06aa1:
+  fontFamily: DM Mono
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 11:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.25em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_556c5aa7:
+  - rgba(255, 255, 255, 0.25)
+style_86f817c3:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 18
+  lineHeight: 28px
+  letterSpacing: 0.01em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 4:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  letterSpacing: 0.15em
+  textCase: UPPER
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_16917ffb:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: fixed
+  dimensions:
+    height: 106
+layout_28346b85:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 30
+    y: -35
+  dimensions:
+    width: 90
+    height: 90
+fill_71d45aea:
+  - '#E8A848'
+effect_49a8bcf3:
+  filter: blur(30px)
+Distran/Utility/Doto 9 Bold 6:
+  fontFamily: Doto
+  fontStyle: Bold
+  fontWeight: 700
+  fontSize: 9
+  lineHeight: 13px
+  letterSpacing: 0.2em
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_a45b2f4c:
+  - '#FFCE7A'
+Distran/Utility/Abel 11 Regular 18:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 11
+  lineHeight: 12px
+  letterSpacing: 0.01em
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+Distran/Utility/DM Mono 8 Medium 19:
+  fontFamily: DM Mono
+  fontStyle: Medium
+  fontWeight: 500
+  fontSize: 8
+  lineHeight: 12px
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+fill_3f46df62:
+  - '#A9C24A'
+fill_b8aa5861:
+  - '#CADA61'
+fill_06f88e6e:
+  - '#D8B483'
+fill_55e15e3f:
+  - '#E8E2D6'
+fill_aae41927:
+  - '#39D0D8'
+layout_eb0545c6:
+  mode: column
+  justifyContent: center
+  alignItems: center
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 28
+    height: 28
+style_2adbd50b:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 14
+  lineHeight: 20px
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+style_96778c2f:
+  fontFamily: Abel
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 12
+  lineHeight: 18px
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+layout_a111c4b6:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 24
+    height: 24
+fill_97d170e1: []
+
+ELEMENTS:
+EL-cc8debb7:
+  type: IMAGE-SVG
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 16
+      height: 12
+EL-81dd7003:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 16px 0px 0px
+    alignItems: stretch
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-8920ae8f:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 12px
+    alignItems: stretch
+    sizing:
+      horizontal: fill
+      vertical: hug
+  fills:
+    - rgba(255, 255, 255, 0.02)
+  strokes: fill_87a9adb8
+  strokeWeight: 1px
+  borderRadius: 10px
+EL-069fd539:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    padding: 4px 0px 0px
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-1bff462f:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    justifyContent: space-between
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fixed
+    dimensions:
+      height: 28
+EL-784cc08a:
+  type: TEXT
+  layout: layout_177c5efc
+  text: Browse
+  textStyle: Distran/Utility/DM Mono 8 Medium 4
+  fills: fill_8fc20520
+EL-f674ad1d:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    padding: 8px 0px 0px
+    gap: 8px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-8af0cbd5:
+  type: FRAME
+  layout:
+    mode: column
+    justifyContent: center
+    alignItems: stretch
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-8eed6056:
+  type: FRAME
+  layout: layout_16917ffb
+  fills:
+    - type: GRADIENT_RADIAL
+      gradient: radial-gradient(circle at 15% 0%, rgba(28, 21, 10, 1) 0%, rgba(6, 6, 6, 1) 80%)
+  effects:
+    boxShadow: 0px 6px 16px 0px rgba(232, 168, 72, 0.1)
+  borderRadius: 8px
+EL-253ec0c6:
+  type: FRAME
+  layout: layout_28346b85
+  fills: fill_71d45aea
+  effects: effect_49a8bcf3
+  opacity: 0.550000011920929
+  borderRadius: 16777200px
+EL-2eaa4802:
+  type: FRAME
+  layout:
+    mode: none
+    sizing: {}
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 84
+      height: 106
+  fills:
+    - type: IMAGE
+      imageRef: b9f21958d7cb19fa082cc8e609f5fcd92822b317
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.699999988079071
+            - 0
+            - 0
+          - - 0
+            - 0.8799999952316284
+            - 0
+        filenameSuffix: 6f42f2
+  opacity: 0.4000000059604645
+EL-2a073457:
+  type: FRAME
+  layout:
+    mode: column
+    padding: 8px
+    justifyContent: space-between
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 84
+      height: 106
+EL-8a275127:
+  type: FRAME
+  layout:
+    mode: column
+    alignItems: stretch
+    gap: 1px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-5565088c:
+  type: FRAME
+  layout:
+    mode: column
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    position: absolute
+    locationRelativeToParent:
+      x: 4
+      y: 4
+    dimensions:
+      width: 15
+      height: 15
+  fills:
+    - rgba(0, 0, 0, 0.6)
+  borderRadius: 16777200px
+EL-7849e73d:
+  type: TEXT
+  layout: layout_177c5efc
+  text: '1'
+  textStyle: Distran/Utility/DM Mono 8 Medium 19
+  fills: fill_e3bcc91d
+EL-8e31d0f1:
+  type: FRAME
+  layout: layout_16917ffb
+  fills:
+    - type: GRADIENT_RADIAL
+      gradient: radial-gradient(circle at 15% 0%, rgba(16, 21, 8, 1) 0%, rgba(6, 6, 6, 1) 80%)
+  effects:
+    boxShadow: 0px 6px 16px 0px rgba(169, 194, 74, 0.1)
+  borderRadius: 8px
+EL-a2fb1bff:
+  type: FRAME
+  layout: layout_28346b85
+  fills: fill_3f46df62
+  effects: effect_49a8bcf3
+  opacity: 0.550000011920929
+  borderRadius: 16777200px
+EL-0c096ce7:
+  type: TEXT
+  layout: layout_177c5efc
+  text: '2'
+  textStyle: Distran/Utility/DM Mono 8 Medium 19
+  fills: fill_e3bcc91d
+EL-2069da64:
+  type: TEXT
+  layout: layout_177c5efc
+  text: '3'
+  textStyle: Distran/Utility/DM Mono 8 Medium 19
+  fills: fill_e3bcc91d
+EL-c8c47eb7:
+  type: TEXT
+  layout: layout_177c5efc
+  text: '4'
+  textStyle: Distran/Utility/DM Mono 8 Medium 19
+  fills: fill_e3bcc91d
+EL-f96bbce8:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    gap: 8px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-b3b7abd1:
+  type: FRAME
+  layout:
+    mode: row
+    padding: 6px 14px 6px 6px
+    alignItems: center
+    gap: 8px
+    sizing:
+      horizontal: hug
+      vertical: hug
+  fills:
+    - rgba(255, 255, 255, 0.03)
+  strokes: fill_f898a368
+  strokeWeight: 1px
+  borderRadius: 16777200px
+EL-8257d511:
+  type: FRAME
+  layout:
+    mode: column
+    alignSelf: stretch
+    justifyContent: center
+    alignItems: center
+    sizing:
+      horizontal: fill
+      vertical: fill
+EL-31241652:
+  type: IMAGE-SVG
+  layout: layout_a111c4b6
+  fills: fill_97d170e1
+  opacity: 0.6000000238418579
+
+COMPONENTS:
+61:8:
+  id: 61:8
+  key: 0d4b4be5cf4766e8c5830107349e6abd40800be1
+  name: 2-home-11
+
+NODES:
+[FRAME] "Distran / Profile — Mike" #14:11749 layout={"mode":"none","sizing":{}} fills=["#070708"]
+  [FRAME] "Frame" #56:1280 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":874}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(13, 13, 16, 1) 0%, rgba(7, 7, 8, 1) 40%, rgba(7, 7, 8, 1) 100%)"}]
+  [FRAME] "Container" #14:11750 layout={"mode":"column","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":402,"height":874}}
+    [FRAME] "status-bar" #56:1281 layout={"mode":"row","alignSelf":"stretch","padding":"0px 20px","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":44}}
+      [TEXT] #56:1282 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle="Distran/Utility/DM Mono 11 Medium 9" text="9:41"
+      [FRAME] "Frame" #56:1283 layout={"mode":"row","alignItems":"center","gap":"6px","sizing":{"horizontal":"hug","vertical":"hug"}}
+        [IMAGE-SVG] "signal" #56:1284 template=EL-cc8debb7
+        [IMAGE-SVG] "wifi" #56:1286 template=EL-cc8debb7
+        [IMAGE-SVG] "battery" #56:1288 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":22,"height":12}}
+    [FRAME] "Frame" #56:1290 layout={"mode":"column","alignSelf":"stretch","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":764}}
+      [FRAME] "Frame" #56:1291 layout={"mode":"column","alignSelf":"stretch","padding":"8px 20px 24px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [FRAME] "Frame" #56:1292 layout={"mode":"row","alignSelf":"stretch","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":40}}
+          [TEXT] #56:1293 layout=layout_177c5efc fills=fill_8fc20520 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":9,"lineHeight":"13.5px","letterSpacing":"0.2222em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Your shelf"
+          [FRAME] "Frame" #56:1294 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":32,"height":32}} fills=fill_87a9adb8 strokes=["rgba(255, 255, 255, 0.09)"] strokeWeight=1px borderRadius=16777200px
+            [IMAGE-SVG] "settings-icon" #56:1295 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":14,"height":14}}
+        [FRAME] "Frame" #56:1298 layout={"mode":"row","alignSelf":"stretch","padding":"8px 0px 0px","alignItems":"center","gap":"16px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [FRAME] "Frame" #56:1299 layout={"mode":"column","justifyContent":"center","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":64,"height":64}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(135deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0.05) 100%)"}] strokes=fill_f898a368 strokeWeight=1px borderRadius=16px
+            [TEXT] #56:1300 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":30,"lineHeight":"36px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="A"
+          [FRAME] "Frame" #56:1301 layout={"mode":"column","gap":"4px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [TEXT] #56:1302 layout=layout_177c5efc fills=fill_e3bcc91d textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":30,"lineHeight":"30px","letterSpacing":"0.01em","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Mike"
+            [TEXT] #56:1303 layout=layout_177c5efc fills=fill_8fc20520 textStyle={"fontFamily":"DM Mono","fontStyle":"Medium","fontWeight":500,"fontSize":10,"lineHeight":"15px","letterSpacing":"0.15em","textCase":"UPPER","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="@Mike"
+        [FRAME] "Frame" #56:1304 template=EL-81dd7003
+          [TEXT] #56:1305 layout=layout_56d3c81c fills=["rgba(255, 255, 255, 0.7)"] textStyle={"fontFamily":"Abel","fontStyle":"Regular","fontWeight":400,"fontSize":14,"lineHeight":"22px","textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="Cyberpunk lifer, corridor-horror apologist, and keeper of far too many lists. If it is on one shelf, it is on my shelf."
+        [FRAME] "Frame" #56:1306 layout={"mode":"row","alignSelf":"stretch","padding":"20px 0px 0px","gap":"10px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [FRAME] "Frame" #56:1307 template=EL-8920ae8f
+            [TEXT] #56:1308 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle=style_c08fd7b7 text="48"
+            [FRAME] "Frame" #56:1309 template=EL-069fd539
+              [TEXT] #56:1310 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_92d06aa1 text="logged"
+          [FRAME] "Frame" #56:1311 template=EL-8920ae8f
+            [TEXT] #56:1312 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle=style_c08fd7b7 text="4"
+            [FRAME] "Frame" #56:1313 template=EL-069fd539
+              [TEXT] #56:1314 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_92d06aa1 text="creators"
+          [FRAME] "Frame" #56:1315 template=EL-8920ae8f
+            [TEXT] #56:1316 layout=layout_56d3c81c fills=fill_e3bcc91d textStyle=style_c08fd7b7 text="3"
+            [FRAME] "Frame" #56:1317 template=EL-069fd539
+              [TEXT] #56:1318 layout=layout_177c5efc fills=fill_8fc20520 textStyle=style_92d06aa1 text="sealed"
+      [FRAME] "Frame" #56:1319 layout={"mode":"column","alignSelf":"stretch","padding":"0px 20px","sizing":{"horizontal":"fill","vertical":"hug"}}
+        [TEXT] #56:1320 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Top four of everything"
+        [FRAME] "Frame" #56:1321 template=EL-81dd7003
+          [FRAME] "Frame" #56:1322 template=EL-1bff462f
+            [TEXT] #56:1323 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_86f817c3 text="Games"
+            [TEXT] #56:1324 template=EL-784cc08a
+          [FRAME] "Frame" #56:1325 template=EL-f674ad1d
+            [FRAME] "Frame" #56:1326 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1327 template=EL-8eed6056
+                [FRAME] "Frame" #56:1328 template=EL-253ec0c6
+                [FRAME] "Frame" #56:1329 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1330 template=EL-2a073457
+                  [TEXT] #56:1331 layout=layout_177c5efc fills=fill_a45b2f4c textStyle="Distran/Utility/Doto 9 Bold 6" text="BG3"
+                  [FRAME] "Frame" #56:1332 template=EL-8a275127
+                    [TEXT] #56:1333 layout=layout_56d3c81c fills=fill_71d45aea textStyle="Distran/Utility/Abel 11 Regular 18" text="Baldur's Gate 3"
+              [FRAME] "Frame" #56:1334 template=EL-5565088c
+                [TEXT] #56:1335 template=EL-7849e73d
+            [FRAME] "Frame" #56:1336 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1337 template=EL-8e31d0f1
+                [FRAME] "Frame" #56:1338 template=EL-a2fb1bff
+                [FRAME] "Frame" #56:1339 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1340 template=EL-2a073457
+                  [TEXT] #56:1341 layout=layout_177c5efc fills=fill_b8aa5861 textStyle="Distran/Utility/Doto 9 Bold 6" text="ER"
+                  [FRAME] "Frame" #56:1342 template=EL-8a275127
+                    [TEXT] #56:1343 layout=layout_56d3c81c fills=fill_3f46df62 textStyle="Distran/Utility/Abel 11 Regular 18" text="Elden Ring"
+              [FRAME] "Frame" #56:1344 template=EL-5565088c
+                [TEXT] #56:1345 template=EL-0c096ce7
+            [FRAME] "Frame" #56:1346 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1347 template=EL-8eed6056
+                [FRAME] "Frame" #56:1348 template=EL-253ec0c6
+                [FRAME] "Frame" #56:1349 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1350 template=EL-2a073457
+                  [TEXT] #56:1351 layout=layout_177c5efc fills=fill_a45b2f4c textStyle="Distran/Utility/Doto 9 Bold 6" text="2077"
+                  [FRAME] "Frame" #56:1352 template=EL-8a275127
+                    [TEXT] #56:1353 layout=layout_56d3c81c fills=fill_71d45aea textStyle="Distran/Utility/Abel 11 Regular 18" text="Cyberpunk 2077"
+              [FRAME] "Frame" #56:1354 template=EL-5565088c
+                [TEXT] #56:1355 template=EL-2069da64
+            [FRAME] "Frame" #56:1356 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1357 template=EL-8e31d0f1
+                [FRAME] "Frame" #56:1358 template=EL-a2fb1bff
+                [FRAME] "Frame" #56:1359 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1360 template=EL-2a073457
+                  [TEXT] #56:1361 layout=layout_177c5efc fills=fill_b8aa5861 textStyle="Distran/Utility/Doto 9 Bold 6" text="IT2"
+                  [FRAME] "Frame" #56:1362 template=EL-8a275127
+                    [TEXT] #56:1363 layout=layout_56d3c81c fills=fill_3f46df62 textStyle="Distran/Utility/Abel 11 Regular 18" text="It Takes Two"
+              [FRAME] "Frame" #56:1364 template=EL-5565088c
+                [TEXT] #56:1365 template=EL-c8c47eb7
+        [FRAME] "Frame" #56:1366 layout={"mode":"column","alignSelf":"stretch","padding":"20px 0px 0px","alignItems":"stretch","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [FRAME] "Frame" #56:1367 template=EL-1bff462f
+            [TEXT] #56:1368 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_86f817c3 text="Film"
+            [TEXT] #56:1369 template=EL-784cc08a
+          [FRAME] "Frame" #56:1370 template=EL-f674ad1d
+            [FRAME] "Frame" #56:1371 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1372 template=EL-8eed6056
+                [FRAME] "Frame" #56:1373 template=EL-253ec0c6
+                [FRAME] "Frame" #56:1374 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1375 template=EL-2a073457
+                  [TEXT] #56:1376 layout=layout_177c5efc fills=fill_a45b2f4c textStyle="Distran/Utility/Doto 9 Bold 6" text="BR49"
+                  [FRAME] "Frame" #56:1377 template=EL-8a275127
+                    [TEXT] #56:1378 layout=layout_56d3c81c fills=fill_71d45aea textStyle="Distran/Utility/Abel 11 Regular 18" text="Blade Runner 2049"
+              [FRAME] "Frame" #56:1379 template=EL-5565088c
+                [TEXT] #56:1380 template=EL-7849e73d
+            [FRAME] "Frame" #56:1381 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1382 layout=layout_16917ffb fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(26, 20, 12, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] effects={"boxShadow":"0px 6px 16px 0px rgba(216, 180, 131, 0.1)"} borderRadius=8px
+                [FRAME] "Frame" #56:1383 layout=layout_28346b85 fills=fill_06f88e6e effects=effect_49a8bcf3 opacity=0.550000011920929 borderRadius=16777200px
+                [FRAME] "Frame" #56:1384 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1385 template=EL-2a073457
+                  [TEXT] #56:1386 layout=layout_177c5efc fills=["#E9C9A0"] textStyle="Distran/Utility/Doto 9 Bold 6" text="D2"
+                  [FRAME] "Frame" #56:1387 template=EL-8a275127
+                    [TEXT] #56:1388 layout=layout_56d3c81c fills=fill_06f88e6e textStyle="Distran/Utility/Abel 11 Regular 18" text="Dune: Part Two"
+              [FRAME] "Frame" #56:1389 template=EL-5565088c
+                [TEXT] #56:1390 template=EL-0c096ce7
+            [FRAME] "Frame" #56:1391 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1392 layout=layout_16917ffb fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(21, 19, 15, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] effects={"boxShadow":"0px 6px 16px 0px rgba(242, 239, 232, 0.1)"} borderRadius=8px
+                [FRAME] "Frame" #56:1393 layout=layout_28346b85 fills=fill_55e15e3f effects=effect_49a8bcf3 opacity=0.550000011920929 borderRadius=16777200px
+                [FRAME] "Frame" #56:1394 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1395 template=EL-2a073457
+                  [TEXT] #56:1396 layout=layout_177c5efc fills=fill_e3bcc91d textStyle="Distran/Utility/Doto 9 Bold 6" text="AR"
+                  [FRAME] "Frame" #56:1397 template=EL-8a275127
+                    [TEXT] #56:1398 layout=layout_56d3c81c fills=fill_55e15e3f textStyle="Distran/Utility/Abel 11 Regular 18" text="Arrival"
+              [FRAME] "Frame" #56:1399 template=EL-5565088c
+                [TEXT] #56:1400 template=EL-2069da64
+            [FRAME] "Frame" #56:1401 template=EL-8af0cbd5
+              [FRAME] "Frame" #56:1402 layout=layout_16917ffb fills=[{"type":"GRADIENT_RADIAL","gradient":"radial-gradient(circle at 15% 0%, rgba(11, 20, 24, 1) 0%, rgba(6, 6, 6, 1) 80%)"}] effects={"boxShadow":"0px 6px 16px 0px rgba(57, 208, 216, 0.1)"} borderRadius=8px
+                [FRAME] "Frame" #56:1403 layout=layout_28346b85 fills=fill_aae41927 effects=effect_49a8bcf3 opacity=0.550000011920929 borderRadius=16777200px
+                [FRAME] "Frame" #56:1404 template=EL-2eaa4802
+                [FRAME] "Frame" #56:1405 template=EL-2a073457
+                  [TEXT] #56:1406 layout=layout_177c5efc fills=["#7FF0F5"] textStyle="Distran/Utility/Doto 9 Bold 6" text="8"
+                  [FRAME] "Frame" #56:1407 template=EL-8a275127
+                    [TEXT] #56:1408 layout=layout_56d3c81c fills=fill_aae41927 textStyle="Distran/Utility/Abel 11 Regular 18" text="Exit 8"
+              [FRAME] "Frame" #56:1409 template=EL-5565088c
+                [TEXT] #56:1410 template=EL-c8c47eb7
+        [FRAME] "Frame" #56:1411 layout={"mode":"column","alignSelf":"stretch","padding":"24px 0px 0px","sizing":{"horizontal":"fill","vertical":"hug"}}
+          [TEXT] #56:1412 layout=layout_177c5efc fills=fill_556c5aa7 textStyle="Distran/Utility/DM Mono 8 Medium 11" text="Creators followed"
+          [FRAME] "Frame" #56:1413 layout={"mode":"column","alignSelf":"stretch","padding":"12px 0px 0px","alignItems":"stretch","gap":"8px","sizing":{"horizontal":"fill","vertical":"hug"}}
+            [FRAME] "Frame" #56:1414 template=EL-f96bbce8
+              [FRAME] "Frame" #56:1415 template=EL-b3b7abd1
+                [FRAME] "Frame" #56:1416 layout=layout_eb0545c6 fills=["#1C150A"] borderRadius=16777200px
+                  [TEXT] #56:1417 layout=layout_177c5efc fills=fill_71d45aea textStyle=style_2adbd50b text="C"
+                [TEXT] #56:1418 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_96778c2f text="CD PROJEKT RED"
+              [FRAME] "Frame" #56:1419 template=EL-b3b7abd1
+                [FRAME] "Frame" #56:1420 layout=layout_eb0545c6 fills=["#1A0B0D"] borderRadius=16777200px
+                  [TEXT] #56:1421 layout=layout_177c5efc fills=["#E05A4F"] textStyle=style_2adbd50b text="S"
+                [TEXT] #56:1422 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_96778c2f text="Studio Trigger"
+            [FRAME] "Frame" #56:1423 template=EL-f96bbce8
+              [FRAME] "Frame" #56:1424 template=EL-b3b7abd1
+                [FRAME] "Frame" #56:1425 layout=layout_eb0545c6 fills=["#1A140C"] borderRadius=16777200px
+                  [TEXT] #56:1426 layout=layout_177c5efc fills=fill_06f88e6e textStyle=style_2adbd50b text="D"
+                [TEXT] #56:1427 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_96778c2f text="Denis Villeneuve"
+              [FRAME] "Frame" #56:1428 template=EL-b3b7abd1
+                [FRAME] "Frame" #56:1429 layout=layout_eb0545c6 fills=["#101508"] borderRadius=16777200px
+                  [TEXT] #56:1430 layout=layout_177c5efc fills=fill_3f46df62 textStyle=style_2adbd50b text="H"
+                [TEXT] #56:1431 layout=layout_177c5efc fills=fill_e3bcc91d textStyle=style_96778c2f text="Hazelight"
+        [FRAME] "Frame" #56:1432 layout={"mode":"column","alignSelf":"stretch","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":20}}
+  [FRAME] "Navigation" #56:1433 layout={"mode":"row","padding":"0px 12px","alignItems":"stretch","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":0,"y":808},"dimensions":{"width":402,"height":66}} fills=["rgba(27, 27, 27, 0.5)"] effects={"backdropFilter":"blur(25px)"} borderRadius="10px 10px 2px 2px"
+    [FRAME] "Nav / Home" #67:435 template=EL-8257d511
+      [IMAGE-SVG] "Home icon" #67:436 layout=layout_a111c4b6 fills=fill_97d170e1 opacity=0.6000000238418579 componentId=61:8
+    [FRAME] "Nav / Discover" #67:439 template=EL-8257d511
+      [IMAGE-SVG] "Discover icon" #67:440 template=EL-31241652
+    [FRAME] "Nav / Lists" #67:443 template=EL-8257d511
+      [IMAGE-SVG] "Lists icon" #67:444 layout=layout_a111c4b6 opacity=0.6000000238418579
+    [FRAME] "Nav / Buddy & friends" #67:450 template=EL-8257d511
+      [IMAGE-SVG] "Buddy & friends icon" #67:451 template=EL-31241652
+    [FRAME] "Nav / Profile / Active" #67:453 template=EL-8257d511
+      [IMAGE-SVG] "Profile icon" #67:454 layout=layout_a111c4b6 fills=fill_97d170e1
+      [RECTANGLE] "Active tab light" #67:457 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"position":"absolute","locationRelativeToParent":{"x":22.8,"y":0},"dimensions":{"width":30,"height":4}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)"}] effects={"boxShadow":"0px 4px 20px 0px rgba(255, 255, 255, 0.4)"} borderRadius="0px 0px 8px 8px"

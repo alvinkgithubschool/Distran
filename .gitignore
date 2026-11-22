@@ -1,0 +1,21 @@
+local.properties
+.gradle/
+**/build/
+.env
+.venv/
+__pycache__/
+*.pyc
+ml/data/
+ml/artifacts/
+.ipynb_checkpoints/
+node_modules/
+**/dist/
+**/target/
+**/src-tauri/gen/
+**/test-results/
+**/playwright-report/
+.DS_Store
+*.tsbuildinfo
+# Local provider credentials, caches and developer overrides
+.env.*.local
+backend/data/

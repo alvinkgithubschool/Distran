@@ -1,0 +1,27 @@
+
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.5)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] Parsing notebook 'ml/notebooks/05_adaptive_personalization.ipynb'...
+/Users/alvin/.local/share/uv/tools/google-colab-cli/lib/python3.12/site-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  _validate(nbdict, ref, version, version_minor, relax_add_props)
+[colab] Executing cell 1/4 - Pin dependencies...
+0
+[colab] Executing cell 2/4 - Install the exact experiment source and app snapshots...
+installed {'adaptive_experiment.py': 61179, 'distran_ml/baseline.py': 3866, 'catalog-metadata.json': 4807, 'catalog-model-v2.json': 22814}
+[colab] Executing cell 3/4 - Preprocess, train encoders and the adaptive classifier, select on validation, evaluate test once...
+[colab] Executing cell 4/4 - Inspect measured results...
+selected adaptive hyperparameters: lr=0.1,reg=0.0
+test pointwise adaptive: {'logloss': 1.745827, 'brier': 0.52121, 'n': 13195}
+test pointwise shared-only: {'logloss': 2.729197, 'brier': 0.709318, 'n': 13195}
+popularity {'all': 0.0, 'game': 0.0161, 'screen': 0.0, 'game_to_screen': 0.0, 'screen_to_game': 0.0}
+bpr {'all': 0.0, 'game': 0.0, 'screen': 0.0, 'game_to_screen': 0.0, 'screen_to_game': 0.0}
+fixed_linear_heuristic {'all': 0.0, 'game': 0.0, 'screen': 0.0, 'game_to_screen': 0.0, 'screen_to_game': 0.0}
+shared_logistic {'all': 0.001, 'game': 0.012, 'screen': 0.0, 'game_to_screen': 0.0, 'screen_to_game': 0.0}
+adaptive {'all': 0.001, 'game': 0.012, 'screen': 0.0, 'game_to_screen': 0.0, 'screen_to_game': 0.0}
+textcnn: {'test_accuracy': 0.535827, 'test_macro_f1': 0.386317, 'majority_baseline': 0.597566, 'params': 196851}
+mini_gpt: {'val_perplexity': 34.6845, 'unigram_baseline_perplexity': 2047.3361, 'params': 808128}
+agreement: {'cnn_gpt_mean_cosine': 0.006765, 'probe_top3_jaccard_cnn_gpt': 0.175, 'probe_top3_jaccard_cnn_svd': 0.1, 'probe_top3_jaccard_cnn_svd_v2_app': 0.158333, 'probe_top3_jaccard_gpt_svd': 0.225, 'probe_top3_jaccard_gpt_svd_v2_app': 0.316667, 'probe_top3_jaccard_svd_svd_v2_app': 0.441667}
+Download /content/distran-adaptive/results.zip before stopping the runtime.
+[colab] Saving notebook with outputs to 'ml/notebooks/05_adaptive_personalization_output.ipynb'...
