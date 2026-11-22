@@ -18,22 +18,23 @@ if (typeof document !== 'undefined') {
   if (link.href !== FONT_HREF) link.href = FONT_HREF;
 }
 
-// Distran app design tokens (apps/desktop/src/styles/foundation.css)
+// Light-mode version of the Distran app tokens (dark app: #070708 bg / #f2efe8 ink;
+// here inverted for projection readability, accent darkened for contrast)
 export const design: DesignSystem = {
-  palette: { bg: '#070708', text: '#f2efe8', accent: '#b7c96c' },
+  palette: { bg: '#f6f5ef', text: '#1b1b16', accent: '#5e7d1e' },
   fonts: { display: 'Abel, sans-serif', body: 'Abel, sans-serif' },
   typeScale: { hero: 150, body: 33 },
   radius: 16,
 };
 
-const panel = '#0e0e10';
-const raised = '#151517';
-const line = 'rgba(255,255,255,0.075)';
-const muted = '#96948f';
-const subtle = '#64645f';
-const ink = '#f2efe8';
-const green = '#b7c96c';
-const amber = '#dfac68';
+const panel = '#ffffff';
+const raised = '#ecebe2';
+const line = 'rgba(25,25,18,0.12)';
+const muted = '#5b594f';
+const subtle = '#8f8d82';
+const ink = '#1b1b16';
+const green = '#5e7d1e';
+const amber = '#a8741c';
 const mono = '"DM Mono", ui-monospace, Menlo, monospace';
 
 const fill = {
@@ -114,7 +115,7 @@ const Plain = ({ children }: { children: ReactNode }) => (
   </p>
 );
 
-// "why this matters" callout for method/results slides
+// takeaway callout for method/results slides (no label — the border says it)
 const SoWhat = ({ children }: { children: ReactNode }) => (
   <div
     style={{
@@ -122,7 +123,7 @@ const SoWhat = ({ children }: { children: ReactNode }) => (
       border: `1px solid ${line}`,
       borderLeft: `3px solid var(--osd-accent)`,
       borderRadius: 12,
-      background: 'rgba(183,201,108,0.05)',
+      background: 'rgba(94,125,30,0.07)',
       padding: '18px 26px',
       fontSize: 25,
       lineHeight: 1.5,
@@ -130,9 +131,6 @@ const SoWhat = ({ children }: { children: ReactNode }) => (
       maxWidth: 1680,
     }}
   >
-    <span style={{ fontFamily: mono, fontSize: 19, letterSpacing: '0.16em', color: green, marginRight: 18 }}>
-      WHY THIS MATTERS
-    </span>
     {children}
   </div>
 );
@@ -165,7 +163,7 @@ const Formula = ({ children, size = 32 }: { children: ReactNode; size?: number }
   </div>
 );
 
-const Chip = ({ children, color = '#c9c7bd' }: { children: ReactNode; color?: string }) => (
+const Chip = ({ children, color = '#45433b' }: { children: ReactNode; color?: string }) => (
   <span
     style={{
       fontFamily: mono,
@@ -221,7 +219,7 @@ const Table = ({
           display: 'flex',
           height: rowH,
           alignItems: 'center',
-          background: highlightLast && ri === rows.length - 1 ? 'rgba(183,201,108,0.07)' : 'transparent',
+          background: highlightLast && ri === rows.length - 1 ? 'rgba(94,125,30,0.09)' : 'transparent',
           borderTop: `1px solid ${line}`,
           fontSize: size,
         }}
@@ -256,7 +254,7 @@ const DBox = ({
   <g>
     <rect
       x={x} y={y} width={w} height={h} rx={12}
-      fill={accent ? 'rgba(183,201,108,0.10)' : panel}
+      fill={accent ? 'rgba(94,125,30,0.10)' : panel}
       stroke={accent ? green : line}
       strokeWidth={accent ? 1.5 : 1}
     />
@@ -283,17 +281,32 @@ const DBox = ({
   </g>
 );
 
-const DArrow = ({ x1, y1, x2, y2, label, labelDy = -12 }: { x1: number; y1: number; x2: number; y2: number; label?: string; labelDy?: number }) => (
-  <g>
-    <line x1={x1} y1={y1} x2={x2 - 12} y2={y2} stroke={subtle} strokeWidth={2} />
-    <polygon points={`${x2},${y2} ${x2 - 11},${y2 - 6} ${x2 - 11},${y2 + 6}`} fill={subtle} />
-    {label && (
-      <text x={(x1 + x2) / 2} y={Math.min(y1, y2) + labelDy} textAnchor="middle" fill={muted} fontFamily={mono} fontSize={17}>
-        {label}
-      </text>
-    )}
-  </g>
-);
+const DArrow = ({ x1, y1, x2, y2, label, labelDy = -12 }: { x1: number; y1: number; x2: number; y2: number; label?: string; labelDy?: number }) => {
+  const mx = (x1 + x2) / 2;
+  const my = (y1 + y2) / 2;
+  // unit direction, shortened so the arrowhead lands on the target edge
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const len = Math.hypot(dx, dy) || 1;
+  const ux = dx / len;
+  const uy = dy / len;
+  const tipX = x2 - ux * 12;
+  const tipY = y2 - uy * 12;
+  return (
+    <g>
+      <line x1={x1} y1={y1} x2={tipX} y2={tipY} stroke={subtle} strokeWidth={2} />
+      <polygon
+        points={`${x2},${y2} ${x2 - ux * 13 - uy * 6},${y2 - uy * 13 + ux * 6} ${x2 - ux * 13 + uy * 6},${y2 - uy * 13 - ux * 6}`}
+        fill={subtle}
+      />
+      {label && (
+        <text x={mx} y={my + labelDy} textAnchor="middle" fill={muted} fontFamily={mono} fontSize={17}>
+          {label}
+        </text>
+      )}
+    </g>
+  );
+};
 
 const Caption = ({ children }: { children: ReactNode }) => (
   <div style={{ fontFamily: mono, fontSize: 20, color: subtle, lineHeight: 1.6 }}>{children}</div>
@@ -306,7 +319,7 @@ const Cover: Page = () => (
     style={{
       ...fill,
       background:
-        'radial-gradient(900px 620px at 82% 12%, rgba(183,201,108,0.10), transparent 62%), var(--osd-bg)',
+        'radial-gradient(900px 620px at 82% 12%, rgba(94,125,30,0.14), transparent 62%), var(--osd-bg)',
       color: 'var(--osd-text)',
       padding: '0 140px',
       display: 'flex',
@@ -355,7 +368,7 @@ const Cover: Page = () => (
       ))}
     </div>
     <div style={{ marginTop: 48, fontFamily: mono, fontSize: 20, color: subtle }}>
-      2026-11-22 · Google Colab CPU via colab CLI · NumPy 2.2.6 · 16 unit tests passing
+      Google Colab CPU via colab CLI · NumPy 2.2.6 · 16 unit tests passing
     </div>
   </div>
 );
@@ -364,7 +377,7 @@ const Agenda: Page = () => (
   <Shell kicker="Agenda" title="Three parts" page="02">
     <div style={{ display: 'flex', gap: 30, marginTop: 6 }}>
       {[
-        ['01', 'Introduction & approach', 'The problem, how earlier runs led here, our reasoning, and the method in brief', 'Hussein'],
+        ['01', 'Introduction & approach', 'The problem, previous iterations and learnings, our reasoning, and the method in brief', 'Hussein'],
         ['02', 'Method & training', 'System, data, model, encoders, Colab training — and what we expected', 'Alvin'],
         ['03', 'Results & learnings', 'Heldout numbers vs expectations, what held up, what we learned', 'Issa'],
       ].map(([n, t, s, who]) => (
@@ -439,14 +452,14 @@ const Problem: Page = () => (
   </Shell>
 );
 
-const Progression: Page = () => (
-  <Shell kicker="01 · Introduction" title="How we got here — four runs, each teaching one lesson" page="04">
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+const PrevIter1: Page = () => (
+  <Shell kicker="01 · Introduction" title="Previous iterations and learnings (1 of 2)" page="04">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
       {[
         ['NB 01–02', 'Smoke test + overlap audit', 'Checked whether public Amazon 5-core data could stand in for app events: 19,615 users appear in both games and movies.', '→ a cross-media proxy corpus exists'],
-        ['NB 03 · 11-16', 'Amazon BPR + SVD + popularity hybrid', 'Validation picked collaborative weight 0.0 — popularity beat BPR (NDCG@10 0.0184 vs 0.0105); BPR disabled in the app.', '→ on sparse data, popularity wins; collaborative needs more signal'],
-        ['NB 04 · 11-16', 'Kaggle metadata: 3 score regressors + TF-IDF/SVD', 'All regressors beat train-mean on heldout title groups; SVD became the serving encoder (v2).', '→ aggregate scores are text-predictable, but not personal taste'],
-        ['NB 05 · 11-22', 'This run: adaptive classifier + CNN/GPT encoders', 'Shared prior + per-user residual, chronological replay, test scored once; encoders benchmarked vs serving SVD.', '→ the experiment this deck presents'],
+        ['NB 03', 'Amazon BPR + SVD + popularity hybrid', 'Validation picked collaborative weight 0.0 — popularity beat BPR (NDCG@10 0.0184 vs 0.0105); BPR disabled in the app.', '→ on sparse data, popularity wins; collaborative needs more signal'],
+        ['NB 04', 'Kaggle metadata: 3 score regressors + TF-IDF/SVD', 'All regressors beat train-mean on heldout title groups; SVD became the serving encoder (v2).', '→ aggregate scores are text-predictable, but not personal taste'],
+        ['NB 05', 'This run: adaptive classifier + CNN/GPT encoders', 'Shared prior + per-user residual, chronological replay, test scored once; encoders benchmarked vs serving SVD.', '→ the experiment this deck presents'],
       ].map(([tag, title, res, lesson]) => (
         <div
           key={tag}
@@ -457,10 +470,10 @@ const Progression: Page = () => (
             border: `1px solid ${line}`,
             borderRadius: 14,
             background: panel,
-            padding: '16px 28px',
+            padding: '18px 28px',
           }}
         >
-          <div style={{ width: 140, fontFamily: mono, fontSize: 19, color: green, flexShrink: 0 }}>{tag}</div>
+          <div style={{ width: 140, fontFamily: mono, fontSize: 20, color: green, flexShrink: 0 }}>{tag}</div>
           <div style={{ flex: 1 }}>
             <div style={{ fontSize: 27, letterSpacing: '-0.01em' }}>{title}</div>
             <div style={{ fontSize: 22, color: muted, marginTop: 4, lineHeight: 1.35 }}>{res}</div>
@@ -478,8 +491,33 @@ const Progression: Page = () => (
   </Shell>
 );
 
+const PrevIter2: Page = () => (
+  <Shell kicker="01 · Introduction" title="Previous iterations and learnings (2 of 2) — what exists now" page="05">
+    <Table
+      rowH={62}
+      size={26}
+      cols={[
+        { label: 'component', w: 480 },
+        { label: 'evidence', w: 620 },
+        { label: 'role going forward', w: 580 },
+      ]}
+      rows={[
+        ['TF-IDF + SVD encoder (v3)', 'serving content model, 32,952 docs', 'baseline encoder'],
+        ['BPR collaborative (notebook 03)', 'validation chose weight 0.0', 'disabled — kept as benchmark'],
+        ['3 aggregate-score regressors (04)', 'heldout MAE beats train-mean', 'offline baselines only'],
+        ['Fixed-weight Home ranker', 'favourites + ratings + MMR, local', 'current rollback'],
+      ]}
+    />
+    <SoWhat>
+      Key insight carried from NB 04: <b>aggregate-score prediction is not personal taste</b> —
+      the regressors cannot become a personal ranker, so they stay offline baselines. Everything in the
+      app today is deterministic; the learned layer we propose would only reorder what the rules allow.
+    </SoWhat>
+  </Shell>
+);
+
 const WhyApproach: Page = () => (
-  <Shell kicker="01 · Introduction" title="Why this approach — reasoning and method in brief" page="05">
+  <Shell kicker="01 · Introduction" title="Why this approach — reasoning and method in brief" page="06">
     <div style={{ display: 'flex', gap: 48 }}>
       <div style={{ flex: 1.2 }}>
         <Bullets
@@ -514,30 +552,6 @@ const WhyApproach: Page = () => (
   </Shell>
 );
 
-const Baselines: Page = () => (
-  <Shell kicker="01 · Introduction" title="Starting point: what already existed" page="06">
-    <Table
-      rowH={62}
-      size={26}
-      cols={[
-        { label: 'component', w: 480 },
-        { label: 'evidence', w: 620 },
-        { label: 'role in this project', w: 580 },
-      ]}
-      rows={[
-        ['TF-IDF + SVD encoder (v3)', 'serving content model, 32,952 docs', 'baseline encoder'],
-        ['BPR collaborative (notebook 03)', 'validation chose weight 0.0', 'disabled — kept as benchmark'],
-        ['3 aggregate-score regressors (04)', 'heldout MAE beats train-mean', 'offline baselines only'],
-        ['Fixed-weight Home ranker', 'favourites + ratings + MMR, local', 'current rollback'],
-      ]}
-    />
-    <SoWhat>
-      Key insight carried from NB 04: <b>aggregate-score prediction is not personal taste</b> —
-      the regressors cannot become a personal ranker, so they stay offline baselines.
-    </SoWhat>
-  </Shell>
-);
-
 const SystemDiagram: Page = () => (
   <Shell kicker="02 · Method" title="The proposed system, end to end" page="07">
     <Plain>
@@ -555,18 +569,18 @@ const SystemDiagram: Page = () => (
       <DArrow x1={560} y1={88} x2={620} y2={88} />
       <DArrow x1={870} y1={88} x2={930} y2={88} />
       <DArrow x1={1200} y1={88} x2={1260} y2={88} />
-      <DBox x={1260} y={260} w={410} h={96} label="MMR diversity" sub="ρ·score − (1−ρ)·max cos" num="6" />
-      <DBox x={950} y={260} w={270} h={96} label="Home / Buddy" sub="cards shown" num="7" />
-      <DBox x={600} y={260} w={310} h={96} label="Feedback events" sub="rating · favourite · dislike" num="8" />
-      <DBox x={260} y={260} w={300} h={96} label="Private profile" sub="long-term + recent, decay" />
-      <DArrow x1={1465} y1={136} x2={1465} y2={260} />
-      <DArrow x1={1260} y1={308} x2={1220} y2={308} />
-      <DArrow x1={950} y1={308} x2={910} y2={308} />
-      <DArrow x1={600} y1={308} x2={560} y2={308} />
-      <DArrow x1={410} y1={260} x2={410} y2={180} />
-      <DArrow x1={410} y1={180} x2={1065} y2={180} />
-      <DArrow x1={1065} y1={180} x2={1065} y2={136} label="as-of features" labelDy={34} />
-      <text x={840} y={430} textAnchor="middle" fill={subtle} fontFamily={mono} fontSize={19}>
+      <DBox x={1260} y={270} w={410} h={96} label="MMR diversity" sub="ρ·score − (1−ρ)·max cos" num="6" />
+      <DBox x={950} y={270} w={270} h={96} label="Home / Buddy" sub="cards shown" num="7" />
+      <DBox x={600} y={270} w={310} h={96} label="Feedback events" sub="rating · favourite · dislike" num="8" />
+      <DBox x={260} y={270} w={300} h={96} label="Private profile" sub="long-term + recent, decay" />
+      <DArrow x1={1465} y1={136} x2={1465} y2={270} />
+      <DArrow x1={1260} y1={318} x2={1220} y2={318} />
+      <DArrow x1={950} y1={318} x2={910} y2={318} />
+      <DArrow x1={600} y1={318} x2={560} y2={318} />
+      <DArrow x1={410} y1={270} x2={410} y2={185} />
+      <DArrow x1={410} y1={185} x2={1065} y2={185} />
+      <DArrow x1={1065} y1={185} x2={1065} y2={136} label="as-of features" labelDy={36} />
+      <text x={840} y={440} textAnchor="middle" fill={subtle} fontFamily={mono} fontSize={19}>
         learned weights reorder eligible candidates only — hard filters stay deterministic
       </text>
     </svg>
@@ -592,9 +606,9 @@ const Data: Page = () => (
           />
         </div>
         <div style={{ display: 'flex', height: 30, marginTop: 16, borderRadius: 8, overflow: 'hidden', border: `1px solid ${line}` }}>
-          <div style={{ width: '60%', background: '#1c2416' }} />
-          <div style={{ width: '20%', background: '#232a18' }} />
-          <div style={{ width: '20%', background: '#2c351d' }} />
+          <div style={{ width: '60%', background: '#e4eac9' }} />
+          <div style={{ width: '20%', background: '#d8e0b2' }} />
+          <div style={{ width: '20%', background: '#cbd79b' }} />
         </div>
         <div style={{ marginTop: 10 }}>
           <Caption>chronological global cutoffs · deterministic 1/128 user sample · salted pseudonyms</Caption>
@@ -614,9 +628,9 @@ const Data: Page = () => (
           />
         </div>
         <div style={{ display: 'flex', height: 30, marginTop: 16, borderRadius: 8, overflow: 'hidden', border: `1px solid ${line}` }}>
-          <div style={{ width: '60%', background: '#1c2416' }} />
-          <div style={{ width: '20%', background: '#232a18' }} />
-          <div style={{ width: '20%', background: '#2c351d' }} />
+          <div style={{ width: '60%', background: '#e4eac9' }} />
+          <div style={{ width: '20%', background: '#d8e0b2' }} />
+          <div style={{ width: '20%', background: '#cbd79b' }} />
         </div>
         <div style={{ marginTop: 10 }}>
           <Caption>title-hash group split (0–5 / 6–7 / 8–9) · aggregate scores = quality, never taste</Caption>
@@ -679,9 +693,9 @@ const CnnPage: Page = () => (
       <DBox x={560} y={20} w={310} h={86} label="conv1d  k=3 · 16 filters" num="3" />
       <DBox x={560} y={157} w={310} h={86} label="conv1d  k=4 · 16 filters" accent num="3" />
       <DBox x={560} y={294} w={310} h={86} label="conv1d  k=5 · 16 filters" num="3" />
-      <DArrow x1={500} y1={200} x2={560} y2={63} />
+      <DArrow x1={500} y1={188} x2={560} y2={63} />
       <DArrow x1={500} y1={200} x2={560} y2={200} />
-      <DArrow x1={500} y1={200} x2={560} y2={337} />
+      <DArrow x1={500} y1={212} x2={560} y2={337} />
       <DBox x={950} y={157} w={230} h={86} label="ReLU + max-pool" sub="over time" num="4" />
       <DArrow x1={870} y1={63} x2={950} y2={185} />
       <DArrow x1={870} y1={200} x2={950} y2={200} />
@@ -709,14 +723,14 @@ const GptPage: Page = () => (
     </Plain>
     <svg width={1680} height={430} viewBox="0 0 1680 430">
       <DBox x={10} y={160} w={230} h={96} label="tokens + positions" sub="learned embeddings" num="1" />
-      <DArrow x1={240} y1={208} x2={300} y2={208} />
+      <DArrow x1={240} y1={200} x2={300} y2={110} />
       <DBox x={300} y={30} w={660} h={140} label="transformer block ×2 (pre-LN)" sub="causal MHA · 2 heads · d=48 → residual · FFN 96 GELU → residual" num="2" />
       <DBox x={300} y={240} w={660} h={100} label="final LayerNorm + head" sub="linear d → vocab, softmax" num="3" />
       <DArrow x1={630} y1={170} x2={630} y2={240} />
       <DArrow x1={960} y1={290} x2={1020} y2={290} />
       <DBox x={1020} y={242} w={230} h={96} label="next-token" sub="cross-entropy" accent num="4" />
       <DArrow x1={1250} y1={290} x2={1310} y2={290} />
-      <DBox x={1310} y={242} w={360} h={96} label="loss" sub="shifted targets, causal mask t ≤ t′" num="5" />
+      <DBox x={1310} y={242} w={360} h={96} label="loss" sub="shifted targets · causal mask" num="5" />
       <text x={10} y={415} fill={subtle} fontFamily={mono} fontSize={19}>
         1,200 Adam steps · batch 16 · 808,128 params · pure NumPy · embeddings = mean-pooled hidden states · metric: val perplexity
       </text>
@@ -741,13 +755,13 @@ const Training: Page = () => (
             border: `1px solid ${line}`,
             borderRadius: 14,
             padding: '24px 28px',
-            color: '#c9c7bd',
+            color: '#3c3a33',
           }}
         >
-          <div><span style={{ color: green }}>colab</span> new -s distran-adaptive-20261122</div>
+          <div><span style={{ color: green }}>colab</span> new -s distran-adaptive-run</div>
           <div><span style={{ color: green }}>colab</span> exec -s … 05_adaptive….ipynb</div>
           <div><span style={{ color: green }}>colab</span> download -s … results.zip</div>
-          <div><span style={{ color: green }}>colab</span> stop -s distran-adaptive-20261122</div>
+          <div><span style={{ color: green }}>colab</span> stop -s distran-adaptive-run</div>
         </div>
         <div style={{ marginTop: 24 }}>
           <Bullets
@@ -994,7 +1008,7 @@ const Conclusions: Page = () => (
             border: `1px solid ${line}`,
             borderRadius: 14,
             padding: '22px 26px',
-            color: '#c9c7bd',
+            color: '#3c3a33',
             marginTop: 16,
           }}
         >
@@ -1023,7 +1037,7 @@ const Thanks: Page = () => (
     style={{
       ...fill,
       background:
-        'radial-gradient(900px 620px at 50% 0%, rgba(183,201,108,0.10), transparent 62%), var(--osd-bg)',
+        'radial-gradient(900px 620px at 50% 0%, rgba(94,125,30,0.14), transparent 62%), var(--osd-bg)',
       color: 'var(--osd-text)',
       padding: '0 140px',
       display: 'flex',
@@ -1076,13 +1090,13 @@ const Sources: Page = () => (
   <Shell kicker="Appendix" title="Sources and references" page="20">
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
       {[
-        ['Ada-Pref — Adaptive Preference Scaling for RLHF (per-instance preference strength; motivates our per-user δᵤ)', 'Hong et al., 2024', 'https://arxiv.org/abs/2406.02764'],
-        ['Amazon Reviews 2023 — 5-core ratings (interaction corpus for NB 03/05)', 'Ni et al., 2023', 'https://amazon-reviews-2023.github.io/data_processing/5core.html'],
+        ['Ada-Pref — Adaptive Preference Scaling for RLHF (per-instance preference strength; motivates our per-user δᵤ)', 'Hong et al.', 'https://arxiv.org/abs/2406.02764'],
+        ['Amazon Reviews — 5-core ratings release (interaction corpus for NB 03/05)', 'Ni et al.', 'https://amazon-reviews-2023.github.io/data_processing/5core.html'],
         ['TMDB popular movies 10k (movie metadata corpus)', 'Kaggle · balaka18', 'https://www.kaggle.com/datasets/balaka18/tmdb-top-10000-popular-movies-dataset'],
         ['Video game sales with ratings (game metadata, NB 04)', 'Kaggle · rush4ratio', 'https://www.kaggle.com/datasets/rush4ratio/video-game-sales-with-ratings'],
-        ['HowLongToBeat snapshot 2025-11 (newer game metadata)', 'Kaggle · zaireali', 'https://www.kaggle.com/datasets/zaireali/howlongtobeat-games-scraper-2162025'],
-        ['LightFM — hybrid metadata + collaborative recommender (baseline considered, deferred)', 'Kula, 2015', 'https://arxiv.org/abs/1507.08439'],
-        ['LinUCB — contextual bandits (deferred until logged exposures exist)', 'Li et al., 2010', 'https://arxiv.org/abs/1003.0146'],
+        ['HowLongToBeat snapshot (newer game metadata)', 'Kaggle · zaireali', 'https://www.kaggle.com/datasets/zaireali/howlongtobeat-games-scraper-2162025'],
+        ['LightFM — hybrid metadata + collaborative recommender (baseline considered, deferred)', 'Kula', 'https://arxiv.org/abs/1507.08439'],
+        ['LinUCB — contextual bandits (deferred until logged exposures exist)', 'Li et al.', 'https://arxiv.org/abs/1003.0146'],
         ['Probability calibration guidance (reliability diagrams, log loss/Brier)', 'scikit-learn docs', 'https://scikit-learn.org/stable/modules/calibration.html'],
         ['TMDB API · IGDB API (live catalog providers in the app)', 'themoviedb.org · api.igdb.com', 'https://www.themoviedb.org/ · https://api.igdb.com/'],
         ['Distran repository — notebooks 03–05, results, tests, this deck', 'this project', 'https://github.com/alvinkgithubschool/Distran'],
@@ -1125,20 +1139,20 @@ export const meta: SlideMeta = {
 export const notes: (string | undefined)[] = [
   'Hussein: open with the app itself — Distran is one ledger across films, TV and games. Today we present the ML project behind making its recommendations adaptive: what we trained, how, and what the heldout numbers actually showed.',
   'Agenda: three parts. I cover the introduction and our reasoning; Alvin takes the method and training; Issa takes the results and what we learned.',
-  'Hussein: the problem. Recommendations across formats from one profile. Two constraints shaped everything: no logged impressions in the app, and public metadata has no user preferences — so Amazon 5-core ratings are our proxy interaction corpus. The “why this matters” box is the takeaway: we need a model that learns from very few explicit signals and can be evaluated honestly first.',
-  'Hussein: progression. This project is the fourth run. NB 01–02 showed a public cross-media proxy corpus exists. NB 03 showed popularity beats BPR on sparse data — validation literally picked collaborative weight zero. NB 04 showed aggregate scores are predictable from text but that is not personal taste. Each run removed an option, which is why this run is an online per-user preference model.',
-  'Hussein: our reasoning, and the method in one line. We fuse features and scores, never average parameters. The model is deliberately small — 13 features, shared prior plus private per-user residual. Read the formula. It is an adaptive preference classifier: same per-instance adaptation idea as Ada-Pref in RLHF, applied per user.',
-  'Hussein: the starting point. SVD v3 serves content vectors; BPR is disabled; the regressors are offline baselines; the fixed-weight ranker is the rollback. Key insight: aggregate-score prediction is not personal taste.',
+  'Hussein: the problem. Recommendations across formats from one profile. Two constraints shaped everything: no logged impressions in the app, and public metadata has no user preferences — so Amazon 5-core ratings are our proxy interaction corpus. The takeaway box: we need a model that learns from very few explicit signals and can be evaluated honestly first.',
+  'Hussein: previous iterations, part one. NB 01–02 showed a public cross-media proxy corpus exists. NB 03 showed popularity beats BPR on sparse data — validation literally picked collaborative weight zero. NB 04 showed aggregate scores are predictable from text but that is not personal taste. Each run removed an option, which is why this run is an online per-user preference model.',
+  'Hussein: previous iterations, part two — what exists in the app now. SVD v3 serves content vectors; BPR is disabled; the regressors are offline baselines; the fixed-weight ranker is the rollback. Everything today is deterministic; the learned layer would only reorder what the rules allow.',
+  'Hussein: our reasoning, and the method in one line. We fuse features and scores, never average parameters. The model is deliberately small — 13 features, shared prior plus private per-user residual. It is an adaptive preference classifier: same per-instance adaptation idea as Ada-Pref in RLHF, applied per user.',
   'Alvin: the system end to end, in plain words first. Catalog proposes candidates, hard rules remove ineligible ones, the classifier scores the rest, MMR diversifies the final cards, and feedback flows back into the private profile. Numbered boxes show the flow; the caption states the safety property: learned weights only reorder eligible candidates — hard filters stay deterministic.',
   'Alvin: data and protocol. Left: Amazon sample, chronological 60/20/20 split — test is genuinely the future. Right: 20k-document Kaggle corpus with a title-hash group split for the encoders. Leakage controls in the box: train-only fitting everywhere, cold items counted not retrieved, SHA256 provenance.',
   'Alvin: the model. It answers one question per candidate: would this user rate it 4+ stars? The 13 features as chips; the online update rule — predict before learning from each event, updates clipped, weights bounded. Why an APC fits us: cold users still get sensible scores from the shared prior, a few own ratings move the private residual, weights are interpretable, and it serves as local JSON with no GPU.',
-  'Alvin: TextCNN in plain words — sliding windows over the description turn word patterns into features and predict the public score bucket. Walk the numbered diagram left to right. 196k parameters, pure NumPy, backward pass gradient-checked. It is a benchmark for whether text can predict aggregate scores at all.',
-  'Alvin: mini-GPT in plain words — predict the next word of a description; the representation that does this well is our embedding. Two pre-LN blocks, causal attention, 808k params, 1,200 Adam steps, all in NumPy. Metric: validation perplexity against a trivial unigram baseline, so the number is interpretable.',
+  'Alvin: TextCNN in plain words — sliding windows over the description turn word patterns into features and predict the public score bucket. Walk the numbered diagram left to right: tokens, embeddings, three conv widths, ReLU, max-over-time pooling, concat, linear head. 196k parameters, pure NumPy, gradient-checked.',
+  'Alvin: mini-GPT in plain words — predict the next word of a description; the representation that does this well is our embedding. Walk the diagram: token and position embeddings feed two pre-LN transformer blocks with causal attention, then a final LayerNorm and head to the vocabulary, trained next-token. 808k params, 1,200 Adam steps, all in NumPy. Metric: validation perplexity vs a trivial unigram baseline.',
   'Alvin: training ran on a Colab CPU runtime through the CLI, pinned versions verified in a fresh subprocess, ten checkpointed stages so interrupted cells resume. Hyperparameters were selected on validation — eta 0.1, lambda 0 — and test was scored exactly once. 187 seconds of compute in the final pass.',
   'Alvin: before results, our pre-registered expectations — five hypotheses with reasoning and where each verdict lands. This keeps the test read honest: we never tuned against test.',
   'Issa: encoder results against baselines. H3 confirmed — the mini-GPT cuts perplexity from 2,047 to 34.7, real language structure. H4 not confirmed — the TextCNN does not beat majority on score buckets. And the encoders disagree with the serving SVD, so neither replaces it: text similarity is not relevance.',
   'Issa: pointwise classifier results. H1 confirmed: the per-user residual cuts log loss from 2.73 to 1.75 and Brier from 0.71 to 0.52 — a few ratings per user genuinely move the prediction. Caveat: probabilities are miscalibrated due to a base-rate shift, so use scores for ranking only, never quote them as chances.',
-  'Issa: ranking results. H2 not confirmed: adaptive and shared logistic are identical to three decimals on NDCG@10 and popularity still edges the small game cohort. The reason is cold start — 8,718 unseen-item positives and 849 users with no history. The honest reading: pointwise gains do not automatically become top-10 gains at this scale, which is why nothing was promoted.',
+  'Issa: ranking results. H2 not confirmed: adaptive and shared logistic are identical to three decimals on NDCG@10 and popularity still edges the small game cohort. The reason is cold start — 8,718 unseen-item positives and 849 users with no history. Pointwise gains do not automatically become top-10 gains at this scale, which is why nothing was promoted.',
   'Issa: what we learned, mapped to the hypotheses. The adaptive linear head is sound and cheap; the encoders learned but do not beat the serving SVD; nothing gets promoted without app-side evaluation. Net lesson: small, online, honestly evaluated beats big and static — and pointwise and ranking quality must each be measured in their own metric.',
   'Issa: conclusions and next steps. Keep the adaptive head as the Phase A prototype behind an event ledger, benchmarked against the fixed-weight ranker which remains the rollback. Bandits only once propensities exist. All evidence is in the repo — linked on the slide.',
   'All: thank you — happy to take questions. Everything shown is reproducible from the repo: the notebook hash, report.json and tests are linked on the previous slide, and full source links are next.',
@@ -1149,9 +1163,9 @@ export default [
   Cover,
   Agenda,
   Problem,
-  Progression,
+  PrevIter1,
+  PrevIter2,
   WhyApproach,
-  Baselines,
   SystemDiagram,
   Data,
   Model,
