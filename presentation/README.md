@@ -1,14 +1,17 @@
 # Distran — AI unit project presentation
 
-A 17-slide, 16:9 deck for the semester AI unit project: **"Distran: adaptive
+A 20-slide, 16:9 deck for the semester AI unit project: **"Distran: adaptive
 cross-media recommendations"** — training a shared-prior online classifier with
 CNN and GPT-style content encoders, executed on Colab and measured on heldout data.
 
 Presenters: **169183 Hussein** (introduction), **167602 Alvin** (methodology),
 **190003 Issa** (results & conclusions). Structure: Introduction → Methodology →
-Results & Conclusions, with the system diagram, the model formula
+Results & Conclusions, with a progression slide (what notebooks 01–04 taught us),
+the system diagram, the model formula
 `p(u,i,c) = σ(b + bᵤ + (θ + δᵤ)·x)`, encoder architecture diagrams, the Colab
-training protocol, and the measured results tables.
+training protocol, pre-registered hypotheses, the measured results tables
+compared against those expectations, and a closing thank-you/Q&A plus a sources
+page with hyperlinks.
 
 ## View the deck
 
