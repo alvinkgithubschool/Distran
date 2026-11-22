@@ -1,28 +1,61 @@
 import type { DesignSystem, Page, SlideMeta } from '@open-slide/core';
 import type { CSSProperties, ReactNode } from 'react';
+import brand from './assets/brand.svg';
 
+// Brand fonts matching the app (@fontsource/abel + @fontsource/dm-mono there;
+// loaded here from Google Fonts once, keyed to this slide's id).
+const FONT_HREF =
+  'https://fonts.googleapis.com/css2?family=Abel&family=DM+Mono:wght@400;500&display=swap';
+const FONT_LINK_ID = 'osd-webfont-distran-ai-project';
+if (typeof document !== 'undefined') {
+  let link = document.getElementById(FONT_LINK_ID) as HTMLLinkElement | null;
+  if (!link) {
+    link = document.createElement('link');
+    link.id = FONT_LINK_ID;
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+  }
+  if (link.href !== FONT_HREF) link.href = FONT_HREF;
+}
+
+// Distran app design tokens (apps/desktop/src/styles/foundation.css)
 export const design: DesignSystem = {
-  palette: { bg: '#0c1222', text: '#eef2ff', accent: '#fbbf24' },
-  fonts: {
-    display: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
-    body: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
-  },
-  typeScale: { hero: 150, body: 34 },
-  radius: 14,
+  palette: { bg: '#070708', text: '#f2efe8', accent: '#b7c96c' },
+  fonts: { display: 'Abel, sans-serif', body: 'Abel, sans-serif' },
+  typeScale: { hero: 150, body: 33 },
+  radius: 16,
 };
 
-const muted = '#8b94ad';
-const panel = 'rgba(255,255,255,0.045)';
-const rule = 'rgba(255,255,255,0.14)';
-const mono = 'ui-monospace, "SF Mono", Menlo, Consolas, monospace';
-const green = '#34d399';
-const red = '#f87171';
+const panel = '#0e0e10';
+const raised = '#151517';
+const line = 'rgba(255,255,255,0.075)';
+const muted = '#96948f';
+const subtle = '#64645f';
+const ink = '#f2efe8';
+const green = '#b7c96c';
+const amber = '#dfac68';
+const red = '#e07a6a';
+const mono = '"DM Mono", ui-monospace, Menlo, monospace';
 
 const fill = {
   width: '100%',
   height: '100%',
   fontFamily: 'var(--osd-font-body)',
 } as const;
+
+const Eyebrow = ({ children, color = subtle }: { children: ReactNode; color?: string }) => (
+  <div
+    style={{
+      fontFamily: mono,
+      fontSize: 22,
+      letterSpacing: '0.19em',
+      textTransform: 'uppercase',
+      color,
+    }}
+  >
+    {children}
+  </div>
+);
 
 const Shell = ({
   kicker,
@@ -40,46 +73,43 @@ const Shell = ({
       ...fill,
       background: 'var(--osd-bg)',
       color: 'var(--osd-text)',
-      padding: '88px 120px 72px',
+      padding: '84px 120px 64px',
       display: 'flex',
       flexDirection: 'column',
     }}
   >
-    <div style={{ fontSize: 24, color: 'var(--osd-accent)', letterSpacing: '0.22em', fontWeight: 700 }}>
-      {kicker}
-    </div>
+    <Eyebrow>{kicker}</Eyebrow>
     <h2
       style={{
         fontFamily: 'var(--osd-font-display)',
-        fontSize: 62,
-        fontWeight: 800,
-        margin: '18px 0 0',
+        fontSize: 58,
+        fontWeight: 400,
+        letterSpacing: '-0.025em',
         lineHeight: 1.1,
+        margin: '16px 0 0',
       }}
     >
       {title}
     </h2>
-    <div style={{ width: 110, height: 4, background: 'var(--osd-accent)', margin: '26px 0 36px' }} />
+    <div style={{ width: 96, height: 3, background: 'var(--osd-accent)', margin: '26px 0 40px' }} />
     {children}
     <div
       style={{
         marginTop: 'auto',
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
+        fontFamily: mono,
         fontSize: 21,
-        color: muted,
-        borderTop: `1px solid ${rule}`,
-        paddingTop: 18,
+        color: subtle,
       }}
     >
-      <span>Distran · Adaptive cross-media recommendations · AI Unit semester project</span>
-      <span>{page}</span>
+      {page} / 17
     </div>
   </div>
 );
 
-const Bullets = ({ items, size = 33, gap = 22 }: { items: ReactNode[]; size?: number; gap?: number }) => (
-  <ul style={{ margin: 0, paddingLeft: 40, fontSize: size, lineHeight: 1.45 }}>
+const Bullets = ({ items, size = 30, gap = 20 }: { items: ReactNode[]; size?: number; gap?: number }) => (
+  <ul style={{ margin: 0, paddingLeft: 34, fontSize: size, lineHeight: 1.5, color: ink }}>
     {items.map((b, i) => (
       <li key={i} style={{ marginBottom: gap }}>
         {b}
@@ -88,50 +118,66 @@ const Bullets = ({ items, size = 33, gap = 22 }: { items: ReactNode[]; size?: nu
   </ul>
 );
 
-const Formula = ({ children, size = 34 }: { children: ReactNode; size?: number }) => (
+const Formula = ({ children, size = 32 }: { children: ReactNode; size?: number }) => (
   <div
     style={{
       fontFamily: mono,
       fontSize: size,
       background: panel,
-      border: `1px solid ${rule}`,
-      borderRadius: 'var(--osd-radius)',
-      padding: '22px 32px',
-      color: '#fde68a',
+      border: `1px solid ${line}`,
+      borderRadius: 12,
+      padding: '20px 28px',
+      color: ink,
       width: 'fit-content',
+      lineHeight: 1.5,
     }}
   >
     {children}
   </div>
 );
 
-type Col = { label: string; w: number };
+const Chip = ({ children, color = '#c9c7bd' }: { children: ReactNode; color?: string }) => (
+  <span
+    style={{
+      fontFamily: mono,
+      fontSize: 20,
+      border: `1px solid ${line}`,
+      borderRadius: 999,
+      padding: '8px 16px',
+      background: panel,
+      color,
+    }}
+  >
+    {children}
+  </span>
+);
+
 const Table = ({
   cols,
   rows,
-  rowH = 50,
-  size = 26,
+  rowH = 52,
+  size = 25,
   highlightLast = false,
 }: {
-  cols: Col[];
+  cols: { label: string; w: number }[];
   rows: (string | ReactNode)[][];
   rowH?: number;
   size?: number;
   highlightLast?: boolean;
 }) => (
-  <div style={{ border: `1px solid ${rule}`, borderRadius: 'var(--osd-radius)', overflow: 'hidden' }}>
-    <div style={{ display: 'flex', background: panel, height: rowH, alignItems: 'center' }}>
+  <div style={{ border: `1px solid ${line}`, borderRadius: 14, overflow: 'hidden', background: panel }}>
+    <div style={{ display: 'flex', height: rowH, alignItems: 'center', background: raised }}>
       {cols.map((c, i) => (
         <div
           key={i}
           style={{
             width: c.w,
-            fontSize: size - 3,
-            fontWeight: 700,
-            color: muted,
-            padding: '0 20px',
+            fontFamily: mono,
+            fontSize: 19,
+            letterSpacing: '0.14em',
             textTransform: 'uppercase',
-            letterSpacing: '0.08em',
+            color: subtle,
+            padding: '0 22px',
           }}
         >
           {c.label}
@@ -145,13 +191,22 @@ const Table = ({
           display: 'flex',
           height: rowH,
           alignItems: 'center',
-          background: highlightLast && ri === rows.length - 1 ? 'rgba(251,191,36,0.10)' : 'transparent',
-          borderTop: `1px solid ${rule}`,
+          background: highlightLast && ri === rows.length - 1 ? 'rgba(183,201,108,0.07)' : 'transparent',
+          borderTop: `1px solid ${line}`,
           fontSize: size,
         }}
       >
         {r.map((cell, ci) => (
-          <div key={ci} style={{ width: cols[ci].w, padding: '0 20px', fontFamily: ci === 0 ? 'inherit' : mono, fontSize: ci === 0 ? size : size - 2 }}>
+          <div
+            key={ci}
+            style={{
+              width: cols[ci].w,
+              padding: '0 22px',
+              fontFamily: ci === 0 ? 'inherit' : mono,
+              fontSize: ci === 0 ? size : size - 3,
+              color: ci === 0 ? ink : muted,
+            }}
+          >
             {cell}
           </div>
         ))}
@@ -160,38 +215,56 @@ const Table = ({
   </div>
 );
 
-const Box = ({
-  x, y, w, h, label, sub, accent = false, size = 24,
+// Diagram primitives — labeled, app-styled
+const DBox = ({
+  x, y, w, h, label, sub, accent = false, num,
 }: {
-  x: number; y: number; w: number; h: number; label: string; sub?: string; accent?: boolean; size?: number;
+  x: number; y: number; w: number; h: number; label: string; sub?: string; accent?: boolean; num?: string;
 }) => (
   <g>
     <rect
-      x={x} y={y} width={w} height={h} rx={10}
-      fill={accent ? 'rgba(251,191,36,0.16)' : panel}
-      stroke={accent ? 'var(--osd-accent)' : rule}
-      strokeWidth={accent ? 2 : 1}
+      x={x} y={y} width={w} height={h} rx={12}
+      fill={accent ? 'rgba(183,201,108,0.10)' : panel}
+      stroke={accent ? green : line}
+      strokeWidth={accent ? 1.5 : 1}
     />
-    <text x={x + w / 2} y={y + h / 2 - (sub ? 12 : 0)} textAnchor="middle" fill={accent ? '#fde68a' : '#eef2ff'} fontSize={size} fontWeight={700}>
+    {num && (
+      <text x={x + 16} y={y + 26} fill={green} fontFamily={mono} fontSize={18}>
+        {num}
+      </text>
+    )}
+    <text
+      x={x + w / 2}
+      y={y + h / 2 - (sub ? 13 : 0)}
+      textAnchor="middle"
+      fill={ink}
+      fontSize={24}
+      fontWeight={400}
+    >
       {label}
     </text>
     {sub && (
-      <text x={x + w / 2} y={y + h / 2 + 22} textAnchor="middle" fill={muted} fontSize={size - 6}>
+      <text x={x + w / 2} y={y + h / 2 + 20} textAnchor="middle" fill={muted} fontFamily={mono} fontSize={17}>
         {sub}
       </text>
     )}
   </g>
 );
 
-const Arrow = ({ x1, y1, x2, y2 }: { x1: number; y1: number; x2: number; y2: number }) => (
+const DArrow = ({ x1, y1, x2, y2, label }: { x1: number; y1: number; x2: number; y2: number; label?: string }) => (
   <g>
-    <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={muted} strokeWidth={2.5} />
-    <polygon
-      points={`${x2},${y2} ${x2 - 10},${y2 - 6} ${x2 - 10},${y2 + 6}`}
-      fill={muted}
-      transform={y1 === y2 ? undefined : `rotate(90 ${x2} ${y2})`}
-    />
+    <line x1={x1} y1={y1} x2={x2 - 12} y2={y2} stroke={subtle} strokeWidth={2} />
+    <polygon points={`${x2},${y2} ${x2 - 11},${y2 - 6} ${x2 - 11},${y2 + 6}`} fill={subtle} />
+    {label && (
+      <text x={(x1 + x2) / 2} y={y1 - 12} textAnchor="middle" fill={muted} fontFamily={mono} fontSize={17}>
+        {label}
+      </text>
+    )}
   </g>
+);
+
+const Caption = ({ children }: { children: ReactNode }) => (
+  <div style={{ fontFamily: mono, fontSize: 20, color: subtle, lineHeight: 1.6 }}>{children}</div>
 );
 
 // ---------------------------------------------------------------- pages
@@ -200,79 +273,84 @@ const Cover: Page = () => (
   <div
     style={{
       ...fill,
-      background: 'radial-gradient(1200px 700px at 75% 20%, rgba(251,191,36,0.14), transparent 60%), var(--osd-bg)',
+      background:
+        'radial-gradient(900px 620px at 82% 12%, rgba(183,201,108,0.10), transparent 62%), var(--osd-bg)',
       color: 'var(--osd-text)',
-      padding: '0 160px',
+      padding: '0 140px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
     }}
   >
-    <div style={{ fontSize: 27, color: 'var(--osd-accent)', letterSpacing: '0.28em', fontWeight: 700 }}>
-      AI UNIT · SEMESTER PROJECT
+    <div style={{ display: 'flex', alignItems: 'center', gap: 22 }}>
+      <img src={brand} width={64} height={64} style={{ borderRadius: 14 }} />
+      <Eyebrow color={green}>AI unit · semester project</Eyebrow>
     </div>
     <h1
       style={{
         fontFamily: 'var(--osd-font-display)',
         fontSize: 'var(--osd-size-hero)',
-        fontWeight: 900,
-        lineHeight: 1.03,
-        margin: '36px 0 28px',
-        maxWidth: 1500,
+        fontWeight: 400,
+        letterSpacing: '-0.03em',
+        lineHeight: 1.02,
+        margin: '40px 0 30px',
       }}
     >
-      Distran: adaptive cross-media recommendations
+      Distran
     </h1>
-    <p style={{ fontSize: 38, color: muted, maxWidth: 1300, lineHeight: 1.4 }}>
-      Training a shared-prior online classifier with CNN and GPT-style content encoders —
-      executed on Colab, measured on heldout data.
+    <p style={{ fontSize: 40, color: muted, maxWidth: 1280, lineHeight: 1.35, letterSpacing: '-0.01em' }}>
+      Adaptive cross-media recommendations — CNN and GPT-style content encoders plus an
+      online shared-prior classifier, trained on Colab and measured on heldout data.
     </p>
-    <div style={{ display: 'flex', gap: 28, marginTop: 72 }}>
+    <div style={{ display: 'flex', gap: 22, marginTop: 64 }}>
       {[
-        ['169183', 'Hussein'],
-        ['167602', 'Alvin'],
-        ['190003', 'Issa'],
+        ['169183', 'Hussein · introduction'],
+        ['167602', 'Alvin · method & training'],
+        ['190003', 'Issa · results & learnings'],
       ].map(([id, name]) => (
         <div
           key={id}
           style={{
-            border: `1px solid ${rule}`,
-            borderRadius: 'var(--osd-radius)',
-            padding: '20px 34px',
+            border: `1px solid ${line}`,
+            borderRadius: 14,
+            padding: '18px 26px',
             background: panel,
           }}
         >
-          <div style={{ fontFamily: mono, fontSize: 24, color: 'var(--osd-accent)' }}>{id}</div>
-          <div style={{ fontSize: 32, fontWeight: 700, marginTop: 6 }}>{name}</div>
+          <div style={{ fontFamily: mono, fontSize: 21, color: green }}>{id}</div>
+          <div style={{ fontSize: 27, marginTop: 6, color: ink }}>{name}</div>
         </div>
       ))}
     </div>
-    <div style={{ marginTop: 56, fontSize: 24, color: muted }}>2026-11-22 · Google Colab CPU via the colab CLI · NumPy 2.2.6</div>
+    <div style={{ marginTop: 48, fontFamily: mono, fontSize: 20, color: subtle }}>
+      2026-11-22 · Google Colab CPU via colab CLI · NumPy 2.2.6 · 16 unit tests passing
+    </div>
   </div>
 );
 
 const Agenda: Page = () => (
-  <Shell kicker="AGENDA" title="Three parts" page="02">
-    <div style={{ display: 'flex', gap: 36, marginTop: 8 }}>
+  <Shell kicker="Agenda" title="Three parts" page="02">
+    <div style={{ display: 'flex', gap: 30, marginTop: 6 }}>
       {[
-        ['01', 'Introduction', 'Why we chose this problem and this approach'],
-        ['02', 'Methodology', 'Data, model, encoders and how we trained on Colab'],
-        ['03', 'Results & conclusions', 'What the heldout numbers came up to, and what we make of them'],
-      ].map(([n, t, s], i) => (
+        ['01', 'Introduction & approach', 'The problem, our reasoning, and the method in brief', 'Hussein'],
+        ['02', 'Method & training', 'System, data, model, encoders, Colab training — and what we expected', 'Alvin'],
+        ['03', 'Results & learnings', 'Heldout numbers, what held up, what we learned', 'Issa'],
+      ].map(([n, t, s, who]) => (
         <div
           key={n}
           style={{
             flex: 1,
-            border: `1px solid ${rule}`,
-            borderTop: `4px solid var(--osd-accent)`,
-            borderRadius: 'var(--osd-radius)',
-            padding: '36px 40px',
+            border: `1px solid ${line}`,
+            borderTop: `3px solid var(--osd-accent)`,
+            borderRadius: 14,
+            padding: '34px 36px',
             background: panel,
           }}
         >
-          <div style={{ fontFamily: mono, fontSize: 26, color: 'var(--osd-accent)' }}>{n}</div>
-          <div style={{ fontSize: 44, fontWeight: 800, margin: '14px 0 12px' }}>{t}</div>
-          <div style={{ fontSize: 27, color: muted, lineHeight: 1.45 }}>{s}</div>
+          <div style={{ fontFamily: mono, fontSize: 22, color: green }}>{n}</div>
+          <div style={{ fontSize: 40, letterSpacing: '-0.02em', margin: '14px 0 10px' }}>{t}</div>
+          <div style={{ fontSize: 25, color: muted, lineHeight: 1.45 }}>{s}</div>
+          <div style={{ fontFamily: mono, fontSize: 19, color: subtle, marginTop: 22 }}>{who}</div>
         </div>
       ))}
     </div>
@@ -280,131 +358,187 @@ const Agenda: Page = () => (
 );
 
 const Problem: Page = () => (
-  <Shell kicker="INTRODUCTION" title="Why we chose this problem" page="03">
-    <Bullets
-      size={32}
-      gap={20}
-      items={[
-        <>Distran recommends across <b>films, TV and games</b> from one taste profile — cross-media, not single-domain.</>,
-        <>The hard part is <b>personalisation</b>: cold users, cold items, and no logged recommendation impressions in the app.</>,
-        <>Aggregate data exists (TMDB, HowLongToBeat, Amazon 5-core) but contains <b>no user-level preferences</b> — we needed a proxy interaction corpus.</>,
-        <>We wanted an <b>explainable, incrementally updatable</b> model — not a black-box reranker — because the app already ranks locally with fixed weights.</>,
-      ]}
-    />
-  </Shell>
-);
-
-const WhyApproach: Page = () => (
-  <Shell kicker="INTRODUCTION" title="Why this approach" page="04">
+  <Shell kicker="01 · Introduction" title="The problem: one taste profile, every format" page="03">
     <div style={{ display: 'flex', gap: 48 }}>
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1.25 }}>
         <Bullets
-          size={29}
-          gap={16}
+          size={30}
+          gap={22}
           items={[
-            <>The repo already had four incompatible artifacts (SVD encoder, Ridge regressors, BPR, hosted LLM) → combine by <b>feature/score fusion, not parameter averaging</b></>,
-            <>Start small: a <b>13-feature logistic classifier</b> with a shared prior + per-user residual, servable as JSON, updatable online</>,
-            <>Benchmark the semantic encoder against <b>CNN and transformer (GPT-style)</b> encoders trained from scratch</>,
-            <>Evaluate before claiming: chronological split, validation-selected hyperparameters, test touched once</>,
+            <>Distran is a ledger for the works you love — <b>films, TV and games</b> side by side, with live TMDB/IGDB discovery.</>,
+            <>The hard part is <b>recommendation</b>: what to show next, from one cross-media profile.</>,
+            <>Constraints: cold users and cold items, and <b>no logged recommendation impressions</b> in the app — only favourites, ratings and lists.</>,
+            <>Public metadata (TMDB, HowLongToBeat) has rich text but <b>no user preferences</b>; Amazon 5-core ratings are the available proxy interaction corpus.</>,
           ]}
         />
       </div>
-      <div style={{ width: 620 }}>
-        <div style={{ fontSize: 24, color: muted, marginBottom: 14, fontWeight: 700, letterSpacing: '0.1em' }}>
-          WHAT ALREADY EXISTED (BASELINES)
+      <div style={{ width: 520 }}>
+        <Eyebrow>App today</Eyebrow>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 18 }}>
+          {[
+            ['12 curated works', 'bundled fallback catalog'],
+            ['fixed weights', 'Home ranker (recommendations.ts)'],
+            ['SVD v3', 'serving content encoder'],
+            ['0 logged impressions', 'no exposure/propensity data'],
+          ].map(([a, b]) => (
+            <div
+              key={a}
+              style={{
+                border: `1px solid ${line}`,
+                borderRadius: 12,
+                background: panel,
+                padding: '16px 22px',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+            >
+              <span style={{ fontFamily: mono, fontSize: 23, color: ink }}>{a}</span>
+              <span style={{ fontFamily: mono, fontSize: 19, color: muted }}>{b}</span>
+            </div>
+          ))}
         </div>
-        <Table
-          rowH={46}
-          size={23}
-          cols={[{ label: 'component', w: 330 }, { label: 'status', w: 290 }]}
-          rows={[
-            ['TF-IDF + SVD encoder (v3)', 'serving content model'],
-            ['BPR collaborative (notebook 03)', 'val chose weight 0.0 — disabled'],
-            ['3 aggregate-score regressors (04)', 'offline baselines only'],
-            ['Fixed-weight Home ranker', 'current rollback'],
-          ]}
-        />
       </div>
     </div>
   </Shell>
 );
 
+const WhyApproach: Page = () => (
+  <Shell kicker="01 · Introduction" title="Why this approach — reasoning and method in brief" page="04">
+    <div style={{ display: 'flex', gap: 48 }}>
+      <div style={{ flex: 1.2 }}>
+        <Bullets
+          size={29}
+          gap={18}
+          items={[
+            <>The repo already had four incompatible artifacts (SVD, Ridge, BPR, hosted LLM) → combine by <b>feature/score fusion</b>, never parameter averaging</>,
+            <>Start with a <b>small online model</b>: 13 bounded features, shared prior θ + private per-user residual δᵤ — servable as JSON, updatable from each explicit rating</>,
+            <>Benchmark the text encoder against <b>CNN and GPT-style transformers</b> trained from scratch — the “advanced” architectures, implemented and gradient-checked in NumPy</>,
+            <>Evaluate before claiming: chronological split, validation-selected hyperparameters, test scored once</>,
+          ]}
+        />
+      </div>
+      <div style={{ width: 560 }}>
+        <Eyebrow>The method in one line</Eyebrow>
+        <div style={{ marginTop: 18 }}>
+          <Formula size={30}>p(u,i,c) = σ( b + bᵤ + (θ + δᵤ) · x )</Formula>
+        </div>
+        <div style={{ marginTop: 22 }}>
+          <Formula size={22}>δᵤ ← clip( δᵤ + η·clip‖(y−p)·x‖ − ηλ·δᵤ, ±10 )</Formula>
+        </div>
+        <Caption>
+          online update after each labelled event, predict-before-learn; η, λ chosen on validation
+        </Caption>
+      </div>
+    </div>
+  </Shell>
+);
+
+const Baselines: Page = () => (
+  <Shell kicker="01 · Introduction" title="Starting point: what already existed" page="05">
+    <Table
+      rowH={62}
+      size={26}
+      cols={[
+        { label: 'component', w: 480 },
+        { label: 'evidence', w: 620 },
+        { label: 'role in this project', w: 580 },
+      ]}
+      rows={[
+        ['TF-IDF + SVD encoder (v3)', 'serving content model, 32,952 docs', 'baseline encoder'],
+        ['BPR collaborative (notebook 03)', 'validation chose weight 0.0', 'disabled — kept as benchmark'],
+        ['3 aggregate-score regressors (04)', 'heldout MAE beats train-mean', 'offline baselines only'],
+        ['Fixed-weight Home ranker', 'favourites + ratings + MMR, local', 'current rollback'],
+      ]}
+    />
+    <div style={{ marginTop: 30 }}>
+      <Caption>
+        key insight: aggregate-score prediction is not personal taste — the regressors cannot become a personal ranker
+      </Caption>
+    </div>
+  </Shell>
+);
+
 const SystemDiagram: Page = () => (
-  <Shell kicker="METHODOLOGY" title="Proposed system (Phase C executed offline)" page="05">
-    <svg width={1680} height={470} viewBox="0 0 1680 470" style={{ marginTop: 4 }}>
-      <Box x={20} y={60} w={250} h={90} label="Live catalog" sub="TMDB · IGDB · HLTB" />
-      <Box x={330} y={60} w={250} h={90} label="Candidate retrieval" sub="semantic + collab" />
-      <Box x={640} y={60} w={250} h={90} label="Hard filters" sub="format · seen · Buddy" />
-      <Box x={950} y={60} w={280} h={90} label="13 preference features" sub="x(u,i,c)" accent />
-      <Box x={1290} y={60} w={370} h={90} label="Shared θ + per-user δ_u" sub="p = σ(b + b_u + (θ+δ_u)·x)" accent />
-      <Arrow x1={270} y1={105} x2={330} y2={105} />
-      <Arrow x1={580} y1={105} x2={640} y2={105} />
-      <Arrow x1={890} y1={105} x2={950} y2={105} />
-      <Arrow x1={1230} y1={105} x2={1290} y2={105} />
-      <Box x={1290} y={230} w={370} h={90} label="MMR diversity" sub="ρ·score − (1−ρ)·max cos" />
-      <Box x={1000} y={230} w={250} h={90} label="Home / Buddy cards" />
-      <Box x={690} y={230} w={270} h={90} label="Feedback + exposure events" sub="replayed predict-before-learn" />
-      <Box x={330} y={230} w={320} h={90} label="Private taste profile" sub="long-term + recent, half-life decay" />
-      <Arrow x1={1475} y1={150} x2={1475} y2={230} />
-      <Arrow x1={1290} y1={275} x2={1250} y2={275} />
-      <Arrow x1={1000} y1={275} x2={960} y2={275} />
-      <Arrow x1={690} y1={275} x2={650} y2={275} />
-      <Arrow x1={490} y1={230} x2={490} y2={150} />
-      <Arrow x1={490} y1={150} x2={640} y2={150} />
-      <text x={845} y={330} textAnchor="middle" fill={muted} fontSize={21}>
-        learned weights can never relax hard filters — they only reorder eligible candidates
+  <Shell kicker="02 · Method" title="The proposed system, end to end" page="06">
+    <svg width={1680} height={480} viewBox="0 0 1680 480">
+      <DBox x={10} y={50} w={240} h={96} label="Live catalog" sub="TMDB · IGDB · HLTB" num="1" />
+      <DBox x={310} y={50} w={250} h={96} label="Candidates" sub="semantic + collab" num="2" />
+      <DBox x={620} y={50} w={250} h={96} label="Hard filters" sub="format · seen · request" num="3" />
+      <DBox x={930} y={50} w={270} h={96} label="Features x(u,i,c)" sub="13 bounded values" num="4" accent />
+      <DBox x={1260} y={50} w={410} h={96} label="Classifier θ + δᵤ" sub="p = σ(b + bᵤ + (θ+δᵤ)·x)" num="5" accent />
+      <DArrow x1={250} y1={98} x2={310} y2={98} />
+      <DArrow x1={560} y1={98} x2={620} y2={98} />
+      <DArrow x1={870} y1={98} x2={930} y2={98} />
+      <DArrow x1={1200} y1={98} x2={1260} y2={98} />
+      <DBox x={1260} y={240} w={410} h={96} label="MMR diversity" sub="ρ·score − (1−ρ)·max cos" num="6" />
+      <DBox x={950} y={240} w={270} h={96} label="Home / Buddy" sub="cards shown" num="7" />
+      <DBox x={600} y={240} w={310} h={96} label="Feedback events" sub="rating · favourite · dislike" num="8" />
+      <DBox x={260} y={240} w={300} h={96} label="Private profile" sub="long-term + recent, decay" />
+      <DArrow x1={1465} y1={146} x2={1465} y2={240} />
+      <DArrow x1={1260} y1={288} x2={1220} y2={288} />
+      <DArrow x1={950} y1={288} x2={910} y2={288} />
+      <DArrow x1={600} y1={288} x2={560} y2={288} />
+      <DArrow x1={410} y1={240} x2={410} y2={146} />
+      <DArrow x1={410} y1={146} x2={620} y2={146} label="as-of features" />
+      <text x={840} y={400} textAnchor="middle" fill={subtle} fontFamily={mono} fontSize={19}>
+        learned weights reorder eligible candidates only — hard filters stay deterministic
       </text>
     </svg>
   </Shell>
 );
 
 const Data: Page = () => (
-  <Shell kicker="METHODOLOGY" title="Data and leakage controls" page="06">
-    <div style={{ display: 'flex', gap: 40 }}>
+  <Shell kicker="02 · Method" title="Data and evaluation protocol" page="07">
+    <div style={{ display: 'flex', gap: 36 }}>
       <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 24, color: muted, fontWeight: 700, letterSpacing: '0.1em', marginBottom: 12 }}>
-          INTERACTIONS — AMAZON 5-CORE (PROXY FOR APP EVENTS)
+        <Eyebrow>Interactions — Amazon 5-core (app-event proxy)</Eyebrow>
+        <div style={{ marginTop: 16 }}>
+          <Table
+            rowH={46}
+            size={23}
+            cols={[{ label: 'split', w: 250 }, { label: 'events', w: 200 }, { label: 'note', w: 280 }]}
+            rows={[
+              ['train  ≤60%', '39,600', '4,718 users · 24,390 items'],
+              ['validation  60–80%', '13,204', 'hyperparameter selection'],
+              ['test  >80%', '13,195', 'scored exactly once'],
+            ]}
+          />
         </div>
-        <Table
-          rowH={44}
-          size={23}
-          cols={[{ label: 'set', w: 250 }, { label: 'events', w: 170 }, { label: 'users', w: 150 }, { label: 'items', w: 150 }]}
-          rows={[
-            ['train (≤60% time)', '39,600', '4,718', '24,390'],
-            ['validation (60–80%)', '13,204', '—', '—'],
-            ['test (>80% time)', '13,195', '—', '—'],
-          ]}
-        />
-        <div style={{ fontSize: 23, color: muted, marginTop: 14, lineHeight: 1.45 }}>
-          65,999 sampled events · deterministic 1/128 user sample (SHA256 of source id) · per-run salt pseudonyms · chronological global cutoffs
+        <div style={{ display: 'flex', height: 34, marginTop: 16, borderRadius: 8, overflow: 'hidden', border: `1px solid ${line}` }}>
+          <div style={{ width: '60%', background: '#1c2416' }} />
+          <div style={{ width: '20%', background: '#232a18' }} />
+          <div style={{ width: '20%', background: '#2c351d' }} />
         </div>
+        <Caption>chronological global cutoffs · 1/128 deterministic user sample · salted pseudonyms</Caption>
       </div>
       <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 24, color: muted, fontWeight: 700, letterSpacing: '0.1em', marginBottom: 12 }}>
-          TEXT CORPUS — KAGGLE (ENCODERS)
+        <Eyebrow>Text corpus — Kaggle (encoder training)</Eyebrow>
+        <div style={{ marginTop: 16 }}>
+          <Table
+            rowH={46}
+            size={23}
+            cols={[{ label: 'source', w: 260 }, { label: 'docs', w: 170 }, { label: 'scored', w: 200 }]}
+            rows={[
+              ['TMDB movies v2', '10,000', 'vote count ≥ 5'],
+              ['HowLongToBeat v1', '10,000', '11,202 scored total'],
+            ]}
+          />
         </div>
-        <Table
-          rowH={44}
-          size={23}
-          cols={[{ label: 'source', w: 300 }, { label: 'docs', w: 160 }, { label: 'scored', w: 150 }]}
-          rows={[
-            ['TMDB popular movies v2', '10,000', 'vote ≥ 5'],
-            ['HowLongToBeat v1 (sampled)', '10,000', '11,202 total'],
-          ]}
-        />
-        <div style={{ fontSize: 23, color: muted, marginTop: 14, lineHeight: 1.45 }}>
-          title-group hash split (buckets 0–5/6–7/8–9) · scores = aggregate quality, never personal taste
+        <div style={{ display: 'flex', height: 34, marginTop: 16, borderRadius: 8, overflow: 'hidden', border: `1px solid ${line}` }}>
+          <div style={{ width: '60%', background: '#1c2416' }} />
+          <div style={{ width: '20%', background: '#232a18' }} />
+          <div style={{ width: '20%', background: '#2c351d' }} />
         </div>
+        <Caption>title-hash group split (0–5/6–7/8–9) · aggregate scores = quality, never taste</Caption>
       </div>
     </div>
-    <div style={{ marginTop: 34 }}>
+    <div style={{ marginTop: 30 }}>
       <Bullets
-        size={27}
+        size={26}
         gap={12}
         items={[
-          <>Train-only vocabulary, IDF, SVD, BPR and feature statistics; validation/test get neutral cold-start vectors</>,
-          <>Cold heldout items (8,718 positives) are counted, never treated as retrievable; 849 relevant users have no train events</>,
-          <>Input SHA256 for every source file recorded in provenance.json</>,
+          <>Leakage controls: train-only vocabulary, SVD, BPR and feature stats; cold items/users get neutral vectors and are counted, not retrieved; SHA256 of every input in provenance.json</>,
         ]}
       />
     </div>
@@ -412,207 +546,218 @@ const Data: Page = () => (
 );
 
 const Model: Page = () => (
-  <Shell kicker="METHODOLOGY" title="The adaptive preference classifier (distran-apc-v1)" page="07">
-    <div style={{ fontSize: 26, color: muted, marginBottom: 18 }}>probability that user u likes item i in context c</div>
-    <Formula size={40}>
-      p(u,i,c) = σ( b + bᵤ + (θ + δᵤ) · x(u,i,c) )
-    </Formula>
-    <div style={{ display: 'flex', gap: 40, marginTop: 30 }}>
-      <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 24, color: muted, fontWeight: 700, letterSpacing: '0.1em', marginBottom: 12 }}>
-          13 BOUNDED FEATURES x
-        </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+  <Shell kicker="02 · Method" title="The preference model: distran-apc-v1" page="08">
+    <Caption>probability that user u would rate item i ≥ 4 stars, in context c</Caption>
+    <div style={{ marginTop: 14 }}>
+      <Formula size={38}>p(u,i,c) = σ( b + bᵤ + (θ + δᵤ) · x(u,i,c) )</Formula>
+    </div>
+    <div style={{ display: 'flex', gap: 44, marginTop: 30 }}>
+      <div style={{ flex: 1.15 }}>
+        <Eyebrow>13 bounded features x</Eyebrow>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 16 }}>
           {['item_pop_pct', 'item_quality', 'item_dom_game', 'item_dom_screen', 'item_recency_90d', 'user_activity', 'user_pos_rate', 'user_aff_game', 'user_aff_screen', 'user_recency_30d', 'aff×dom_game', 'aff×dom_screen', 'bpr_collab_pct'].map((f) => (
-            <span
-              key={f}
-              style={{
-                fontFamily: mono,
-                fontSize: 21,
-                border: `1px solid ${rule}`,
-                borderRadius: 999,
-                padding: '7px 16px',
-                background: panel,
-                color: '#c7d2fe',
-              }}
-            >
-              {f}
-            </span>
+            <Chip key={f}>{f}</Chip>
           ))}
         </div>
       </div>
-      <div style={{ width: 640 }}>
-        <div style={{ fontSize: 24, color: muted, fontWeight: 700, letterSpacing: '0.1em', marginBottom: 12 }}>
-          ONLINE UPDATE (PREDICT-BEFORE-LEARN)
+      <div style={{ flex: 1 }}>
+        <Eyebrow>Online update, predict-before-learn</Eyebrow>
+        <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-start' }}>
+          <Formula size={23}>δᵤ ← clip( δᵤ + η·clip‖(y−p)·x‖₁ − ηλ·δᵤ, ±10 )</Formula>
+          <Formula size={23}>bᵤ ← clip( bᵤ + η·(y−p), ±10 )</Formula>
         </div>
-        <Formula size={24}>
-          δᵤ ← clip(δᵤ + η·clip‖(y−p)·x‖ + ηλδᵤ, ±10)
-        </Formula>
-        <Formula size={24}>
-          bᵤ ← clip(bᵤ + η·(y−p), ±10)   ·  y = 1 if rating ≥ 4
-        </Formula>
-        <div style={{ fontSize: 23, color: muted, marginTop: 14, lineHeight: 1.45 }}>
-          shared θ trained by SGD (5 sampled unobserved negatives/user); δᵤ learned by chronological replay; η, λ chosen on validation log loss; labels: rating ≥ 4 positive, ≤ 3 negative — unobserved ≠ dislike
-        </div>
+        <Caption>y = 1 if rating ≥ 4 else 0 · unobserved items are sampled negatives for θ only, never proven dislikes</Caption>
       </div>
     </div>
   </Shell>
 );
 
 const CnnPage: Page = () => (
-  <Shell kicker="METHODOLOGY" title="Content encoder 1 — TextCNN (pure NumPy)" page="08">
-    <svg width={1680} height={400} viewBox="0 0 1680 400">
-      <Box x={20} y={140} w={200} h={110} label="tokens x" sub="48-token window" />
-      <Box x={290} y={140} w={220} h={110} label="embedding E" sub="24-d, learned" />
-      <Box x={580} y={40} w={300} h={80} label="conv1d k=3, 16 filters" />
-      <Box x={580} y={150} w={300} h={80} label="conv1d k=4, 16 filters" accent />
-      <Box x={580} y={260} w={300} h={80} label="conv1d k=5, 16 filters" />
-      <Arrow x1={510} y1={195} x2={580} y2={80} />
-      <Arrow x1={510} y1={195} x2={580} y2={190} />
-      <Arrow x1={510} y1={195} x2={580} y2={300} />
-      <Box x={950} y={150} w={220} h={90} label="ReLU + max-pool" sub="over time" />
-      <Arrow x1={880} y1={80} x2={950} y2={180} />
-      <Arrow x1={880} y1={190} x2={950} y2={195} />
-      <Arrow x1={880} y1={300} x2={950} y2={210} />
-      <Box x={1240} y={150} w={180} h={90} label="concat z" sub="48-d" />
-      <Arrow x1={1170} y1={195} x2={1240} y2={195} />
-      <Box x={1490} y={140} w={170} h={110} label="linear head" sub="3 score buckets" accent />
-      <Arrow x1={1420} y1={195} x2={1490} y2={195} />
-      <text x={20} y={370} fill={muted} fontSize={22}>
-        loss = cross-entropy on aggregate score bucket (low &lt;6, mid 6–7.5, high &gt;7.5) · Adam · 15 epochs · 196,851 params · backward pass verified against numerical gradients
+  <Shell kicker="02 · Method" title="Content encoder A — TextCNN" page="09">
+    <svg width={1680} height={440} viewBox="0 0 1680 440">
+      <DBox x={10} y={160} w={210} h={100} label="tokens" sub="48-token window" num="1" />
+      <DBox x={280} y={160} w={220} h={100} label="embedding E" sub="24-d, learned" num="2" />
+      <DBox x={560} y={30} w={310} h={86} label="conv1d  k=3 · 16 filters" num="3" />
+      <DBox x={560} y={167} w={310} h={86} label="conv1d  k=4 · 16 filters" accent num="3" />
+      <DBox x={560} y={304} w={310} h={86} label="conv1d  k=5 · 16 filters" num="3" />
+      <DArrow x1={500} y1={210} x2={560} y2={73} />
+      <DArrow x1={500} y1={210} x2={560} y2={210} />
+      <DArrow x1={500} y1={210} x2={560} y2={347} />
+      <DBox x={950} y={167} w={230} h={86} label="ReLU + max-pool" sub="over time" num="4" />
+      <DArrow x1={870} y1={73} x2={950} y2={195} />
+      <DArrow x1={870} y1={210} x2={950} y2={210} />
+      <DArrow x1={870} y1={347} x2={950} y2={225} />
+      <DBox x={1250} y={167} w={190} h={86} label="concat z" sub="48-d" num="5" />
+      <DArrow x1={1180} y1={210} x2={1250} y2={210} />
+      <DBox x={1510} y={160} w={160} h={100} label="linear head" sub="3 buckets" accent num="6" />
+      <DArrow x1={1440} y1={210} x2={1510} y2={210} />
+      <text x={10} y={425} fill={subtle} fontFamily={mono} fontSize={19}>
+        cross-entropy on aggregate score bucket (low &lt;6 · mid 6–7.5 · high &gt;7.5) · Adam · 15 epochs · 196,851 params · pure NumPy, backward pass gradient-checked
       </text>
     </svg>
   </Shell>
 );
 
 const GptPage: Page = () => (
-  <Shell kicker="METHODOLOGY" title="Content encoder 2 — mini-GPT (decoder-only transformer)" page="09">
-    <svg width={1680} height={430} viewBox="0 0 1680 430">
-      <Box x={20} y={170} w={230} h={90} label="tokens + pos" sub="learned embeddings" />
-      <Arrow x1={250} y1={215} x2={320} y2={215} />
-      <Box x={320} y={60} w={640} h={130} label="block ×2 (pre-LN)" sub="MHA causal (2 heads, d=48) → residual · FFN ff=96 (GELU) → residual" />
-      <Box x={320} y={240} w={640} h={130} label="final LayerNorm" sub="then linear head d → vocab" />
-      <Arrow x1={640} y1={190} x2={640} y2={240} />
-      <Arrow x1={960} y1={305} x2={1030} y2={305} />
-      <Box x={1030} y={250} w={240} h={110} label="softmax" sub="next token" accent />
-      <Arrow x1={1270} y1={305} x2={1340} y2={305} />
-      <Box x={1340} y={250} w={320} h={110} label="cross-entropy loss" sub="shifted targets" />
-      <text x={20} y={415} fill={muted} fontSize={22}>
-        causal mask: position t only attends to ≤ t · trained 1,200 steps, batch 16, Adam · 808,128 params · embeddings = mean-pooled hidden states · NumPy only
+  <Shell kicker="02 · Method" title="Content encoder B — mini-GPT (decoder-only transformer)" page="10">
+    <svg width={1680} height={440} viewBox="0 0 1680 440">
+      <DBox x={10} y={170} w={230} h={96} label="tokens + positions" sub="learned embeddings" num="1" />
+      <DArrow x1={240} y1={218} x2={300} y2={218} />
+      <DBox x={300} y={40} w={660} h={140} label="transformer block ×2 (pre-LN)" sub="causal MHA · 2 heads · d=48 → residual · FFN 96 GELU → residual" num="2" />
+      <DBox x={300} y={250} w={660} h={100} label="final LayerNorm + head" sub="linear d → vocab, softmax" num="3" />
+      <DArrow x1={630} y1={180} x2={630} y2={250} />
+      <DArrow x1={960} y1={300} x2={1020} y2={300} />
+      <DBox x={1020} y={252} w={230} h={96} label="next-token" sub="cross-entropy" accent num="4" />
+      <DArrow x1={1250} y1={300} x2={1310} y2={300} />
+      <DBox x={1310} y={252} w={360} h={96} label="loss" sub="shifted targets, causal mask t ≤ t′" num="5" />
+      <text x={10} y={425} fill={subtle} fontFamily={mono} fontSize={19}>
+        1,200 Adam steps · batch 16 · 808,128 params · pure NumPy · embeddings = mean-pooled hidden states · metric: validation perplexity
       </text>
     </svg>
   </Shell>
 );
 
 const Training: Page = () => (
-  <Shell kicker="METHODOLOGY" title="How we trained — Colab CLI, pinned, staged, resumed" page="10">
+  <Shell kicker="02 · Method" title="Training: Colab CLI, pinned, staged, resumable" page="11">
     <div style={{ display: 'flex', gap: 44 }}>
-      <div style={{ flex: 1.2 }}>
+      <div style={{ flex: 1.15 }}>
         <div
           style={{
             fontFamily: mono,
-            fontSize: 23,
-            lineHeight: 1.65,
+            fontSize: 22,
+            lineHeight: 1.7,
             background: panel,
-            border: `1px solid ${rule}`,
-            borderRadius: 'var(--osd-radius)',
-            padding: '26px 30px',
-            color: '#c7d2fe',
+            border: `1px solid ${line}`,
+            borderRadius: 14,
+            padding: '24px 28px',
+            color: '#c9c7bd',
           }}
         >
-          <div><span style={{ color: 'var(--osd-accent)' }}>colab</span> new -s distran-adaptive-20261122</div>
-          <div><span style={{ color: 'var(--osd-accent)' }}>colab</span> exec -s … -f ml/notebooks/05_adaptive_personalization.ipynb --timeout 3600</div>
-          <div><span style={{ color: 'var(--osd-accent)' }}>colab</span> download -s … /content/distran-adaptive/results.zip …</div>
-          <div><span style={{ color: 'var(--osd-accent)' }}>colab</span> stop -s distran-adaptive-20261122</div>
+          <div><span style={{ color: green }}>colab</span> new -s distran-adaptive-20261122</div>
+          <div><span style={{ color: green }}>colab</span> exec -s … -f 05_adaptive_personalization.ipynb --timeout 3600</div>
+          <div><span style={{ color: green }}>colab</span> download -s … results.zip → ml/artifacts/</div>
+          <div><span style={{ color: green }}>colab</span> stop -s distran-adaptive-20261122</div>
         </div>
-        <Bullets
-          size={26}
-          gap={12}
-          items={[
-            <>CPU runtime, pinned NumPy 2.2.6 / pandas 2.2.3 / scikit-learn 1.6.1 / kagglehub 0.4.3, verified in a fresh subprocess</>,
-            <>10 checkpointed stages (download → parse → corpus → CNN → GPT → SVD → BPR stats → θ → validation grid → test → export) so interrupted cells resume</>,
-          ]}
-        />
+        <div style={{ marginTop: 24 }}>
+          <Bullets
+            size={25}
+            gap={12}
+            items={[
+              <>CPU runtime; pinned NumPy 2.2.6 / pandas 2.2.3 / scikit-learn 1.6.1 / kagglehub 0.4.3, verified in a fresh subprocess</>,
+              <>10 checkpointed stages — interrupted cells resume from cache/</>,
+            ]}
+          />
+        </div>
       </div>
       <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 24, color: muted, fontWeight: 700, letterSpacing: '0.1em', marginBottom: 12 }}>
-          SELECTION PROTOCOL
+        <Eyebrow>Selection protocol</Eyebrow>
+        <div style={{ marginTop: 16 }}>
+          <Table
+            rowH={50}
+            size={24}
+            cols={[{ label: 'step', w: 560 }]}
+            rows={[
+              ['fit vocab / SVD / BPR / features on train only'],
+              ['train shared θ (SGD, 5 sampled negatives per user)'],
+              ['grid η ∈ {0.05, 0.1} × λ ∈ {0, 0.01} → validation log loss'],
+              ['selected η = 0.1, λ = 0 → test scored once'],
+            ]}
+          />
         </div>
-        <Table
-          rowH={46}
-          size={24}
-          cols={[{ label: 'step', w: 430 }]}
-          rows={[
-            ['fit vocabulary / SVD / BPR / features on train only'],
-            ['train shared θ on train (SGD + sampled negatives)'],
-            ['grid η ∈ {0.05, 0.1} × λ ∈ {0, 0.01} → validation log loss'],
-            ['selected η=0.1, λ=0.0 → test scored exactly once'],
-          ]}
-        />
-        <div style={{ fontSize: 23, color: muted, marginTop: 16, lineHeight: 1.45 }}>
-          final measured pass: 187 s compute · ranking metrics: NDCG/Recall@10, user-level bootstrap CIs (400)
+        <div style={{ marginTop: 20 }}>
+          <Caption>final measured pass: 187 s compute · metrics: NDCG/Recall@10 with user-level bootstrap CIs (400), log loss, Brier, 10-bin reliability</Caption>
         </div>
       </div>
     </div>
   </Shell>
 );
 
-const EncodersResults: Page = () => (
-  <Shell kicker="RESULTS" title="Neural encoders vs baselines" page="11">
+const Expected: Page = () => (
+  <Shell kicker="02 · Method" title="Expected results — hypotheses before looking at test" page="12">
     <Table
-      rowH={58}
-      size={27}
+      rowH={66}
+      size={25}
       cols={[
-        { label: 'encoder', w: 420 },
-        { label: 'task', w: 560 },
-        { label: 'result', w: 300 },
-        { label: 'baseline', w: 300 },
+        { label: 'hypothesis', w: 640 },
+        { label: 'reasoning', w: 700 },
+        { label: 'verdict', w: 340 },
       ]}
       rows={[
-        ['mini-GPT (transformer LM)', 'next-token perplexity on val docs', '34.68', '2,047.3 (unigram)'],
-        ['TextCNN', '3-class aggregate-score bucket, test', 'acc 0.536 · F1 0.386', '0.598 (majority)'],
-        ['TF-IDF + SVD 64-d', 'unsupervised embeddings', 'explained var 0.069', 'serving encoder (v3)'],
+        ['H1 · δᵤ improves pointwise fit vs shared-only', 'each user has a handful of ratings; a private residual should calibrate per user', 'confirmed (p.14)'],
+        ['H2 · δᵤ improves NDCG@10 ranking', 'marginal expected: 24k-item catalog, cold items dominate retrieval', 'not confirmed (p.15)'],
+        ['H3 · mini-GPT perplexity ≪ unigram baseline', 'even a tiny causal LM should model catalog text far better than bag-of-words', 'confirmed (p.13)'],
+        ['H4 · TextCNN beats majority on score buckets', 'uncertain: aggregate scores are only weakly predictable from text', 'not confirmed (p.13)'],
+        ['H5 · nothing gets promoted without app-side eval', 'no impression ledger exists in the app yet', 'held'],
       ]}
     />
-    <div style={{ display: 'flex', gap: 40, marginTop: 34 }}>
+    <div style={{ marginTop: 28 }}>
+      <Caption>pre-registered expectations keep the test honest: test metrics were read only after validation selection</Caption>
+    </div>
+  </Shell>
+);
+
+const EncodersResults: Page = () => (
+  <Shell kicker="03 · Results" title="Encoder results vs their baselines" page="13">
+    <Table
+      rowH={64}
+      size={26}
+      cols={[
+        { label: 'encoder', w: 400 },
+        { label: 'task', w: 560 },
+        { label: 'result', w: 360 },
+        { label: 'baseline', w: 360 },
+      ]}
+      rows={[
+        ['mini-GPT', 'next-token perplexity (val)', '34.68', '2,047.3 unigram'],
+        ['TextCNN', '3-class score bucket (test)', 'acc 0.536 · F1 0.386', '0.598 majority'],
+        ['TF-IDF + SVD', 'unsupervised 64-d embeddings', 'explained var 0.069', 'serving encoder v3'],
+      ]}
+    />
+    <div style={{ display: 'flex', gap: 40, marginTop: 32 }}>
       <div style={{ flex: 1 }}>
         <Bullets
-          size={27}
-          gap={12}
+          size={26}
+          gap={14}
           items={[
-            <>GPT-style LM learns the corpus: <b style={{ color: green }}>59× lower perplexity</b> than a unigram model</>,
-            <>TextCNN does <b style={{ color: red }}>not</b> beat majority on score buckets — aggregate scores are weakly predictable from text alone</>,
-            <>Encoder geometries disagree: CNN↔GPT mean cosine 0.007; top-3 probe Jaccard vs serving SVD only 0.10–0.32</>,
+            <><b style={{ color: green }}>H3 confirmed:</b> the transformer LM cuts perplexity 59× vs unigram — real language structure learned</>,
+            <><b style={{ color: amber }}>H4 not confirmed:</b> TextCNN does not beat majority on score buckets; aggregate scores are weakly text-predictable</>,
+            <>Encoders disagree geometrically: CNN↔GPT mean cosine 0.007; top-3 probe Jaccard vs serving SVD 0.10–0.32 → no drop-in replacement</>,
           ]}
         />
       </div>
-      <div style={{ width: 560, fontSize: 24, color: muted, lineHeight: 1.5 }}>
-        <div style={{ fontWeight: 700, color: 'var(--osd-text)', marginBottom: 10 }}>probe: “cyberpunk” top-3 neighbors</div>
-        GPT: disco-elysium, elden-ring, edgerunners · SVD: disco-elysium, edgerunners, elden-ring · CNN: blade-runner, exit-8, arrival
+      <div style={{ width: 520 }}>
+        <Eyebrow>Probe — “cyberpunk” top-3 neighbours</Eyebrow>
+        <div style={{ fontFamily: mono, fontSize: 21, color: muted, lineHeight: 1.8, marginTop: 14 }}>
+          GPT: disco-elysium · elden-ring · edgerunners
+          <br />
+          SVD: disco-elysium · edgerunners · elden-ring
+          <br />
+          CNN: blade-runner · exit-8 · arrival
+        </div>
       </div>
     </div>
   </Shell>
 );
 
 const PointwiseResults: Page = () => (
-  <Shell kicker="RESULTS" title="Preference classifier — pointwise (13,195 test events)" page="12">
+  <Shell kicker="03 · Results" title="Classifier pointwise — 13,195 test events" page="14">
     <Table
-      rowH={62}
-      size={29}
+      rowH={66}
+      size={27}
       highlightLast
-      cols={[{ label: 'model', w: 560 }, { label: 'log loss ↓', w: 340 }, { label: 'Brier ↓', w: 340 }, { label: 'note', w: 440 }]}
+      cols={[{ label: 'model', w: 620 }, { label: 'log loss ↓', w: 340 }, { label: 'brier ↓', w: 340 }, { label: 'verdict', w: 380 }]}
       rows={[
-        ['shared logistic only (δᵤ = 0)', '2.7292', '0.7093', 'prior trained on train'],
-        ['adaptive (θ + online δᵤ, η=0.1)', '1.7458', '0.5212', 'predict-before-learn replay'],
+        ['shared logistic only (δᵤ = 0)', '2.7292', '0.7093', '—'],
+        ['adaptive (θ + online δᵤ, η = 0.1)', '1.7458', '0.5212', 'H1 confirmed'],
       ]}
     />
-    <div style={{ marginTop: 34 }}>
+    <div style={{ marginTop: 32 }}>
       <Bullets
-        size={28}
+        size={27}
         gap={14}
         items={[
-          <>The per-user residual cuts test log loss by <b style={{ color: green }}>36%</b> and Brier by <b style={{ color: green }}>26%</b> vs the shared prior — real pointwise signal from a handful of ratings per user</>,
-          <>Calibration is <b style={{ color: red }}>not</b> trustworthy: observed positive rate stays 0.72–0.94 in every prediction bin (train→test base-rate shift) — scores rank, but are not “80% chance you’ll love this”</>,
+          <>Per-user residual cuts test log loss by <b style={{ color: green }}>36%</b> and Brier by <b style={{ color: green }}>26%</b> — real signal from a few ratings per user</>,
+          <>Calibration caveat: observed positive rate stays 0.72–0.94 in every prediction bin (train→test base-rate shift) — scores rank well but are not calibrated probabilities</>,
         ]}
       />
     </div>
@@ -620,110 +765,118 @@ const PointwiseResults: Page = () => (
 );
 
 const RankingResults: Page = () => (
-  <Shell kicker="RESULTS" title="Ranking — NDCG@10 / Recall@10 on heldout test" page="13">
+  <Shell kicker="03 · Results" title="Ranking — NDCG@10 / Recall@10 on heldout test" page="15">
     <Table
-      rowH={54}
-      size={26}
+      rowH={56}
+      size={25}
       highlightLast
       cols={[
-        { label: 'model', w: 460 },
-        { label: 'all', w: 300 },
-        { label: 'game', w: 300 },
-        { label: 'screen', w: 300 },
-        { label: 'game→screen', w: 320 },
+        { label: 'model', w: 440 },
+        { label: 'all', w: 310 },
+        { label: 'game', w: 310 },
+        { label: 'screen', w: 310 },
+        { label: 'cross', w: 310 },
       ]}
       rows={[
         ['popularity', '0.000 / 0.000', '0.0161 / 0.0208', '0.000 / 0.000', '0.000 / 0.000'],
-        ['BPR collaborative', '0.000 / 0.000', '0.000 / 0.000', '0.000 / 0.000', '0.000 / 0.000'],
+        ['BPR', '0.000 / 0.000', '0.000 / 0.000', '0.000 / 0.000', '0.000 / 0.000'],
         ['fixed heuristic linear', '0.000 / 0.000', '0.000 / 0.000', '0.000 / 0.000', '0.000 / 0.000'],
         ['shared logistic', '0.0010 / 0.0033', '0.0120 / 0.0417', '0.000 / 0.000', '0.000 / 0.000'],
         ['adaptive (ours)', '0.0010 / 0.0033', '0.0120 / 0.0417', '0.000 / 0.000', '0.000 / 0.000'],
       ]}
     />
-    <div style={{ marginTop: 30 }}>
+    <div style={{ marginTop: 28 }}>
       <Bullets
-        size={27}
+        size={26}
         gap={12}
         items={[
-          <>No measurable ranking gain from δᵤ on this sample — CIs overlap everywhere; popularity still edges the game cohort (0.0161 vs 0.0120)</>,
-          <>Retrieval is cold-start dominated: 8,718 heldout positives are items absent from the train catalog; 849 relevant users have no train events; coverage of a 24,390-item catalog at top-10 ≈ 0.05–8%</>,
+          <><b style={{ color: amber }}>H2 not confirmed:</b> δᵤ gives no measurable NDCG gain — bootstrap CIs overlap everywhere; popularity still edges the small game cohort</>,
+          <>Why: cold start dominates — 8,718 heldout positives are items absent from the train catalog, 849 relevant users have no train events, top-10 coverage of 24,390 items ≈ 0.05–8%</>,
         ]}
       />
     </div>
   </Shell>
 );
 
-const Conclusions: Page = () => (
-  <Shell kicker="CONCLUSIONS" title="What we conclude" page="14">
-    <div style={{ display: 'flex', gap: 40 }}>
+const Learnings: Page = () => (
+  <Shell kicker="03 · Results" title="What we learned" page="16">
+    <div style={{ display: 'flex', gap: 36 }}>
       <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 26, fontWeight: 800, color: green, marginBottom: 16 }}>WHAT WORKED</div>
-        <Bullets
-          size={28}
-          gap={14}
-          items={[
-            <>Shared prior + per-user residual is a sound, cheap preference head: big pointwise gain, JSON-servable, online-updatable</>,
-            <>GPT-style pretraining on catalog text works even at d=48 in pure NumPy (ppl 34.7 vs 2,047)</>,
-            <>The staged Colab-CLI pipeline with checkpoints + provenance made a long CPU run reproducible</>,
-          ]}
-        />
+        <Eyebrow color={green}>What worked</Eyebrow>
+        <div style={{ marginTop: 16 }}>
+          <Bullets
+            size={27}
+            gap={16}
+            items={[
+              <>Shared prior + per-user residual is a sound, cheap preference head — big pointwise gain (H1), JSON-servable, online-updatable</>,
+              <>GPT-style pretraining works even at d=48 in pure NumPy (H3, ppl 34.7 vs 2,047)</>,
+              <>Staged + checkpointed Colab pipeline with SHA256 provenance made a long CPU run reproducible; 16 unit tests guard the update rules</>,
+            ]}
+          />
+        </div>
       </div>
       <div style={{ flex: 1 }}>
-        <div style={{ fontSize: 26, fontWeight: 800, color: red, marginBottom: 16 }}>WHAT DIDN’T / LIMITS</div>
-        <Bullets
-          size={28}
-          gap={14}
-          items={[
-            <>No NDCG gain over popularity/shared prior on 1/128 sample with 24k items — cold items dominate</>,
-            <>TextCNN score head ≤ majority baseline; encoders not drop-in replacements for the serving SVD</>,
-            <>Probabilities miscalibrated across time (base-rate shift); single fixed split, no significance claims</>,
-            <>Amazon IDs are not app catalog IDs — no app-surface quality claim; nothing promoted</>,
-          ]}
-        />
+        <Eyebrow color={amber}>What didn’t / limits</Eyebrow>
+        <div style={{ marginTop: 16 }}>
+          <Bullets
+            size={27}
+            gap={16}
+            items={[
+              <>No ranking gain at this scale (H2) — cold items dominate a 24k catalog; popularity remains competitive</>,
+              <>TextCNN ≤ majority on score buckets (H4); encoders are not drop-in replacements for serving SVD</>,
+              <>Probabilities miscalibrated across time; single fixed split, no significance claims; Amazon IDs ≠ app catalog IDs — no app-surface claim, nothing promoted (H5 held)</>,
+            ]}
+          />
+        </div>
       </div>
     </div>
   </Shell>
 );
 
-const Future: Page = () => (
-  <Shell kicker="NEXT" title="Future work and where the evidence lives" page="15">
+const Conclusions: Page = () => (
+  <Shell kicker="03 · Results" title="Conclusions and next steps" page="17">
     <div style={{ display: 'flex', gap: 44 }}>
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1.2 }}>
         <Bullets
           size={28}
-          gap={14}
+          gap={16}
           items={[
-            <>Phase A in the app: event/impression ledger with provenance → local adaptive classifier scored on-device, benchmarked against the fixed-weight ranker</>,
-            <>Chronological app evaluation: NDCG/Recall@k, calibration (reliability + log loss), diversity, coverage, per-cohort</>,
-            <>Only then: LightFM/CatBoost challengers, and a logged exploration slot (contextual bandit) once propensities exist</>,
-            <>Encoder: re-embed catalog with a larger pretrained encoder (e.g. E5) and measure relevance before replacing SVD v3</>,
+            <>For a university-scale system: <b>small + online + evaluated beats big + static</b> — the adaptive linear head gave measurable pointwise gains at negligible cost</>,
+            <>Next in the app (Phase A): event/impression ledger with provenance → on-device adaptive scoring benchmarked against the fixed-weight ranker</>,
+            <>Then, only with data: chronological app evaluation (NDCG@k, calibration, diversity, per-cohort), LightFM/CatBoost challengers, logged exploration (bandit)</>,
+            <>Encoder path: re-embed the catalog with a larger pretrained encoder and measure relevance before replacing SVD v3</>,
           ]}
         />
       </div>
-      <div style={{ width: 640 }}>
-        <div style={{ fontSize: 24, color: muted, fontWeight: 700, letterSpacing: '0.1em', marginBottom: 12 }}>
-          REPRODUCE / READ
-        </div>
+      <div style={{ width: 560 }}>
+        <Eyebrow>Evidence in the repo</Eyebrow>
         <div
           style={{
             fontFamily: mono,
-            fontSize: 22,
-            lineHeight: 1.7,
+            fontSize: 21,
+            lineHeight: 1.8,
             background: panel,
-            border: `1px solid ${rule}`,
-            borderRadius: 'var(--osd-radius)',
-            padding: '24px 28px',
-            color: '#c7d2fe',
+            border: `1px solid ${line}`,
+            borderRadius: 14,
+            padding: '22px 26px',
+            color: '#c9c7bd',
+            marginTop: 16,
           }}
         >
-          <div>ml/notebooks/05_adaptive_personalization.ipynb</div>
-          <div>ml/notebooks/ADAPTIVE_PERSONALIZATION_RESULTS.md</div>
-          <div>ml/notebooks/results/adaptive/report.json</div>
-          <div>ml/adaptive_experiment.py · ml/tests/test_adaptive.py</div>
-          <div style={{ marginTop: 10, color: muted }}>notebook SHA256 3dd1aad4… · 16 unit tests OK</div>
+          ml/notebooks/05_adaptive_personalization.ipynb
+          <br />
+          ml/notebooks/ADAPTIVE_PERSONALIZATION_RESULTS.md
+          <br />
+          ml/notebooks/results/adaptive/report.json
+          <br />
+          ml/adaptive_experiment.py · ml/tests/ (16 tests)
+          <br />
+          <span style={{ color: subtle }}>notebook SHA256 3dd1aad4…</span>
         </div>
-        <div style={{ marginTop: 26, fontSize: 25, color: muted }}>
-          Presenters — 169183 Hussein (introduction) · 167602 Alvin (methodology) · 190003 Issa (results)
+        <div style={{ marginTop: 24, fontFamily: mono, fontSize: 20, color: subtle, lineHeight: 1.7 }}>
+          169183 Hussein · 167602 Alvin · 190003 Issa
+          <br />
+          github.com/alvinkgithubschool/Distran
         </div>
       </div>
     </div>
@@ -736,21 +889,23 @@ export const meta: SlideMeta = {
 };
 
 export const notes: (string | undefined)[] = [
-  'Hussein: welcome. One-line pitch — Distran recommends films, TV and games from one taste profile; today we show the ML we built and measured for that. Introduce the three of us with student IDs.',
-  'Agenda: introduction (why this problem and approach), methodology (data, model, encoders, Colab training), results and conclusions. Alvin takes methodology, Issa takes results.',
-  'Hussein: the problem. Cross-media means one profile spans movies and games; the app had no impression ledger, and public metadata has no user preferences, so we used Amazon 5-core as a proxy interaction corpus.',
-  'Hussein: why this approach. Four existing artifacts could not be merged by averaging parameters — different feature spaces. So: feature/score fusion, a small online-updatable linear model first, and CNN/GPT encoders as benchmarks. Note BPR was already disabled (validation weight 0.0 in notebook 03).',
-  'Alvin: the system diagram. Hard filters stay deterministic; the learned layer only reorders eligible candidates. The feedback loop is replayed predict-before-learn — we never train on the label before scoring it.',
-  'Alvin: data. 66k sampled Amazon events with a chronological 60/80 split; 20k Kaggle text docs for the encoders. Emphasise leakage controls: train-only vocab/BPR/features, salted pseudonyms, cold items counted not retrieved, SHA256 provenance.',
-  'Alvin: the model. Read the formula aloud: sigmoid of intercept plus user intercept plus (shared theta plus private delta) dot 13 bounded features. The update rule on the right is what runs online; clips keep one bad event from moving the profile.',
-  'Alvin: TextCNN. Conv windows 3/4/5 over learned embeddings, ReLU, max-over-time pooling, linear head on three aggregate-score buckets. Pure NumPy, Adam, gradient-checked against numerical gradients. 196k params.',
-  'Alvin: mini-GPT. Two pre-LN blocks with causal multi-head attention and a GELU FFN, trained next-token. Also pure NumPy. Its pooled hidden states are the text embeddings. 808k params, 1,200 steps.',
-  'Alvin: training. Colab CLI, CPU, pinned versions verified in a fresh subprocess; ten checkpointed stages so an interrupted cell resumes; hyperparameters chosen on validation, test scored once. 187 s for the final measured pass.',
-  'Issa: encoder results. The GPT-style LM cuts perplexity from 2,047 to 34.7 — real learning. Honest negative: the TextCNN does not beat the majority baseline on score buckets, and encoders disagree with the serving SVD geometry.',
-  'Issa: pointwise. The per-user residual cuts log loss 2.73 → 1.75 and Brier 0.71 → 0.52. Caveat: reliability table shows a base-rate shift, so probabilities are ranking scores, not calibrated chances.',
-  'Issa: ranking. NDCG@10 identical for shared and adaptive to three decimals; popularity still best on the small game cohort. Cold items dominate: 8,718 unseen-item positives, 849 users with no history.',
-  'Issa: conclusions. What worked: the shared-prior-plus-residual head, NumPy GPT pretraining, reproducible staged pipeline. Limits: no ranking gain at this scale, no calibration, no app-surface claim — nothing promoted.',
-  'Issa: future work and where the evidence lives. Phase A is the event ledger plus on-device adaptive scoring; bandits only after propensities exist. All numbers reproducible from the notebook and report.json in the repo.',
+  'Hussein: open with the app itself — Distran is one ledger across films, TV and games. Today we present the ML project behind making its recommendations adaptive: what we trained, how, and what the heldout numbers actually showed.',
+  'Agenda: three parts. I cover the introduction and our reasoning; Alvin takes the method and training; Issa takes the results and what we learned.',
+  'Hussein: the problem. Recommendations across formats from one profile. Two constraints shaped everything: no logged impressions in the app, and public metadata has no user preferences — so Amazon 5-core ratings are our proxy interaction corpus.',
+  'Hussein: our reasoning, and the method in one line. Four existing artifacts could not be merged by averaging parameters, so we fuse features and scores. The model is deliberately small — a 13-feature logistic classifier with a shared prior and a private per-user residual — plus CNN and GPT-style encoders as benchmarks. Read the formula: sigmoid of intercepts plus (theta plus delta) dot features.',
+  'Hussein: the starting point. SVD v3 is the serving encoder; BPR was already disabled because validation picked weight zero in notebook 03; the three regressors are offline baselines. Key insight on the slide: aggregate-score prediction is not personal taste.',
+  'Alvin: the system end to end. Numbered flow: catalog, candidates, hard filters, features, classifier, MMR, cards, then feedback events loop back into the private profile. Note the caption: learned weights only reorder eligible candidates — hard filters stay deterministic.',
+  'Alvin: data and protocol. Left: Amazon sample with chronological 60/80 split. Right: 20k-doc Kaggle corpus with title-hash split for the encoders. Leakage controls: train-only fitting everywhere, cold items counted not retrieved, SHA256 provenance.',
+  'Alvin: the model itself. The formula, the 13 features as chips, and the online update rule — every event is scored before its label is learned, updates are norm-clipped, weights bounded at ±10. Labels: rating ≥ 4 positive, ≤ 3 negative; unobserved is never a dislike.',
+  'Alvin: TextCNN. Walk the numbered diagram: tokens, 24-d embeddings, three conv widths, ReLU, max-over-time pooling, concat, linear head on three score buckets. 196k params, pure NumPy, gradient-checked against numerical gradients.',
+  'Alvin: mini-GPT. Token plus position embeddings, two pre-LN blocks with causal multi-head attention and a GELU FFN, final LayerNorm and a head to the vocabulary, trained next-token. 808k params, 1,200 steps, also pure NumPy. Metric is validation perplexity.',
+  'Alvin: training ran on a Colab CPU runtime through the CLI, pinned versions verified in a fresh subprocess, ten checkpointed stages so interrupted cells resume. Hyperparameters were selected on validation — eta 0.1, lambda 0 — and the test set was scored exactly once.',
+  'Alvin: before results, our pre-registered expectations — five hypotheses with reasoning and where each verdict lands. This keeps the test read honest.',
+  'Issa: encoder results. H3 confirmed — the mini-GPT cuts perplexity from 2,047 to 34.7. H4 not confirmed — the TextCNN does not beat the majority baseline on score buckets. And the encoders disagree with the serving SVD geometry, so neither replaces it.',
+  'Issa: pointwise classifier results. H1 confirmed: the per-user residual cuts log loss from 2.73 to 1.75 and Brier from 0.71 to 0.52. Caveat: the reliability table shows a base-rate shift, so treat outputs as ranking scores, not calibrated probabilities.',
+  'Issa: ranking results. H2 not confirmed: adaptive and shared logistic are identical to three decimals on NDCG@10, and popularity still edges the game cohort. The reason is cold start — 8,718 unseen-item positives and 849 users with no history.',
+  'Issa: what we learned, mapped back to the hypotheses. The adaptive linear head is sound and cheap; the encoders learned but don’t beat the serving SVD; and nothing gets promoted without an app-side evaluation — that held.',
+  'Issa: conclusions. For a project at this scale, small + online + evaluated beats big + static. Next step is the event ledger and on-device scoring in the app; bandits only once propensities exist. All evidence is in the repo — the notebook, the results doc and report.json are linked on the slide.',
 ];
 
 export default [
@@ -758,15 +913,17 @@ export default [
   Agenda,
   Problem,
   WhyApproach,
+  Baselines,
   SystemDiagram,
   Data,
   Model,
   CnnPage,
   GptPage,
   Training,
+  Expected,
   EncodersResults,
   PointwiseResults,
   RankingResults,
+  Learnings,
   Conclusions,
-  Future,
 ] satisfies Page[];

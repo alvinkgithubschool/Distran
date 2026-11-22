@@ -1,6 +1,6 @@
 # Distran — AI unit project presentation
 
-A 15-slide, 16:9 deck for the semester AI unit project: **"Distran: adaptive
+A 17-slide, 16:9 deck for the semester AI unit project: **"Distran: adaptive
 cross-media recommendations"** — training a shared-prior online classifier with
 CNN and GPT-style content encoders, executed on Colab and measured on heldout data.
 
