@@ -17,6 +17,16 @@ This opens the native Tauri window. No emulator, Android Studio configuration or
 
 For the browser preview: `pnpm dev`, then open <http://127.0.0.1:1420>.
 
+## Run on other platforms
+
+- **Any OS, browser only** — Node 22.12+ and pnpm 11 are the only requirements: `pnpm install && pnpm dev`, then open <http://127.0.0.1:1420>. No Rust, Xcode or Android tooling needed. The layout adapts down to phone widths, so this also works on tablets/phones.
+- **macOS native window** — `pnpm app` (Rust 1.90+ and Xcode command-line tools, as above); `pnpm app:build` produces the app bundle.
+- **Windows** — the browser preview above works as-is. A native Tauri build additionally needs the Rust toolchain, WebView2 and WiX (`pnpm app:build`).
+- **Linux** — the browser preview works as-is. A native build additionally needs the `webkit2gtk` development packages.
+- **Android/iOS** — native packaging is not implemented yet; use the responsive browser build on mobile.
+- **Live provider search** on any platform needs the backend running (`pnpm api`, Python 3.13 venv — see [backend/README.md](backend/README.md)). Without it the app falls back to the bundled curated catalog.
+- **Presentation** — see [Semester project presentation](#semester-project-presentation) below; the `.pptx` opens on any platform.
+
 ## Persistent local test accounts
 
 | Role | Email | Password |
@@ -54,6 +64,12 @@ ml/                    Model code, Colab notebooks and mathematical documentatio
 docs/                  Product plan, architecture, design sources and validation
 ```
 
+## Architecture at a glance
+
+- **Frontend** — `apps/desktop/`: React + TypeScript + Vite client with a responsive layout, wrapped in a Tauri 2 Rust shell (`src-tauri/`) for the native macOS window. Local-first: accounts, logs, lists, favourites and chat drafts persist in the app origin; Home ranking (`src/lib/recommendations.ts`) runs on-device from the bundled content vectors, favourites, ratings and format filters.
+- **Backend** — `backend/`: read-only FastAPI gateway for TMDB (movies/TV) and IGDB (games), bound to loopback, with a SQLite catalog cache and a PostgreSQL schema draft in `migrations/`. Provider credentials live only in `backend/.env` (git-ignored); the client receives normalized public metadata.
+- **ML / AI** — `ml/`: notebooks 01–05 executed on Google Colab (CPU) through the installed `colab` CLI — BPR + content model (03), Kaggle aggregate-score regressors + shared TF-IDF/SVD encoder (04), and the adaptive personalization experiment (05) with from-scratch TextCNN and mini-GPT content encoders plus the `distran-apc-v1` shared-prior online logistic preference classifier. Each notebook has a measured-results document beside it; unit tests live in `ml/tests/`. Buddy chat uses two approved free OpenRouter models (Perplexity Decider for thematic scores, NVIDIA Nemotron for grounded conversation).
+
 ## Check and build
 
 ```sh
@@ -67,6 +83,10 @@ pnpm app:build         # Native macOS app bundle
 
 Test browser setup: `pnpm --dir apps/desktop exec playwright install chromium --only-shell`.
 The default build deliberately uses `--mode demo` and includes the local preview login. `pnpm --dir apps/desktop build:production` disables those logins; production hosted authentication must be implemented before that mode is useful. Neither preview build is a deployed service.
+
+## Semester project presentation
+
+`presentation/Distran-AI-Unit-Project.pptx` — a 15-slide 16:9 deck (with speaker notes) covering Introduction, Methodology, and Results & Conclusions for the AI unit project. Presenters: 169183 Hussein, 167602 Alvin, 190003 Issa. Open the `.pptx` in PowerPoint, Keynote, LibreOffice Impress or Google Slides on any platform; the live slide page and editing instructions are in [presentation/README.md](presentation/README.md).
 
 ## Documentation
 
@@ -86,6 +106,8 @@ The original dataset proposal remains at the repository root. Presentation text,
 The home feed includes on-device content recommendations from a Colab-trained TF-IDF/SVD index, using local favourites and ratings with format filtering. See [the training process and results](ml/notebooks/TRAINING_RESULTS.md) alongside [the runnable notebook](ml/notebooks/03_training.ipynb). Amazon BPR/popularity/hybrid results are separate research benchmarks; Buddy chat stays disabled. No extra inference hosting is required for the current content model.
 
 The [Kaggle follow-up](ml/notebooks/KAGGLE_TRAINING_RESULTS.md) adds evaluated movie/game aggregate-score models and a shared content model trained on 32,952 metadata documents. The app bundles its projected vectors; external titles and aggregate predictions are not automatically imported into the catalog.
+
+The [adaptive personalization run](ml/notebooks/ADAPTIVE_PERSONALIZATION_RESULTS.md) ([notebook 05](ml/notebooks/05_adaptive_personalization.ipynb)) trains TextCNN and mini-GPT content encoders and the shared-prior online logistic preference classifier (`distran-apc-v1`) on the sampled Amazon 5-core interactions, with heldout NDCG/log-loss results and explicit limits. It is a research artifact — nothing from it is promoted to the app yet.
 
 ## Buddy thematic lists and conversation
 

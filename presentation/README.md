@@ -1,64 +1,39 @@
-# open-slide workspace
+# Distran — AI unit project presentation
 
-Slides as React components. Each slide lives under `slides/<id>/index.tsx` and default-exports an array of page components. The `@open-slide/core` runtime handles layout, scaling, navigation, thumbnails, and fullscreen play mode — you just write the pages.
+A 15-slide, 16:9 deck for the semester AI unit project: **"Distran: adaptive
+cross-media recommendations"** — training a shared-prior online classifier with
+CNN and GPT-style content encoders, executed on Colab and measured on heldout data.
 
-## Getting started
+Presenters: **169183 Hussein** (introduction), **167602 Alvin** (methodology),
+**190003 Issa** (results & conclusions). Structure: Introduction → Methodology →
+Results & Conclusions, with the system diagram, the model formula
+`p(u,i,c) = σ(b + bᵤ + (θ + δᵤ)·x)`, encoder architecture diagrams, the Colab
+training protocol, and the measured results tables.
 
-```bash
-pnpm install
-pnpm dev
-```
+## View the deck
 
-Then open the dev server and edit `slides/getting-started/index.tsx`, or create a new slide at `slides/<your-slide>/index.tsx`.
+- **PowerPoint file (works on any platform):** [Distran-AI-Unit-Project.pptx](./Distran-AI-Unit-Project.pptx)
+  — open it in PowerPoint (Windows/macOS), Keynote (macOS/iOS), LibreOffice Impress
+  (Linux/Windows/macOS), or upload it to Google Slides (any OS, browser). Every slide
+  carries its speaker notes in the notes pane.
+- **Live slide page (any OS, any modern browser):**
 
-## Scripts
+  ```sh
+  npm install
+  npm run dev
+  ```
 
-| Command | Description |
-| --- | --- |
-| `pnpm dev` | Start the dev server with hot reload. |
-| `pnpm build` | Build a static bundle you can deploy. |
-| `pnpm preview` | Preview the built bundle locally. |
+  then open <http://localhost:5173/s/distran-ai-project>. Arrow keys / PageUp /
+  PageDown move between pages; `F` enters fullscreen play mode, `Esc` exits.
+  `npm run build && npm run preview` serves a static production build instead.
 
-## Authoring a slide
+## Edit the deck
 
-```tsx
-// slides/my-slide/index.tsx
-import type { Page, SlideMeta } from '@open-slide/core';
-
-const Cover: Page = () => (
-  <div style={{ width: '100%', height: '100%' }}>Hello</div>
-);
-
-export const meta: SlideMeta = { title: 'My slide' };
-export default [Cover] satisfies Page[];
-```
-
-Every page renders into a fixed **1920 × 1080** canvas — design with absolute pixel values. Put images, videos, and fonts under `slides/<id>/assets/` and import them directly.
-
-See [`CLAUDE.md`](./CLAUDE.md) for the full authoring guide.
-
-## Navigation
-
-- Arrow keys / PageUp / PageDown move between pages.
-- `F` enters fullscreen play mode; Esc exits.
-- In play mode: Space / → next, ← prev.
-
-## Claude Code integration
-
-This workspace ships with Claude Code skills preconfigured under `.claude/skills/` and `.agents/skills/`. Ask Claude Code to "make slides about X" and the `create-slide` skill takes over. Use `apply-comments` to iterate via inspector-style markers inside your source.
-
-## Config
-
-Optional `open-slide.config.ts` at the workspace root:
-
-```ts
-import type { OpenSlideConfig } from '@open-slide/core';
-
-const openSlideConfig: OpenSlideConfig = {
-  port: 5173,
-};
-
-export default openSlideConfig;
-```
-
-Supported fields: `slidesDir`, `port`.
+The source is a single slide folder, `slides/distran-ai-project/index.tsx`: an array
+of page components, each rendering onto a fixed **1920 × 1080** canvas with absolute
+pixel values, plus a `meta` export (title) and a `notes` export (one speaker note per
+page — shown in the presenter view and baked into the `.pptx` notes pages). Design
+tokens (`palette`, `fonts`, `typeScale`, `radius`) are declared in the exported
+`design` const at the top of the file. After editing, re-run `npm run dev` for hot
+reload; to regenerate the `.pptx`, re-render each page at 1920×1080 and rebuild the
+file (the current export is committed alongside this README).
