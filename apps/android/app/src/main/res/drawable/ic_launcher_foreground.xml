@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Minimalist 'd' letterform -->
+    <path
+        android:fillColor="#F2EFE8"
+        android:pathData="M56,28h7v52h-7v-5c-3.2,3.8 -7.4,5.8 -12.5,5.8c-9.1,0 -15.5,-6.9 -15.5,-16.8s6.4,-16.8 15.5,-16.8c5.1,0 9.3,2 12.5,5.7V28zM45.2,53.6c-5.6,0 -9.7,4.2 -9.7,10.4s4.1,10.4 9.7,10.4c5.7,0 10.8,-4.2 10.8,-10.4S50.9,53.6 45.2,53.6z" />
+    <!-- Lime asterisk spark -->
+    <path
+        android:fillColor="#B7C96C"
+        android:pathData="M75,30v12M69,36h12M70.8,31.8l8.4,8.4M79.2,31.8l-8.4,8.4"
+        android:strokeColor="#B7C96C"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round" />
+</vector>
